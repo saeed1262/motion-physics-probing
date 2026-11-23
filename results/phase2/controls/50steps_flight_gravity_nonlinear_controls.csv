@@ -1,0 +1,55 @@
+checkpoint,target,metric,seed,step,features,model,score,within_prompt_r
+50steps,flight_gravity,r2,0,10,explicit,linear,0.797288568959374,0.499438255867141
+50steps,flight_gravity,r2,0,10,guess features,linear,0.5967695088661498,0.1964263978430725
+50steps,flight_gravity,r2,0,10,guess features,mlp,0.7139644353821415,0.22136457793513056
+50steps,flight_gravity,r2,0,10,everything the guess shows,linear,0.7764994921169492,0.36631589495921973
+50steps,flight_gravity,r2,0,10,everything the guess shows,mlp,0.7550775778338388,0.295460071843519
+50steps,flight_gravity,r2,0,10,layer 5,linear,0.8597388800645898,0.3731584088552434
+50steps,flight_gravity,r2,0,10,layer 5,mlp,0.8506497675968521,0.4101787279897532
+50steps,flight_gravity,r2,0,10,everything the guess shows + layer 5,linear,0.8612332416079111,0.4277992597408454
+50steps,flight_gravity,r2,0,10,everything the guess shows + layer 5,mlp,0.857512145099048,0.4166382990839585
+50steps,flight_gravity,r2,0,20,explicit,linear,0.8295756671864973,0.5888204636203703
+50steps,flight_gravity,r2,0,20,guess features,linear,0.5794046641808483,0.17234067469790326
+50steps,flight_gravity,r2,0,20,guess features,mlp,0.7266445012138136,0.24281423473002958
+50steps,flight_gravity,r2,0,20,everything the guess shows,linear,0.8295635013634638,0.4467585073728124
+50steps,flight_gravity,r2,0,20,everything the guess shows,mlp,0.7795524810030264,0.3099030756241531
+50steps,flight_gravity,r2,0,20,layer 5,linear,0.8662379224301567,0.358714206367747
+50steps,flight_gravity,r2,0,20,layer 5,mlp,0.8777750453831092,0.43541447709703657
+50steps,flight_gravity,r2,0,20,everything the guess shows + layer 5,linear,0.8660840109944912,0.41250904658712223
+50steps,flight_gravity,r2,0,20,everything the guess shows + layer 5,mlp,0.8280077491349714,0.35923149596486387
+50steps,flight_gravity,r2,1,10,explicit,linear,0.6536854922198267,0.4126524690601733
+50steps,flight_gravity,r2,1,10,guess features,linear,0.5522953818395857,0.1874059423638993
+50steps,flight_gravity,r2,1,10,guess features,mlp,0.7076715202856131,0.3638915533935086
+50steps,flight_gravity,r2,1,10,everything the guess shows,linear,0.5464771802984123,0.3112673765942118
+50steps,flight_gravity,r2,1,10,everything the guess shows,mlp,0.7277090657175296,0.3614120729474164
+50steps,flight_gravity,r2,1,10,layer 5,linear,0.7899408672268109,0.44507028538727683
+50steps,flight_gravity,r2,1,10,layer 5,mlp,0.8538637423233111,0.599369128625645
+50steps,flight_gravity,r2,1,10,everything the guess shows + layer 5,linear,0.7379691119601945,0.41070086851480087
+50steps,flight_gravity,r2,1,10,everything the guess shows + layer 5,mlp,0.8423017274834306,0.5345961459589121
+50steps,flight_gravity,r2,1,20,explicit,linear,0.6917053391170072,0.503842661210283
+50steps,flight_gravity,r2,1,20,guess features,linear,0.5346411761314632,0.15446415726581197
+50steps,flight_gravity,r2,1,20,guess features,mlp,0.7025294291353081,0.34358522372994826
+50steps,flight_gravity,r2,1,20,everything the guess shows,linear,0.5932282480025524,0.2860122177098704
+50steps,flight_gravity,r2,1,20,everything the guess shows,mlp,0.7261140834991837,0.3394919084283194
+50steps,flight_gravity,r2,1,20,layer 5,linear,0.7867417105123989,0.44054560950528215
+50steps,flight_gravity,r2,1,20,layer 5,mlp,0.8315558763193894,0.5148595455110773
+50steps,flight_gravity,r2,1,20,everything the guess shows + layer 5,linear,0.6500310226094459,0.3378352275552829
+50steps,flight_gravity,r2,1,20,everything the guess shows + layer 5,mlp,0.8302661653178117,0.4778673618431738
+50steps,flight_gravity,r2,2,10,explicit,linear,0.6695632487703078,0.4046838073422955
+50steps,flight_gravity,r2,2,10,guess features,linear,0.49090654618504737,0.27317815452759703
+50steps,flight_gravity,r2,2,10,guess features,mlp,0.5931456608684755,0.30587238290084084
+50steps,flight_gravity,r2,2,10,everything the guess shows,linear,0.5964966001207674,0.3447733304622856
+50steps,flight_gravity,r2,2,10,everything the guess shows,mlp,0.6262021695198059,0.3645713697450823
+50steps,flight_gravity,r2,2,10,layer 5,linear,0.792529566807318,0.5160757101553556
+50steps,flight_gravity,r2,2,10,layer 5,mlp,0.8343742013401435,0.5995086067709412
+50steps,flight_gravity,r2,2,10,everything the guess shows + layer 5,linear,0.7782240919885952,0.507591493541639
+50steps,flight_gravity,r2,2,10,everything the guess shows + layer 5,mlp,0.7845418709091377,0.5715345668245028
+50steps,flight_gravity,r2,2,20,explicit,linear,0.717416285643392,0.4632830473935417
+50steps,flight_gravity,r2,2,20,guess features,linear,0.47891143997199703,0.27889955544232364
+50steps,flight_gravity,r2,2,20,guess features,mlp,0.633167307958983,0.3628061840797036
+50steps,flight_gravity,r2,2,20,everything the guess shows,linear,0.6938621877650977,0.502861225664111
+50steps,flight_gravity,r2,2,20,everything the guess shows,mlp,0.7195403375145171,0.45595891669440075
+50steps,flight_gravity,r2,2,20,layer 5,linear,0.8088484527498517,0.5308508954850839
+50steps,flight_gravity,r2,2,20,layer 5,mlp,0.8176167558760647,0.5817811945351761
+50steps,flight_gravity,r2,2,20,everything the guess shows + layer 5,linear,0.8080673645232479,0.5563766096638934
+50steps,flight_gravity,r2,2,20,everything the guess shows + layer 5,mlp,0.8031849229592554,0.586174987343544

@@ -1,0 +1,10 @@
+checkpoint,target,metric,seed,step,features,model,score,within_prompt_r
+50steps,xcom_margin,r2,0,10,explicit,linear,0.8107097497750635,0.8181282817617895
+50steps,xcom_margin,r2,0,10,guess features,linear,0.7502994458605695,0.7646338298902244
+50steps,xcom_margin,r2,0,10,guess features,mlp,0.8614594408396958,0.8773530528293779
+50steps,xcom_margin,r2,0,10,everything the guess shows,linear,0.8735592385651724,0.878073332633566
+50steps,xcom_margin,r2,0,10,everything the guess shows,mlp,0.8869063883161361,0.8955082950324567
+50steps,xcom_margin,r2,0,10,layer 7,linear,0.854135325580477,0.8578022469781738
+50steps,xcom_margin,r2,0,10,layer 7,mlp,0.8307954761799761,0.8680007727205883
+50steps,xcom_margin,r2,0,10,everything the guess shows + layer 7,linear,0.8839703364236033,0.8887518361832824
+50steps,xcom_margin,r2,0,10,everything the guess shows + layer 7,mlp,0.8729210888794774,0.8879191194553443

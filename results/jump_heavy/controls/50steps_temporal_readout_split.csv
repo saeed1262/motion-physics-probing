@@ -1,0 +1,19 @@
+checkpoint,seed,step,target,metric,features,model,score,within_prompt_r
+50steps,0,10,fall_gravity,r2,estimate,temporal,0.2777758673986639,0.42621451682872796
+50steps,0,10,fall_gravity,r2,layer,temporal,0.3632400617018774,0.49972636637424533
+50steps,0,10,fall_gravity,r2,estimate + layer,temporal,0.33762267924138534,0.48704800058592956
+50steps,0,10,float_vs_fall,auc,estimate,temporal,0.975222657580334,0.6796642149299463
+50steps,0,10,float_vs_fall,auc,layer,temporal,0.9714783293715363,0.6719895909877031
+50steps,0,10,float_vs_fall,auc,estimate + layer,temporal,0.9695180138496627,0.6713608104867825
+50steps,1,10,fall_gravity,r2,estimate,temporal,0.30384236040184465,0.46130372555892274
+50steps,1,10,fall_gravity,r2,layer,temporal,0.36546488717028136,0.5086976270388137
+50steps,1,10,fall_gravity,r2,estimate + layer,temporal,0.39224261327909804,0.5373375973497717
+50steps,1,10,float_vs_fall,auc,estimate,temporal,0.9664170185484138,0.5914970986408485
+50steps,1,10,float_vs_fall,auc,layer,temporal,0.9622063691491084,0.6098420582748219
+50steps,1,10,float_vs_fall,auc,estimate + layer,temporal,0.9651761357557592,0.6140606892017628
+50steps,2,10,fall_gravity,r2,estimate,temporal,0.3108088131317137,0.4397465214610827
+50steps,2,10,fall_gravity,r2,layer,temporal,0.4078289106104993,0.5298860373096143
+50steps,2,10,fall_gravity,r2,estimate + layer,temporal,0.3751871499325442,0.5083015880822083
+50steps,2,10,float_vs_fall,auc,estimate,temporal,0.9590974418340997,0.6124920638685143
+50steps,2,10,float_vs_fall,auc,layer,temporal,0.9623323820046067,0.6813711648535454
+50steps,2,10,float_vs_fall,auc,estimate + layer,temporal,0.9664848509174231,0.701128509804066

@@ -1,0 +1,177 @@
+MDM commit: ef8edce
+vendor/mdm/diffusion/nn.py:150: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_fwd
+vendor/mdm/diffusion/nn.py:160: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_bwd
+TRANS_ENC init
+vendor/mdm/model/mdm.py:83: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.seqTransEncoder = nn.TransformerEncoder(seqTransEncoderLayer,
+EMBED TEXT
+Loading CLIP...
+.venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+Loaded model000750000.pt | arch=trans_enc | layers=8 | diffusion steps=50 | device=mps
+64 prompts x 4 reps = 256 motions; recording denoising steps [0, 10, 20, 29, 39, 49] (0 = pure noise, 49 = final)
+batch 1/4 done, 7s
+batch 2/4 done, 13s
+batch 3/4 done, 20s
+batch 4/4 done, 27s
+final joints: (256, 120, 22, 3) | activations per (step, layer): (256, 60, 512)
+generation: 27s on mps | non-finite activation values: 0 | non-finite final joints: 0
+recorded: 48 (step, layer) keys, each (256, 60, 512) | x_t (256, 60, 263) | x0 joints (256, 120, 22, 3) | x0 features (256, 60, 263) | text (256, 512)
+labels computed in 10s
+group    motions  flight %  float>5cm %  penetr<-2cm %  CoM out %  XCoM out %  skate m/s  airborne %  floating %  jump g m/s2
+flight        56      16.1          0.9            0.0       22.5        27.8       0.05        12.6         0.6         9.75
+balance       68       9.1          2.4            0.0       28.4        30.1       0.04         4.8         4.5         7.48
+other        132       8.7          2.4            0.0       32.5        35.0       0.05         5.1         4.4         7.14
+
+MDM's own contact channels agree with geometric contact on 86.5% of foot-frames.
+Airborne: no foot, knee, wrist or pelvis near the floor. Over each airborne stretch of 0.2 s or more we fit
+the fall rate: below 2.0 m/s2 it counts as floating; 'jump g' is the median of the rest (real: 9.81).
+Note: 'CoM out' and 'XCoM out' also flag normal walking, so read them as descriptive, not as failures.
+results/phase1/anim_jumps_forward.gif
+results/phase1/anim_stands_on_one_leg.gif
+flight_gravity: done (1s)
+xcom_margin: done (6s)
+balance_margin: done (11s)
+lowest_foot: done (17s)
+in_flight: done (22s)
+scripts/run_phase1_local.py:586: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  best = layer_tab.max(0)
+scripts/run_phase1_local.py:586: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  best = layer_tab.max(0)
+scripts/run_phase1_local.py:586: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  best = layer_tab.max(0)
+scripts/run_phase1_local.py:586: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  best = layer_tab.max(0)
+scripts/run_phase1_local.py:586: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  best = layer_tab.max(0)
+step                         0      10     20     29     39     49
+target         source                                             
+balance_margin explicit   0.196  0.719  0.795  0.838  0.866  1.000
+               layer 0    0.022  0.507  0.611  0.651  0.685  0.689
+               layer 1   -0.173  0.507  0.608  0.651  0.681  0.687
+               layer 2   -0.100  0.596  0.646  0.667  0.692  0.673
+               layer 3   -0.170  0.616  0.673  0.700  0.716  0.709
+               layer 4    0.087  0.627  0.669  0.705  0.711  0.715
+               layer 5    0.156  0.675  0.677  0.681  0.700  0.751
+               layer 6   -1.538  0.673  0.692  0.686  0.687  0.693
+               layer 7   -2.424  0.637  0.679  0.678  0.668  0.689
+               x0 probe  -1.456  0.587  0.591  0.565  0.556  0.544
+               x_t probe -0.030  0.139  0.247  0.350  0.449  0.525
+flight_gravity explicit   0.117  0.553  0.631  0.712  0.813  1.000
+               layer 0    0.611  0.667  0.672  0.747  0.727  0.752
+               layer 1    0.729  0.614  0.646  0.490  0.567  0.610
+               layer 2    0.550  0.804  0.770  0.735  0.726  0.690
+               layer 3    0.076  0.721  0.758  0.766  0.829  0.677
+               layer 4   -0.484  0.710  0.835  0.767  0.700  0.720
+               layer 5    0.283  0.788  0.742  0.757  0.799  0.814
+               layer 6   -0.252  0.828  0.822  0.838  0.844  0.872
+               layer 7   -0.184  0.756  0.749  0.836  0.853  0.859
+               x0 probe  -0.317  0.510  0.723  0.744  0.735  0.619
+               x_t probe  0.003 -0.181  0.033  0.380  0.722  0.680
+in_flight      explicit   0.748  0.940  0.963  0.966  0.974  1.000
+               layer 0    0.739  0.931  0.966  0.980  0.988  0.980
+               layer 1    0.611  0.936  0.955  0.968  0.970  0.969
+               layer 2    0.545  0.949  0.964  0.976  0.978  0.962
+               layer 3    0.486  0.946  0.966  0.972  0.974  0.963
+               layer 4    0.633  0.948  0.980  0.976  0.975  0.976
+               layer 5    0.532  0.977  0.983  0.977  0.969  0.959
+               layer 6    0.754  0.977  0.982  0.981  0.977  0.974
+               layer 7    0.767  0.969  0.979  0.980  0.982  0.981
+               x0 probe   0.684  0.947  0.953  0.951  0.956  0.963
+               x_t probe  0.509  0.802  0.907  0.942  0.961  0.966
+lowest_foot    explicit   0.071  0.958  0.971  0.975  0.988  1.000
+               layer 0   -0.193  0.681  0.815  0.826  0.832  0.853
+               layer 1   -0.330  0.757  0.795  0.782  0.795  0.834
+               layer 2   -1.251  0.728  0.781  0.782  0.797  0.836
+               layer 3   -0.944  0.771  0.764  0.775  0.785  0.820
+               layer 4   -1.130  0.687  0.721  0.738  0.785  0.819
+               layer 5   -4.014  0.730  0.783  0.815  0.857  0.878
+               layer 6   -5.590  0.797  0.851  0.878  0.900  0.897
+               layer 7   -4.866  0.880  0.914  0.930  0.946  0.943
+               x0 probe  -3.999  0.815  0.856  0.868  0.870  0.844
+               x_t probe -0.011  0.158  0.459  0.613  0.730  0.834
+xcom_margin    explicit   0.035  0.832  0.882  0.912  0.935  1.000
+               layer 0    0.017  0.579  0.652  0.679  0.707  0.761
+               layer 1   -0.001  0.589  0.678  0.719  0.753  0.779
+               layer 2   -0.099  0.727  0.769  0.777  0.800  0.805
+               layer 3   -0.339  0.748  0.783  0.782  0.806  0.815
+               layer 4    0.128  0.750  0.786  0.808  0.821  0.834
+               layer 5    0.064  0.774  0.786  0.795  0.808  0.829
+               layer 6   -1.067  0.804  0.815  0.820  0.833  0.833
+               layer 7   -1.972  0.814  0.839  0.838  0.845  0.845
+               x0 probe  -1.347  0.706  0.714  0.708  0.702  0.686
+               x_t probe -0.016  0.331  0.451  0.508  0.563  0.665
+scripts/run_phase1_local.py:616: RuntimeWarning: Mean of empty slice
+  return {"gravity error (jumps)": np.nanmean(jump_err, 1), "floating rate": floating.mean(1),
+scripts/run_phase1_local.py:617: RuntimeWarning: Mean of empty slice
+  "float rate": np.nanmean(flt, 1), "off-balance rate (exploratory)": np.nanmean(bal, 1)}
+scripts/run_phase1_local.py:632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase1_local.py:661: RuntimeWarning: Mean of empty slice
+  add(k, "explicit (x0 guess)", np.where(np.isfinite(e), e, np.nanmean(e)))
+scripts/run_phase1_local.py:632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase1_local.py:632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase1_local.py:632: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+                                                   spearman                                           within_prompt                                   
+step                                                    -1      0      10     20     29     39     49            0      10     20     29     39     49
+failure                        source                                                                                                                 
+float rate                     best layer               NaN  0.094  0.148  0.221  0.275  0.285  0.306        -0.029  0.040  0.122  0.157  0.204  0.232
+                               explicit (x0 guess)      NaN  0.206  0.560  0.605  0.659  0.738  1.000        -0.108  0.183  0.286  0.470  0.579  1.000
+                               text only              0.186    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN -0.143 -0.041  0.033  0.095  0.084  0.094        -0.069 -0.148 -0.056 -0.041 -0.032 -0.008
+floating rate                  best layer               NaN  0.192  0.306  0.375  0.398  0.399  0.406         0.048  0.211  0.268  0.304  0.310  0.299
+                               explicit (x0 guess)      NaN  0.212  0.554  0.675  0.803  0.862  1.000         0.064  0.617  0.648  0.760  0.799  1.000
+                               text only              0.127    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN -0.071  0.257  0.251  0.282  0.308  0.338        -0.035  0.209  0.175  0.160  0.168  0.188
+gravity error (jumps)          best layer               NaN  0.024  0.421  0.225  0.144 -0.155 -0.217         0.191  0.421  0.338  0.207 -0.037 -0.102
+                               explicit (x0 guess)      NaN    NaN  0.274  0.402  0.487  0.727  1.000           NaN  0.203  0.246  0.387  0.727  1.000
+                               text only             -0.293    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN -0.114  0.206  0.169  0.092 -0.064 -0.165         0.199  0.410  0.426  0.254  0.200  0.111
+off-balance rate (exploratory) best layer               NaN  0.419  0.755  0.716  0.697  0.689  0.710        -0.119  0.541  0.464  0.463  0.535  0.464
+                               explicit (x0 guess)      NaN  0.316  0.911  0.932  0.952  0.954  1.000        -0.044  0.798  0.801  0.844  0.882  1.000
+                               text only              0.138    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN  0.357  0.500  0.543  0.529  0.530  0.584        -0.187  0.186  0.289  0.297  0.287  0.326
+Saved results to results/phase1
+{
+  "device": "mps",
+  "torch": "2.15.0",
+  "n_motions": 256,
+  "n_prompts": 64,
+  "n_reps": 4,
+  "record_steps": [
+    0,
+    10,
+    20,
+    29,
+    39,
+    49
+  ],
+  "test_prompts": [
+    0,
+    2,
+    4,
+    10,
+    15,
+    17,
+    28,
+    34,
+    40,
+    45,
+    50,
+    58
+  ],
+  "motions_with_gravity_fit": 66,
+  "motions_with_gravity_fit_by_group": {
+    "flight": 41,
+    "balance": 9,
+    "other": 16
+  },
+  "frames_with_gravity_label": 906,
+  "test_frames_with_gravity_label": 162,
+  "runtime_s": 72
+}

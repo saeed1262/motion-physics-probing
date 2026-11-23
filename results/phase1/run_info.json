@@ -1,0 +1,38 @@
+{
+  "device": "mps",
+  "torch": "2.15.0",
+  "n_motions": 256,
+  "n_prompts": 64,
+  "n_reps": 4,
+  "record_steps": [
+    0,
+    10,
+    20,
+    29,
+    39,
+    49
+  ],
+  "test_prompts": [
+    0,
+    2,
+    4,
+    10,
+    15,
+    17,
+    28,
+    34,
+    40,
+    45,
+    50,
+    58
+  ],
+  "motions_with_gravity_fit": 66,
+  "motions_with_gravity_fit_by_group": {
+    "flight": 41,
+    "balance": 9,
+    "other": 16
+  },
+  "frames_with_gravity_label": 906,
+  "test_frames_with_gravity_label": 162,
+  "runtime_s": 72
+}

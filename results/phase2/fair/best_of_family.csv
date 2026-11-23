@@ -1,0 +1,49 @@
+tag,checkpoint,target,comparison,measure,families,observed,ci_low,ci_high
+phase2,1000steps,balance_margin,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: mlp, estimate: mlp",-0.006277347960511381,-0.01822048177335918,0.0034345500272949816
+phase2,1000steps,balance_margin,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: mlp, estimate: mlp",-0.003991275341347467,-0.011917355628697909,0.002749838307568722
+phase2,1000steps,balance_margin,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: mlp, estimate: mlp",-0.004291904842425698,-0.01388644012460041,0.003743998539652793
+phase2,1000steps,balance_margin,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",0.023829129910032165,0.014724762832823434,0.03476648414417375
+phase2,1000steps,balance_margin,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",0.019876062745471712,0.013100151961607917,0.02662030528006215
+phase2,1000steps,balance_margin,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",0.02198699903913115,0.014742215005404109,0.029418410855328286
+phase2,1000steps,flight_gravity,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: mlp, estimate: ridge",0.029476042264795277,-0.013533523474568807,0.07397222169912393
+phase2,1000steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: mlp, estimate: ridge",0.005652209351270199,-0.04434781816109513,0.04943067735178233
+phase2,1000steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: mlp, estimate: ridge",0.00957421876639386,-0.04162338951811433,0.05823548496401
+phase2,1000steps,flight_gravity,fair: best(estimate) - best(layer),score,"estimate: ridge, layer: mlp",-0.02488183697863633,-0.07027660159390925,0.013666771638343516
+phase2,1000steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_r,"estimate: ridge, layer: mlp",0.00025931017745917107,-0.042534922955142045,0.045237874708487155
+phase2,1000steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: ridge, layer: mlp",-0.00022194785426243868,-0.050693699566983316,0.04960381884934061
+phase2,1000steps,in_flight,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: ridge, estimate: mlp",0.004128087076589959,-0.0024563113932320993,0.010669101099683581
+phase2,1000steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: ridge, estimate: mlp",-0.009670515683007808,-0.018886980817161406,-0.0005574932011280201
+phase2,1000steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: ridge, estimate: mlp",-0.010122941665410501,-0.02092441637858945,0.0004223623384847547
+phase2,1000steps,in_flight,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: ridge",0.001489422642156124,-0.005482457166950602,0.008426198755780467
+phase2,1000steps,in_flight,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: ridge",0.059791367340451984,0.04550055069652806,0.07561810281976251
+phase2,1000steps,in_flight,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: ridge",0.06257441697172683,0.04718747178575063,0.08034494297651315
+phase2,1000steps,xcom_margin,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: mlp, estimate: mlp",-0.0015041825496254768,-0.005658937668984248,0.0018956830625749042
+phase2,1000steps,xcom_margin,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: mlp, estimate: mlp",-0.0013415087803365644,-0.0040954255493254235,0.001014383021419329
+phase2,1000steps,xcom_margin,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: mlp, estimate: mlp",-0.002326718362351321,-0.00557192273650407,0.0005504439008991224
+phase2,1000steps,xcom_margin,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",0.014637877072917638,0.008008521824643086,0.021896551074457836
+phase2,1000steps,xcom_margin,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",0.010417335735714572,0.00620338304681263,0.015321715605781066
+phase2,1000steps,xcom_margin,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",0.013132487086333411,0.00828308611279506,0.01881081454648103
+phase2,50steps,balance_margin,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: ridge, estimate: mlp",0.005278314614119761,-0.007692719414536764,0.017619309770323943
+phase2,50steps,balance_margin,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: ridge, estimate: mlp",-0.005334600994797434,-0.01171996452024322,0.0006963671655903805
+phase2,50steps,balance_margin,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: ridge, estimate: mlp",-0.006726632651963382,-0.014823599361189821,0.0018755156694230772
+phase2,50steps,balance_margin,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",0.0281865991779765,0.01867088156883941,0.037490304591343684
+phase2,50steps,balance_margin,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",0.023168312271765634,0.0144934585844245,0.031998824738914265
+phase2,50steps,balance_margin,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",0.02748605462470355,0.017290919222890895,0.037445514284199705
+phase2,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: ridge, estimate: mlp",0.04526229321007014,0.01855848978203252,0.08406721138932925
+phase2,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: ridge, estimate: mlp",0.08022928487503111,0.021435166002375446,0.1478161190725878
+phase2,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: ridge, estimate: mlp",0.06569877994739753,-0.0034768395367277046,0.13400993272370265
+phase2,50steps,flight_gravity,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",-0.041933633640512835,-0.09298316453954993,-0.004085026285615732
+phase2,50steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",-0.07773981593255219,-0.16023842626799742,-0.003130744932192721
+phase2,50steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",-0.07298110360295695,-0.17064261615858725,0.029360738851311043
+phase2,50steps,in_flight,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: ridge, estimate: mlp",0.004121754122714538,-0.0006196726715687578,0.009784259218424704
+phase2,50steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: ridge, estimate: mlp",-0.028818431583864546,-0.039401882723372306,-0.019483405663132027
+phase2,50steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: ridge, estimate: mlp",-0.03156273844391588,-0.043799507954973935,-0.021008174940712717
+phase2,50steps,in_flight,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: ridge",-0.0014728394280280055,-0.007609243061003714,0.004578574162518178
+phase2,50steps,in_flight,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: ridge",0.10129391679339916,0.08629916847875925,0.12127141241147554
+phase2,50steps,in_flight,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: ridge",0.11076569531794445,0.09397658709542676,0.13221400738812686
+phase2,50steps,xcom_margin,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: mlp, estimate: mlp",-0.0045613132104347365,-0.009677414579378216,0.00010731740332171479
+phase2,50steps,xcom_margin,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: mlp, estimate: mlp",-0.003132757870505598,-0.005864095946258005,-0.0005760676359936827
+phase2,50steps,xcom_margin,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: mlp, estimate: mlp",-0.003756827627908965,-0.007584810769129776,-0.00015926093724238439
+phase2,50steps,xcom_margin,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: tuned",0.026064438320832717,0.016729112177936777,0.0391025022183085
+phase2,50steps,xcom_margin,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: tuned",0.0193317733136108,0.014589409232133598,0.024287760147913704
+phase2,50steps,xcom_margin,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: tuned",0.02590825006709674,0.020108300491621125,0.03245683314527852

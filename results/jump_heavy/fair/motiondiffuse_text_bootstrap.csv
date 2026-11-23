@@ -1,0 +1,31 @@
+checkpoint,tag,target,layer_spec,refit_seed,comparison,measure,observed,ci_low,ci_high,share_above_zero
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): tuned,score,-0.06440628418964134,-0.10936923972177225,-0.0163987690315379,0.003
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): tuned,within_prompt_r,-0.02940921609273689,-0.04990351891032443,-0.008989891474624244,0.003
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): tuned,within_prompt_frame_r,-0.03476722560948814,-0.06125654199927375,-0.00788561262048942,0.007
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): fallback,score,-0.02762513678668066,-0.049437085638436365,-0.008258753625835167,0.003
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): fallback,within_prompt_r,-0.006708322136326272,-0.015663382434923386,0.001900902716389088,0.067
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): fallback,within_prompt_frame_r,-0.007299769509737153,-0.01935678662075029,0.0029069525774837244,0.097
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): ridge only,score,-0.015136042219697776,-0.04440598117246514,0.014972343696580355,0.16
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): ridge only,within_prompt_r,-0.003892106425415376,-0.01876817598952932,0.00842788017832089,0.295
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text): ridge only,within_prompt_frame_r,-0.0050472111359303184,-0.023130862756080492,0.010249034677411506,0.27
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): tuned,score,0.034117439068855004,0.008960316173107488,0.059576639211082034,0.998
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): tuned,within_prompt_r,0.016181514275567355,-0.0025012669458515835,0.03706235427720664,0.956
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): tuned,within_prompt_frame_r,0.012990981980004146,-0.008657071358440476,0.03714466390258304,0.868
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): fallback,score,0.02510538427247111,0.0034707146665999083,0.04735027836109796,0.988
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): fallback,within_prompt_r,0.02165805230756762,0.0066554888012420755,0.03809455790964994,0.998
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): fallback,within_prompt_frame_r,0.01667985677093109,-0.001485349100241914,0.03613719449279527,0.964
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): ridge only,score,0.04348313542716464,0.023397634313192535,0.0665652117485249,1.0
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): ridge only,within_prompt_r,0.039774563911796956,0.02323901218918081,0.05567466215450327,1.0
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.039319192234054945,0.01968224224774131,0.058927821110191764,1.0
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): tuned,score,-0.01905417768023332,-0.061799942831105854,0.020350657981992516,0.168
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): tuned,within_prompt_r,-0.016252161947496124,-0.03817488171156276,0.006349693975877395,0.066
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): tuned,within_prompt_frame_r,-0.018328448044034384,-0.043382851590344794,0.007735505668580224,0.089
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): fallback,score,0.02510538427247111,0.0034707146665999083,0.04735027836109796,0.988
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): fallback,within_prompt_r,0.02165805230756762,0.0066554888012420755,0.03809455790964994,0.998
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): fallback,within_prompt_frame_r,0.01667985677093109,-0.001485349100241914,0.03613719449279527,0.964
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): ridge only,score,-0.0022945986368873017,-0.03390403321891078,0.029993309143924306,0.453
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): ridge only,within_prompt_r,0.001713909159222038,-0.018737945614065544,0.018465854434875063,0.567
+motiondiffuse,jump_heavy,fall_gravity,text,0,conditional gain (text + layer): ridge only,within_prompt_frame_r,0.0018571507771710238,-0.02185879210390062,0.022039812699240102,0.556
+motiondiffuse,jump_heavy,fall_gravity,text,0,layer adds beyond text: fallback,score,0.05273052105915177,0.027302967452842872,0.08068383284626121,1.0
+motiondiffuse,jump_heavy,fall_gravity,text,0,layer adds beyond text: fallback,within_prompt_r,0.028366374443893894,0.014890885215920968,0.044573891751188484,1.0
+motiondiffuse,jump_heavy,fall_gravity,text,0,layer adds beyond text: fallback,within_prompt_frame_r,0.023979626280668243,0.005525086014062644,0.04472265563439725,0.998

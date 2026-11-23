@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Learning curves, tuned readouts</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_tuned_curve.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 200, svg = setup(W, H);
+const C = { "explicit": [col("dim"), null], "layer | ridge": [col("dim"), "3 2"], "layer | tuned": [col("layer"), null],
+            "estimate | tuned": [col("est"), null], "estimate + layer | tuned+fallback": [col("both"), null] };
+const TT = ["Estimate leads from 50 prompts", "The layer's lead holds", "Combining them pays off"];
+const PW = [222, 196, 196], PX = [0, 222, 418];
+FIG.panels.forEach((P, i) => {
+  const p = panel(svg, PX[i], 0, PW[i], H, { t: 34, r: i === 0 ? 74 : 8, b: 28, l: 30 });
+  title(p, "abc"[i], TT[i], P.name);
+  const ns = P.series[0].pts.map((q) => q[0]);
+  const x = d3.scaleLog().domain(d3.extent(ns)).range([0, p.w]);
+  const vals = P.series.flatMap((s) => s.pts.flatMap((q) => [q[2], q[3]]));
+  const y = d3.scaleLinear().domain([Math.max(d3.min(vals), i === 0 ? 0.55 : -0.35), d3.max(vals)]).nice().range([p.h, 0]).clamp(true);
+  axes(p, x, y, { xTickValues: ns, xFormat: d3.format("d"), xLabel: "training prompts per fold", yTicks: 4 });
+  P.series.forEach((s) => {
+    const [c, dash] = C[s.key];
+    band(p, x, y, s.pts.map((q) => [q[0], q[2], q[3]]), c, 0.12);
+    series(p, x, y, s.pts.map((q) => [q[0], q[1]]), c, i === 0 ? s.label : null, { dash, r: 2 });
+  });
+  placeLabels(p);
+});
+</script></body></html>

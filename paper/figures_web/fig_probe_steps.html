@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Probe scores across denoising</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_probe_steps.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 196, svg = setup(W, H);
+const C = { layer: col("layer"), explicit: col("dim"), est: col("est"), noisy: col("neutral") };
+FIG.panels.forEach((P, i) => {
+  const p = panel(svg, i * 316, 0, 308, H, { t: 34, r: 72, b: 28, l: 30 });
+  title(p, "ab"[i], P.name, P.sub);
+  const x = d3.scaleLinear().domain([0, 100]).range([0, p.w]);
+  const y = d3.scaleLinear().domain(P.metric === "AUC" ? [0.45, 1] : [0, 1]).range([p.h, 0]);
+  axes(p, x, y, { xTickValues: [0, 20, 40, 60, 80, 100], xFormat: (d) => `${d}%`, xLabel: "denoising done", yTicks: 5 });
+  p.inner.append("line").attr("x1", x(20)).attr("x2", x(20)).attr("y1", 0).attr("y2", p.h).attr("stroke", col("axis")).attr("stroke-dasharray", "2 2");
+  P.series.forEach((s) => {
+    band(p, x, y, s.pts.map((q) => [q[0], q[2], q[3]]), C[s.key], 0.16);
+    series(p, x, y, s.pts.map((q) => [q[0], q[1]]), C[s.key], s.label, { dash: s.key === "noisy" ? "2 2" : null, width: ["layer", "est"].includes(s.key) ? 1.9 : 1.1 });
+  });
+  P.mlp.forEach((q) => {
+    p.inner.append("line").attr("x1", x(q[0])).attr("x2", x(q[0])).attr("y1", y(q[1] - q[2])).attr("y2", y(q[1] + q[2])).attr("stroke", col("est"));
+    p.inner.append("path").attr("d", d3.symbol(d3.symbolDiamond, 34)()).attr("transform", `translate(${x(q[0])},${y(q[1])})`)
+      .attr("fill", col("est")).attr("stroke", "#fff").attr("stroke-width", 0.7);
+  });
+  const m = P.mlp[0];
+  p.inner.append("text").attr("class", "annot").style("fill", col("est")).attr("x", x(m[0]) + 6).attr("y", y(m[1]) - 6).text("estimate, MLP");
+  placeLabels(p);
+});
+</script></body></html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>The estimate shows the physics</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_teaser.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 372, svg = setup(W, H), LW = 16, RH = 112, TOP = 34;
+const CW = [(W - LW) * 0.45, (W - LW) * 0.55], CX = [LW, LW + (W - LW) * 0.45];
+FIG.rows.forEach((r, i) => svg.append("text").attr("transform", `translate(9,${TOP + i * RH + RH / 2}) rotate(-90)`)
+  .attr("text-anchor", "middle").style("fill", col("ink")).style("font-weight", 600).text(r));
+FIG.cols.forEach((C, j) => {
+  const t = svg.append("text").attr("class", "title").attr("x", CX[j] + 4).attr("y", 10);
+  t.append("tspan").attr("class", "letter").text(`(${"ab"[j]}) `); t.append("tspan").text(`“${C.prompt}”`);
+  svg.append("text").attr("class", "subtitle").attr("x", CX[j] + 4).attr("y", 22)
+    .text(C.kind === "jump" ? "center of mass, red while airborne" : "lowest foot height under each body; red: floating");
+  const bw = C.box.x1 - C.box.x0, bh = C.box.y1 - C.box.y0, sc = Math.min((CW[j] - 8) / bw, (RH - 22) / bh);
+  C.cells.forEach((c, i) => {
+    const ox = CX[j] + (CW[j] - bw * sc) / 2, oy = TOP + i * RH + 14;
+    const X = (p) => ox + (p[0] - C.box.x0) * sc, Y = (p) => oy + (C.box.y1 - p[1]) * sc;
+    svg.append("image").attr("href", c.img).attr("x", ox).attr("y", oy).attr("width", bw * sc).attr("height", bh * sc);
+    const hot = C.kind === "jump" ? col("mark") : col("mark");
+    svg.append("text").attr("x", CX[j] + CW[j] / 2).attr("y", oy - 3).attr("text-anchor", "middle").style("fill", hot).style("font-weight", 600).text(c.text);
+    if (C.kind === "jump") {
+      svg.append("path").attr("d", d3.line().x(X).y(Y)(c.com)).attr("fill", "none").attr("stroke", col("dim")).attr("stroke-width", 0.9).attr("opacity", 0.8);
+      svg.append("path").attr("d", d3.line().defined((p, k) => c.air[k]).x(X).y(Y)(c.com)).attr("fill", "none").attr("stroke", col("mark")).attr("stroke-width", 2);
+    } else {
+      c.heights.forEach(([x, h, fl]) => svg.append("text").attr("x", X([x, 0])).attr("y", Y([0, -0.17])).attr("text-anchor", "middle")
+        .style("font-size", "8px").style("fill", fl ? col("mark") : col("muted")).style("font-weight", fl ? 650 : 400).text(`${Math.round(h)} cm`));
+    }
+  });
+});
+</script></body></html>

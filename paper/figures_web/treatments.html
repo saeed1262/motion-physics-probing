@@ -1,0 +1,62 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Treatment ideas</title>
+<link rel="stylesheet" href="style.css">
+<style>
+@font-face { font-family: "Plex"; src: url("fonts/IBMPlexSans-Regular.ttf"); font-weight: 100 549; }
+@font-face { font-family: "Plex"; src: url("fonts/IBMPlexSans-SemiBold.ttf"); font-weight: 550 900; }
+.plex text { font-family: "Plex", sans-serif !important; }
+</style>
+<script src="lib/d3.min.js"></script><script src="common.js"></script>
+<script src="data/fig_steps_fall.js"></script><script src="data/treat_box.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const C = { est: "#bb4a52", expl: "#af8d04", layer: "#03557b", both: "#211f27", gray: "#a5acb1" };   // S5
+const W = 624, H = 520, svg = setup(W, H), M = FIG.models[0];
+svg.append("text").attr("class", "title").attr("x", 0).attr("y", 10).text("Treatment ideas, shown in palette S5 on the same data (Figure 7(b), 50-step)");
+const cell = (k, x0, y0, name, sub, opts = {}) => {
+  const g = svg.append("g").attr("class", opts.plex ? "plex" : null);
+  if (opts.card) g.append("rect").attr("x", x0).attr("y", y0).attr("width", 304).attr("height", 172).attr("rx", 6).attr("fill", "#f4f6f9");
+  const p = panel(g, x0 + (opts.card ? 8 : 0), y0 + (opts.card ? 6 : 0), opts.card ? 288 : 304, opts.card ? 160 : 172, { t: 34, r: 92, b: 26, l: 28 });
+  title(p, k, name, sub);
+  const x = d3.scaleLinear().domain([20, 80]).range([0, p.w]), y = d3.scaleLinear().domain([0, 0.8]).range([p.h, 0]);
+  axes(p, x, y, { xTickValues: [20, 40, 60, 80], xFormat: (d) => `${d}%`, yTicks: 4 });
+  if (opts.card) p.inner.selectAll(".grid line").attr("stroke", "#e3e8ef");
+  return { p, x, y };
+};
+const pts = (k) => M.steps.map((s, j) => [s, M[k][j]]);
+// (a) current: four colors, direct labels
+{ const { p, x, y } = cell("a", 0, 18, "Four colors, direct labels", "the current treatment");
+  [["explicit", C.expl, "estimate's own fall rate"], ["estimate", C.est, "estimate readout"], ["layer", C.layer, "layer readout"], ["both", C.both, "both"]]
+    .forEach(([k, c, l]) => series(p, x, y, pts(k), c, l)); placeLabels(p); }
+// (b) highlight and dim, with a callout
+{ const { p, x, y } = cell("b", 320, 18, "Highlight the comparison, dim the rest", "only the two readouts compared are in color");
+  [["explicit", C.gray, "explicit label", 1], ["both", "#6f7682", "both", 1.1], ["estimate", C.est, "estimate", 2.2], ["layer", C.layer, "layer", 2.2]]
+    .forEach(([k, c, l, w]) => series(p, x, y, pts(k), c, l, { width: w, r: w > 2 ? 2.6 : 1.6 })); placeLabels(p);
+  const x0 = x(20), y1 = y(M.estimate[0]), y2 = y(M.both[0]);
+  p.inner.append("path").attr("d", `M${x0 - 6},${y1} h-4 V${y2} h4`).attr("fill", "none").attr("stroke", C.both).attr("stroke-width", 0.9);
+  p.inner.append("text").attr("x", x0 + 4).attr("y", (y1 + y2) / 2 + 22).style("fill", C.both).style("font-weight", 650)
+    .text(`+${(M.both[0] - M.estimate[0]).toFixed(2)} R² from the layer at 20%`); }
+// (c) the gain as a shaded gap
+{ const { p, x, y } = cell("c", 0, 200, "Show the gain itself", "shaded: what adding the layer adds to the estimate");
+  p.inner.append("path").attr("d", d3.area().x((d) => x(d[0])).y0((d) => y(d[1])).y1((d) => y(d[2]))(M.steps.map((s, j) => [s, M.estimate[j], M.both[j]])))
+    .attr("fill", C.layer).attr("opacity", 0.22);
+  [["explicit", C.gray, "explicit label", 1], ["estimate", C.est, "estimate", 1.8], ["both", C.layer, "estimate + layer", 1.8]]
+    .forEach(([k, c, l, w]) => series(p, x, y, pts(k), c, l, { width: w, r: 2 })); placeLabels(p);
+  p.inner.append("text").attr("x", x(28)).attr("y", y(0.42)).style("fill", C.layer).style("font-weight", 650).text("gain"); }
+// (d) sans-serif labels on a card
+{ const { p, x, y } = cell("d", 320, 200, "Sans-serif type on a card", "IBM Plex Sans, tinted panel, no axis lines", { plex: true, card: true });
+  [["explicit", C.expl, "estimate's own fall rate"], ["estimate", C.est, "estimate readout"], ["layer", C.layer, "layer readout"], ["both", C.both, "both"]]
+    .forEach(([k, c, l]) => series(p, x, y, pts(k), c, l)); placeLabels(p);
+  p.inner.selectAll(".axis path").remove(); }
+// bodies
+const BY = 392, bw = TBOX.x1 - TBOX.x0, bh = TBOX.y1 - TBOX.y0, sc = 150 / bw;
+svg.append("text").attr("class", "title").attr("x", 0).attr("y", BY).text("Body treatments (final jump of Figure 1)");
+[["e", "Shaded blue", "current"], ["f", "Neutral clay", "color saved for failures"], ["g", "Flat silhouettes", "fading in over time"], ["h", "Colored by time", "crest ramp, early to late"]]
+  .forEach(([L, n, s], i) => {
+    const x0 = i * 156;
+    svg.append("image").attr("href", `img/treat_B${i + 1}.jpg`).attr("x", x0).attr("y", BY + 8).attr("width", bw * sc).attr("height", bh * sc);
+    const t = svg.append("text").attr("x", x0).attr("y", BY + 8 + bh * sc + 12).style("fill", col("ink")).style("font-weight", 650);
+    t.append("tspan").text(`(${L}) ${n}`);
+    svg.append("text").attr("x", x0).attr("y", BY + 8 + bh * sc + 23).style("font-size", "8.5px").text(s);
+  });
+</script></body></html>

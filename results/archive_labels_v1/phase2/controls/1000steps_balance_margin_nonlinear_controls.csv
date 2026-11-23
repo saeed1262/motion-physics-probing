@@ -1,0 +1,37 @@
+checkpoint,target,metric,seed,step,features,model,score
+1000steps,balance_margin,r2,0,200,explicit,linear,0.5486458624014667
+1000steps,balance_margin,r2,0,200,guess features,linear,0.5142630222250641
+1000steps,balance_margin,r2,0,200,guess features,mlp,0.5809290456491979
+1000steps,balance_margin,r2,0,200,everything the guess shows,linear,0.6201120888823155
+1000steps,balance_margin,r2,0,200,everything the guess shows,mlp,0.6247322876187609
+1000steps,balance_margin,r2,0,200,layer 7,linear,0.5696808774046926
+1000steps,balance_margin,r2,0,200,layer 7,mlp,0.5954666812018241
+1000steps,balance_margin,r2,0,200,everything the guess shows + layer 7,linear,0.6060065820559739
+1000steps,balance_margin,r2,0,200,everything the guess shows + layer 7,mlp,0.620184629843575
+1000steps,balance_margin,r2,0,400,explicit,linear,0.5954655919569278
+1000steps,balance_margin,r2,0,400,guess features,linear,0.5280081038061044
+1000steps,balance_margin,r2,0,400,guess features,mlp,0.6137907851387855
+1000steps,balance_margin,r2,0,400,everything the guess shows,linear,0.6608428238817656
+1000steps,balance_margin,r2,0,400,everything the guess shows,mlp,0.6687723915259728
+1000steps,balance_margin,r2,0,400,layer 7,linear,0.5888945578510226
+1000steps,balance_margin,r2,0,400,layer 7,mlp,0.6163632467547209
+1000steps,balance_margin,r2,0,400,everything the guess shows + layer 7,linear,0.6535568050230933
+1000steps,balance_margin,r2,0,400,everything the guess shows + layer 7,mlp,0.6607589515609518
+1000steps,balance_margin,r2,1,200,explicit,linear,0.5637909158470744
+1000steps,balance_margin,r2,1,200,guess features,linear,0.5703946652811273
+1000steps,balance_margin,r2,1,200,guess features,mlp,0.6218693785560852
+1000steps,balance_margin,r2,1,200,everything the guess shows,linear,0.6624112970583371
+1000steps,balance_margin,r2,1,200,everything the guess shows,mlp,0.6606797667266391
+1000steps,balance_margin,r2,1,200,layer 7,linear,0.6123614606682326
+1000steps,balance_margin,r2,1,200,layer 7,mlp,0.6105882843144357
+1000steps,balance_margin,r2,1,200,everything the guess shows + layer 7,linear,0.6537087598459033
+1000steps,balance_margin,r2,1,200,everything the guess shows + layer 7,mlp,0.6490231358264007
+1000steps,balance_margin,r2,1,400,explicit,linear,0.6088117006803943
+1000steps,balance_margin,r2,1,400,guess features,linear,0.5822278135619737
+1000steps,balance_margin,r2,1,400,guess features,mlp,0.6484287537984099
+1000steps,balance_margin,r2,1,400,everything the guess shows,linear,0.6923882557605396
+1000steps,balance_margin,r2,1,400,everything the guess shows,mlp,0.694739157564268
+1000steps,balance_margin,r2,1,400,layer 7,linear,0.6277989897705456
+1000steps,balance_margin,r2,1,400,layer 7,mlp,0.6352586660540198
+1000steps,balance_margin,r2,1,400,everything the guess shows + layer 7,linear,0.6923902153975143
+1000steps,balance_margin,r2,1,400,everything the guess shows + layer 7,mlp,0.6797313347842614

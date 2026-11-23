@@ -1,0 +1,10 @@
+checkpoint,seed,step,target,metric,features,model,score,within_prompt_r
+1000steps,0,200,fall_gravity,r2,estimate,temporal,0.3925727613187059,0.5816779238897853
+1000steps,0,200,fall_gravity,r2,layer,temporal,0.4397501301009622,0.6260226190104313
+1000steps,0,200,fall_gravity,r2,estimate + layer,temporal,0.4277331348595973,0.6215150047303432
+1000steps,1,200,fall_gravity,r2,estimate,temporal,0.16663556865535445,0.39884765720602616
+1000steps,1,200,fall_gravity,r2,layer,temporal,0.20434577831545642,0.4274010269582427
+1000steps,1,200,fall_gravity,r2,estimate + layer,temporal,0.1949455882927209,0.4252633177586941
+1000steps,2,200,fall_gravity,r2,estimate,temporal,0.311582866904367,0.5336177870067413
+1000steps,2,200,fall_gravity,r2,layer,temporal,0.38763745612798584,0.5958869241394468
+1000steps,2,200,fall_gravity,r2,estimate + layer,temporal,0.3653449089035633,0.5778203708976586

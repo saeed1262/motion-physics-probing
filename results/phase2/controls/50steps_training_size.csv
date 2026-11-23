@@ -1,0 +1,169 @@
+checkpoint,seed,step,design,n_train_prompts,rep,source,r2
+50steps,0,10,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.8472369072129875
+50steps,0,10,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.8444813339859621
+50steps,0,10,"5-fold, subsampled training prompts",13,0,explicit,0.7822859932531114
+50steps,0,10,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.5994320702171013
+50steps,0,10,"5-fold, subsampled training prompts",13,1,explicit,0.7779895494349905
+50steps,0,10,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.5732950734165227
+50steps,0,10,"5-fold, subsampled training prompts",13,2,explicit,0.7798530430294781
+50steps,0,10,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.5332639415086686
+50steps,0,10,"5-fold, subsampled training prompts",26,0,explicit,0.7820508163985783
+50steps,0,10,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.6798116043362892
+50steps,0,10,"5-fold, subsampled training prompts",26,1,explicit,0.7838946752287896
+50steps,0,10,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.6963576236535263
+50steps,0,10,"5-fold, subsampled training prompts",26,2,explicit,0.7806312140538455
+50steps,0,10,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.6093548592748304
+50steps,0,10,"5-fold, subsampled training prompts",52,0,explicit,0.7838463377017789
+50steps,0,10,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7559819236429639
+50steps,0,10,"5-fold, subsampled training prompts",52,1,explicit,0.7837996193842968
+50steps,0,10,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7128026760723409
+50steps,0,10,"5-fold, subsampled training prompts",52,2,explicit,0.7843918052529264
+50steps,0,10,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.7688947962146014
+50steps,0,10,"5-fold, subsampled training prompts",100,0,explicit,0.7841246376618736
+50steps,0,10,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.8002807880206236
+50steps,0,10,"5-fold, subsampled training prompts",100,1,explicit,0.783978315390875
+50steps,0,10,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.8126247266470055
+50steps,0,10,"5-fold, subsampled training prompts",100,2,explicit,0.7832165618688444
+50steps,0,10,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.8101208452691422
+50steps,0,10,"5-fold, subsampled training prompts",200,0,explicit,0.7846266445419838
+50steps,0,10,"5-fold, subsampled training prompts",200,0,layer 7 (linear),0.8394404725670548
+50steps,0,20,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.880962067063476
+50steps,0,20,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.8347259441747622
+50steps,0,20,"5-fold, subsampled training prompts",13,0,explicit,0.8219930845951902
+50steps,0,20,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.5866342688164456
+50steps,0,20,"5-fold, subsampled training prompts",13,1,explicit,0.8192230907403554
+50steps,0,20,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.5670715256951377
+50steps,0,20,"5-fold, subsampled training prompts",13,2,explicit,0.8212577763509841
+50steps,0,20,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.550394871468496
+50steps,0,20,"5-fold, subsampled training prompts",26,0,explicit,0.8238036015058119
+50steps,0,20,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.6927925360634564
+50steps,0,20,"5-fold, subsampled training prompts",26,1,explicit,0.8245925861042597
+50steps,0,20,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.7097268396612539
+50steps,0,20,"5-fold, subsampled training prompts",26,2,explicit,0.8216429518681521
+50steps,0,20,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.6129805380578304
+50steps,0,20,"5-fold, subsampled training prompts",52,0,explicit,0.8243514802541764
+50steps,0,20,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7846691704096576
+50steps,0,20,"5-fold, subsampled training prompts",52,1,explicit,0.8243698903990639
+50steps,0,20,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7436581257323878
+50steps,0,20,"5-fold, subsampled training prompts",52,2,explicit,0.824513355657973
+50steps,0,20,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.8020955774541549
+50steps,0,20,"5-fold, subsampled training prompts",100,0,explicit,0.8246225842888865
+50steps,0,20,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.8224144055227969
+50steps,0,20,"5-fold, subsampled training prompts",100,1,explicit,0.8245053885024622
+50steps,0,20,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.825655322863316
+50steps,0,20,"5-fold, subsampled training prompts",100,2,explicit,0.8238112184868632
+50steps,0,20,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.8144909252724278
+50steps,0,20,"5-fold, subsampled training prompts",200,0,explicit,0.8248557074396135
+50steps,0,20,"5-fold, subsampled training prompts",200,0,layer 7 (linear),0.8499401766461658
+50steps,1,10,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.7688319961389039
+50steps,1,10,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.7906676733684377
+50steps,1,10,"5-fold, subsampled training prompts",13,0,explicit,0.7647435873749067
+50steps,1,10,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.5519687045362229
+50steps,1,10,"5-fold, subsampled training prompts",13,1,explicit,0.7716418611494718
+50steps,1,10,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.5401648406914124
+50steps,1,10,"5-fold, subsampled training prompts",13,2,explicit,0.7728810861281038
+50steps,1,10,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.5869507048425827
+50steps,1,10,"5-fold, subsampled training prompts",26,0,explicit,0.7738775455329545
+50steps,1,10,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.6760925917741918
+50steps,1,10,"5-fold, subsampled training prompts",26,1,explicit,0.7718665360662195
+50steps,1,10,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.6594159222047817
+50steps,1,10,"5-fold, subsampled training prompts",26,2,explicit,0.7730034617553858
+50steps,1,10,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.644955455845286
+50steps,1,10,"5-fold, subsampled training prompts",52,0,explicit,0.7744464392464449
+50steps,1,10,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7527371494792487
+50steps,1,10,"5-fold, subsampled training prompts",52,1,explicit,0.7729370262396386
+50steps,1,10,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7556156469873637
+50steps,1,10,"5-fold, subsampled training prompts",52,2,explicit,0.7728068195666139
+50steps,1,10,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.7258665623338588
+50steps,1,10,"5-fold, subsampled training prompts",100,0,explicit,0.7720183471970073
+50steps,1,10,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.7747259986578157
+50steps,1,10,"5-fold, subsampled training prompts",100,1,explicit,0.7721908764514304
+50steps,1,10,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.8018109355373779
+50steps,1,10,"5-fold, subsampled training prompts",100,2,explicit,0.7726131248325372
+50steps,1,10,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.7999719880664139
+50steps,1,10,"5-fold, subsampled training prompts",200,0,explicit,0.7732758950592475
+50steps,1,10,"5-fold, subsampled training prompts",200,0,layer 7 (linear),0.8378838333829144
+50steps,1,20,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.8532547753854124
+50steps,1,20,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.7943529084830481
+50steps,1,20,"5-fold, subsampled training prompts",13,0,explicit,0.8277231700444654
+50steps,1,20,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.557476752817206
+50steps,1,20,"5-fold, subsampled training prompts",13,1,explicit,0.8313766785689718
+50steps,1,20,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.520766974399099
+50steps,1,20,"5-fold, subsampled training prompts",13,2,explicit,0.8338314914358703
+50steps,1,20,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.6289133192671821
+50steps,1,20,"5-fold, subsampled training prompts",26,0,explicit,0.8340126290141143
+50steps,1,20,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.7095740862929655
+50steps,1,20,"5-fold, subsampled training prompts",26,1,explicit,0.8324873420409786
+50steps,1,20,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.6762550216488215
+50steps,1,20,"5-fold, subsampled training prompts",26,2,explicit,0.8338807239725243
+50steps,1,20,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.6754942797742081
+50steps,1,20,"5-fold, subsampled training prompts",52,0,explicit,0.8343888967440922
+50steps,1,20,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7864250483354085
+50steps,1,20,"5-fold, subsampled training prompts",52,1,explicit,0.8335295427423962
+50steps,1,20,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7760533928661942
+50steps,1,20,"5-fold, subsampled training prompts",52,2,explicit,0.833330273281217
+50steps,1,20,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.7734570086211479
+50steps,1,20,"5-fold, subsampled training prompts",100,0,explicit,0.832857210734238
+50steps,1,20,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.8062768157877299
+50steps,1,20,"5-fold, subsampled training prompts",100,1,explicit,0.8333668513766154
+50steps,1,20,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.8252162106060892
+50steps,1,20,"5-fold, subsampled training prompts",100,2,explicit,0.8333788459384845
+50steps,1,20,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.8307930689362832
+50steps,1,20,"5-fold, subsampled training prompts",200,0,explicit,0.8337903639824423
+50steps,1,20,"5-fold, subsampled training prompts",200,0,layer 7 (linear),0.8551517419913397
+50steps,2,10,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.7419978804480272
+50steps,2,10,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.7908075376120829
+50steps,2,10,"5-fold, subsampled training prompts",13,0,explicit,0.7908382395863842
+50steps,2,10,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.5272633698793571
+50steps,2,10,"5-fold, subsampled training prompts",13,1,explicit,0.7877494221713912
+50steps,2,10,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.5985120140005691
+50steps,2,10,"5-fold, subsampled training prompts",13,2,explicit,0.7895835672532053
+50steps,2,10,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.46539015477240675
+50steps,2,10,"5-fold, subsampled training prompts",26,0,explicit,0.7892222530832811
+50steps,2,10,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.6037628066507919
+50steps,2,10,"5-fold, subsampled training prompts",26,1,explicit,0.7908647933229187
+50steps,2,10,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.6523750910150579
+50steps,2,10,"5-fold, subsampled training prompts",26,2,explicit,0.7902105676714382
+50steps,2,10,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.587973708245453
+50steps,2,10,"5-fold, subsampled training prompts",52,0,explicit,0.791690530416158
+50steps,2,10,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7610933871764402
+50steps,2,10,"5-fold, subsampled training prompts",52,1,explicit,0.7904873368179773
+50steps,2,10,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7298760550953447
+50steps,2,10,"5-fold, subsampled training prompts",52,2,explicit,0.7913699435118543
+50steps,2,10,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.7349806465718458
+50steps,2,10,"5-fold, subsampled training prompts",100,0,explicit,0.7914116518676779
+50steps,2,10,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.783607240460875
+50steps,2,10,"5-fold, subsampled training prompts",100,1,explicit,0.7919833615240435
+50steps,2,10,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.7840825921171478
+50steps,2,10,"5-fold, subsampled training prompts",100,2,explicit,0.7921434379615452
+50steps,2,10,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.8173653002177573
+50steps,2,10,"5-fold, subsampled training prompts",199,0,explicit,0.792071981561738
+50steps,2,10,"5-fold, subsampled training prompts",199,0,layer 7 (linear),0.8372863861598532
+50steps,2,20,"phase 1 split (52 curated train, 12 test)",52,0,explicit,0.7759635420709291
+50steps,2,20,"phase 1 split (52 curated train, 12 test)",52,0,layer 7 (linear),0.8111220673376698
+50steps,2,20,"5-fold, subsampled training prompts",13,0,explicit,0.8461788608563527
+50steps,2,20,"5-fold, subsampled training prompts",13,0,layer 7 (linear),0.5326600017796423
+50steps,2,20,"5-fold, subsampled training prompts",13,1,explicit,0.844763704419357
+50steps,2,20,"5-fold, subsampled training prompts",13,1,layer 7 (linear),0.5944825131753095
+50steps,2,20,"5-fold, subsampled training prompts",13,2,explicit,0.8455358737178034
+50steps,2,20,"5-fold, subsampled training prompts",13,2,layer 7 (linear),0.47724651002975993
+50steps,2,20,"5-fold, subsampled training prompts",26,0,explicit,0.8462991457540526
+50steps,2,20,"5-fold, subsampled training prompts",26,0,layer 7 (linear),0.6322873517025226
+50steps,2,20,"5-fold, subsampled training prompts",26,1,explicit,0.8456378102246229
+50steps,2,20,"5-fold, subsampled training prompts",26,1,layer 7 (linear),0.6917914365729696
+50steps,2,20,"5-fold, subsampled training prompts",26,2,explicit,0.8455700108515324
+50steps,2,20,"5-fold, subsampled training prompts",26,2,layer 7 (linear),0.6391978465479276
+50steps,2,20,"5-fold, subsampled training prompts",52,0,explicit,0.8467975897705681
+50steps,2,20,"5-fold, subsampled training prompts",52,0,layer 7 (linear),0.7766252395225435
+50steps,2,20,"5-fold, subsampled training prompts",52,1,explicit,0.8458426123895982
+50steps,2,20,"5-fold, subsampled training prompts",52,1,layer 7 (linear),0.7445110284783897
+50steps,2,20,"5-fold, subsampled training prompts",52,2,explicit,0.8465335611159558
+50steps,2,20,"5-fold, subsampled training prompts",52,2,layer 7 (linear),0.7631261426919798
+50steps,2,20,"5-fold, subsampled training prompts",100,0,explicit,0.846417188710635
+50steps,2,20,"5-fold, subsampled training prompts",100,0,layer 7 (linear),0.8153088399112917
+50steps,2,20,"5-fold, subsampled training prompts",100,1,explicit,0.8469756583054822
+50steps,2,20,"5-fold, subsampled training prompts",100,1,layer 7 (linear),0.8175662675891979
+50steps,2,20,"5-fold, subsampled training prompts",100,2,explicit,0.8471822764561375
+50steps,2,20,"5-fold, subsampled training prompts",100,2,layer 7 (linear),0.837965675380391
+50steps,2,20,"5-fold, subsampled training prompts",199,0,explicit,0.8470145042045548
+50steps,2,20,"5-fold, subsampled training prompts",199,0,layer 7 (linear),0.8558658784453725

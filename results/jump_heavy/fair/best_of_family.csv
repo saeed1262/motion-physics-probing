@@ -1,0 +1,13 @@
+tag,checkpoint,target,comparison,measure,families,observed,ci_low,ci_high
+jump_heavy,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: mlp, estimate: mlp",0.020969833194237064,0.009213975805683157,0.034345332241100916
+jump_heavy,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: mlp, estimate: mlp",0.02127354207076737,0.01014552942119357,0.03362391545474695
+jump_heavy,50steps,flight_gravity,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: mlp, estimate: mlp",0.02412528890012855,0.010372564279379581,0.03978981028931425
+jump_heavy,50steps,flight_gravity,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",-0.005590360260036564,-0.022647116948431877,0.011250149665910368
+jump_heavy,50steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",-0.00023985340234888852,-0.016470728827430982,0.017040309034767095
+jump_heavy,50steps,flight_gravity,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",0.0004547056168903163,-0.021723814503516924,0.02397383507231986
+jump_heavy,50steps,in_flight,gain: best(estimate + layer) - best(estimate),score,"estimate + layer: ridge, estimate: mlp",-0.0008952151574552758,-0.0024259419286742747,0.0005854278845448008
+jump_heavy,50steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_r,"estimate + layer: ridge, estimate: mlp",-0.016250997873812456,-0.020024490014501344,-0.012699133882917841
+jump_heavy,50steps,in_flight,gain: best(estimate + layer) - best(estimate),within_prompt_frame_r,"estimate + layer: ridge, estimate: mlp",-0.01817718590476991,-0.022516431712695413,-0.014027325126176663
+jump_heavy,50steps,in_flight,fair: best(estimate) - best(layer),score,"estimate: mlp, layer: mlp",0.0021979903890593233,0.0005405321615776171,0.004329504503728781
+jump_heavy,50steps,in_flight,fair: best(estimate) - best(layer),within_prompt_r,"estimate: mlp, layer: mlp",0.005790140518830977,0.003424722375025055,0.008425255896231217
+jump_heavy,50steps,in_flight,fair: best(estimate) - best(layer),within_prompt_frame_r,"estimate: mlp, layer: mlp",0.006517045347573913,0.003863651553813352,0.00949253340839456

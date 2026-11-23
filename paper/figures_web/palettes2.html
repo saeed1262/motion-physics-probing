@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Palette study</title>
+<link rel="stylesheet" href="style.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script>
+<script src="data/fig_probe_steps.js"></script><script>window.PROBE = window.FIG;</script>
+<script src="data/fig_steps_fall.js"></script><script>window.STEPS = window.FIG;</script>
+<script src="data/palette_study.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, RH = 122, TOP = 28, H = TOP + RH * STUDY.length, svg = setup(W, H);
+svg.append("text").attr("class", "title").attr("x", 0).attr("y", 10).text("Shortlist: each palette on Figure 7(b), as a deuteranope sees it, and on Figure 3(a)");
+svg.append("text").attr("class", "subtitle").attr("x", 0).attr("y", 22)
+  .text("ΔE: smallest CIEDE2000 difference between roles (normal / protan / deutan / tritan; above ~10 is clearly distinct); contrast: darkest-line minimum on white");
+const P = PROBE.panels[0], S = STEPS.models[0];
+STUDY.forEach((r, i) => {
+  const oy = TOP + i * RH;
+  svg.append("line").attr("x1", 0).attr("x2", W).attr("y1", oy + 2).attr("y2", oy + 2).attr("stroke", col("grid"));
+  const t = svg.append("text").attr("x", 0).attr("y", oy + 15).style("fill", col("ink")).style("font-weight", 650).text(r.name);
+  const ok = Math.min(...r.de) >= 12 && r.contrast >= 3;
+  svg.append("text").attr("x", 0).attr("y", oy + 27).style("font-size", "8.5px")
+    .text(`ΔE ${r.de.join(" / ")} · contrast ${r.contrast.toFixed(2)}`);
+  if (ok) svg.append("text").attr("x", 0).attr("y", oy + 38).style("font-size", "8.5px").style("fill", col("teal")).style("font-weight", 650).text("passes every check");
+  ["est", "expl", "layer", "both", "neutral"].forEach((k, j) => {
+    svg.append("rect").attr("x", j * 22).attr("y", oy + 46).attr("width", 18).attr("height", 12).attr("rx", 2).attr("fill", r.p[k]);
+    svg.append("rect").attr("x", j * 22).attr("y", oy + 60).attr("width", 18).attr("height", 12).attr("rx", 2).attr("fill", r.deutan[k]);
+    svg.append("text").attr("x", j * 22 + 9).attr("y", oy + 82).attr("text-anchor", "middle").style("font-size", "7px").text(k);
+  });
+  svg.append("text").attr("x", 114).attr("y", oy + 55).style("font-size", "7.5px").text("normal");
+  svg.append("text").attr("x", 114).attr("y", oy + 69).style("font-size", "7.5px").text("deutan");
+  const draw = (x0, w, pal, lab) => {
+    const p = panel(svg, x0, oy + 4, w, RH - 6, { t: 14, r: 4, b: 18, l: 24 });
+    p.g.append("text").attr("x", 0).attr("y", 9).style("font-size", "8.5px").style("fill", col("muted")).text(lab);
+    const x = d3.scaleLinear().domain([20, 80]).range([0, p.w]), y = d3.scaleLinear().domain([0, 0.8]).range([p.h, 0]);
+    axes(p, x, y, { xTickValues: [20, 50, 80], xFormat: (d) => `${d}%`, yTicks: 4 });
+    [["explicit", pal.expl], ["estimate", pal.est], ["layer", pal.layer], ["both", pal.both]].forEach(([k, c]) =>
+      series(p, x, y, S.steps.map((s, j) => [s, S[k][j]]), c, null, { r: 2.2 }));
+  };
+  draw(150, 150, r.p, "Figure 7(b)");
+  draw(306, 150, r.deutan, "same, deuteranopia");
+  const p = panel(svg, 462, oy + 4, 162, RH - 6, { t: 14, r: 4, b: 18, l: 24 });
+  p.g.append("text").attr("x", 0).attr("y", 9).style("font-size", "8.5px").style("fill", col("muted")).text("Figure 3(a)");
+  const x = d3.scaleLinear().domain([0, 100]).range([0, p.w]), y = d3.scaleLinear().domain([0, 1]).range([p.h, 0]);
+  axes(p, x, y, { xTickValues: [0, 50, 100], xFormat: (d) => `${d}%`, yTicks: 4 });
+  const C = { layer: r.p.layer, explicit: r.p.expl, est: r.p.est, noisy: r.p.neutral };
+  P.series.forEach((s) => { band(p, x, y, s.pts.map((q) => [q[0], q[2], q[3]]), C[s.key], 0.16);
+    series(p, x, y, s.pts.map((q) => [q[0], q[1]]), C[s.key], null, { dash: s.key === "noisy" ? "2 2" : null, r: 1.8 }); });
+});
+</script></body></html>

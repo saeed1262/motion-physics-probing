@@ -1,0 +1,37 @@
+IntPhys dev: 360 videos, 90 scenarios, 0.50 possible
+
+Accuracy (mean, sd over 10 grouped 5-fold repeats; the nonlinear probe over 3):
+                                            per_video        pairwise       
+                                                 mean    std     mean    std
+subset     features                                                         
+O1         nonlinear temporal probe             0.506  0.005    0.531  0.034
+           pooled (their baseline as read)      0.498  0.010    0.523  0.021
+           time + 4x4 space                     0.527  0.016    0.589  0.016
+           time + 4x4 space + frame changes     0.635  0.023    0.792  0.019
+           time kept                            0.511  0.016    0.521  0.019
+O2         nonlinear temporal probe             0.500  0.000    0.564  0.005
+           pooled (their baseline as read)      0.506  0.007    0.525  0.039
+           time + 4x4 space                     0.520  0.016    0.602  0.014
+           time + 4x4 space + frame changes     0.588  0.020    0.820  0.019
+           time kept                            0.497  0.012    0.493  0.009
+O3         nonlinear temporal probe             0.500  0.000    0.503  0.032
+           pooled (their baseline as read)      0.502  0.005    0.530  0.028
+           time + 4x4 space                     0.508  0.009    0.541  0.023
+           time + 4x4 space + frame changes     0.611  0.017    0.800  0.025
+           time kept                            0.501  0.008    0.477  0.026
+all blocks nonlinear temporal probe             0.504  0.003    0.539  0.025
+           pooled (their baseline as read)      0.501  0.005    0.521  0.015
+           time + 4x4 space                     0.509  0.011    0.544  0.012
+           time + 4x4 space + frame changes     0.621  0.009    0.796  0.023
+           time kept                            0.515  0.007    0.504  0.013
+
+Permutation null, linear probes, all blocks (20 shuffles; mean and 95th percentile):
+                                 per_video            pairwise           
+                                      mean <lambda_0>     mean <lambda_0>
+features                                                                 
+pooled (their baseline as read)      0.501      0.509    0.494      0.548
+time + 4x4 space                     0.499      0.515    0.502      0.582
+time + 4x4 space + frame changes     0.497      0.517    0.490      0.533
+time kept                            0.496      0.517    0.489      0.536
+
+Permutation p-values (all blocks): {'pooled (their baseline as read)': {'per_video': np.float64(0.47619047619047616), 'pairwise': np.float64(0.38095238095238093)}, 'time kept': {'per_video': np.float64(0.14285714285714285), 'pairwise': np.float64(0.47619047619047616)}, 'time + 4x4 space': {'per_video': np.float64(0.2857142857142857), 'pairwise': np.float64(0.23809523809523808)}, 'time + 4x4 space + frame changes': {'per_video': np.float64(0.047619047619047616), 'pairwise': np.float64(0.047619047619047616)}}

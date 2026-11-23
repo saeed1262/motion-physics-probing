@@ -1,0 +1,7 @@
+IntPhys dev: 360 videos, 90 scenarios
+Mean |frame change|, impossible / possible, per latent step: min 1.000, max 1.033, median 1.005
+Largest global change, pairwise (impossible higher): 50.0%
+Largest 4x4-cell change, pairwise (impossible higher): 50.0%
+  block O1: change ratio 1.000 to 1.057
+  block O2: change ratio 1.000 to 1.028
+  block O3: change ratio 1.000 to 1.031

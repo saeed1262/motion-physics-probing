@@ -1,0 +1,37 @@
+checkpoint,target,metric,seed,step,features,model,score
+1000steps,in_flight,auc,0,200,explicit,linear,0.7851830472537036
+1000steps,in_flight,auc,0,200,guess features,linear,0.8924184130296688
+1000steps,in_flight,auc,0,200,guess features,mlp,0.9082740419229177
+1000steps,in_flight,auc,0,200,everything the guess shows,linear,0.9124038149895377
+1000steps,in_flight,auc,0,200,everything the guess shows,mlp,0.9185872420195937
+1000steps,in_flight,auc,0,200,layer 6,linear,0.9266165071817318
+1000steps,in_flight,auc,0,200,layer 6,mlp,0.9191735826502205
+1000steps,in_flight,auc,0,200,everything the guess shows + layer 6,linear,0.9284272341704701
+1000steps,in_flight,auc,0,200,everything the guess shows + layer 6,mlp,0.918454857642628
+1000steps,in_flight,auc,0,400,explicit,linear,0.7981899620904029
+1000steps,in_flight,auc,0,400,guess features,linear,0.900417911519223
+1000steps,in_flight,auc,0,400,guess features,mlp,0.9089344029903368
+1000steps,in_flight,auc,0,400,everything the guess shows,linear,0.9211775030756317
+1000steps,in_flight,auc,0,400,everything the guess shows,mlp,0.9194970970922368
+1000steps,in_flight,auc,0,400,layer 6,linear,0.9386036428763174
+1000steps,in_flight,auc,0,400,layer 6,mlp,0.9254435456498599
+1000steps,in_flight,auc,0,400,everything the guess shows + layer 6,linear,0.9420210260177728
+1000steps,in_flight,auc,0,400,everything the guess shows + layer 6,mlp,0.9285124267739855
+1000steps,in_flight,auc,1,200,explicit,linear,0.789157896289317
+1000steps,in_flight,auc,1,200,guess features,linear,0.8915521298684421
+1000steps,in_flight,auc,1,200,guess features,mlp,0.9090277260046256
+1000steps,in_flight,auc,1,200,everything the guess shows,linear,0.905845449923997
+1000steps,in_flight,auc,1,200,everything the guess shows,mlp,0.919318451596254
+1000steps,in_flight,auc,1,200,layer 6,linear,0.9231719345556813
+1000steps,in_flight,auc,1,200,layer 6,mlp,0.9027854088883872
+1000steps,in_flight,auc,1,200,everything the guess shows + layer 6,linear,0.9239520999235586
+1000steps,in_flight,auc,1,200,everything the guess shows + layer 6,mlp,0.9219828358213853
+1000steps,in_flight,auc,1,400,explicit,linear,0.805873355304497
+1000steps,in_flight,auc,1,400,guess features,linear,0.8969411326679181
+1000steps,in_flight,auc,1,400,guess features,mlp,0.9205039114635275
+1000steps,in_flight,auc,1,400,everything the guess shows,linear,0.9233773616295236
+1000steps,in_flight,auc,1,400,everything the guess shows,mlp,0.9326450395447359
+1000steps,in_flight,auc,1,400,layer 6,linear,0.9404285085405657
+1000steps,in_flight,auc,1,400,layer 6,mlp,0.915572271779237
+1000steps,in_flight,auc,1,400,everything the guess shows + layer 6,linear,0.9467990402193837
+1000steps,in_flight,auc,1,400,everything the guess shows + layer 6,mlp,0.9353934989719862

@@ -1,0 +1,23 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Noise block colors</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_steps_fall.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 2 * 150, svg = setup(W, H), F = FIG.film;
+</script>
+<script src="setup_diagram.js"></script>
+<script>
+// the iso style's top row with each noise option, cropped to the inputs, layers and bodies
+const VARIANTS = [["Sunset, 3D block", { noise: "sunset" }], ["Sunset, flat grid on a card", { noise: "sunset", flat: true }]];
+VARIANTS.forEach(([name, o], j) => {
+  const oy = j * 150;
+  if (j) svg.append("line").attr("x1", 0).attr("x2", W).attr("y1", oy - 4).attr("y2", oy - 4).attr("stroke", C.axis).attr("stroke-width", 0.6);
+  const h = svg.append("text").attr("x", 0).attr("y", oy + 8).style("font-size", "9px");
+  h.append("tspan").style("fill", C.mark).style("font-weight", 700).text(`${j + 1}  `);
+  h.append("tspan").style("fill", C.muted).text(name);
+  svg.append("clipPath").attr("id", `crop${j}`).append("rect").attr("x", -2).attr("y", 30).attr("width", W + 4).attr("height", 128);
+  figure(svg.append("g").attr("transform", `translate(0,${oy - 14})`).attr("clip-path", `url(#crop${j})`), "iso", o);
+});
+finish();
+</script></body></html>

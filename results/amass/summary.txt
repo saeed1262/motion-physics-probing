@@ -1,0 +1,17 @@
+AMASS BMLmovi: 1801 clips, 86 subjects, 203713 frames at 20 fps (source [np.float64(120.0)] fps)
+Floating (default labels): 0.09% of frames; 0.2% of clips have any
+Raised contact (>5 cm): 0.93% of contact frames (mean over clips)
+Airborne stretches >= 0.2 s: 302 (5 floating, 297 falling), in 129 clips
+Fitted g, falling stretches: median 10.33, mean 10.44, SD 1.06, IQR 9.81 to 10.94 m/s^2; frame-weighted SD 0.98
+Same stretches at the subject's own scale (g divided by HumanML3D's leg-length retargeting factor): median 9.65, SD 0.77; factor median 1.067, range 0.924 to 1.233
+Fitted g, all stretches: share below 2 m/s^2 1.7%
+Stretches per action index (default): 1: 12, 2: 16, 3: 12, 4: 19, 5: 19, 6: 13, 7: 15, 8: 16, 9: 32, 10: 20, 11: 7, 12: 12, 13: 18, 14: 15, 15: 3, 16: 13, 17: 7, 18: 6, 19: 17, 20: 18, 21: 12
+
+By threshold setting (floating % of frames; clips with any floating %; falling stretches; median g):
+  default: 0.09%; 0.2%; 297; 10.33
+  contact x0.75: 0.27%; 0.9%; 451; 10.54
+  contact x1.25: 0.07%; 0.2%; 204; 10.26
+  support 10 cm: 0.09%; 0.2%; 300; 10.32
+  support 20 cm: 0.08%; 0.2%; 297; 10.33
+  floating 1 m/s2: 0.09%; 0.2%; 297; 10.33
+  floating 3 m/s2: 0.10%; 0.3%; 296; 10.33

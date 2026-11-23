@@ -1,0 +1,46 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,jump_heavy,flight_gravity,r2,estimate | mlp config 0,default,2,3,13770,236,0.709609782351783,0.7137525313050572,0.6910543766521232
+50steps,jump_heavy,flight_gravity,r2,estimate | mlp config 1,default,2,3,13770,236,0.7135038321881283,0.7173677092393744,0.6951077629466035
+50steps,jump_heavy,flight_gravity,r2,estimate | mlp config 2,default,2,3,13770,236,0.7029153653256832,0.7085271039147341,0.6824012251346501
+50steps,jump_heavy,flight_gravity,r2,estimate | mlp config 3,default,2,3,13770,236,0.7017082678643694,0.7083917535894815,0.6848579232973412
+50steps,jump_heavy,flight_gravity,r2,estimate | mlp config 4,default,2,3,13770,236,0.7021405218988488,0.7092796933313105,0.6868477600664339
+50steps,jump_heavy,flight_gravity,r2,layer | mlp config 0,default,2,3,13770,236,0.709593981118491,0.7087874699159413,0.6805121033495817
+50steps,jump_heavy,flight_gravity,r2,layer | mlp config 1,default,2,3,13770,236,0.7055075427554458,0.7037316733796619,0.675309837357536
+50steps,jump_heavy,flight_gravity,r2,layer | mlp config 2,default,2,3,13770,236,0.7047352303725185,0.7041752014857271,0.6775285345071257
+50steps,jump_heavy,flight_gravity,r2,layer | mlp config 3,default,2,3,13770,236,0.7074107100084485,0.7083777565105265,0.6784793315235936
+50steps,jump_heavy,flight_gravity,r2,layer | mlp config 4,default,2,3,13770,236,0.713221782837256,0.7104479430376367,0.6806384679898135
+50steps,jump_heavy,flight_gravity,r2,estimate + layer | mlp config 0,default,2,3,13770,236,0.729762356759696,0.7356949876549062,0.7075191311946762
+50steps,jump_heavy,flight_gravity,r2,estimate + layer | mlp config 1,default,2,3,13770,236,0.7347595368103441,0.7371414201287891,0.7087694853374501
+50steps,jump_heavy,flight_gravity,r2,estimate + layer | mlp config 2,default,2,3,13770,236,0.7277860498852602,0.7288336549486979,0.7050001489311726
+50steps,jump_heavy,flight_gravity,r2,estimate + layer | mlp config 3,default,2,3,13770,236,0.7299896551752079,0.7316475781164896,0.7035161914035247
+50steps,jump_heavy,flight_gravity,r2,estimate + layer | mlp config 4,default,2,3,13770,236,0.7256677155190636,0.7371060098681502,0.7129709947866961
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp config 0,default,2,3,13770,236,0.9730476098285012,0.6811888740787838,0.6568547443771616
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp config 1,default,2,3,13770,236,0.9732211654808576,0.6906241293733156,0.6715967955789236
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp config 2,default,2,3,13770,236,0.9747570301534292,0.685351516266207,0.666242651236408
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp config 3,default,2,3,13770,236,0.9763747721149346,0.6782865651549917,0.6606878886565166
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp config 4,default,2,3,13770,236,0.9728074633367212,0.6856825280472919,0.6681042716517912
+50steps,jump_heavy,float_vs_fall,auc,layer | mlp config 0,default,2,3,13770,236,0.9692619347240372,0.6840449483246087,0.6599714574050991
+50steps,jump_heavy,float_vs_fall,auc,layer | mlp config 1,default,2,3,13770,236,0.9699218334059337,0.6895626948431108,0.6621474751746481
+50steps,jump_heavy,float_vs_fall,auc,layer | mlp config 2,default,2,3,13770,236,0.967546827355888,0.6886330365721111,0.662152668553252
+50steps,jump_heavy,float_vs_fall,auc,layer | mlp config 3,default,2,3,13770,236,0.9727319587628868,0.6909005322851595,0.6632790752048481
+50steps,jump_heavy,float_vs_fall,auc,layer | mlp config 4,default,2,3,13770,236,0.9639414234548183,0.6855440194370782,0.6544801004704709
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp config 0,default,2,3,13770,236,0.9686288175790135,0.6899787252198811,0.6630923402153237
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp config 1,default,2,3,13770,236,0.9741438378265008,0.702755025535836,0.674810266616409
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp config 2,default,2,3,13770,236,0.9732306035525871,0.6988515829942911,0.6745232365304127
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp config 3,default,2,3,13770,236,0.9759245276930771,0.7005826922034009,0.6802045180282851
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp config 4,default,2,3,13770,236,0.9683280092928707,0.6822387841786268,0.6531168396722858
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 0,default,2,3,11640,233,0.3420362230106341,0.48059421481582165,0.47053899996311993
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 1,default,2,3,11640,233,0.36203408968918915,0.4916388599701449,0.48802672437193056
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 2,default,2,3,11640,233,0.33878720099966475,0.4693895908483365,0.45394781005571105
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 3,default,2,3,11640,233,0.3556049965817504,0.4924993368298353,0.48220022565894605
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 4,default,2,3,11640,233,0.3624140532653687,0.49579444914427206,0.4843512171834217
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 0,default,2,3,11640,233,0.4280598027198528,0.5748851665126236,0.5663937048185268
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 1,default,2,3,11640,233,0.4382291762097035,0.5753463698812266,0.5633607715575377
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 2,default,2,3,11640,233,0.41656198582184434,0.5544132467162307,0.5453720588129115
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 3,default,2,3,11640,233,0.4445642856521669,0.5806917796891935,0.5700177400221829
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 4,default,2,3,11640,233,0.42896735636724403,0.5707522864440581,0.5593910845364111
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 0,default,2,3,11640,233,0.4405458797928159,0.5835862339734671,0.5734927867798115
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 1,default,2,3,11640,233,0.4410104312403035,0.5831223429114002,0.5681086593952066
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 2,default,2,3,11640,233,0.4294899009508105,0.5766106076557564,0.5646155741607852
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 3,default,2,3,11640,233,0.44685978608857035,0.5918813404143127,0.5804657555761709
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 4,default,2,3,11640,233,0.4427727215378866,0.5848830379534533,0.5739903188625435

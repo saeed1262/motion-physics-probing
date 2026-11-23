@@ -1,0 +1,196 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Video storyboard</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/demo_storyboard.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+// Storyboard for the supplementary video: six stills at 640 x 360 (1280 x 720 rendered), from the recorded motions
+// prepared by scripts/demo_storyboard.py. Captions under each still say how the clip moves.
+const FW = 640, FH = 360, GAP = 24, W = 2 * FW + GAP, TOP = 54, PITCH = FH + 74, H = TOP + 3 * PITCH, svg = setup(W, H);
+const D = FIG, C = { ink: col("ink"), muted: col("muted"), est: col("est"), lay: col("layer"), mark: col("mark"), dim: col("dim"),
+  body: col("body"), axis: col("axis") };
+const defs = svg.append("defs"); let gid = 0;
+const grad = (stops, x2 = 0, y2 = 1) => { const id = `gr${gid++}`, lg = defs.append("linearGradient").attr("id", id)
+  .attr("x1", 0).attr("y1", 0).attr("x2", x2).attr("y2", y2); stops.forEach(([o, c, a]) => lg.append("stop").attr("offset", o)
+  .attr("stop-color", c).attr("stop-opacity", a ?? 1)); return `url(#${id})`; };
+const SUNSET = grad([0, 0.2, 0.4, 0.6, 0.8, 1].map((u) => [u, ramp(u)]), 1, 0);
+const tx = (g, x, y, s, o = {}) => g.append("text").attr("x", x).attr("y", y).attr("text-anchor", o.anchor || "start")
+  .style("fill", o.color).style("font-size", `${o.size || 11}px`).style("font-weight", o.bold ? 650 : 400)
+  .style("font-style", o.italic ? "italic" : "normal").style("letter-spacing", o.ls || null).text(s);
+
+tx(svg, 0, 18, "Supplementary video: storyboard", { color: C.ink, bold: true, size: 15 });
+tx(svg, 0, 36, "Six stills at 1280 × 720. Every body, path and number comes from the recorded motions; nothing is interpolated between recorded steps.", { color: C.muted, size: 11 });
+
+function frame(k, dark, caption) {
+  const x = (k % 2) * (FW + GAP), y = TOP + Math.floor(k / 2) * PITCH;
+  const T = dark ? { bg0: "#1b2740", bg1: "#0e1524", ink: "#eef2f8", muted: "#9aa7bf", floor: "#25324d", track: "#33415e" }
+                 : { bg0: "#ffffff", bg1: "#f3f5f9", ink: C.ink, muted: C.muted, floor: "#e9edf4", track: "#dfe4ec" };
+  const g = svg.append("g").attr("transform", `translate(${x},${y})`);
+  defs.append("clipPath").attr("id", `fr${k}`).append("rect").attr("width", FW).attr("height", FH).attr("rx", 8);
+  const inner = g.append("g").attr("clip-path", `url(#fr${k})`);
+  inner.append("rect").attr("width", FW).attr("height", FH).attr("fill", grad([[0, T.bg0], [1, T.bg1]]));
+  g.append("rect").attr("width", FW).attr("height", FH).attr("rx", 8).attr("fill", "none").attr("stroke", dark ? "#0e1524" : "#d5dbe5");
+  const words = caption.split(" "); let line = "", ly = FH + 18;
+  words.forEach((w) => { if ((line + " " + w).length > 108) { tx(g, 2, ly, line.trim(), { color: C.muted, size: 10.5 }); line = ""; ly += 14; } line += " " + w; });
+  tx(g, 2, ly, line.trim(), { color: C.muted, size: 10.5 });
+  return { g: inner, T };
+}
+function header(f, n, title, sub) {
+  const { g, T } = f;
+  if (n) {
+    g.append("rect").attr("x", 24).attr("y", 20).attr("width", 20).attr("height", 20).attr("rx", 10).attr("fill", T.ink);
+    tx(g, 34, 34, `${n}`, { color: T.bg0, bold: true, size: 11, anchor: "middle" });
+    [1, 2, 3].forEach((i) => g.append("circle").attr("cx", FW - 60 + i * 12).attr("cy", 30).attr("r", 3.2)
+      .attr("fill", i === n ? T.ink : "none").attr("stroke", T.muted).attr("stroke-width", 1));
+  }
+  tx(g, n ? 54 : 24, 35, title, { color: T.ink, bold: true, size: 16 });
+  tx(g, 24, 56, sub, { color: T.muted, size: 11 });
+}
+function timebar(f, t, total, speed) {
+  const { g, T } = f, x0 = 24, x1 = FW - 24, yb = FH - 20, px = x0 + (x1 - x0) * (t / total);
+  g.append("line").attr("x1", x0).attr("x2", x1).attr("y1", yb).attr("y2", yb).attr("stroke", T.track).attr("stroke-width", 3).attr("stroke-linecap", "round");
+  g.append("line").attr("x1", x0).attr("x2", px).attr("y1", yb).attr("y2", yb).attr("stroke", T.muted).attr("stroke-width", 3).attr("stroke-linecap", "round");
+  g.append("circle").attr("cx", px).attr("cy", yb).attr("r", 5).attr("fill", T.bg0).attr("stroke", T.ink).attr("stroke-width", 1.6);
+  tx(g, x0, yb - 9, `t = ${t.toFixed(2)} s`, { color: T.muted, size: 10 });
+  if (speed) tx(g, x1, yb - 9, speed, { color: T.muted, size: 10, anchor: "end", bold: true });
+}
+// a body image in a box (metres) scaled into (ox, oy, w, h), floor-aligned at the bottom; returns screen mappers
+function place(g, img, box, ox, oy, w, h, o = {}) {
+  const bw = box.x1 - box.x0, bh = box.y1 - box.y0, sc = Math.min(w / bw, h / bh);
+  const x0 = ox + (w - bw * sc) / 2, y0 = oy + h - bh * sc;
+  if (img) g.append("image").attr("href", img).attr("x", x0).attr("y", y0).attr("width", bw * sc).attr("height", bh * sc).attr("opacity", o.opacity ?? 1);
+  return { X: (p) => x0 + (p[0] - box.x0) * sc, Y: (p) => y0 + (box.y1 - p[1]) * sc, sc, floorY: y0 + box.y1 * sc, x0, w: bw * sc };
+}
+function comPath(g, m, pts, air, upto, o = {}) {
+  const P = pts.slice(0, upto ?? pts.length), A = air.slice(0, P.length);
+  g.append("path").attr("d", d3.line().x(m.X).y(m.Y)(P)).attr("fill", "none").attr("stroke", o.ground || C.dim).attr("stroke-width", 1).attr("opacity", 0.7)
+    .attr("stroke-dasharray", o.dash || null);
+  g.append("path").attr("d", d3.line().defined((p, i) => A[i]).x(m.X).y(m.Y)(P)).attr("fill", "none").attr("stroke", o.color || C.mark)
+    .attr("stroke-width", o.width || 2.2).attr("stroke-linecap", "round").attr("stroke-dasharray", o.dash || null);
+  const last = P[P.length - 1];
+  if (o.head) g.append("circle").attr("cx", m.X(last)).attr("cy", m.Y(last)).attr("r", 3.2).attr("fill", o.color || C.mark);
+}
+function floor(f, y, x0 = 0, x1 = FW) {
+  f.g.append("rect").attr("x", x0).attr("y", y).attr("width", x1 - x0).attr("height", 26)
+    .attr("fill", grad([[0, f.T.floor], [1, f.T.floor, 0]]));
+}
+
+// 0. title card
+{
+  const f = frame(0, false, "Title card, about 4 s. The title and one sentence fade in over a faint replay of the jump; no audio, no author names (double-blind).");
+  const J = D.jump;
+  place(f.g, J.imgo_final, J.boxo, 300, 92, 330, 200, { opacity: 0.22 });
+  tx(f.g, 36, 140, "Probing Physics in Motion Diffusion", { color: C.ink, bold: true, size: 24 });
+  tx(f.g, 36, 172, "Models Against Their Own Estimate", { color: C.ink, bold: true, size: 24 });
+  f.g.append("rect").attr("x", 36).attr("y", 190).attr("width", 200).attr("height", 4).attr("rx", 2).attr("fill", SUNSET);
+  tx(f.g, 36, 220, "What the model's own clean-motion estimate already shows,", { color: C.muted, size: 13 });
+  tx(f.g, 36, 238, "and what its layers add. About one minute.", { color: C.muted, size: 13 });
+  tx(f.g, 36, 318, "Supplementary video · anonymous submission", { color: C.muted, size: 10.5, ls: "0.02em" });
+}
+
+// 1. four stages of denoising, in sync, at the apex
+{
+  const J = D.jump, f = frame(1, false, "Clip 1, about 12 s. The four bodies play in sync at normal speed, each leaving a fading trail; the center-of-mass path grows with the body and turns red while airborne; each fall rate appears at landing.");
+  header(f, 1, "The model's own estimate, step by step", `“${J.prompt}”: the clean-motion estimate at three points of denoising, and the final motion`);
+  const PX = 24, PW = 141, PG = 8, TOPY = 104, PH = 214;
+  // denoising bar
+  const bx0 = PX, bx1 = FW - 24, by = 76;
+  f.g.append("rect").attr("x", bx0).attr("y", by).attr("width", bx1 - bx0).attr("height", 4).attr("rx", 2).attr("fill", SUNSET);
+  tx(f.g, bx0, by - 4, "denoising", { color: f.T.muted, size: 9.5 });
+  tx(f.g, bx1, by - 4, "done", { color: f.T.muted, size: 9.5, anchor: "end" });
+  J.versions.forEach((v, j) => {
+    const u = v.step === null ? 1 : v.step / 50, ox = PX + j * (PW + PG);
+    const mx = bx0 + (bx1 - bx0) * u, cx = ox + PW / 2;
+    f.g.append("path").attr("d", `M${mx},${by + 6} C${mx},${by + 14} ${cx},${by + 8} ${cx},${TOPY - 6}`).attr("fill", "none")
+      .attr("stroke", ramp(u)).attr("stroke-width", 1.2).attr("opacity", 0.9);
+    f.g.append("circle").attr("cx", mx).attr("cy", by + 2).attr("r", 4).attr("fill", "#fff").attr("stroke", ramp(u)).attr("stroke-width", 2);
+    f.g.append("rect").attr("x", ox).attr("y", TOPY).attr("width", PW).attr("height", PH).attr("rx", 7).attr("fill", "#fff")
+      .attr("stroke", "#e3e8ef");
+    tx(f.g, ox + 10, TOPY + 18, v.name === "final" ? "final motion" : `estimate at ${v.name}`, { color: C.ink, bold: true, size: 11 });
+    const m = place(f.g, J[`img4_${v.name}`], J.box4, ox + 4, TOPY + 26, PW - 8, PH - 58);
+    comPath(f.g, m, v.com, v.air, J.apex - v.seg0 + 1, { head: true });
+    const gtxt = v.g === null ? "no fall" : `${v.g.toFixed(1)} m/s²`;
+    tx(f.g, ox + 10, TOPY + PH - 12, "fall rate", { color: C.muted, size: 9.5 });
+    tx(f.g, ox + PW - 10, TOPY + PH - 12, gtxt, { color: C.mark, bold: true, size: 11, anchor: "end" });
+  });
+  timebar(f, J.apex_t, 6, "1×");
+}
+
+// 2 and 5. the estimate at 20% over the final motion, light and dark
+function overlay(k, dark, caption) {
+  const J = D.jump, f = frame(k, dark, caption), T = f.T;
+  header(f, 1, "At 20% of denoising, the jump is already there", "slow motion: the final motion and, at the apex, the estimate at 20% of denoising (teal), with their centers of mass");
+  const m = place(f.g, null, J.boxo, 24, 74, 400, 236);
+  floor(f, m.floorY - 4, 24, 424);
+  place(f.g, J[`imgo_final${dark ? "_dark" : ""}`], J.boxo, 24, 74, 400, 236);
+  place(f.g, J[`imgo_est${dark ? "_dark" : ""}`], J.boxo, 24, 74, 400, 236, { opacity: 0.75 });
+  const vf = J.versions.find((v) => v.name === "final"), ve = J.versions.find((v) => v.name === "20%");
+  comPath(f.g, m, vf.com, vf.air, null, { ground: T.muted });
+  comPath(f.g, m, ve.com, ve.air, null, { color: C.est, dash: "4 3", width: 1.8, ground: "none" });
+  // numbers card
+  const cx = 436, cy = 96, cw = 180;
+  f.g.append("rect").attr("x", cx).attr("y", cy).attr("width", cw).attr("height", 128).attr("rx", 8)
+    .attr("fill", dark ? "#1f2b45" : "#fff").attr("stroke", dark ? "#2c3a58" : "#e3e8ef");
+  tx(f.g, cx + 12, cy + 22, "fall rate over the flight", { color: T.ink, bold: true, size: 11 });
+  [["final motion", vf.g, T.ink], ["estimate at 20%", ve.g, C.est], ["gravity", 9.81, T.muted]].forEach(([n, v, c], i) => {
+    tx(f.g, cx + 12, cy + 50 + i * 24, n, { color: c, size: 11, bold: i < 2 });
+    tx(f.g, cx + cw - 12, cy + 50 + i * 24, `${v.toFixed(i === 2 ? 2 : 1)} m/s²`, { color: c, size: 11, anchor: "end", bold: i < 2 });
+  });
+  tx(f.g, cx + 12, cy + 118, "from parabolas fitted to each path", { color: T.muted, size: 9 });
+  timebar(f, J.apex_t, 6, "0.25×");
+}
+overlay(2, false, "Clip 1 replay, about 8 s. The flight again at quarter speed; the estimate at 20% appears over the final motion at the apex, both paths are drawn, and the numbers fade in at the end.");
+
+// 3. the floating walk
+{
+  const Fl = D.floating, f = frame(3, false, "Clip 2, about 12 s. The walk plays at normal speed; a body turns red while it floats (airborne but barely falling), and the gap under the lowest foot is measured live.");
+  header(f, 2, "A body that floats", `“${Fl.prompt}”: the estimate at 20% already floats where the final motion does`);
+  Fl.panels.forEach((p, j) => {
+    const ox = 24 + j * 302, w = 290;
+    f.g.append("rect").attr("x", ox).attr("y", 74).attr("width", w).attr("height", 236).attr("rx", 7).attr("fill", "#fff").attr("stroke", "#e3e8ef");
+    tx(f.g, ox + 12, 94, p.name, { color: C.ink, bold: true, size: 11.5 });
+    const m = place(f.g, null, Fl.box, ox + 6, 104, w - 12, 170);
+    floor(f, m.floorY - 4, ox + 1, ox + w - 1);
+    place(f.g, p.img, Fl.box, ox + 6, 104, w - 12, 170);
+    const fx = m.X(p.foot), fy = m.Y(p.foot), gy = m.floorY;
+    if (p.floating) {
+      f.g.append("line").attr("x1", fx + 14).attr("x2", fx + 14).attr("y1", fy).attr("y2", gy).attr("stroke", C.mark).attr("stroke-width", 1.4);
+      [fy, gy].forEach((yy) => f.g.append("line").attr("x1", fx + 10).attr("x2", fx + 18).attr("y1", yy).attr("y2", yy).attr("stroke", C.mark).attr("stroke-width", 1.4));
+      tx(f.g, fx + 22, (fy + gy) / 2 + 4, `${Math.round(p.foot_cm)} cm`, { color: C.mark, bold: true, size: 11 });
+    }
+    f.g.append("rect").attr("x", ox + 12).attr("y", 282).attr("width", 64).attr("height", 18).attr("rx", 9).attr("fill", p.floating ? C.mark : "#e9edf4");
+    tx(f.g, ox + 44, 295, p.floating ? "floating" : "supported", { color: p.floating ? "#fff" : C.muted, bold: true, size: 9.5, anchor: "middle" });
+    tx(f.g, ox + w - 12, 295, `floating in ${p.n_float} of ${p.n} frames`, { color: C.muted, size: 10, anchor: "end" });
+  });
+  timebar(f, Fl.frames[Fl.frames.length - 1] / 20, 6, "1×");
+}
+
+// 4. what the layer adds
+{
+  const G = D.gain, f = frame(4, false, "Clip 3, about 15 s. Each of the three jumps plays once; after landing, the bars fill to the two predicted fall rates. The closing line gives the gain over all held-out jumps.");
+  header(f, 3, "What a layer adds", "one of the three jumps where adding layer 5 helps most, selected for that reason; predictions on held-out prompts");
+  f.g.append("rect").attr("x", 24).attr("y", 74).attr("width", 330).attr("height", 236).attr("rx", 7).attr("fill", "#fff").attr("stroke", "#e3e8ef");
+  const m = place(f.g, G.img, G.box, 32, 90, 314, 204);
+  const air = G.air;
+  comPath(f.g, m, G.final, air, null);
+  comPath(f.g, m, G.est, air, null, { color: C.est, dash: "4 3", width: 1.6, ground: "none" });
+  tx(f.g, 36, 92, `“${G.prompt}”`, { color: C.ink, italic: true, size: 11 });
+  // bars
+  const bx = 376, bw = 236, x = d3.scaleLinear().domain([0, Math.ceil(Math.max(G.g, G.pe, G.pb, 9.81)) + 1]).range([bx, bx + bw]);
+  tx(f.g, bx, 100, "fall rate of this jump (m/s²)", { color: C.ink, bold: true, size: 11 });
+  [["final motion", G.g, C.mark], ["predicted from the estimate", G.pe, C.est], ["predicted with layer 5 added", G.pb, C.lay]].forEach(([n, v, c], i) => {
+    const y = 124 + i * 44;
+    tx(f.g, bx, y, n, { color: C.muted, size: 10 });
+    f.g.append("rect").attr("x", bx).attr("y", y + 6).attr("width", bw).attr("height", 14).attr("rx", 7).attr("fill", "#eef1f6");
+    f.g.append("rect").attr("x", bx).attr("y", y + 6).attr("width", x(v) - bx).attr("height", 14).attr("rx", 7).attr("fill", c);
+    tx(f.g, x(v) - 6, y + 17, v.toFixed(1), { color: "#fff", bold: true, size: 10, anchor: "end" });
+  });
+  f.g.append("line").attr("x1", x(9.81)).attr("x2", x(9.81)).attr("y1", 126).attr("y2", 258).attr("stroke", C.ink).attr("stroke-dasharray", "2 2").attr("opacity", 0.5);
+  tx(f.g, x(9.81), 270, "9.81", { color: C.muted, size: 9, anchor: "middle" });
+  tx(f.g, bx, 296, `all held-out jumps: R² ${G.r2_est.toFixed(2)} → ${G.r2_both.toFixed(2)} with the layer`, { color: C.ink, size: 10 });
+  [0, 1, 2].forEach((i) => f.g.append("circle").attr("cx", 24 + i * 14).attr("cy", FH - 20).attr("r", 4).attr("fill", i === 0 ? C.ink : "#dfe4ec"));
+  tx(f.g, 70, FH - 16, "jump 1 of 3", { color: C.muted, size: 10 });
+}
+
+overlay(5, true, "Alternative look: the same still as Clip 1's replay on a dark stage. Either look would apply to every clip.");
+</script></body></html>

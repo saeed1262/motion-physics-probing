@@ -1,0 +1,16 @@
+target,features,fold,alpha,ridge_val_mse,mlp_config,mlp_val_mse,tuned,fallback_choice
+fall_gravity,estimate,0,10.0,5.555212736767363,3,5.257367452972203,mlp,
+fall_gravity,estimate,1,0.1,6.5456022460047985,0,5.794689509160058,mlp,
+fall_gravity,estimate,2,1000.0,5.435771513329806,1,5.3295674986802135,mlp,
+fall_gravity,estimate,3,1000.0,5.199767112717304,1,5.218803380942003,ridge,
+fall_gravity,estimate,4,1000.0,5.026088012727165,1,4.559254851304041,mlp,
+fall_gravity,layer,0,100.0,5.49635856148541,1,6.077606749472342,ridge,
+fall_gravity,layer,1,100.0,6.43869823906991,1,6.796402492455632,ridge,
+fall_gravity,layer,2,10.0,5.973339186782461,3,6.45449536972199,ridge,
+fall_gravity,layer,3,100.0,5.9213260870533855,3,6.088703429532698,ridge,
+fall_gravity,layer,4,10.0,5.323580818052623,3,5.828772254132947,ridge,
+fall_gravity,estimate + layer,0,10.0,5.126534222001173,3,5.189458263546698,ridge,combined
+fall_gravity,estimate + layer,1,10.0,5.885709964400621,4,6.0897014477291584,ridge,estimate
+fall_gravity,estimate + layer,2,1000.0,5.612264137664793,4,5.588801358739188,mlp,estimate
+fall_gravity,estimate + layer,3,1000.0,5.1786580331441785,3,5.4204158060288075,ridge,combined
+fall_gravity,estimate + layer,4,1000.0,4.921504015168202,4,4.982857051582605,ridge,estimate

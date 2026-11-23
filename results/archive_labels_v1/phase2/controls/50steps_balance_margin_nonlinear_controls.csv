@@ -1,0 +1,55 @@
+checkpoint,target,metric,seed,step,features,model,score
+50steps,balance_margin,r2,0,10,explicit,linear,0.7738145888036017
+50steps,balance_margin,r2,0,10,guess features,linear,0.6692451548970287
+50steps,balance_margin,r2,0,10,guess features,mlp,0.7628699774855912
+50steps,balance_margin,r2,0,10,everything the guess shows,linear,0.8146268432549753
+50steps,balance_margin,r2,0,10,everything the guess shows,mlp,0.8141497676151881
+50steps,balance_margin,r2,0,10,layer 7,linear,0.761914373357962
+50steps,balance_margin,r2,0,10,layer 7,mlp,0.6709345062080002
+50steps,balance_margin,r2,0,10,everything the guess shows + layer 7,linear,0.8203931564624287
+50steps,balance_margin,r2,0,10,everything the guess shows + layer 7,mlp,0.7858203296267625
+50steps,balance_margin,r2,0,20,explicit,linear,0.8097844808829318
+50steps,balance_margin,r2,0,20,guess features,linear,0.6865294423543837
+50steps,balance_margin,r2,0,20,guess features,mlp,0.7940950837184173
+50steps,balance_margin,r2,0,20,everything the guess shows,linear,0.8475816360493046
+50steps,balance_margin,r2,0,20,everything the guess shows,mlp,0.8554503094353536
+50steps,balance_margin,r2,0,20,layer 7,linear,0.7713007648523589
+50steps,balance_margin,r2,0,20,layer 7,mlp,0.6979557063628162
+50steps,balance_margin,r2,0,20,everything the guess shows + layer 7,linear,0.8441606474697912
+50steps,balance_margin,r2,0,20,everything the guess shows + layer 7,mlp,0.8198797275022371
+50steps,balance_margin,r2,1,10,explicit,linear,0.7489818077552421
+50steps,balance_margin,r2,1,10,guess features,linear,0.661667290027171
+50steps,balance_margin,r2,1,10,guess features,mlp,0.7359514587974014
+50steps,balance_margin,r2,1,10,everything the guess shows,linear,0.7931721579243329
+50steps,balance_margin,r2,1,10,everything the guess shows,mlp,0.7939787821614688
+50steps,balance_margin,r2,1,10,layer 7,linear,0.7439490576500956
+50steps,balance_margin,r2,1,10,layer 7,mlp,0.6861986190194118
+50steps,balance_margin,r2,1,10,everything the guess shows + layer 7,linear,0.7976491931153317
+50steps,balance_margin,r2,1,10,everything the guess shows + layer 7,mlp,0.7535401003764495
+50steps,balance_margin,r2,1,20,explicit,linear,0.8095866209550228
+50steps,balance_margin,r2,1,20,guess features,linear,0.6760955789778436
+50steps,balance_margin,r2,1,20,guess features,mlp,0.7697870216382032
+50steps,balance_margin,r2,1,20,everything the guess shows,linear,0.8405382045125067
+50steps,balance_margin,r2,1,20,everything the guess shows,mlp,0.8427581346459043
+50steps,balance_margin,r2,1,20,layer 7,linear,0.7669062603052579
+50steps,balance_margin,r2,1,20,layer 7,mlp,0.7223222917989218
+50steps,balance_margin,r2,1,20,everything the guess shows + layer 7,linear,0.8445716912495603
+50steps,balance_margin,r2,1,20,everything the guess shows + layer 7,mlp,0.8013130737104528
+50steps,balance_margin,r2,2,10,explicit,linear,0.7853412234347907
+50steps,balance_margin,r2,2,10,guess features,linear,0.6888579053681629
+50steps,balance_margin,r2,2,10,guess features,mlp,0.7947248002382465
+50steps,balance_margin,r2,2,10,everything the guess shows,linear,0.8270735568826646
+50steps,balance_margin,r2,2,10,everything the guess shows,mlp,0.8440001507363052
+50steps,balance_margin,r2,2,10,layer 7,linear,0.7722696289784593
+50steps,balance_margin,r2,2,10,layer 7,mlp,0.7800693217008934
+50steps,balance_margin,r2,2,10,everything the guess shows + layer 7,linear,0.8251394869391857
+50steps,balance_margin,r2,2,10,everything the guess shows + layer 7,mlp,0.8278998693009441
+50steps,balance_margin,r2,2,20,explicit,linear,0.8393247524554314
+50steps,balance_margin,r2,2,20,guess features,linear,0.7033763413946047
+50steps,balance_margin,r2,2,20,guess features,mlp,0.8223734529442875
+50steps,balance_margin,r2,2,20,everything the guess shows,linear,0.8727014580450303
+50steps,balance_margin,r2,2,20,everything the guess shows,mlp,0.8750999066219204
+50steps,balance_margin,r2,2,20,layer 7,linear,0.7957490966152893
+50steps,balance_margin,r2,2,20,layer 7,mlp,0.810637848794173
+50steps,balance_margin,r2,2,20,everything the guess shows + layer 7,linear,0.8731827882987884
+50steps,balance_margin,r2,2,20,everything the guess shows + layer 7,mlp,0.8648890668353904

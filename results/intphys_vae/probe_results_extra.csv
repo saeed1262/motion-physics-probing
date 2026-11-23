@@ -1,0 +1,121 @@
+features,subset,repeat,per_video,pairwise
+time kept + frame changes,all blocks,0,0.5333333333333333,0.5694444444444444
+time kept + frame changes,all blocks,1,0.5388888888888889,0.55
+time kept + frame changes,all blocks,2,0.5305555555555556,0.5666666666666667
+time kept + frame changes,all blocks,3,0.5277777777777778,0.5861111111111111
+time kept + frame changes,all blocks,4,0.5472222222222223,0.6138888888888889
+time kept + frame changes,all blocks,5,0.5333333333333333,0.5861111111111111
+time kept + frame changes,all blocks,6,0.5222222222222223,0.5472222222222223
+time kept + frame changes,all blocks,7,0.5611111111111111,0.5888888888888889
+time kept + frame changes,all blocks,8,0.5222222222222223,0.5805555555555556
+time kept + frame changes,all blocks,9,0.525,0.5472222222222223
+frame changes only,all blocks,0,0.6277777777777778,0.7666666666666667
+frame changes only,all blocks,1,0.6083333333333333,0.7666666666666667
+frame changes only,all blocks,2,0.6222222222222222,0.7555555555555555
+frame changes only,all blocks,3,0.6166666666666667,0.8111111111111111
+frame changes only,all blocks,4,0.625,0.7888888888888889
+frame changes only,all blocks,5,0.6111111111111112,0.7861111111111111
+frame changes only,all blocks,6,0.6166666666666667,0.7583333333333333
+frame changes only,all blocks,7,0.6166666666666667,0.7944444444444444
+frame changes only,all blocks,8,0.6138888888888889,0.7833333333333333
+frame changes only,all blocks,9,0.625,0.7805555555555556
+time + 4x4 space + signed frame changes,all blocks,0,0.5194444444444445,0.5027777777777778
+time + 4x4 space + signed frame changes,all blocks,1,0.5166666666666667,0.4888888888888889
+time + 4x4 space + signed frame changes,all blocks,2,0.5222222222222223,0.5138888888888888
+time + 4x4 space + signed frame changes,all blocks,3,0.5333333333333333,0.5277777777777778
+time + 4x4 space + signed frame changes,all blocks,4,0.5277777777777778,0.5083333333333333
+time + 4x4 space + signed frame changes,all blocks,5,0.5277777777777778,0.5527777777777778
+time + 4x4 space + signed frame changes,all blocks,6,0.5166666666666667,0.5416666666666666
+time + 4x4 space + signed frame changes,all blocks,7,0.5527777777777778,0.5555555555555556
+time + 4x4 space + signed frame changes,all blocks,8,0.5277777777777778,0.5194444444444445
+time + 4x4 space + signed frame changes,all blocks,9,0.5361111111111111,0.5083333333333333
+time kept + frame changes,O1,0,0.5916666666666667,0.6916666666666667
+time kept + frame changes,O1,1,0.5833333333333334,0.6666666666666666
+time kept + frame changes,O1,2,0.5916666666666667,0.6583333333333333
+time kept + frame changes,O1,3,0.575,0.625
+time kept + frame changes,O1,4,0.575,0.675
+time kept + frame changes,O1,5,0.5666666666666667,0.6333333333333333
+time kept + frame changes,O1,6,0.5666666666666667,0.5833333333333334
+time kept + frame changes,O1,7,0.6,0.675
+time kept + frame changes,O1,8,0.6,0.6416666666666667
+time kept + frame changes,O1,9,0.575,0.625
+frame changes only,O1,0,0.675,0.7916666666666666
+frame changes only,O1,1,0.6916666666666667,0.8
+frame changes only,O1,2,0.6166666666666667,0.775
+frame changes only,O1,3,0.6583333333333333,0.775
+frame changes only,O1,4,0.6666666666666666,0.7833333333333333
+frame changes only,O1,5,0.7083333333333334,0.775
+frame changes only,O1,6,0.65,0.7666666666666667
+frame changes only,O1,7,0.675,0.8
+frame changes only,O1,8,0.65,0.8166666666666667
+frame changes only,O1,9,0.7,0.7666666666666667
+time + 4x4 space + signed frame changes,O1,0,0.5,0.525
+time + 4x4 space + signed frame changes,O1,1,0.5083333333333333,0.49166666666666664
+time + 4x4 space + signed frame changes,O1,2,0.5,0.4666666666666667
+time + 4x4 space + signed frame changes,O1,3,0.525,0.49166666666666664
+time + 4x4 space + signed frame changes,O1,4,0.5333333333333333,0.49166666666666664
+time + 4x4 space + signed frame changes,O1,5,0.525,0.5166666666666667
+time + 4x4 space + signed frame changes,O1,6,0.5166666666666667,0.5333333333333333
+time + 4x4 space + signed frame changes,O1,7,0.5166666666666667,0.5416666666666666
+time + 4x4 space + signed frame changes,O1,8,0.5,0.5083333333333333
+time + 4x4 space + signed frame changes,O1,9,0.5,0.525
+time kept + frame changes,O2,0,0.5583333333333333,0.6
+time kept + frame changes,O2,1,0.5333333333333333,0.5583333333333333
+time kept + frame changes,O2,2,0.475,0.6
+time kept + frame changes,O2,3,0.5083333333333333,0.6583333333333333
+time kept + frame changes,O2,4,0.5,0.6916666666666667
+time kept + frame changes,O2,5,0.5166666666666667,0.6416666666666667
+time kept + frame changes,O2,6,0.5166666666666667,0.6416666666666667
+time kept + frame changes,O2,7,0.5083333333333333,0.6583333333333333
+time kept + frame changes,O2,8,0.5333333333333333,0.6416666666666667
+time kept + frame changes,O2,9,0.5083333333333333,0.6333333333333333
+frame changes only,O2,0,0.5583333333333333,0.8083333333333333
+frame changes only,O2,1,0.575,0.8083333333333333
+frame changes only,O2,2,0.6333333333333333,0.7833333333333333
+frame changes only,O2,3,0.5666666666666667,0.825
+frame changes only,O2,4,0.5583333333333333,0.8166666666666667
+frame changes only,O2,5,0.5333333333333333,0.7833333333333333
+frame changes only,O2,6,0.5833333333333334,0.825
+frame changes only,O2,7,0.5833333333333334,0.8083333333333333
+frame changes only,O2,8,0.6,0.825
+frame changes only,O2,9,0.5916666666666667,0.8166666666666667
+time + 4x4 space + signed frame changes,O2,0,0.5,0.5333333333333333
+time + 4x4 space + signed frame changes,O2,1,0.55,0.55
+time + 4x4 space + signed frame changes,O2,2,0.525,0.5333333333333333
+time + 4x4 space + signed frame changes,O2,3,0.5583333333333333,0.5416666666666666
+time + 4x4 space + signed frame changes,O2,4,0.5333333333333333,0.55
+time + 4x4 space + signed frame changes,O2,5,0.525,0.5166666666666667
+time + 4x4 space + signed frame changes,O2,6,0.5166666666666667,0.5333333333333333
+time + 4x4 space + signed frame changes,O2,7,0.5333333333333333,0.5666666666666667
+time + 4x4 space + signed frame changes,O2,8,0.5416666666666666,0.525
+time + 4x4 space + signed frame changes,O2,9,0.5,0.5166666666666667
+time kept + frame changes,O3,0,0.5166666666666667,0.4666666666666667
+time kept + frame changes,O3,1,0.49166666666666664,0.4166666666666667
+time kept + frame changes,O3,2,0.49166666666666664,0.425
+time kept + frame changes,O3,3,0.4666666666666667,0.48333333333333334
+time kept + frame changes,O3,4,0.5,0.5
+time kept + frame changes,O3,5,0.48333333333333334,0.45
+time kept + frame changes,O3,6,0.5,0.44166666666666665
+time kept + frame changes,O3,7,0.4583333333333333,0.5
+time kept + frame changes,O3,8,0.48333333333333334,0.39166666666666666
+time kept + frame changes,O3,9,0.49166666666666664,0.43333333333333335
+frame changes only,O3,0,0.6166666666666667,0.8166666666666667
+frame changes only,O3,1,0.625,0.7833333333333333
+frame changes only,O3,2,0.6333333333333333,0.8166666666666667
+frame changes only,O3,3,0.625,0.8166666666666667
+frame changes only,O3,4,0.6,0.8
+frame changes only,O3,5,0.6083333333333333,0.8416666666666667
+frame changes only,O3,6,0.65,0.8083333333333333
+frame changes only,O3,7,0.6416666666666667,0.8
+frame changes only,O3,8,0.6333333333333333,0.7916666666666666
+frame changes only,O3,9,0.625,0.8083333333333333
+time + 4x4 space + signed frame changes,O3,0,0.49166666666666664,0.525
+time + 4x4 space + signed frame changes,O3,1,0.5166666666666667,0.48333333333333334
+time + 4x4 space + signed frame changes,O3,2,0.5,0.49166666666666664
+time + 4x4 space + signed frame changes,O3,3,0.5583333333333333,0.525
+time + 4x4 space + signed frame changes,O3,4,0.5166666666666667,0.5333333333333333
+time + 4x4 space + signed frame changes,O3,5,0.5083333333333333,0.5666666666666667
+time + 4x4 space + signed frame changes,O3,6,0.48333333333333334,0.525
+time + 4x4 space + signed frame changes,O3,7,0.49166666666666664,0.5416666666666666
+time + 4x4 space + signed frame changes,O3,8,0.5583333333333333,0.5083333333333333
+time + 4x4 space + signed frame changes,O3,9,0.5666666666666667,0.5333333333333333

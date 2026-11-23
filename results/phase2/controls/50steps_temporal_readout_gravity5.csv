@@ -1,0 +1,10 @@
+checkpoint,seed,step,target,metric,features,model,score,within_prompt_r
+50steps,0,10,flight_gravity,r2,estimate,temporal,0.8098816813563932,0.3482826681371774
+50steps,0,10,flight_gravity,r2,layer,temporal,0.8640096888334353,0.4426047251554887
+50steps,0,10,flight_gravity,r2,estimate + layer,temporal,0.8502296446051899,0.4321263179894314
+50steps,1,10,flight_gravity,r2,estimate,temporal,0.7614202470088456,0.4968215525466487
+50steps,1,10,flight_gravity,r2,layer,temporal,0.8183455366882832,0.558680928181303
+50steps,1,10,flight_gravity,r2,estimate + layer,temporal,0.7391086413242527,0.5140056060918664
+50steps,2,10,flight_gravity,r2,estimate,temporal,0.7339324511790626,0.42232631521665726
+50steps,2,10,flight_gravity,r2,layer,temporal,0.8130100513403886,0.5727077492339683
+50steps,2,10,flight_gravity,r2,estimate + layer,temporal,0.7721423410103039,0.5518011786817792

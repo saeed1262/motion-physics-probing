@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixed-MLP comparison</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_fair.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 186, svg = setup(W, H), LW = 108, TOP = 30, RH = 18;
+const n = FIG.panels[0].rows.length, PW = (W - LW) / 4;
+FIG.panels[0].rows.forEach((r, i) => {
+  const y = TOP + i * RH;
+  if (r.label === "estimate, MLP") svg.append("rect").attr("x", 0).attr("y", y).attr("width", W).attr("height", RH).attr("fill", col("est")).attr("opacity", 0.06);
+  svg.append("text").attr("x", LW - 8).attr("y", y + RH / 2 + 3).attr("text-anchor", "end").style("fill", col(r.color)).style("font-weight", 600).text(r.label);
+});
+FIG.panels.forEach((P, j) => {
+  const x0 = LW + j * PW + 10, x1 = LW + (j + 1) * PW - 10;
+  const vals = P.rows.flatMap((r) => [r["50steps"][0] - r["50steps"][1], r["50steps"][0] + r["50steps"][1], r["1000steps"][0] - r["1000steps"][1], r["1000steps"][0] + r["1000steps"][1]]);
+  const x = d3.scaleLinear().domain(d3.extent(vals)).nice(3).range([x0, x1]);
+  svg.append("text").attr("x", x0).attr("y", 12).style("fill", col("ink")).style("font-weight", 650).text(`(${"abcd"[j]}) ${P.name}`);
+  svg.append("g").attr("class", "grid").selectAll("line").data(x.ticks(3)).join("line").attr("x1", (d) => x(d)).attr("x2", (d) => x(d))
+    .attr("y1", TOP).attr("y2", TOP + n * RH);
+  svg.append("g").attr("class", "axis").attr("transform", `translate(0,${TOP + n * RH})`).call(d3.axisBottom(x).ticks(3).tickSize(3).tickSizeOuter(0));
+  svg.append("text").attr("class", "axis-label").attr("x", (x0 + x1) / 2).attr("y", TOP + n * RH + 22).attr("text-anchor", "middle").text(P.metric);
+  const ref = P.rows.find((r) => r.label === "estimate, MLP")["50steps"][0];
+  svg.append("line").attr("x1", x(ref)).attr("x2", x(ref)).attr("y1", TOP).attr("y2", TOP + n * RH).attr("stroke", col("est")).attr("stroke-dasharray", "2 2").attr("stroke-width", 0.8);
+  P.rows.forEach((r, i) => [["50steps", -3.5, true], ["1000steps", 3.5, false]].forEach(([ck, off, filled]) => {
+    const [m, sd] = r[ck], y = TOP + i * RH + RH / 2 + off, c = col(r.color);
+    svg.append("line").attr("x1", x(m - sd)).attr("x2", x(m + sd)).attr("y1", y).attr("y2", y).attr("stroke", c).attr("stroke-width", 1);
+    svg.append("circle").attr("cx", x(m)).attr("cy", y).attr("r", 2.6).attr("fill", filled ? c : "#fff").attr("stroke", c).attr("stroke-width", 1.1);
+  }));
+});
+[["50-step model", true], ["1000-step model", false]].forEach(([lab, f], i) => {
+  const g = svg.append("g").attr("transform", `translate(${LW + 10 + i * 110},${H - 6})`);
+  g.append("circle").attr("r", 2.6).attr("fill", f ? col("ink") : "#fff").attr("stroke", col("ink"));
+  g.append("text").attr("x", 6).attr("y", 3).text(lab);
+});
+</script></body></html>

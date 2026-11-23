@@ -1,0 +1,169 @@
+checkpoint,tag,target,layer_spec,refit_seed,comparison,measure,observed,ci_low,ci_high,share_above_zero
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): tuned,score,0.4078698493334336,0.1527193411129732,0.6752380260946584,1.0
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): tuned,within_prompt_r,0.0776303307735467,-0.03010033869957755,0.2190476285834773,0.912
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): tuned,within_prompt_frame_r,0.11520579636559972,-0.0025493505525163666,0.24689363139636497,0.973
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): fallback,score,0.2525177532054632,0.044568879705451356,0.5324650288311928,0.992
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): fallback,within_prompt_r,9.790597759085085e-05,-0.0822366970194384,0.0758074562721096,0.483
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): fallback,within_prompt_frame_r,0.046241639385604244,-0.0393319347725204,0.12889297808371658,0.822
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): ridge only,score,0.2738376801529445,0.07679815814111923,0.5231117581380501,1.0
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): ridge only,within_prompt_r,0.025442546652530984,-0.04368008789046835,0.08523804504952813,0.771
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.02342547010238452,-0.10572347272274218,0.11889574052937242,0.652
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): tuned,score,0.15925452694344044,-0.14717290873836109,0.46445621948471466,0.849
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): tuned,within_prompt_r,-0.04604453204290068,-0.20673961591352966,0.17272983927841098,0.303
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): tuned,within_prompt_frame_r,0.003722365685410317,-0.1868950705017641,0.24849644597073883,0.511
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): fallback,score,0.0022987984604616596,-0.22376450983131888,0.24877378727672814,0.469
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): fallback,within_prompt_r,0.0019342522932114248,-0.08189950717637476,0.1452209250099274,0.472
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): fallback,within_prompt_frame_r,0.024544079286308446,-0.07045026531071179,0.1931405675308554,0.624
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): ridge only,score,0.27309992910631087,0.04770384832156054,0.5375268841262621,0.995
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): ridge only,within_prompt_r,-0.008327101750207289,-0.13648903751067043,0.11928137460633555,0.475
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layer + cond): ridge only,within_prompt_frame_r,0.024072473060848948,-0.13766798120194723,0.16850748893149048,0.618
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): tuned,score,0.385054689951965,0.1206314817898047,0.6647076000412354,1.0
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): tuned,within_prompt_r,0.08794686728273171,-0.026710968567974815,0.26245040675808157,0.922
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): tuned,within_prompt_frame_r,0.11321307263223243,-0.012249306720237827,0.2910141547888781,0.961
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): fallback,score,0.336653001580282,0.1139190885728528,0.5872038727074324,1.0
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): fallback,within_prompt_r,0.05557464838284809,-0.045136463212914237,0.20962504235121282,0.804
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.11375415725183832,0.009147080394533005,0.2756974679307687,0.986
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): ridge only,score,0.2740875814530308,0.09850124994416544,0.4863477817603666,1.0
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): ridge only,within_prompt_r,0.052586020329609906,-0.025066121399866612,0.1276296793038821,0.892
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.0447997026477803,-0.0543470967896522,0.12716248574581304,0.816
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): tuned,score,-0.5640390614920232,-2.553895837057702,0.44317092027023114,0.33
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): tuned,within_prompt_r,0.01607508134048924,-0.12545919783351933,0.1900610786924049,0.59
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): tuned,within_prompt_frame_r,0.09225410739065185,-0.08096704758410814,0.2932132959677394,0.839
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): fallback,score,-0.7538785080661896,-2.7412615465768932,0.18551656099744238,0.192
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): fallback,within_prompt_r,0.0303945619396489,-0.057626548106612115,0.15543227793306158,0.715
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): fallback,within_prompt_frame_r,0.07053449683114535,-0.04424289424218148,0.2303385380159569,0.875
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): ridge only,score,0.24337721785685051,0.06589701084673787,0.4671982285381122,0.998
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_r,-0.009097660299020094,-0.12408698601303243,0.09918751811682676,0.447
+50steps,cond_token,fall_gravity,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_frame_r,0.013941163198989581,-0.11635151659492,0.14480882338377268,0.583
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layer): fallback,score,-0.25021895474500155,-0.5767860720566524,0.093180122421123,0.066
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layer): fallback,within_prompt_r,0.001836346315620574,-0.12235572196870871,0.17643721754857938,0.495
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layer): fallback,within_prompt_frame_r,-0.0216975600992958,-0.16419314799223597,0.1906126738570508,0.383
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layers all): fallback,score,-1.0905315096464716,-3.0060252108685557,-0.16478188405110059,0.0
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layers all): fallback,within_prompt_r,-0.02518008644319919,-0.10177688692633038,0.05527738554658547,0.253
+50steps,cond_token,fall_gravity,cond,0,condition token adds (layers all): fallback,within_prompt_frame_r,-0.043219660420692974,-0.15422355236556345,0.076721473349172,0.211
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): tuned,score,0.010570229088512795,0.0035016567241972526,0.019838997421609626,0.999
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): tuned,within_prompt_r,0.08124535379187442,0.03255678143197709,0.11752869979430722,0.998
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): tuned,within_prompt_frame_r,0.0970265637401459,0.030871279882808637,0.1403535915689172,0.998
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): fallback,score,0.007687261378876653,0.0016613168286686048,0.014899368999253143,0.998
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): fallback,within_prompt_r,0.05375461274886939,0.011298851182299815,0.09152956137676165,0.99
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): fallback,within_prompt_frame_r,0.05021121290166869,-0.0035966292161690953,0.10094140921522132,0.959
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): ridge only,score,0.008567175814783279,0.0036626591427114277,0.016205078091532522,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): ridge only,within_prompt_r,0.08883004323831462,0.04617705721940827,0.12451969020110425,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.0945205531862724,0.03333756755090604,0.14540551236223018,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): tuned,score,0.011269071032046996,0.0034507997439624295,0.02077689437602247,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): tuned,within_prompt_r,0.06458227134608802,0.01069149007313213,0.11047193065707411,0.988
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): tuned,within_prompt_frame_r,0.08848347444279064,0.020433219345411598,0.1401453993766472,0.994
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): fallback,score,0.009548637661952686,0.0022421203305979078,0.018347019892629463,0.998
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): fallback,within_prompt_r,0.032100824562076635,-0.011288996978122183,0.07134188223781204,0.915
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): fallback,within_prompt_frame_r,0.05034058814459763,-0.011566719825435348,0.09756947094768276,0.947
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): ridge only,score,0.00969398504096508,0.004174553906716627,0.017696277631635702,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): ridge only,within_prompt_r,0.0806837356731141,0.04114113012115238,0.1215250173417486,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layer + cond): ridge only,within_prompt_frame_r,0.0825819899277912,0.03790345626322148,0.13449640055190198,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): tuned,score,0.010620880447865577,0.004135527586316509,0.018436400051221418,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): tuned,within_prompt_r,0.07882852285042391,0.034789056184968005,0.11781830509402799,0.999
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): tuned,within_prompt_frame_r,0.10198685985442146,0.04251075833078623,0.15267257979287277,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): fallback,score,0.010620880447865577,0.004135527586316509,0.018436400051221418,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): fallback,within_prompt_r,0.07882852285042391,0.034789056184968005,0.11781830509402799,0.999
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.10198685985442146,0.04251075833078623,0.15267257979287277,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): ridge only,score,0.008754365621087112,0.004054860526680209,0.015971734881843686,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): ridge only,within_prompt_r,0.09559638204794901,0.054788495652764585,0.1321515708467623,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.11673921437511947,0.05969560604239953,0.1652059481255358,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): tuned,score,0.011053007503986523,0.0035688671279801576,0.02023915600167842,0.998
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): tuned,within_prompt_r,0.013677372022706358,-0.033873008121249826,0.06955180517882303,0.718
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): tuned,within_prompt_frame_r,0.027967419162210405,-0.03355749493677318,0.09609545559315946,0.824
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): fallback,score,0.003919974767303325,-0.0010029304440960867,0.010373502095201702,0.921
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): fallback,within_prompt_r,-0.020647370895062744,-0.06268393623452914,0.02017078873493504,0.183
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): fallback,within_prompt_frame_r,-0.005285063497479092,-0.05184698334030543,0.03087027441708875,0.401
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): ridge only,score,0.009439749473972081,0.003913587818318234,0.017931778904894523,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_r,0.0764527435013525,0.036612571258566866,0.12126542493688541,1.0
+50steps,cond_token,float_vs_fall,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_frame_r,0.07333939721211197,0.025308596333207808,0.13196482973025045,1.0
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layer): fallback,score,0.0018613762830760328,-0.0032882628787709255,0.0069226829236950305,0.782
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layer): fallback,within_prompt_r,-0.021653788186792755,-0.07830124817179175,0.035378227430730005,0.23
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layer): fallback,within_prompt_frame_r,0.00012937524292894187,-0.06696634982566786,0.0626811164451052,0.479
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layers all): fallback,score,-0.0067009056805622524,-0.015131717678477517,-0.00044804289935295756,0.013
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layers all): fallback,within_prompt_r,-0.09947589374548665,-0.14117100880239827,-0.05381724348558534,0.001
+50steps,cond_token,float_vs_fall,cond,0,condition token adds (layers all): fallback,within_prompt_frame_r,-0.10727192335190056,-0.1563698012842983,-0.04403244525135172,0.001
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): tuned,score,-0.0045613132104347365,-0.009489386574419997,-3.875933854386776e-05,0.024
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): tuned,within_prompt_r,-0.003132757870505598,-0.005858622666163635,-0.0007215841271381643,0.004
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): tuned,within_prompt_frame_r,-0.003756827627908965,-0.007692033694438443,-0.00044884275324931223,0.008
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): fallback,score,0.00011881533192692473,-0.0005428393346342015,0.0007878139819914448,0.619
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): fallback,within_prompt_r,0.00030402542695096013,-0.00035751592419089594,0.0010120925708035494,0.813
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): fallback,within_prompt_frame_r,0.0003493506609900665,-0.0006517308591813569,0.0013504500014761029,0.757
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): ridge only,score,0.014044659606397225,0.009046506692677748,0.018504061643325843,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): ridge only,within_prompt_r,0.013603784503579575,0.008841036440321862,0.018941307485169517,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.018322809074421964,0.011919317136139201,0.024666827964073268,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): tuned,score,-0.00784601167602772,-0.013919759336557671,-0.0020470611324525695,0.004
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): tuned,within_prompt_r,-0.00957147134292502,-0.013093760552293762,-0.006535975780239661,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): tuned,within_prompt_frame_r,-0.013763629593250948,-0.018168594989231228,-0.009670274467652638,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): fallback,score,-0.0006833556693512932,-0.002677259696061787,0.0016008479257509387,0.241
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): fallback,within_prompt_r,-0.0012905208310725058,-0.002642097128515053,-2.1496295127285297e-05,0.024
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): fallback,within_prompt_frame_r,-0.0020114237329754703,-0.004161995276798619,7.119971106263882e-05,0.029
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): ridge only,score,0.012344504825716918,0.006311626119708616,0.01783810770447707,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): ridge only,within_prompt_r,0.01051019798198738,0.005131491222659853,0.01646517108342292,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layer + cond): ridge only,within_prompt_frame_r,0.013183339737130262,0.0061691902847229915,0.020622469316871315,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): tuned,score,-0.006870590359003281,-0.012187857533632787,-0.001344268297724811,0.007
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): tuned,within_prompt_r,-0.008415776844041156,-0.01137463972187551,-0.00584877879894107,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): tuned,within_prompt_frame_r,-0.011118704371263055,-0.015049589633512864,-0.007428838049441356,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): ridge only,score,0.02021867449005177,0.014287771962126546,0.026258700145216037,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): ridge only,within_prompt_r,0.018952513462780263,0.012598940032371294,0.026069731859898054,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.024810766190944578,0.016486135198396028,0.033425608862098,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): tuned,score,-0.01711369684605213,-0.027649083008724384,-0.004751038232334943,0.004
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): tuned,within_prompt_r,-0.017472957581493587,-0.022005638856394484,-0.013308000111022126,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): tuned,within_prompt_frame_r,-0.025720245814787046,-0.03084502778539603,-0.02078513597988148,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): ridge only,score,0.011593472961023865,0.00418067402888059,0.018650140062156845,0.999
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_r,0.012072457942783554,0.00524358820992935,0.019701280623562786,1.0
+50steps,cond_token,xcom_margin,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_frame_r,0.014785785583240507,0.005436844180097378,0.02520363215692763,0.999
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layer): fallback,score,-0.0008021710012782179,-0.002868385846506888,0.0015556632145278858,0.237
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layer): fallback,within_prompt_r,-0.001594546258023466,-0.003103869392468278,-0.00014187764149359893,0.016
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layer): fallback,within_prompt_frame_r,-0.002360774393965537,-0.004754463064484379,-7.912232343753428e-05,0.023
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layers all): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layers all): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,xcom_margin,cond,0,condition token adds (layers all): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): tuned,score,-0.0037242733169633446,-0.00956783201548452,0.0014269773509181958,0.077
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): tuned,within_prompt_r,-0.00921591174303582,-0.016720688424431883,-0.001968468241044877,0.004
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): tuned,within_prompt_frame_r,-0.010366973008619995,-0.01884415552935377,-0.002261978692448319,0.005
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): fallback,score,-0.0037142026517406057,-0.008839441891977277,8.853007969734213e-05,0.026
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): fallback,within_prompt_r,-0.006917886637639592,-0.013091305641718351,-0.0015604150338115312,0.009
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): fallback,within_prompt_frame_r,-0.00769121013493268,-0.01378668001692548,-0.0020779111228023312,0.004
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): ridge only,score,0.005749844524559511,0.0030788690856733774,0.00890651981500475,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): ridge only,within_prompt_r,0.013095344508321505,0.008122992829702736,0.018499003838488473,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.013536241969473228,0.00813817191845751,0.019308355468856744,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): tuned,score,-0.010176890399576921,-0.018220203605592514,-0.0034266057910974854,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): tuned,within_prompt_r,-0.024811169504861397,-0.03553347558788196,-0.015904268612131997,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): tuned,within_prompt_frame_r,-0.0284308733994435,-0.041433119324953256,-0.018235687124433027,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): ridge only,score,0.006039548514391813,0.0032404853896493115,0.009259943397587919,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): ridge only,within_prompt_r,0.012643002002330261,0.007356742639740424,0.01822741337564748,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layer + cond): ridge only,within_prompt_frame_r,0.01249315067673984,0.006374645426593287,0.019253072909657772,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): tuned,score,-0.013872940159803115,-0.02104659048824936,-0.008767223608747631,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): tuned,within_prompt_r,-0.018213530572818826,-0.02543994530378263,-0.012236611552119607,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): tuned,within_prompt_frame_r,-0.017351312810177433,-0.02519781261742713,-0.009933606895145072,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): ridge only,score,0.006727210078534496,0.003807353249697748,0.010119997186691905,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): ridge only,within_prompt_r,0.01950858492904728,0.013075056677673887,0.0265356582383605,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.020052626101118243,0.012834979049997707,0.027951775353190173,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): tuned,score,-0.008318466540563008,-0.014639651327204415,-0.0031087157116953578,0.002
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): tuned,within_prompt_r,-0.029475467526431265,-0.03864517895159669,-0.021992647968997567,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): tuned,within_prompt_frame_r,-0.03324242001744293,-0.04416131670386187,-0.023891326533360676,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): ridge only,score,0.005452198198611202,0.0019324107907321946,0.00930843621522558,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_r,0.01146669253767496,0.004747924005231036,0.017878990650609772,1.0
+50steps,cond_token,in_flight,cond,0,conditional gain (layers all + cond): ridge only,within_prompt_frame_r,0.010170258954719569,0.0027841425234612165,0.017461689327921248,0.997
+50steps,cond_token,in_flight,cond,0,condition token adds (layer): fallback,score,0.0037142026517406057,-8.853007969734362e-05,0.008839441891977275,0.974
+50steps,cond_token,in_flight,cond,0,condition token adds (layer): fallback,within_prompt_r,0.006917886637639592,0.0015604150338115299,0.01309130564171835,0.991
+50steps,cond_token,in_flight,cond,0,condition token adds (layer): fallback,within_prompt_frame_r,0.00769121013493268,0.0020779111228023312,0.013786680016925477,0.996
+50steps,cond_token,in_flight,cond,0,condition token adds (layers all): fallback,score,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,condition token adds (layers all): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+50steps,cond_token,in_flight,cond,0,condition token adds (layers all): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0

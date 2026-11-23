@@ -1,0 +1,26 @@
+target,features,fold,alpha,ridge_val_mse,mlp_config,mlp_val_mse,tuned,fallback_choice
+float_vs_fall,estimate,0,1.0,0.04142319265861011,2,0.023753595956604954,mlp,
+float_vs_fall,estimate,1,1000.0,0.036185518330394774,1,0.028354268470872752,mlp,
+float_vs_fall,estimate,2,0.1,0.029794939989911437,1,0.020368854343224618,mlp,
+float_vs_fall,estimate,3,0.1,0.05094217542507426,4,0.03777382383668361,mlp,
+float_vs_fall,estimate,4,1.0,0.056840942213716605,2,0.05056165536802076,mlp,
+float_vs_fall,estimate + layer,0,10000.0,0.032471370799374406,1,0.027500334282346488,mlp,estimate
+float_vs_fall,estimate + layer,1,1000.0,0.028076198469175227,1,0.025817081992817886,mlp,combined
+float_vs_fall,estimate + layer,2,1000.0,0.02059206083969471,4,0.016854308048321602,mlp,combined
+float_vs_fall,estimate + layer,3,1000.0,0.0420600300850038,4,0.0385009312367332,mlp,estimate
+float_vs_fall,estimate + layer,4,1000.0,0.04608481376652288,3,0.04461945311728685,mlp,combined
+float_vs_fall,estimate + injected 0.005,0,10000.0,0.032141017408804026,0,0.027057586054378763,mlp,estimate
+float_vs_fall,estimate + injected 0.005,1,1000.0,0.027652772408815432,1,0.025734736480091214,mlp,combined
+float_vs_fall,estimate + injected 0.005,2,1000.0,0.020487976764629188,4,0.015825362038679982,mlp,combined
+float_vs_fall,estimate + injected 0.005,3,1000.0,0.04119739840784761,4,0.03612669157757655,mlp,combined
+float_vs_fall,estimate + injected 0.005,4,1000.0,0.045408412891729186,1,0.0437282078469161,mlp,combined
+float_vs_fall,estimate + injected 0.01,0,10000.0,0.031864432066544615,1,0.023470951128870057,mlp,combined
+float_vs_fall,estimate + injected 0.01,1,1000.0,0.027345720064997497,4,0.024788656731146327,mlp,combined
+float_vs_fall,estimate + injected 0.01,2,1000.0,0.020479049620207673,0,0.015755779023524014,mlp,combined
+float_vs_fall,estimate + injected 0.01,3,1000.0,0.04069696955901832,4,0.035080573990113134,mlp,combined
+float_vs_fall,estimate + injected 0.01,4,1000.0,0.04480901896586288,0,0.04199883664732884,mlp,combined
+float_vs_fall,estimate + injected 0.02,0,10000.0,0.0314847029141318,0,0.02076023474337048,mlp,combined
+float_vs_fall,estimate + injected 0.02,1,1000.0,0.026680255335012813,0,0.021787877239352202,mlp,combined
+float_vs_fall,estimate + injected 0.02,2,1000.0,0.02024765235013052,4,0.013912251250545297,mlp,combined
+float_vs_fall,estimate + injected 0.02,3,1000.0,0.040050830757736945,2,0.03201328058822327,mlp,combined
+float_vs_fall,estimate + injected 0.02,4,1000.0,0.04385330623059604,0,0.038517084132115374,mlp,combined

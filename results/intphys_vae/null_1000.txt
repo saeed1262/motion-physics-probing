@@ -1,0 +1,7 @@
+Label-shuffle null, 1000 shuffles within scenario (all blocks):
+  time + 4x4 space + frame changes | per_video: observed 0.621, null mean 0.501, 95th pct 0.531, max 0.556, p = 0.0010
+  time + 4x4 space + frame changes | pairwise: observed 0.796, null mean 0.499, 95th pct 0.567, max 0.617, p = 0.0010
+  frame changes only | per_video: observed 0.618, null mean 0.500, 95th pct 0.528, max 0.561, p = 0.0010
+  frame changes only | pairwise: observed 0.779, null mean 0.498, 95th pct 0.569, max 0.625, p = 0.0010
+  time + 4x4 space + signed frame changes | per_video: observed 0.528, null mean 0.499, 95th pct 0.531, max 0.561, p = 0.0629
+  time + 4x4 space + signed frame changes | pairwise: observed 0.522, null mean 0.500, 95th pct 0.567, max 0.633, p = 0.3137

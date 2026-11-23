@@ -1,0 +1,16 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 0,default,0,3,11640,233,0.7381753702757472,0.8281051205063058,0.8278242655590575
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 1,default,0,3,11640,233,0.741929736005596,0.8325164900344341,0.8312672688149552
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 2,default,0,3,11640,233,0.7442126768924529,0.8318970775221284,0.8310626898518221
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 3,default,0,3,11640,233,0.7392463336969899,0.8287835391066469,0.8248112507443324
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 4,default,0,3,11640,233,0.739122320047503,0.8291103574689824,0.8286587319694004
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 0,default,0,3,11640,233,0.5080490377166096,0.6426519231301744,0.6342351981973633
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 1,default,0,3,11640,233,0.50953005523364,0.6375537270832304,0.6253334006382655
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 2,default,0,3,11640,233,0.49129687469011163,0.6239692102482731,0.6173123512398155
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 3,default,0,3,11640,233,0.5088687563806884,0.6392621346177332,0.6319988633360571
+50steps,jump_heavy,fall_gravity,r2,layer | mlp config 4,default,0,3,11640,233,0.518522688618039,0.6509964519446537,0.6413987795565852
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 0,default,0,3,11640,233,0.7410419010088689,0.8293178175157825,0.827825693998625
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 1,default,0,3,11640,233,0.7418557897321776,0.8308726239053318,0.8279694664832592
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 2,default,0,3,11640,233,0.7438225635545477,0.8311772782468173,0.8313244096595355
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 3,default,0,3,11640,233,0.749425341717034,0.8339627741828639,0.8296368075819085
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 4,default,0,3,11640,233,0.7419560835308026,0.8298441920022679,0.8277701189182385

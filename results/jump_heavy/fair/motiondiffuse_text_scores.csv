@@ -1,0 +1,17 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,jump_heavy,fall_gravity,r2,explicit,text,0,3,7431,235,0.28862703874685547,0.45150321928190684,0.4662671167934156
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | ridge,text,0,3,7431,235,0.3698524348140093,0.4741770868360063,0.4866815377063753
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp,text,0,3,7431,235,-59.698647408626464,0.04097092209393444,0.028421447097198873
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | tuned,text,0,3,7431,235,0.36510348287063765,0.4825718819667612,0.4963458914078256
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | ridge,text,0,3,7431,235,0.35471639259431154,0.4702849804105909,0.48163432657044497
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp,text,0,3,7431,235,-24.07888829845233,0.05049051878236216,0.03725430575444749
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | tuned,text,0,3,7431,235,0.3006971986809963,0.4531626658740243,0.46157866579833745
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | tuned+fallback,text,0,3,7431,235,0.337478346083957,0.47586355983043493,0.48904612189808844
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | ridge,text,0,3,7431,235,0.41333557024117396,0.5139516507478032,0.5260007299404302
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp,text,0,3,7431,235,-20.78891746812391,0.03146234380295212,0.03739448693058978
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | tuned,text,0,3,7431,235,0.39922092193949266,0.49875339624232856,0.5093368733878297
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | tuned+fallback,text,0,3,7431,235,0.39020886714310876,0.5042299342743288,0.5130257481787567
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | ridge,text,0,3,7431,235,0.367557836177122,0.4758909959952283,0.4885386884835463
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp,text,0,3,7431,235,-12078.803030885649,-0.01200292783536044,-0.002444854104256822
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned,text,0,3,7431,235,0.34604930519040433,0.4663197200192651,0.4780174433637912
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned+fallback,text,0,3,7431,235,0.39020886714310876,0.5042299342743288,0.5130257481787567

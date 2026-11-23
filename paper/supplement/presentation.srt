@@ -1,0 +1,208 @@
+1
+00:00:00,000 --> 00:00:07,175
+Ask a motion diffusion model for a person walking forward slowly and carefully, and watch closely.
+
+2
+00:00:07,625 --> 00:00:10,000
+Most samples are fine.
+
+3
+00:00:10,450 --> 00:00:20,700
+But in some, in the middle of a step, both feet leave the floor and the whole body glides a few centimeters up, for half a second, before it sets down again.
+
+4
+00:00:21,150 --> 00:00:26,575
+Nothing pulls it back down, because nothing in the model enforces the ground.
+
+5
+00:00:27,925 --> 00:00:37,125
+Kinematic motion generators output joint positions directly, so their physics is learned from motion capture and never enforced.
+
+6
+00:00:37,575 --> 00:00:45,625
+Video diffusion models were recently reported to know more physics in their activations than they show in their outputs.
+
+7
+00:00:46,075 --> 00:00:52,425
+If motion models did too, a probe on the layers could catch a sample like that one early.
+
+8
+00:00:52,875 --> 00:00:55,600
+We set out to show exactly that.
+
+9
+00:00:56,050 --> 00:00:58,325
+It is not what we found.
+
+10
+00:00:59,675 --> 00:01:10,775
+A diffusion model builds a motion out of noise in many small steps, and at every step it computes a clean-motion estimate: its running guess of the final motion.
+
+11
+00:01:11,225 --> 00:01:14,625
+Here is one jump at four points of denoising.
+
+12
+00:01:15,075 --> 00:01:18,925
+At zero percent the estimate is an average crouch.
+
+13
+00:01:19,375 --> 00:01:27,650
+By twenty percent the jump is in place, and it falls at nine and a half meters per second squared, close to gravity.
+
+14
+00:01:28,100 --> 00:01:34,150
+Slowed down, the estimate at twenty percent moves almost on top of the final motion.
+
+15
+00:01:35,500 --> 00:01:51,625
+Because the output is joint positions, physics can be computed exactly, for the final motion and for every estimate: balance from the extrapolated center of mass, and for flight, a parabola fitted to the center of mass in the air.
+
+16
+00:01:52,075 --> 00:01:58,650
+A real jump falls at nine point eight one; a body that falls slower than two is floating.
+
+17
+00:01:59,100 --> 00:02:08,475
+Our first definition of "airborne" looked only at the feet and counted crawling and hovering as flight; the corrected labels separate them.
+
+18
+00:02:09,825 --> 00:02:11,750
+Here is the catch.
+
+19
+00:02:12,200 --> 00:02:21,475
+The estimate is computed from the model's layers, so it cannot carry information about the outcome that the layers and the noisy input lack.
+
+20
+00:02:21,925 --> 00:02:29,850
+A probe that beats a quick readout of the estimate only shows that the layers store the information in an easier form.
+
+21
+00:02:30,300 --> 00:02:39,025
+So for every target we train two readers, one on the estimate and one on the estimate and a layer, both tuned the same way.
+
+22
+00:02:39,475 --> 00:02:42,975
+The gap between them is what the layer adds.
+
+23
+00:02:44,325 --> 00:02:50,850
+Against the usual baselines, the layers look ahead of the estimate on almost every target.
+
+24
+00:02:51,300 --> 00:02:56,275
+Read the estimate with the same care, and the advantage disappears.
+
+25
+00:02:56,725 --> 00:03:05,600
+For balance and flight, on all three models, adding a layer gains at most one hundredth, one point on a hundred-point scale.
+
+26
+00:03:06,050 --> 00:03:14,825
+A positive control, in which we hide a small known signal in the layer, shows that the protocol would have found a gain that small.
+
+27
+00:03:16,175 --> 00:03:22,550
+Our pilot study, with sixty-four prompts, pointed the other way, and the reason was data.
+
+28
+00:03:22,1000 --> 00:03:30,325
+With too few training examples, a high-dimensional probe and a one-number baseline can trade places.
+
+29
+00:03:30,775 --> 00:03:36,850
+Only a lead that persists as the training set grows is evidence about the model.
+
+30
+00:03:38,200 --> 00:03:42,000
+There is one exception: how fast a jump falls.
+
+31
+00:03:42,450 --> 00:03:56,350
+A fifth of the way through denoising, MDM's layers add about eight hundredths in R squared that the estimate does not yet show, and on the fifty-step model the gain survives every control we applied.
+
+32
+00:03:56,800 --> 00:04:01,825
+But it fades: by sixty percent of the way it is under two hundredths.
+
+33
+00:04:02,275 --> 00:04:08,125
+A real case of a model knowing more than it shows, but a small and short-lived one.
+
+34
+00:04:22,275 --> 00:04:24,250
+What does go wrong?
+
+35
+00:04:24,700 --> 00:04:30,800
+Mostly not the jumps: when MDM's bodies fall, they fall at close to the right rate.
+
+36
+00:04:31,250 --> 00:04:40,775
+The common failure is floating, and on test captions the original thousand-step checkpoint floats about twice as often as the fifty-step one.
+
+37
+00:04:41,225 --> 00:04:46,550
+The estimate at twenty percent already floats where the final motion does.
+
+38
+00:04:47,900 --> 00:04:52,750
+That makes the estimate an early warning, with no training at all.
+
+39
+00:04:53,200 --> 00:04:59,525
+If it floats at twenty percent, the final motion floats in about eighty percent of cases.
+
+40
+00:04:59,975 --> 00:05:02,200
+But the payoff is small.
+
+41
+00:05:02,650 --> 00:05:13,150
+Floating affects only nine to eighteen percent of samples and concentrates in a few prompts, so aborting early saves under a tenth of the compute.
+
+42
+00:05:13,600 --> 00:05:16,850
+Even a perfect detector would save little.
+
+43
+00:05:18,200 --> 00:05:27,500
+In video, a linear probe at chance on Wan two point one's clean latent was read as evidence that plausibility is absent there.
+
+44
+00:05:27,950 --> 00:05:38,325
+One fixed transformation, the size of the change between frames, lifts a linear readout to seventy-eight percent pairwise accuracy on IntPhys.
+
+45
+00:05:38,775 --> 00:05:42,525
+A probe at chance is weak evidence of absence.
+
+46
+00:05:43,875 --> 00:05:50,025
+Before concluding that a generator knows more than it shows, we suggest five checks.
+
+47
+00:05:50,475 --> 00:05:56,250
+Read its own estimate as carefully as its layers, and run a positive control.
+
+48
+00:05:56,700 --> 00:06:01,200
+Score within prompts, and vary the amount of training data.
+
+49
+00:06:01,650 --> 00:06:06,150
+Try simple transforms before declaring something absent.
+
+50
+00:06:06,600 --> 00:06:09,975
+Look at what a target's variance is made of.
+
+51
+00:06:10,425 --> 00:06:15,300
+And for early pruning, compare with scoring the decoded preview.
+
+52
+00:06:16,650 --> 00:06:23,550
+Every body, path and number in this video is computed from the recorded outputs of the models.
+

@@ -1,0 +1,534 @@
+{
+ "A blog (current)": {
+  "est": "#c4572b",
+  "expl": "#c7862a",
+  "layer": "#2a5c9e",
+  "layer2": "#7ea6d6",
+  "both": "#172033",
+  "second": "#c7862a",
+  "neutral": "#5b6680",
+  "cvd": {
+   "protan": {
+    "est": "#756925",
+    "expl": "#9c8a1b",
+    "layer": "#3d61a1",
+    "layer2": "#94a8d8",
+    "both": "#192234",
+    "second": "#9c8a1b",
+    "neutral": "#5e6881"
+   },
+   "deutan": {
+    "est": "#908128",
+    "expl": "#ab9a2d",
+    "layer": "#2a579d",
+    "layer2": "#899fd5",
+    "both": "#161f33",
+    "second": "#ab9a2d",
+    "neutral": "#5b657f"
+   },
+   "tritan": {
+    "est": "#d73f4e",
+    "expl": "#d97674",
+    "layer": "#006b75",
+    "layer2": "#5eb1b6",
+    "both": "#0c2427",
+    "second": "#d97674",
+    "neutral": "#516b6f"
+   }
+  }
+ },
+ "G flare + crest": {
+  "est": "#d64f5f",
+  "expl": "#eb9872",
+  "layer": "#215584",
+  "layer2": "#44948f",
+  "both": "#62296a",
+  "second": "#33858d",
+  "neutral": "#8a94a6",
+  "cvd": {
+   "protan": {
+    "est": "#706c5f",
+    "expl": "#aea16f",
+    "layer": "#405786",
+    "layer2": "#8c8d8f",
+    "both": "#1d3c6c",
+    "second": "#7b808e",
+    "neutral": "#8e95a7"
+   },
+   "deutan": {
+    "est": "#92885c",
+    "expl": "#c2b371",
+    "layer": "#314e83",
+    "layer2": "#7f8390",
+    "both": "#314368",
+    "second": "#6d768d",
+    "neutral": "#8c92a6"
+   },
+   "tritan": {
+    "est": "#e93656",
+    "expl": "#fe898e",
+    "layer": "#006066",
+    "layer2": "#029792",
+    "both": "#633245",
+    "second": "#008a87",
+    "neutral": "#83989a"
+   }
+  }
+ },
+ "I viridis": {
+  "est": "#22a884",
+  "expl": "#7ad151",
+  "layer": "#3b528b",
+  "layer2": "#2a788e",
+  "both": "#440154",
+  "second": "#21918c",
+  "neutral": "#8f8f8f",
+  "cvd": {
+   "protan": {
+    "est": "#a39c82",
+    "expl": "#d8c142",
+    "layer": "#3a588d",
+    "layer2": "#6b758f",
+    "both": "#002256",
+    "second": "#88898c",
+    "neutral": "#8f8f8f"
+   },
+   "deutan": {
+    "est": "#939086",
+    "expl": "#ccb95b",
+    "layer": "#30508a",
+    "layer2": "#5d6b8e",
+    "both": "#042752",
+    "second": "#787e8d",
+    "neutral": "#8f8f8f"
+   },
+   "tritan": {
+    "est": "#00a99e",
+    "expl": "#76cab6",
+    "layer": "#085f67",
+    "layer2": "#007f7f",
+    "both": "#43172e",
+    "second": "#00958f",
+    "neutral": "#8f8f8f"
+   }
+  }
+ },
+ "Okabe-Ito": {
+  "est": "#D55E00",
+  "expl": "#E69F00",
+  "layer": "#0072B2",
+  "layer2": "#56B4E9",
+  "both": "#000000",
+  "second": "#009E73",
+  "neutral": "#999999",
+  "cvd": {
+   "protan": {
+    "est": "#817100",
+    "expl": "#b9a200",
+    "layer": "#5375b5",
+    "layer2": "#9bb3ec",
+    "both": "#000000",
+    "second": "#9a9271",
+    "neutral": "#999999"
+   },
+   "deutan": {
+    "est": "#9e8c00",
+    "expl": "#cab411",
+    "layer": "#3b67b1",
+    "layer2": "#87a4e8",
+    "both": "#000000",
+    "second": "#8a8676",
+    "neutral": "#999999"
+   },
+   "tritan": {
+    "est": "#eb4050",
+    "expl": "#fb8c87",
+    "layer": "#008289",
+    "layer2": "#00c2c6",
+    "both": "#000000",
+    "second": "#009e92",
+    "neutral": "#999999"
+   }
+  }
+ },
+ "Tol vibrant": {
+  "est": "#CC3311",
+  "expl": "#EE7733",
+  "layer": "#0077BB",
+  "layer2": "#33BBEE",
+  "both": "#000000",
+  "second": "#009988",
+  "neutral": "#BBBBBB",
+  "cvd": {
+   "protan": {
+    "est": "#635706",
+    "expl": "#998829",
+    "layer": "#567abe",
+    "layer2": "#a0b8f0",
+    "both": "#000000",
+    "second": "#918f87",
+    "neutral": "#bbbbbb"
+   },
+   "deutan": {
+    "est": "#897900",
+    "expl": "#b6a330",
+    "layer": "#3c6bba",
+    "layer2": "#88a7ed",
+    "both": "#000000",
+    "second": "#81838a",
+    "neutral": "#bbbbbb"
+   },
+   "tritan": {
+    "est": "#e1002e",
+    "expl": "#ff5d69",
+    "layer": "#008890",
+    "layer2": "#00c9cc",
+    "both": "#000000",
+    "second": "#009c94",
+    "neutral": "#bbbbbb"
+   }
+  }
+ },
+ "Tableau 10": {
+  "est": "#E15759",
+  "expl": "#F28E2B",
+  "layer": "#4E79A7",
+  "layer2": "#76B7B2",
+  "both": "#3d3d3d",
+  "second": "#59A14F",
+  "neutral": "#BAB0AC",
+  "cvd": {
+   "protan": {
+    "est": "#7a7358",
+    "expl": "#ac9918",
+    "layer": "#667ba9",
+    "layer2": "#b0b1b2",
+    "both": "#3d3d3d",
+    "second": "#a59548",
+    "neutral": "#b2b1ac"
+   },
+   "deutan": {
+    "est": "#9d9056",
+    "expl": "#c4b02b",
+    "layer": "#5b72a6",
+    "layer2": "#a4a8b3",
+    "both": "#3d3d3d",
+    "second": "#9b8e55",
+    "neutral": "#b5b3ac"
+   },
+   "tritan": {
+    "est": "#f63b59",
+    "expl": "#ff777b",
+    "layer": "#1c8489",
+    "layer2": "#5ebab5",
+    "both": "#3d3d3d",
+    "second": "#529d8e",
+    "neutral": "#bdafaf"
+   }
+  }
+ },
+ "Economist": {
+  "est": "#E3120B",
+  "expl": "#EBB434",
+  "layer": "#006BA2",
+  "layer2": "#3EBCD2",
+  "both": "#0C0C0C",
+  "second": "#379A8B",
+  "neutral": "#B7C6CF",
+  "cvd": {
+   "protan": {
+    "est": "#625601",
+    "expl": "#cbb41b",
+    "layer": "#506da4",
+    "layer2": "#abb5d3",
+    "both": "#0c0c0c",
+    "second": "#93918a",
+    "neutral": "#c2c5d0"
+   },
+   "deutan": {
+    "est": "#928100",
+    "expl": "#d8c23b",
+    "layer": "#3b60a1",
+    "layer2": "#96a6d2",
+    "both": "#0c0c0c",
+    "second": "#85868c",
+    "neutral": "#bec2cf"
+   },
+   "tritan": {
+    "est": "#fb0017",
+    "expl": "#ffa39b",
+    "layer": "#00797f",
+    "layer2": "#00c5c3",
+    "both": "#0c0c0c",
+    "second": "#009d95",
+    "neutral": "#b1c8c9"
+   }
+  }
+ },
+ "IBM Carbon": {
+  "est": "#fa4d56",
+  "expl": "#b28600",
+  "layer": "#002d9c",
+  "layer2": "#1192e8",
+  "both": "#161616",
+  "second": "#009d9a",
+  "neutral": "#a8a8a8",
+  "cvd": {
+   "protan": {
+    "est": "#7d7555",
+    "expl": "#998600",
+    "layer": "#00419f",
+    "layer2": "#6896ec",
+    "both": "#161616",
+    "second": "#92949a",
+    "neutral": "#a8a8a8"
+   },
+   "deutan": {
+    "est": "#a89a51",
+    "expl": "#a3910f",
+    "layer": "#00339a",
+    "layer2": "#4885e6",
+    "both": "#161616",
+    "second": "#80879b",
+    "neutral": "#a8a8a8"
+   },
+   "tritan": {
+    "est": "#ff1652",
+    "expl": "#c27872",
+    "layer": "#004d61",
+    "layer2": "#00a7b2",
+    "both": "#161616",
+    "second": "#00a29c",
+    "neutral": "#a8a8a8"
+   }
+  }
+ },
+ "Crameri batlow": {
+  "est": "#bd8f34",
+  "expl": "#fdb4b6",
+  "layer": "#114260",
+  "layer2": "#5f7843",
+  "both": "#101010",
+  "second": "#5f7843",
+  "neutral": "#9a9a9a",
+  "cvd": {
+   "protan": {
+    "est": "#a29028",
+    "expl": "#c1beb6",
+    "layer": "#344261",
+    "layer2": "#7d713f",
+    "both": "#101010",
+    "second": "#7d713f",
+    "neutral": "#9a9a9a"
+   },
+   "deutan": {
+    "est": "#ad9b38",
+    "expl": "#d2ccb5",
+    "layer": "#293b5f",
+    "layer2": "#797046",
+    "both": "#101010",
+    "second": "#797046",
+    "neutral": "#9a9a9a"
+   },
+   "tritan": {
+    "est": "#cd817c",
+    "expl": "#ffadb5",
+    "layer": "#00494d",
+    "layer2": "#61746b",
+    "both": "#101010",
+    "second": "#61746b",
+    "neutral": "#9a9a9a"
+   }
+  }
+ },
+ "S1 shown/hidden": {
+  "est": "#d1491f",
+  "expl": "#e8a04a",
+  "layer": "#1d4e89",
+  "layer2": "#6e9fd1",
+  "both": "#1b1f27",
+  "second": "#2a8c82",
+  "neutral": "#9aa3b2",
+  "cvd": {
+   "protan": {
+    "est": "#716417",
+    "expl": "#b8a540",
+    "layer": "#31538b",
+    "layer2": "#8ba0d3",
+    "both": "#1c1f27",
+    "second": "#858482",
+    "neutral": "#9ea4b3"
+   },
+   "deutan": {
+    "est": "#928217",
+    "expl": "#c9b64c",
+    "layer": "#1e4988",
+    "layer2": "#7e96d0",
+    "both": "#1b1e27",
+    "second": "#777a83",
+    "neutral": "#9ca1b2"
+   },
+   "tritan": {
+    "est": "#e61f41",
+    "expl": "#fc8f8d",
+    "layer": "#005c64",
+    "layer2": "#42aab0",
+    "both": "#182122",
+    "second": "#008f89",
+    "neutral": "#94a6a8"
+   }
+  }
+ },
+ "S2 ember and ink": {
+  "est": "#e0592a",
+  "expl": "#b9a58c",
+  "layer": "#22324d",
+  "layer2": "#8794a8",
+  "both": "#7a2f3b",
+  "second": "#5f7a99",
+  "neutral": "#c9ced6",
+  "cvd": {
+   "protan": {
+    "est": "#7f7123",
+    "expl": "#ada58a",
+    "layer": "#28344e",
+    "layer2": "#8d95a9",
+    "both": "#403f3b",
+    "second": "#6e7b9a",
+    "neutral": "#ccced6"
+   },
+   "deutan": {
+    "est": "#a19024",
+    "expl": "#b1aa8d",
+    "layer": "#23304c",
+    "layer2": "#8a92a8",
+    "both": "#534e39",
+    "second": "#677598",
+    "neutral": "#cacdd6"
+   },
+   "tritan": {
+    "est": "#f63750",
+    "expl": "#c1a09e",
+    "layer": "#0e383c",
+    "layer2": "#7f989a",
+    "both": "#852434",
+    "second": "#4c8184",
+    "neutral": "#c6d0d0"
+   }
+  }
+ },
+ "S3 flare/crest tuned": {
+  "est": "#d64f5f",
+  "expl": "#e98b61",
+  "layer": "#1f4f86",
+  "layer2": "#3f8f8d",
+  "both": "#24202e",
+  "second": "#3f8f8d",
+  "neutral": "#9aa1ad",
+  "cvd": {
+   "protan": {
+    "est": "#706c5f",
+    "expl": "#a4975d",
+    "layer": "#355388",
+    "layer2": "#87888d",
+    "both": "#1d222f",
+    "second": "#87888d",
+    "neutral": "#9da1ae"
+   },
+   "deutan": {
+    "est": "#92885c",
+    "expl": "#bbab60",
+    "layer": "#244a85",
+    "layer2": "#7a7f8e",
+    "both": "#1e222e",
+    "second": "#7a7f8e",
+    "neutral": "#9ca0ad"
+   },
+   "tritan": {
+    "est": "#e93656",
+    "expl": "#fd7a81",
+    "layer": "#005c64",
+    "layer2": "#00938e",
+    "both": "#222225",
+    "second": "#00938e",
+    "neutral": "#96a3a5"
+   }
+  }
+ },
+ "S4 lightness-stepped": {
+  "expl": "#b38b28",
+  "est": "#b65352",
+  "layer": "#045786",
+  "both": "#322d31",
+  "neutral": "#a5acb1",
+  "layer2": "#0f96c5",
+  "second": "#018b85",
+  "cvd": {
+   "protan": {
+    "est": "#6a6551",
+    "expl": "#9d8b16",
+    "layer": "#405888",
+    "layer2": "#7e94c7",
+    "both": "#2d2e31",
+    "second": "#828385",
+    "neutral": "#aaacb1"
+   },
+   "deutan": {
+    "est": "#837a50",
+    "expl": "#a6952d",
+    "layer": "#2f4e85",
+    "layer2": "#6785c4",
+    "both": "#2e2f31",
+    "second": "#727786",
+    "neutral": "#a8aab1"
+   },
+   "tritan": {
+    "est": "#c64354",
+    "expl": "#c27e78",
+    "layer": "#006368",
+    "layer2": "#00a3a6",
+    "both": "#332d2e",
+    "second": "#008f89",
+    "neutral": "#a2adae"
+   }
+  }
+ },
+ "S5 stepped, vivid": {
+  "est": "#bb4a52",
+  "expl": "#af8d04",
+  "layer": "#03557b",
+  "both": "#211f27",
+  "neutral": "#a5acb1",
+  "layer2": "#0f96c5",
+  "second": "#018b85",
+  "cvd": {
+   "protan": {
+    "est": "#656152",
+    "expl": "#9f8b00",
+    "layer": "#42557d",
+    "both": "#1d2027",
+    "neutral": "#aaacb1",
+    "layer2": "#7e94c7",
+    "second": "#828385"
+   },
+   "deutan": {
+    "est": "#82784f",
+    "expl": "#a79515",
+    "layer": "#334b7a",
+    "both": "#1e2027",
+    "neutral": "#a8aab1",
+    "layer2": "#6785c4",
+    "second": "#727786"
+   },
+   "tritan": {
+    "est": "#cc364e",
+    "expl": "#be8078",
+    "layer": "#005f62",
+    "both": "#202022",
+    "neutral": "#a2adae",
+    "layer2": "#00a3a6",
+    "second": "#008f89"
+   }
+  }
+ }
+}

@@ -1,0 +1,223 @@
+checkpoint 1000steps | seeds [0, 1] | 186 test captions | 4 samples per prompt | cache data/phase2
+MDM commit: ef8edce
+Setup done: ['vendor/checkpoints/ckpt_1000steps/humanml_trans_enc_512/args.json']
+vendor/mdm/diffusion/nn.py:150: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_fwd
+vendor/mdm/diffusion/nn.py:160: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_bwd
+TRANS_ENC init
+vendor/mdm/model/mdm.py:83: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.seqTransEncoder = nn.TransformerEncoder(seqTransEncoderLayer,
+EMBED TEXT
+Loading CLIP...
+.venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+Loaded 1000steps: model000475000.pt | layers=8 | steps=1000 | recording steps [0, 200, 400, 599, 799, 999]
+250 prompts (64 curated + 186 test) x 4 = 1000 motions per run. Examples: ['a person stretches their shoulders by moving their bent arms forward and backward.', 'a person stretches his shoulders and arms with help from the opposite hands.', 'he walks then runs forward.']
+seed 0: batch 1/16 saved (130s)
+seed 0: batch 2/16 saved (382s)
+seed 0: batch 3/16 saved (659s)
+seed 0: batch 4/16 saved (3348s)
+seed 0: batch 5/16 saved (3675s)
+seed 0: batch 6/16 saved (3808s)
+seed 0: batch 7/16 saved (3936s)
+seed 0: batch 8/16 saved (4065s)
+seed 0: batch 9/16 saved (4193s)
+seed 0: batch 10/16 saved (4322s)
+seed 0: batch 11/16 saved (4450s)
+seed 0: batch 12/16 saved (4578s)
+seed 0: batch 13/16 saved (4707s)
+seed 0: batch 14/16 saved (4835s)
+seed 0: batch 15/16 saved (4964s)
+seed 0: batch 16/16 saved (5047s)
+seed 0: all 16 batches present in data/phase2/1000steps_seed0
+seed 1: batch 1/16 saved (129s)
+seed 1: batch 2/16 saved (258s)
+seed 1: batch 3/16 saved (387s)
+seed 1: batch 4/16 saved (517s)
+seed 1: batch 5/16 saved (646s)
+seed 1: batch 6/16 saved (775s)
+seed 1: batch 7/16 saved (903s)
+seed 1: batch 8/16 saved (1029s)
+seed 1: batch 9/16 saved (1156s)
+seed 1: batch 10/16 saved (1282s)
+seed 1: batch 11/16 saved (1411s)
+seed 1: batch 12/16 saved (1543s)
+seed 1: batch 13/16 saved (1673s)
+seed 1: batch 14/16 saved (1802s)
+seed 1: batch 15/16 saved (1931s)
+seed 1: batch 16/16 saved (2014s)
+seed 1: all 16 batches present in data/phase2/1000steps_seed1
+seed 0: labels ready (36s)
+seed 1: labels ready (36s)
+
+seed 0
+group              motions  flight %  float>5cm %  XCoM out %  airborne %  gravity m/s2
+curated: flight         56      24.1          8.4        43.2        21.5          3.75
+curated: balance        68       4.9          3.7        30.2         4.3          0.04
+curated: other         132      11.4          3.8        46.4         9.1          0.02
+test captions          744      13.5          5.4        46.6        11.4          0.05
+
+seed 1
+group              motions  flight %  float>5cm %  XCoM out %  airborne %  gravity m/s2
+curated: flight         56      21.3          5.8        38.1        18.8          7.55
+curated: balance        68       5.8          2.7        28.6         5.5         -0.00
+curated: other         132      13.2          4.5        45.8        11.2          0.02
+test captions          744      13.5          5.1        47.3        11.3          0.04
+seed 0: step 0 done (30s)
+seed 0: step 200 done (60s)
+seed 0: step 400 done (90s)
+seed 0: step 599 done (120s)
+seed 0: step 799 done (150s)
+seed 0: step 999 done (180s)
+seed 1: step 0 done (30s)
+seed 1: step 200 done (60s)
+seed 1: step 400 done (90s)
+seed 1: step 599 done (120s)
+seed 1: step 799 done (150s)
+seed 1: step 999 done (182s)
+                           mean                                       std                                   
+step                        0      200    400    599    799    999    0      200    400    599    799    999
+target         source                                                                                       
+balance_margin explicit   0.070  0.556  0.602  0.646  0.706  0.999  0.022  0.011  0.009  0.006  0.008  0.001
+               layer 0    0.095  0.418  0.499  0.547  0.582  0.630  0.003  0.023  0.029  0.039  0.037  0.029
+               layer 1    0.150  0.442  0.514  0.557  0.588  0.630  0.015  0.027  0.035  0.041  0.041  0.033
+               layer 2    0.193  0.481  0.533  0.566  0.593  0.626  0.037  0.020  0.027  0.029  0.029  0.028
+               layer 3    0.222  0.513  0.549  0.570  0.588  0.618  0.030  0.014  0.027  0.032  0.031  0.028
+               layer 4    0.216  0.545  0.574  0.591  0.607  0.641  0.031  0.017  0.022  0.026  0.028  0.027
+               layer 5    0.217  0.569  0.592  0.615  0.633  0.668  0.037  0.012  0.017  0.018  0.020  0.019
+               layer 6    0.166  0.582  0.599  0.619  0.637  0.671  0.058  0.022  0.022  0.021  0.022  0.018
+               layer 7    0.141  0.591  0.608  0.627  0.643  0.679  0.089  0.030  0.028  0.024  0.023  0.021
+               x0 probe   0.174  0.542  0.555  0.563  0.568  0.569  0.091  0.040  0.038  0.038  0.041  0.056
+               x_t probe -0.009  0.186  0.308  0.406  0.492  0.569  0.001  0.002  0.002  0.022  0.041  0.052
+flight_gravity explicit   0.001  0.684  0.694  0.713  0.745  1.000  0.004  0.082  0.079  0.074  0.082  0.000
+               layer 0    0.234  0.502  0.561  0.571  0.556  0.505  0.086  0.053  0.038  0.043  0.027  0.036
+               layer 1    0.247  0.544  0.570  0.576  0.565  0.526  0.098  0.034  0.032  0.043  0.056  0.052
+               layer 2    0.295  0.656  0.632  0.629  0.615  0.578  0.078  0.038  0.026  0.025  0.030  0.022
+               layer 3    0.129  0.674  0.652  0.643  0.639  0.638  0.089  0.038  0.022  0.016  0.013  0.024
+               layer 4   -0.024  0.668  0.652  0.644  0.637  0.634  0.024  0.054  0.034  0.008  0.015  0.008
+               layer 5    0.015  0.672  0.658  0.632  0.630  0.626  0.046  0.049  0.027  0.005  0.007  0.008
+               layer 6   -0.036  0.669  0.670  0.659  0.647  0.636  0.174  0.024  0.020  0.011  0.011  0.016
+               layer 7   -0.615  0.638  0.641  0.646  0.625  0.618  0.133  0.012  0.001  0.005  0.039  0.049
+               x0 probe  -0.193  0.443  0.429  0.425  0.401  0.289  0.284  0.024  0.010  0.035  0.014  0.137
+               x_t probe -0.010  0.198  0.337  0.418  0.444  0.292  0.006  0.018  0.017  0.035  0.055  0.100
+in_flight      explicit   0.677  0.787  0.802  0.820  0.849  1.000  0.026  0.003  0.005  0.007  0.004  0.000
+               layer 0    0.760  0.887  0.907  0.921  0.939  0.972  0.006  0.002  0.002  0.001  0.001  0.000
+               layer 1    0.771  0.895  0.908  0.923  0.939  0.969  0.003  0.004  0.002  0.000  0.001  0.002
+               layer 2    0.763  0.898  0.915  0.929  0.944  0.971  0.009  0.003  0.002  0.002  0.003  0.002
+               layer 3    0.775  0.911  0.924  0.936  0.949  0.972  0.006  0.001  0.002  0.003  0.002  0.001
+               layer 4    0.776  0.913  0.928  0.940  0.950  0.974  0.014  0.001  0.001  0.002  0.003  0.003
+               layer 5    0.758  0.924  0.936  0.946  0.957  0.977  0.016  0.003  0.002  0.003  0.003  0.001
+               layer 6    0.727  0.925  0.940  0.951  0.963  0.981  0.012  0.002  0.001  0.002  0.004  0.001
+               layer 7    0.723  0.924  0.938  0.950  0.962  0.980  0.001  0.001  0.004  0.005  0.005  0.002
+               x0 probe   0.746  0.892  0.899  0.903  0.912  0.942  0.023  0.001  0.002  0.003  0.006  0.007
+               x_t probe  0.498  0.754  0.838  0.876  0.897  0.936  0.013  0.008  0.008  0.004  0.001  0.008
+lowest_foot    explicit   0.300  0.864  0.886  0.905  0.931  1.000  0.017  0.004  0.003  0.004  0.006  0.000
+               layer 0    0.105  0.696  0.764  0.797  0.830  0.887  0.004  0.001  0.002  0.002  0.007  0.007
+               layer 1    0.201  0.708  0.761  0.791  0.826  0.885  0.016  0.001  0.006  0.001  0.004  0.002
+               layer 2    0.202  0.723  0.768  0.795  0.823  0.867  0.035  0.006  0.002  0.005  0.007  0.005
+               layer 3    0.206  0.746  0.774  0.794  0.817  0.855  0.002  0.002  0.005  0.002  0.004  0.002
+               layer 4    0.219  0.754  0.782  0.803  0.823  0.857  0.018  0.007  0.000  0.002  0.003  0.001
+               layer 5    0.179  0.789  0.806  0.825  0.847  0.882  0.022  0.001  0.001  0.001  0.004  0.001
+               layer 6    0.114  0.811  0.829  0.847  0.866  0.898  0.020  0.003  0.001  0.001  0.001  0.005
+               layer 7    0.107  0.813  0.833  0.848  0.869  0.909  0.007  0.006  0.006  0.011  0.011  0.017
+               x0 probe   0.202  0.771  0.791  0.805  0.825  0.879  0.009  0.011  0.016  0.010  0.007  0.014
+               x_t probe -0.010  0.294  0.562  0.702  0.785  0.876  0.003  0.010  0.015  0.012  0.012  0.012
+xcom_margin    explicit   0.014  0.659  0.706  0.750  0.795  0.999  0.006  0.006  0.001  0.006  0.010  0.000
+               layer 0    0.123  0.498  0.588  0.636  0.672  0.707  0.002  0.006  0.007  0.011  0.012  0.012
+               layer 1    0.174  0.527  0.608  0.654  0.688  0.718  0.017  0.007  0.008  0.011  0.012  0.007
+               layer 2    0.190  0.606  0.644  0.671  0.692  0.717  0.018  0.005  0.004  0.005  0.005  0.003
+               layer 3    0.208  0.635  0.661  0.679  0.697  0.716  0.019  0.001  0.002  0.004  0.005  0.003
+               layer 4    0.202  0.664  0.682  0.694  0.709  0.726  0.020  0.003  0.006  0.006  0.005  0.004
+               layer 5    0.210  0.676  0.697  0.713  0.727  0.737  0.037  0.001  0.003  0.004  0.005  0.008
+               layer 6    0.140  0.693  0.713  0.729  0.741  0.754  0.059  0.003  0.004  0.004  0.003  0.006
+               layer 7    0.125  0.713  0.732  0.746  0.758  0.775  0.093  0.014  0.011  0.009  0.007  0.008
+               x0 probe   0.160  0.565  0.573  0.572  0.573  0.566  0.085  0.023  0.020  0.021  0.021  0.035
+               x_t probe -0.008  0.173  0.287  0.384  0.475  0.554  0.001  0.001  0.005  0.010  0.021  0.035
+scripts/run_phase2_local.py:646: RuntimeWarning: Mean of empty slice
+  return {"gravity error": np.nanmean(grav, 1), "float rate": np.nanmean(flt, 1),
+scripts/run_phase2_local.py:647: RuntimeWarning: Mean of empty slice
+  "off-balance rate (exploratory)": np.nanmean(bal, 1)}
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase2_local.py:646: RuntimeWarning: Mean of empty slice
+  return {"gravity error": np.nanmean(grav, 1), "float rate": np.nanmean(flt, 1),
+scripts/run_phase2_local.py:647: RuntimeWarning: Mean of empty slice
+  "off-balance rate (exploratory)": np.nanmean(bal, 1)}
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+scripts/run_phase2_local.py:656: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return spearmanr(rp[keep], ry[keep]).correlation if keep.sum() >= 10 else np.nan
+Layer fixed on the first run: layer 4 (the other runs are an honest test of it)
+                                                   spearman                                           within_prompt                                   
+step                                                   -1      0      200    400    599    799    999           0      200    400    599    799    999
+failure                        source                                                                                                                 
+float rate                     explicit (x0 guess)      NaN  0.298  0.618  0.615  0.692  0.712  1.000         0.028  0.265  0.378  0.480  0.541  1.000
+                               layer 4                  NaN  0.226  0.404  0.434  0.486  0.513  0.576        -0.077  0.191  0.230  0.304  0.368  0.514
+                               text only              0.281    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN  0.359  0.445  0.440  0.434  0.436  0.437        -0.018  0.180  0.195  0.214  0.207  0.211
+gravity error                  explicit (x0 guess)      NaN  0.075  0.693  0.717  0.751  0.761  1.000         0.018  0.320  0.413  0.381  0.417  1.000
+                               layer 4                  NaN  0.456  0.702  0.705  0.686  0.685  0.735        -0.171  0.184  0.089  0.170  0.186  0.290
+                               text only              0.612    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN  0.622  0.651  0.674  0.673  0.680  0.688         0.017  0.112  0.092  0.076  0.075  0.186
+off-balance rate (exploratory) explicit (x0 guess)      NaN  0.143  0.891  0.900  0.903  0.915  1.000        -0.004  0.634  0.662  0.669  0.721  0.999
+                               layer 4                  NaN  0.498  0.848  0.853  0.857  0.871  0.884        -0.079  0.546  0.546  0.555  0.604  0.657
+                               text only              0.459    NaN    NaN    NaN    NaN    NaN    NaN           NaN    NaN    NaN    NaN    NaN    NaN
+                               x0 probe                 NaN  0.634  0.828  0.828  0.830  0.833  0.840         0.012  0.502  0.497  0.506  0.519  0.538
+progress                   0.000000  0.200200  0.204082  0.400400  0.408163  0.591837  0.599600  0.795918  0.799800  1.000000
+target         checkpoint                                                                                                    
+balance_margin 1000steps      0.222     0.591       NaN     0.608       NaN       NaN     0.627       NaN     0.643     0.679
+               50steps        0.399       NaN     0.759       NaN     0.778     0.785       NaN     0.789       NaN     0.788
+flight_gravity 1000steps      0.295     0.680       NaN     0.670       NaN       NaN     0.659       NaN     0.652     0.654
+               50steps        0.495       NaN     0.799       NaN     0.808     0.813       NaN     0.814       NaN     0.813
+in_flight      1000steps      0.779     0.925       NaN     0.940       NaN       NaN     0.951       NaN     0.963     0.981
+               50steps        0.877       NaN     0.973       NaN     0.979     0.981       NaN     0.984       NaN     0.985
+lowest_foot    1000steps      0.229     0.815       NaN     0.834       NaN       NaN     0.851       NaN     0.871     0.909
+               50steps        0.308       NaN     0.868       NaN     0.891     0.910       NaN     0.930       NaN     0.942
+xcom_margin    1000steps      0.215     0.713       NaN     0.732       NaN       NaN     0.746       NaN     0.758     0.775
+               50steps        0.468       NaN     0.838       NaN     0.854     0.859       NaN     0.863       NaN     0.861
+{
+  "device": "mps",
+  "torch": "2.15.0",
+  "checkpoint": "1000steps",
+  "seeds": [
+    0,
+    1
+  ],
+  "n_prompts": 250,
+  "n_curated": 64,
+  "samples_per_prompt": 4,
+  "n_motions_per_run": 1000,
+  "record_steps": [
+    0,
+    200,
+    400,
+    599,
+    799,
+    999
+  ],
+  "frame_stride": 4,
+  "fixed_layer": "layer 4",
+  "runtime_s": 7523,
+  "motions_with_gravity_fit": {
+    "0": {
+      "curated: flight": 40,
+      "curated: balance": 8,
+      "curated: other": 26,
+      "test captions": 196
+    },
+    "1": {
+      "curated: flight": 43,
+      "curated: balance": 9,
+      "curated: other": 28,
+      "test captions": 195
+    }
+  }
+}
+Tables and figures in results/phase2/1000steps | cached arrays and per-run CSVs in data/phase2

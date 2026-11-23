@@ -1,0 +1,16 @@
+{
+  "_note": "The figures' colors by role (chosen November 17: IBM Carbon categorical colors for roles, CARTO Sunset for ordered quantities). scripts/make_web_figures.py writes palette.css from this file and reads the body colors; change colors here only. Scores in paper/figures_web/study/.",
+  "est": "#009d9a",
+  "expl": "#a56eff",
+  "layer": "#002d9c",
+  "layer2": "#1192e8",
+  "both": "#161616",
+  "second": "#ee538b",
+  "neutral": "#c6c6c6",
+  "dim": "#8d8d8d",
+  "mark": "#fa4d56",
+  "ok": "#198038",
+  "body": "#1f4e6b",
+  "body_fail": "#fa4d56",
+  "ramp0": "#fac484", "ramp1": "#f8a07e", "ramp2": "#eb7f86", "ramp3": "#ce6693", "ramp4": "#a059a0", "ramp5": "#5c53a5"
+}

@@ -1,0 +1,8 @@
+{
+ "xcom_margin": 3,
+ "balance_margin": 3,
+ "in_flight": 6,
+ "flight_gravity": 6,
+ "float_vs_fall": 6,
+ "fall_gravity": 6
+}

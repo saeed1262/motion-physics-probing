@@ -1,0 +1,70 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gain per layer</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_layers.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 344, svg = setup(W, H);
+// One row per model family. Data set by marker (circle: main data, diamond: jump prompts); in the MDM row, filled with a
+// solid line is the 50-step model and open with a dashed line the 1000-step model. Color by the interval, as in
+// Figure 4: deep blue = the layer adds, teal = the estimate alone is better, gray = covers zero.
+const STY = { "phase2 50steps": [d3.symbolCircle, null, -0.21], "phase2 1000steps": [d3.symbolCircle, "3 2", -0.07],
+              "jump_heavy 50steps": [d3.symbolDiamond, null, 0.07], "jump_heavy 1000steps": [d3.symbolDiamond, "3 2", 0.21],
+              "phase2 motiondiffuse": [d3.symbolCircle, null, -0.1], "jump_heavy motiondiffuse": [d3.symbolDiamond, null, 0.1] };
+const ROWS = [["MDM: layers add about 0.01 or less to balance, flight and floating, and 0.06 to 0.08 to the fall rate", (s) => s.ck !== "motiondiffuse", "abcd"],
+              ["MotionDiffuse: no layer adds to balance or flight; single layers add up to 0.025 to the fall rate", (s) => s.ck === "motiondiffuse", "efgh"]];
+const sig = (q) => (q[2] > 0 ? col("layer") : q[3] < 0 ? col("est") : col("dim"));
+const pw = [148, 148, 148, 180], px = [0, 150, 300, 444], RH = 154, PH = 136;
+const LAY = ["0", "1", "2", "3", "4", "5", "6", "7", "all"];
+ROWS.forEach(([rtitle, keep, letters], r) => {
+  const y0 = r * RH;
+  svg.append("text").attr("class", "title").attr("x", 0).attr("y", y0 + 10).text(rtitle);
+  if (!r) svg.append("text").attr("class", "subtitle").attr("x", 0).attr("y", 22)
+    .text("gain from adding one layer (or all eight) to the tuned readout of the estimate, with fallback; 95% intervals");
+  FIG.panels.forEach((P, i) => {
+    const series = P.series.filter(keep);
+    const p = panel(svg, px[i], y0 + (r ? 16 : 28), pw[i], PH - (r ? 0 : 12), { t: 18, r: 4, b: 26, l: 34 });
+    const tt = p.g.append("text").attr("x", 0).attr("y", 10).style("fill", col("ink")).style("font-weight", 650);
+    tt.append("tspan").text(`(${letters[i]}) `); tt.append("tspan").text(P.name);
+    const x = d3.scalePoint().domain(LAY).range([4, p.w - 4]);
+    const vals = series.flatMap((s) => s.pts.flatMap((q) => [q[2], q[3]])).concat([0]);
+    const y = d3.scaleLinear().domain(d3.extent(vals)).nice().range([p.h, 0]);
+    const gy = p.inner.append("g").attr("class", "grid");
+    gy.selectAll("line").data(y.ticks(4)).join("line").attr("x1", 0).attr("x2", p.w).attr("y1", (d) => y(d)).attr("y2", (d) => y(d));
+    p.inner.append("g").attr("class", "axis").attr("transform", `translate(0,${p.h})`).call(d3.axisBottom(x).tickSize(3).tickSizeOuter(0));
+    p.inner.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(4).tickSize(0).tickPadding(4).tickFormat((d) => (d === 0 ? "0" : d3.format("+.3~f")(d))))
+      .call((s) => s.select(".domain").remove());
+    p.inner.append("line").attr("class", "zero").attr("x1", 0).attr("x2", p.w).attr("y1", y(0)).attr("y2", y(0));
+    p.inner.append("text").attr("class", "axis-label").attr("x", p.w / 2).attr("y", p.h + 20).attr("text-anchor", "middle").text("layer");
+    series.forEach((s) => {
+      const [sym, dash, off] = STY[`${s.tag} ${s.ck}`], X = (l) => x(l) + off * x.step();
+      p.inner.append("path").attr("d", d3.line().x((q) => X(q[0])).y((q) => y(q[1]))(s.pts.slice(0, 8))).attr("fill", "none")
+        .attr("stroke", col("neutral")).attr("stroke-width", 1).attr("stroke-dasharray", dash);
+      s.pts.forEach((q) => {
+        const c = sig(q);
+        p.inner.append("line").attr("x1", X(q[0])).attr("x2", X(q[0])).attr("y1", y(q[2])).attr("y2", y(q[3])).attr("stroke", c).attr("stroke-width", 0.9);
+        p.inner.append("path").attr("d", d3.symbol(sym, 20)()).attr("transform", `translate(${X(q[0])},${y(q[1])})`)
+          .attr("fill", dash ? "#fff" : c).attr("fill-opacity", dash ? 1 : 0.45).attr("stroke", c).attr("stroke-width", 0.9);
+      });
+    });
+  });
+});
+// key
+[["main data", d3.symbolCircle, null], ["jump prompts", d3.symbolDiamond, null], ["MDM 1000-step (open, dashed)", d3.symbolCircle, "3 2"]]
+  .forEach(([lab, sym, dash], i) => {
+    const g = svg.append("g").attr("transform", `translate(${8 + i * 110},${H - 17})`);
+    g.append("line").attr("x1", 0).attr("x2", 16).attr("stroke", col("neutral")).attr("stroke-dasharray", dash);
+    g.append("path").attr("d", d3.symbol(sym, 20)()).attr("transform", "translate(8,0)").attr("fill", dash ? "#fff" : col("dim")).attr("stroke", col("dim"));
+    g.append("text").attr("x", 20).attr("y", 3).text(lab);
+  });
+// color key: only the verdicts that actually occur in the data
+const used = new Set(FIG.panels.flatMap((P) => P.series.flatMap((s) => s.pts.map(sig))));
+let kx2 = 8;
+[["interval above zero: the layer adds", col("layer")], ["interval below zero: the estimate alone is better", col("est")], ["covers zero", col("dim")]]
+  .filter(([, c]) => used.has(c)).forEach(([lab, c]) => {
+    const g = svg.append("g").attr("transform", `translate(${kx2},${H - 4})`);
+    kx2 += 34 + lab.length * 5.1;
+    g.append("line").attr("x1", 0).attr("x2", 12).attr("stroke", c).attr("stroke-width", 2);
+    g.append("text").attr("x", 16).attr("y", 3).style("fill", c === col("dim") ? col("muted") : c).style("font-weight", 600).text(lab);
+  });
+</script></body></html>

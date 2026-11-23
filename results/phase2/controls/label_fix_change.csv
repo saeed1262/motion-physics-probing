@@ -1,0 +1,31 @@
+checkpoint,target,features,max_abs_change_in_score
+50steps,xcom_margin,everything the guess shows,0.00363
+50steps,xcom_margin,everything the guess shows + layer 7,0.00898
+50steps,xcom_margin,explicit,0.00000
+50steps,xcom_margin,guess features,0.00000
+50steps,xcom_margin,layer 7,0.00000
+50steps,balance_margin,everything the guess shows,0.00559
+50steps,balance_margin,everything the guess shows + layer 7,0.01010
+50steps,balance_margin,explicit,0.00000
+50steps,balance_margin,guess features,0.00000
+50steps,balance_margin,layer 7,0.00000
+50steps,in_flight,everything the guess shows,0.00178
+50steps,in_flight,everything the guess shows + layer 6,0.00760
+50steps,in_flight,explicit,0.00000
+50steps,in_flight,guess features,0.00000
+50steps,in_flight,layer 6,0.00000
+1000steps,xcom_margin,everything the guess shows,0.00643
+1000steps,xcom_margin,everything the guess shows + layer 7,0.00343
+1000steps,xcom_margin,explicit,0.00000
+1000steps,xcom_margin,guess features,0.00000
+1000steps,xcom_margin,layer 7,0.00000
+1000steps,balance_margin,everything the guess shows,0.00502
+1000steps,balance_margin,everything the guess shows + layer 7,0.00435
+1000steps,balance_margin,explicit,0.00000
+1000steps,balance_margin,guess features,0.00000
+1000steps,balance_margin,layer 7,0.00000
+1000steps,in_flight,everything the guess shows,0.01245
+1000steps,in_flight,everything the guess shows + layer 6,0.00520
+1000steps,in_flight,explicit,0.00000
+1000steps,in_flight,guess features,0.00000
+1000steps,in_flight,layer 6,0.00000

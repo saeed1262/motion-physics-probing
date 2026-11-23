@@ -1,0 +1,16 @@
+checkpoint,tag,target,layer_spec,refit_seed,comparison,measure,observed,ci_low,ci_high,share_above_zero
+motiondiffuse,jump_heavy,fall_gravity,default,0,standard: layer ridge - explicit,score,-0.22666056304825088,-0.2818144465663265,-0.17517215394616012,0.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,standard: layer ridge - explicit,within_prompt_r,-0.2103178887310344,-0.2420035104375348,-0.17462555494089307,0.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,standard: layer ridge - explicit,within_prompt_frame_r,-0.21839305047871993,-0.25697373852928035,-0.17625045337562653,0.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,fair: estimate tuned - layer tuned,score,0.22513449479622938,0.18092258289067242,0.2700574917970954,1.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,fair: estimate tuned - layer tuned,within_prompt_r,0.20815887107078135,0.1778564840437935,0.23590533102037142,1.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,fair: estimate tuned - layer tuned,within_prompt_frame_r,0.21626015820581423,0.17857553721690558,0.25134928931688744,1.0
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): tuned,score,0.021764361909858865,0.0062553054161794104,0.038580851083180226,0.998
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): tuned,within_prompt_r,0.01252229949777739,0.0019521034120385695,0.02383562993504396,0.99
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): tuned,within_prompt_frame_r,0.01464585907502114,0.0026149733628004633,0.027641998971834374,0.992
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): fallback,score,0.011598205251044713,0.0029629054742109475,0.02172798971472895,0.996
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): fallback,within_prompt_r,0.004276917668912472,-0.0005300790100170954,0.008942138391835873,0.964
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): fallback,within_prompt_frame_r,0.004094237541832579,-0.0017835606774607156,0.009375083829576289,0.913
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): ridge only,score,0.015625504268585222,0.0006651705786223095,0.03229963292128765,0.981
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): ridge only,within_prompt_r,0.011005578150485862,0.0008498665237666014,0.021964434875208147,0.985
+motiondiffuse,jump_heavy,fall_gravity,default,0,conditional gain (layer): ridge only,within_prompt_frame_r,0.014483275331269918,0.003159359484648228,0.027328287060825254,0.994

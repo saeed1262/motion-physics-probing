@@ -1,0 +1,10 @@
+checkpoint,target,metric,seed,step,features,model,score,within_prompt_r
+50steps,flight_gravity,r2,0,10,explicit,linear,0.7973213851917327,0.49814848080203844
+50steps,flight_gravity,r2,0,10,guess features,linear,0.6036291810652601,0.1928431238447023
+50steps,flight_gravity,r2,0,10,guess features,mlp,0.7020415244985676,0.2977753947952093
+50steps,flight_gravity,r2,0,10,everything the guess shows,linear,0.7585458804778519,0.3408859262113633
+50steps,flight_gravity,r2,0,10,everything the guess shows,mlp,0.7357285904132329,0.31430949821808585
+50steps,flight_gravity,r2,0,10,layer 5,linear,0.8627068190751801,0.36641087696361024
+50steps,flight_gravity,r2,0,10,layer 5,mlp,0.8819873094454386,0.43910952792253677
+50steps,flight_gravity,r2,0,10,everything the guess shows + layer 5,linear,0.8511835093741373,0.40571116897487
+50steps,flight_gravity,r2,0,10,everything the guess shows + layer 5,mlp,0.835167048796862,0.41485102392867235

@@ -1,0 +1,166 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp config 0,sweep,0,3,87086,250,0.8183724709341975,0.8606043697996085,0.8248485581924508
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp config 1,sweep,0,3,87086,250,0.8161889709142526,0.86295684869037,0.8282460436966779
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp config 2,sweep,0,3,87086,250,0.819951048642892,0.8606142505611681,0.8243018168353599
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp config 3,sweep,0,3,87086,250,0.8118680596908276,0.856845361485318,0.819618684445766
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp config 4,sweep,0,3,87086,250,0.8212215209106788,0.864155112795422,0.8290058293673064
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp config 0,sweep,0,3,87086,250,0.7896779531535355,0.8412339309987739,0.8012424631025487
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp config 1,sweep,0,3,87086,250,0.7944743548618675,0.8440438369860512,0.8049730295411899
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp config 2,sweep,0,3,87086,250,0.7871311457138146,0.8376032646464876,0.7963755309875408
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp config 3,sweep,0,3,87086,250,0.7762846404406598,0.8221480952432242,0.7754373692485522
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp config 4,sweep,0,3,87086,250,0.8006438398572787,0.8460329839040611,0.8065193255789485
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp config 0,sweep,0,3,87086,250,0.7938115783551214,0.8411617921506194,0.8009024964411872
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp config 1,sweep,0,3,87086,250,0.7942318119975502,0.844558816413884,0.8046106097489589
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp config 2,sweep,0,3,87086,250,0.785806280108008,0.836985950778477,0.7967768642670394
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp config 3,sweep,0,3,87086,250,0.7771882999114662,0.8240299015447587,0.7779341337897582
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp config 4,sweep,0,3,87086,250,0.8053962849302468,0.8488748440082389,0.810502284336148
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp config 0,sweep,0,3,87086,250,0.7949358007008575,0.8439524771324154,0.8046805357613842
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp config 1,sweep,0,3,87086,250,0.7962617051190333,0.8485055606286231,0.8106378648767655
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp config 2,sweep,0,3,87086,250,0.7940739057620261,0.8444203909963013,0.8061022107535053
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp config 3,sweep,0,3,87086,250,0.7794512731986873,0.8283126884746668,0.7837653479609351
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp config 4,sweep,0,3,87086,250,0.8049034632421886,0.8515352062274507,0.8142162739306383
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp config 0,sweep,0,3,87086,250,0.7970306377740071,0.8488905834968343,0.8107086596629492
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp config 1,sweep,0,3,87086,250,0.7985791902309565,0.8488826950395266,0.8113000721868225
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp config 2,sweep,0,3,87086,250,0.7928435923122588,0.8458143714829073,0.8078498808767355
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp config 3,sweep,0,3,87086,250,0.7813447790192867,0.8303457197451208,0.7858357831835234
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp config 4,sweep,0,3,87086,250,0.8084981577728989,0.8543365366324198,0.8180078055159592
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp config 0,sweep,0,3,87086,250,0.8009255991155295,0.8508717894029707,0.8138668714409548
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp config 1,sweep,0,3,87086,250,0.8011162548957913,0.8540451258997954,0.8179950923211237
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp config 2,sweep,0,3,87086,250,0.7958488009959912,0.8480927315419584,0.8103348586570852
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp config 3,sweep,0,3,87086,250,0.7847551742178834,0.8326497282212483,0.7897743194709712
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp config 4,sweep,0,3,87086,250,0.8108138090533249,0.8565962236783979,0.8209248605858527
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp config 0,sweep,0,3,87086,250,0.8070418044560975,0.8530679178537476,0.8155589120421398
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp config 1,sweep,0,3,87086,250,0.8030505163932706,0.8532459583117948,0.8161698324920593
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp config 2,sweep,0,3,87086,250,0.8009840813288643,0.8502164482981472,0.8123364549177724
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp config 3,sweep,0,3,87086,250,0.786002290303627,0.8350154631024423,0.7925246461165489
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp config 4,sweep,0,3,87086,250,0.8139326245099578,0.8592372120696772,0.8235713411419437
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp config 0,sweep,0,3,87086,250,0.8032103267373826,0.8527139650730063,0.8154574573511371
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp config 1,sweep,0,3,87086,250,0.8033962668896277,0.8550767039171667,0.8187362084886438
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp config 2,sweep,0,3,87086,250,0.7979936837859497,0.8507696805784357,0.8139353258181055
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp config 3,sweep,0,3,87086,250,0.7837201818544731,0.8359519840812153,0.7934859407897555
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp config 4,sweep,0,3,87086,250,0.8155188993376329,0.8605021970314728,0.8248554088243165
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp config 0,sweep,0,3,87086,250,0.8035893540538988,0.8539086043315297,0.8167808904434117
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp config 1,sweep,0,3,87086,250,0.8018634136002198,0.8537873342916732,0.817186961759472
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp config 2,sweep,0,3,87086,250,0.797035311339912,0.849610343881142,0.8119122575328079
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp config 3,sweep,0,3,87086,250,0.7824784576178514,0.8345091899041783,0.7922678337887831
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp config 4,sweep,0,3,87086,250,0.8124821513367355,0.8577543434518325,0.8210237336210944
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp config 0,sweep,0,3,87086,250,0.7170255228147739,0.7987290887543957,0.7487517805990569
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp config 1,sweep,0,3,87086,250,0.712826376636906,0.7998185774597416,0.7518473073114774
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp config 2,sweep,0,3,87086,250,0.7060234615349334,0.7931790135842103,0.7435559714267329
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp config 3,sweep,0,3,87086,250,0.6684781086877247,0.7573477235702271,0.6979880956775901
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp config 4,sweep,0,3,87086,250,0.7127846545027497,0.7985639805941002,0.7512573226154422
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp config 0,sweep,0,3,87086,250,0.7658689670764068,0.8287100939864499,0.7851352352814892
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp config 1,sweep,0,3,87086,250,0.750143914799468,0.8244611256098553,0.7834480212217657
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp config 2,sweep,0,3,87086,250,0.7554750998997477,0.821991687128305,0.7787234092419864
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp config 3,sweep,0,3,87086,250,0.7240634611440173,0.796172768294596,0.746024184900008
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp config 4,sweep,0,3,87086,250,0.761597046445237,0.8289007758770752,0.7875305463810713
+motiondiffuse,phase2,in_flight,auc,estimate | mlp config 0,sweep,0,3,90000,250,0.9435379090472517,0.695703440703413,0.6201034035760705
+motiondiffuse,phase2,in_flight,auc,estimate | mlp config 1,sweep,0,3,90000,250,0.9536760662481322,0.7099614295914474,0.6366986922262015
+motiondiffuse,phase2,in_flight,auc,estimate | mlp config 2,sweep,0,3,90000,250,0.9511389911732343,0.7029910302060489,0.627919907139725
+motiondiffuse,phase2,in_flight,auc,estimate | mlp config 3,sweep,0,3,90000,250,0.9638657782898943,0.6976382759094635,0.6272568980189861
+motiondiffuse,phase2,in_flight,auc,estimate | mlp config 4,sweep,0,3,90000,250,0.9481835940587826,0.7111416161149224,0.637966216856868
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp config 0,sweep,0,3,90000,250,0.9205153073230445,0.6799031909458804,0.604313975275591
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp config 1,sweep,0,3,90000,250,0.9287053728679533,0.6869247884257691,0.6131115126432486
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp config 2,sweep,0,3,90000,250,0.9501952377056068,0.6658046651543147,0.5867821757351521
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp config 3,sweep,0,3,90000,250,0.9489065617431541,0.643674451646973,0.5677291438642424
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp config 4,sweep,0,3,90000,250,0.9249175540249257,0.6995825316876625,0.6238496122989322
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp config 0,sweep,0,3,90000,250,0.9363150809624976,0.6855243564467809,0.6115219819161932
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp config 1,sweep,0,3,90000,250,0.9330029533519442,0.6838009017190749,0.6081982445677167
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp config 2,sweep,0,3,90000,250,0.938800445542901,0.6714255282221087,0.5966554172597079
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp config 3,sweep,0,3,90000,250,0.9464395564078525,0.6452378241128223,0.5691514892949601
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp config 4,sweep,0,3,90000,250,0.9302191909445189,0.6974418334598553,0.6168735778344063
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp config 0,sweep,0,3,90000,250,0.93938740940546,0.6834148283631701,0.6049028280448433
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp config 1,sweep,0,3,90000,250,0.9354244802481554,0.6902055478446545,0.6178435988148685
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp config 2,sweep,0,3,90000,250,0.9394255898574436,0.6775683222889772,0.6033792028485097
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp config 3,sweep,0,3,90000,250,0.9504453080413368,0.6479300878684651,0.5717085085578075
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp config 4,sweep,0,3,90000,250,0.9389148706512174,0.7062779090228191,0.6319166597807226
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp config 0,sweep,0,3,90000,250,0.9308580465690705,0.6925078772822518,0.6191118035823542
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp config 1,sweep,0,3,90000,250,0.9336127273648082,0.6894225034311201,0.617080261321805
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp config 2,sweep,0,3,90000,250,0.9401757910131389,0.6799494740667715,0.6070929082456291
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp config 3,sweep,0,3,90000,250,0.9595289612737121,0.6595232934928337,0.5883825973736829
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp config 4,sweep,0,3,90000,250,0.935589683899589,0.7039806479700187,0.6306751549102445
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp config 0,sweep,0,3,90000,250,0.9411756231279105,0.6918893470050584,0.6185150356328099
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp config 1,sweep,0,3,90000,250,0.9381103306223019,0.6857074524567472,0.6148929918526451
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp config 2,sweep,0,3,90000,250,0.9418766791182726,0.679055612020741,0.6061540818158982
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp config 3,sweep,0,3,90000,250,0.9598047912971929,0.662030023388087,0.5889597713009289
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp config 4,sweep,0,3,90000,250,0.9320957055822396,0.6985542013426231,0.6210962944961997
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp config 0,sweep,0,3,90000,250,0.9404730835024809,0.6873636819605464,0.6134350310247734
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp config 1,sweep,0,3,90000,250,0.9458712670382189,0.6868497061348603,0.6164901395769685
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp config 2,sweep,0,3,90000,250,0.9518544933950931,0.6766482398070403,0.6056066715747808
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp config 3,sweep,0,3,90000,250,0.9641309686993433,0.6632015538044354,0.5911545244202507
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp config 4,sweep,0,3,90000,250,0.9354116989192247,0.7048489640439805,0.6291610323005445
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp config 0,sweep,0,3,90000,250,0.9344973068457278,0.6965430819441746,0.62528275242371
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp config 1,sweep,0,3,90000,250,0.948912573125082,0.6973385986896989,0.6227602549067096
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp config 2,sweep,0,3,90000,250,0.9553092430614466,0.6848848194975271,0.6111547080662102
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp config 3,sweep,0,3,90000,250,0.9614905396256188,0.6616178370925377,0.5884429850891372
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp config 4,sweep,0,3,90000,250,0.938865461465832,0.7071508499906529,0.6344095980119975
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp config 0,sweep,0,3,90000,250,0.9348948028259634,0.698268242544945,0.6222537955377766
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp config 1,sweep,0,3,90000,250,0.9502610850946716,0.7034330989409275,0.6296404076806132
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp config 2,sweep,0,3,90000,250,0.9474801756800459,0.6806975468668963,0.6041842714371161
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp config 3,sweep,0,3,90000,250,0.9648729872037283,0.6624061316104743,0.5917528776290276
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp config 4,sweep,0,3,90000,250,0.9412414626357798,0.7082691123143056,0.632552451127826
+motiondiffuse,phase2,in_flight,auc,layers all | mlp config 0,sweep,0,3,90000,250,0.9187337019830869,0.5879614512706437,0.5516734878498394
+motiondiffuse,phase2,in_flight,auc,layers all | mlp config 1,sweep,0,3,90000,250,0.9350850942932246,0.5896895426878551,0.5586788897642303
+motiondiffuse,phase2,in_flight,auc,layers all | mlp config 2,sweep,0,3,90000,250,0.920360556107248,0.5682834463895646,0.5381963190712471
+motiondiffuse,phase2,in_flight,auc,layers all | mlp config 3,sweep,0,3,90000,250,0.9462914411587339,0.5373910913543852,0.5039630190733514
+motiondiffuse,phase2,in_flight,auc,layers all | mlp config 4,sweep,0,3,90000,250,0.9271232287663134,0.5967910466407188,0.5555153700863685
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp config 0,sweep,0,3,90000,250,0.926605771137867,0.683387880661744,0.6090913007524271
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp config 1,sweep,0,3,90000,250,0.93905463577362,0.672906710026734,0.5961045277659699
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp config 2,sweep,0,3,90000,250,0.9302531529865689,0.6524737206625352,0.5699286040794491
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp config 3,sweep,0,3,90000,250,0.9587333545799858,0.6262434021848692,0.5513566850230404
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp config 4,sweep,0,3,90000,250,0.93472592653739,0.6878167798356517,0.6121743223783993
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp config 0,sweep,0,3,2107,50,0.9353024130060184,0.00010958441150022218,0.00011156111242268151
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp config 1,sweep,0,3,2107,50,0.9272039681499635,0.00010158730199391944,9.991893620075365e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp config 2,sweep,0,3,2107,50,0.9113239358383325,4.1841280887117075e-05,-9.492440124418403e-07
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp config 3,sweep,0,3,2107,50,0.9489311930463492,1.6633102098569445e-05,2.806218717999354e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp config 4,sweep,0,3,2107,50,0.936876920459013,5.309135821512203e-06,-2.878931304158606e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp config 0,sweep,0,3,2107,50,0.943847783269538,2.931766325247911e-05,2.0882030653106912e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp config 1,sweep,0,3,2107,50,0.9439093944307423,3.0698924251226026e-05,2.0256535920641914e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp config 2,sweep,0,3,2107,50,0.9352114631966219,3.0307344559493204e-05,2.3992210919988936e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp config 3,sweep,0,3,2107,50,0.9312321645467863,0.00011129269685890995,7.367497905746982e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp config 4,sweep,0,3,2107,50,0.914490553933237,3.7623625524126625e-05,3.80179499346637e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp config 0,sweep,0,3,2107,50,0.9628660729828213,2.222049301677669e-05,1.221633055934118e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp config 1,sweep,0,3,2107,50,0.9636904889970289,2.5513801680864398e-05,1.661600199839928e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp config 2,sweep,0,3,2107,50,0.9647779748900289,3.439832926650847e-05,3.0300722890293725e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp config 3,sweep,0,3,2107,50,0.9505526423364516,9.029121697108691e-05,4.725905051413775e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp config 4,sweep,0,3,2107,50,0.9343205462465113,3.671996359789068e-05,3.827431196503384e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp config 0,sweep,0,3,2107,50,0.9643916826888285,2.1344341322599773e-05,4.089988366703982e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp config 1,sweep,0,3,2107,50,0.9639242202276288,2.1536637922506454e-05,4.900128003722422e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp config 2,sweep,0,3,2107,50,0.958964032773226,3.027638453858236e-05,2.1166796107928235e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp config 3,sweep,0,3,2107,50,0.9458662822651784,9.390902383882357e-05,4.0414981356952816e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp config 4,sweep,0,3,2107,50,0.9332760903708599,3.497019390736297e-05,3.2886404484873855e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp config 0,sweep,0,3,2107,50,0.9684736666073375,2.3846907544513534e-05,5.291302497408341e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp config 1,sweep,0,3,2107,50,0.9694291285834714,3.0117668433852807e-05,1.100381183942144e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp config 2,sweep,0,3,2107,50,0.9628054397765566,3.1994537529613986e-05,1.7585989221288886e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp config 3,sweep,0,3,2107,50,0.953339813914734,7.297360786040369e-05,3.1280369670086025e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp config 4,sweep,0,3,2107,50,0.9398254546023537,3.771330888839527e-05,3.3351286206413285e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp config 0,sweep,0,3,2107,50,0.9691200948225109,3.380599968141291e-05,1.6850223327310153e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp config 1,sweep,0,3,2107,50,0.9678976511478257,3.454892521716882e-05,1.5716110639221346e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp config 2,sweep,0,3,2107,50,0.9621052240396971,4.2319730300814674e-05,2.691625581404095e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp config 3,sweep,0,3,2107,50,0.9491424313133348,8.212559610207486e-05,4.654079763870251e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp config 4,sweep,0,3,2107,50,0.9368319345317845,4.3530010096445013e-05,4.0696778387562425e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp config 0,sweep,0,3,2107,50,0.9668473275425362,3.365358392475367e-05,1.5391903080582468e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp config 1,sweep,0,3,2107,50,0.9665735001594066,3.6424919874981656e-05,1.814627520485077e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp config 2,sweep,0,3,2107,50,0.9585914319411819,4.005036788414283e-05,2.669673308768907e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp config 3,sweep,0,3,2107,50,0.942962734049066,8.911992885684906e-05,5.317260816798258e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp config 4,sweep,0,3,2107,50,0.9392289020891074,4.75528996441831e-05,4.40106281706705e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp config 0,sweep,0,3,2107,50,0.9646860471256925,3.81336887261926e-05,1.8676914376824242e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp config 1,sweep,0,3,2107,50,0.9639838754789534,3.668306264774208e-05,1.7077355542937542e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp config 2,sweep,0,3,2107,50,0.9526611131865488,4.113574182639391e-05,2.8426030559593645e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp config 3,sweep,0,3,2107,50,0.9491218942595999,0.00010664845419764853,6.917618086681972e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp config 4,sweep,0,3,2107,50,0.9388005578254975,4.247876443336254e-05,4.098804815834868e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp config 0,sweep,0,3,2107,50,0.9591664694457538,2.7621581152667566e-05,1.2031121574192613e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp config 1,sweep,0,3,2107,50,0.9558619597043447,3.323936548033669e-05,1.537961893386479e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp config 2,sweep,0,3,2107,50,0.9523882637583592,3.415099971475324e-05,2.378238511953682e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp config 3,sweep,0,3,2107,50,0.9404767725922261,0.00010034386627243269,6.249532142829875e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp config 4,sweep,0,3,2107,50,0.9341454923122963,4.216338082855225e-05,3.857218434451151e-05
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp config 0,sweep,0,3,2107,50,0.978227789176386,0.09027993454569709,0.056724625239098554
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp config 1,sweep,0,3,2107,50,0.9839615389881295,0.10820323721414458,0.06304001327288936
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp config 2,sweep,0,3,2107,50,0.984181578849573,0.11076782322600268,0.06861185382743724
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp config 3,sweep,0,3,2107,50,0.9796194190556476,0.09884061940466922,0.07542088850264554
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp config 4,sweep,0,3,2107,50,0.976161370388698,0.09769007822055208,0.048735759308758085
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp config 0,sweep,0,3,2107,50,0.9797279720539597,0.00028607732739463384,0.0001699626394880179
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp config 1,sweep,0,3,2107,50,0.9799822403382942,0.0002876916087437078,0.0001344154075432924
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp config 2,sweep,0,3,2107,50,0.9793622169064937,0.0001625287601638743,9.50909089110464e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp config 3,sweep,0,3,2107,50,0.9735179581865586,0.00023290226658121495,0.00010804661535087746
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp config 4,sweep,0,3,2107,50,0.9840397753833096,0.00011677316436702956,5.7174521915093546e-05

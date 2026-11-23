@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Early warning payoff</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_early.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 206, svg = setup(W, H);
+svg.append("text").attr("class", "title").attr("x", 0).attr("y", 10).text("The rule saves 3 to 10% of compute; even a perfect detector saves only 7 to 23%");
+svg.append("text").attr("class", "subtitle").attr("x", 0).attr("y", 22)
+  .text("delivered floating against compute, final check kept, retry budget 1 to 20; check at 20% of denoising");
+FIG.models.forEach((m, i) => {
+  const p = panel(svg, i * 316, 26, 308, H - 26, { t: 18, r: 8, b: 28, l: 36 });
+  p.g.append("text").attr("x", 0).attr("y", 10).style("fill", col("both")).style("font-weight", 650).text(`(${"ab"[i]}) ${m.name}`);
+  const all = m.filter.concat(m.rule, m.probe, m.oracle);
+  const x = d3.scaleLinear().domain([0.98, d3.max(m.filter, (d) => d[0]) + 0.1]).range([0, p.w]);
+  const y = d3.scaleLinear().domain([0, d3.max(all, (d) => d[1]) * 1.05]).nice().range([p.h, 0]);
+  axes(p, x, y, { yTicks: 4, xLabel: "compute per delivered motion (1 = one sample)", xFormat: d3.format(".1f"),
+                  yLabel: "% that float" });
+  // region between finish-then-filter and the perfect detector: the most any early signal can save
+  const reg = m.filter.map((d) => [d[0], d[1]]).concat(m.oracle.map((d) => [d[0], d[1]]).reverse());
+  p.inner.append("path").attr("d", d3.line().x((d) => x(d[0])).y((d) => y(d[1]))(reg) + "Z").attr("fill", col("dim")).attr("opacity", 0.07);
+  [["oracle", "perfect detector", col("dim"), "2 2"], ["probe", "layer probe", col("layer"), "4 2"], ["rule", "estimate shows floating", col("est"), null],
+   ["filter", "finish, then filter", col("both"), null]].forEach(([k, lab, c, dash]) => {
+    series(p, x, y, m[k].map((d) => [d[0], d[1]]), c, null, { dash, r: k === "filter" ? 2.2 : 1.8, width: k === "filter" ? 1.6 : 1.2 });
+  });
+  m.filter.filter((d) => [1, 2, 3, 5, 10, 20].includes(d[2])).forEach((d) => p.inner.append("text").attr("x", x(d[0]) + 4).attr("y", y(d[1]) - 4)
+    .style("font-size", "8px").text(d[2] === 1 ? "once" : `${d[2]} tries`));
+  if (i === 0) {
+    [["finish, then filter", col("both"), null], ["early abort: estimate shows floating", col("est"), null],
+     ["early abort: layer probe", col("layer"), "4 2"], ["early abort: perfect detector", col("dim"), "2 2"]].forEach(([lab, c, dash], k) => {
+      const g = p.inner.append("g").attr("transform", `translate(${p.w - 150},${8 + 11 * k})`);
+      g.append("line").attr("x1", 0).attr("x2", 14).attr("stroke", c).attr("stroke-width", 1.3).attr("stroke-dasharray", dash);
+      g.append("text").attr("x", 18).attr("y", 3).style("fill", c).text(lab);
+    });
+  }
+});
+</script></body></html>

@@ -1,0 +1,19 @@
+\begin{tabular}{lcc}
+\toprule
+Readout of the clean VAE latent & Per-video (\%) & Pairwise (\%) \\
+\midrule
+\multicolumn{3}{l}{\emph{Linear in the latent}} \\
+\quad Pooled over time and space & 50.1 $\pm$ 0.5 & 52.1 $\pm$ 1.5 \\
+\quad Time kept & 51.5 $\pm$ 0.7 & 50.4 $\pm$ 1.3 \\
+\quad Time + $4{\times}4$ space & 50.9 $\pm$ 1.1 & 54.4 $\pm$ 1.2 \\
+\quad Time + $4{\times}4$ space + signed changes & 52.8 $\pm$ 1.1 & 52.2 $\pm$ 2.2 \\
+\multicolumn{3}{l}{\emph{Linear after a fixed nonlinearity: absolute frame-to-frame change}} \\
+\quad Time kept + $|\Delta|$ & 53.4 $\pm$ 1.2 & 57.4 $\pm$ 2.2 \\
+\quad $4{\times}4$ space, $|\Delta|$ only & 61.8 $\pm$ 0.6 & 77.9 $\pm$ 1.7 \\
+\quad Time + $4{\times}4$ space + $|\Delta|$ & 62.1 $\pm$ 0.9 & 79.6 $\pm$ 2.3 \\
+\multicolumn{3}{l}{\emph{Trained nonlinear readout}} \\
+\quad Small temporal CNN & 50.4 $\pm$ 0.3 & 53.9 $\pm$ 2.5 \\
+\midrule
+Shuffled labels (1,000 shuffles, last $|\Delta|$ row; mean, 95th pct.) & 50.1, 53.1 & 49.9, 56.7 \\
+\bottomrule
+\end{tabular}

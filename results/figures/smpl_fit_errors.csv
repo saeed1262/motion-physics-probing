@@ -1,0 +1,29 @@
+figure,fit,frames,mean_joint_error_cm
+Figure 1,jump est20,9,1.24
+Figure 1,jump est40,9,1.23
+Figure 1,jump final,9,1.23
+Figure 1,float est20,9,1.02
+Figure 1,float est40,9,1.01
+Figure 1,float final,9,1.11
+web figures and demo,demo_jh50s0_m491_0,11,1.66
+web figures and demo,demo_jh50s0_m491_10,11,1.12
+web figures and demo,demo_jh50s0_m491_20,11,1.13
+web figures and demo,demo_jh50s0_m491_final,11,1.19
+web figures and demo,film_jh50s0_m392_0,3,1.24
+web figures and demo,film_jh50s0_m392_10,3,1.17
+web figures and demo,film_jh50s0_m392_20,3,1.05
+web figures and demo,film_jh50s0_m392_29,3,1.10
+web figures and demo,film_jh50s0_m392_39,3,1.06
+web figures and demo,film_jh50s0_m392_final,3,1.09
+web figures and demo,film_jh50s0_m491_0,3,1.65
+web figures and demo,film_jh50s0_m491_10,3,1.16
+web figures and demo,film_jh50s0_m491_20,3,1.19
+web figures and demo,film_jh50s0_m491_29,3,1.21
+web figures and demo,film_jh50s0_m491_39,3,1.24
+web figures and demo,film_jh50s0_m491_final,3,1.28
+web figures and demo,knows_jh50s0_m191_final,3,2.98
+web figures and demo,knows_jh50s0_m343_final,3,2.45
+web figures and demo,knows_jh50s1_m107_final,3,1.32
+web figures and demo,knows_jh50s1_m54_final,3,1.06
+web figures and demo,knows_jh50s2_m937_final,3,1.14
+web figures and demo,labels_walk_m0,2,1.03

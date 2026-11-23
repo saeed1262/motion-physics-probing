@@ -1,0 +1,567 @@
+checkpoint,score,check_step,abort_rate,strategy,budget,rel_compute,failure_rate
+50steps,none,,0.0,"finish+filter, budget 1",1.0,1.0,0.0936
+50steps,none,,0.0,"finish+filter, budget 2",2.0,1.0945,0.05546
+50steps,none,,0.0,"finish+filter, budget 3",3.0,1.15014,0.0448
+50steps,none,,0.0,"finish+filter, budget 4",4.0,1.19202,0.03936
+50steps,none,,0.0,"finish+filter, budget 5",5.0,1.2351999999999999,0.03758
+50steps,none,,0.0,"finish+filter, budget 6",6.0,1.27028,0.0353
+50steps,none,,0.0,"finish+filter, budget 8",8.0,1.34114,0.03306
+50steps,none,,0.0,"finish+filter, budget 10",10.0,1.40662,0.03082
+50steps,none,,0.0,"finish+filter, budget 12",12.0,1.46458,0.02972
+50steps,none,,0.0,"finish+filter, budget 15",15.0,1.54668,0.02756
+50steps,none,,0.0,"finish+filter, budget 20",20.0,1.6872999999999998,0.0262
+50steps,none,,0.0,generate once,,1.0,0.0936
+50steps,none,,0.0,"finish, then filter",,1.40662,0.03082
+50steps,guess,10.0,0.02,early,,1.0164516000000001,0.08984
+50steps,random,10.0,0.02,early,,1.0044132000000001,0.09382
+50steps,guess,10.0,0.02,early+final,,1.3029424,0.03082
+50steps,random,10.0,0.02,early+final,,1.400568,0.03044
+50steps,guess,10.0,0.04,early,,1.0428427999999998,0.0827
+50steps,random,10.0,0.04,early,,1.0088176,0.0937
+50steps,guess,10.0,0.04,early+final,,1.2300328,0.03234
+50steps,random,10.0,0.04,early+final,,1.4037904,0.03098
+50steps,guess,10.0,0.06,early,,1.053504,0.07094
+50steps,random,10.0,0.06,early,,1.0141284,0.0953
+50steps,guess,10.0,0.06,early+final,,1.2055244,0.03448
+50steps,random,10.0,0.06,early+final,,1.4029896,0.03158
+50steps,guess,10.0,0.08,early,,1.0572352,0.06896
+50steps,random,10.0,0.08,early,,1.0195756,0.09428
+50steps,guess,10.0,0.08,early+final,,1.2033976,0.03466
+50steps,random,10.0,0.08,early+final,,1.40216,0.0311
+50steps,guess,10.0,0.1,early,,1.0572352,0.06896
+50steps,random,10.0,0.1,early,,1.0251767999999999,0.0927
+50steps,guess,10.0,0.1,early+final,,1.2033976,0.03466
+50steps,random,10.0,0.1,early+final,,1.4081587999999998,0.03148
+50steps,guess,10.0,0.15,early,,1.0572352,0.06896
+50steps,random,10.0,0.15,early,,1.0397011999999999,0.09324
+50steps,guess,10.0,0.15,early+final,,1.2033976,0.03466
+50steps,random,10.0,0.15,early+final,,1.4138784000000002,0.03204
+50steps,guess,10.0,0.2,early,,1.0572352,0.06896
+50steps,random,10.0,0.2,early,,1.0557084,0.09418
+50steps,guess,10.0,0.2,early+final,,1.2033976,0.03466
+50steps,random,10.0,0.2,early+final,,1.4194276,0.03292
+50steps,guess,10.0,0.3,early,,1.0572352,0.06896
+50steps,random,10.0,0.3,early,,1.0944636,0.09442
+50steps,guess,10.0,0.3,early+final,,1.2033976,0.03466
+50steps,random,10.0,0.3,early+final,,1.4380104,0.03426
+50steps,guess,10.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess,10.0,,"early+final, budget 2",2.0,1.0533288,0.05668
+50steps,guess,10.0,,"early+final, budget 3",3.0,1.0830228,0.04718
+50steps,guess,10.0,,"early+final, budget 4",4.0,1.104884,0.04284
+50steps,guess,10.0,,"early+final, budget 5",5.0,1.125278,0.03972
+50steps,guess,10.0,,"early+final, budget 6",6.0,1.1417604,0.03826
+50steps,guess,10.0,,"early+final, budget 8",8.0,1.1758836,0.0362
+50steps,guess,10.0,,"early+final, budget 10",10.0,1.2033976,0.03466
+50steps,guess,10.0,,"early+final, budget 12",12.0,1.2308804,0.03392
+50steps,guess,10.0,,"early+final, budget 15",15.0,1.2738488,0.0329
+50steps,guess,10.0,,"early+final, budget 20",20.0,1.3334276,0.03228
+50steps,guess readout,10.0,0.02,early,,1.0179036000000001,0.09018
+50steps,guess readout,10.0,0.02,early+final,,1.2915543999999999,0.03082
+50steps,guess readout,10.0,0.04,early,,1.0430628,0.08308
+50steps,guess readout,10.0,0.04,early+final,,1.2284468,0.03232
+50steps,guess readout,10.0,0.06,early,,1.0585376,0.07506
+50steps,guess readout,10.0,0.06,early+final,,1.2052304,0.03508
+50steps,guess readout,10.0,0.08,early,,1.074668,0.06888
+50steps,guess readout,10.0,0.08,early+final,,1.1836772,0.0361
+50steps,guess readout,10.0,0.1,early,,1.091542,0.06646
+50steps,guess readout,10.0,0.1,early+final,,1.1764408,0.0383
+50steps,guess readout,10.0,0.15,early,,1.1423708000000001,0.0666
+50steps,guess readout,10.0,0.15,early+final,,1.1900592,0.0448
+50steps,guess readout,10.0,0.2,early,,1.1745216,0.06486
+50steps,guess readout,10.0,0.2,early+final,,1.2147968,0.0454
+50steps,guess readout,10.0,0.3,early,,1.244464,0.06288
+50steps,guess readout,10.0,0.3,early+final,,1.2784464,0.04858
+50steps,guess readout,10.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess readout,10.0,,"early+final, budget 2",2.0,1.0529328,0.05616
+50steps,guess readout,10.0,,"early+final, budget 3",3.0,1.0810108,0.04718
+50steps,guess readout,10.0,,"early+final, budget 4",4.0,1.1018564,0.04254
+50steps,guess readout,10.0,,"early+final, budget 5",5.0,1.1201892,0.03994
+50steps,guess readout,10.0,,"early+final, budget 6",6.0,1.1364539999999999,0.03874
+50steps,guess readout,10.0,,"early+final, budget 8",8.0,1.1677156,0.0363
+50steps,guess readout,10.0,,"early+final, budget 10",10.0,1.193304,0.03538
+50steps,guess readout,10.0,,"early+final, budget 12",12.0,1.2193332,0.03438
+50steps,guess readout,10.0,,"early+final, budget 15",15.0,1.254894,0.03322
+50steps,guess readout,10.0,,"early+final, budget 20",20.0,1.3132427999999998,0.03226
+50steps,layer 3 probe,10.0,0.02,early,,1.0272184,0.09152
+50steps,layer 3 probe,10.0,0.02,early+final,,1.2856576000000002,0.03082
+50steps,layer 3 probe,10.0,0.04,early,,1.041228,0.08568
+50steps,layer 3 probe,10.0,0.04,early+final,,1.2412528,0.03636
+50steps,layer 3 probe,10.0,0.06,early,,1.0555588,0.07876
+50steps,layer 3 probe,10.0,0.06,early+final,,1.1904328,0.0374
+50steps,layer 3 probe,10.0,0.08,early,,1.0700524,0.06996
+50steps,layer 3 probe,10.0,0.08,early+final,,1.1725020000000002,0.03762
+50steps,layer 3 probe,10.0,0.1,early,,1.0827816,0.06828
+50steps,layer 3 probe,10.0,0.1,early+final,,1.1664392,0.03764
+50steps,layer 3 probe,10.0,0.15,early,,1.1181356,0.06742
+50steps,layer 3 probe,10.0,0.15,early+final,,1.19189,0.04334
+50steps,layer 3 probe,10.0,0.2,early,,1.147774,0.06662
+50steps,layer 3 probe,10.0,0.2,early+final,,1.2039503999999999,0.04374
+50steps,layer 3 probe,10.0,0.3,early,,1.205194,0.06288
+50steps,layer 3 probe,10.0,0.3,early+final,,1.2367272,0.04358
+50steps,layer 3 probe,10.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,layer 3 probe,10.0,,"early+final, budget 2",2.0,1.0507984000000001,0.05692
+50steps,layer 3 probe,10.0,,"early+final, budget 3",3.0,1.0777448,0.04794
+50steps,layer 3 probe,10.0,,"early+final, budget 4",4.0,1.094538,0.04398
+50steps,layer 3 probe,10.0,,"early+final, budget 5",5.0,1.1106704,0.04188
+50steps,layer 3 probe,10.0,,"early+final, budget 6",6.0,1.1258168,0.04048
+50steps,layer 3 probe,10.0,,"early+final, budget 8",8.0,1.1529724000000001,0.03896
+50steps,layer 3 probe,10.0,,"early+final, budget 10",10.0,1.1749736,0.03764
+50steps,layer 3 probe,10.0,,"early+final, budget 12",12.0,1.2025184,0.03728
+50steps,layer 3 probe,10.0,,"early+final, budget 15",15.0,1.2364848000000002,0.03628
+50steps,layer 3 probe,10.0,,"early+final, budget 20",20.0,1.2919528,0.03542
+50steps,guess readout + layer,10.0,0.02,early,,1.02453,0.09188
+50steps,guess readout + layer,10.0,0.02,early+final,,1.284394,0.03082
+50steps,guess readout + layer,10.0,0.04,early,,1.0428384,0.08308
+50steps,guess readout + layer,10.0,0.04,early+final,,1.2294943999999999,0.03398
+50steps,guess readout + layer,10.0,0.06,early,,1.057266,0.0764
+50steps,guess readout + layer,10.0,0.06,early+final,,1.1917440000000001,0.03806
+50steps,guess readout + layer,10.0,0.08,early,,1.0737352,0.07024
+50steps,guess readout + layer,10.0,0.08,early+final,,1.1669224,0.0386
+50steps,guess readout + layer,10.0,0.1,early,,1.0875952,0.06638
+50steps,guess readout + layer,10.0,0.1,early+final,,1.1689176000000001,0.04026
+50steps,guess readout + layer,10.0,0.15,early,,1.119702,0.06378
+50steps,guess readout + layer,10.0,0.15,early+final,,1.180474,0.04116
+50steps,guess readout + layer,10.0,0.2,early,,1.1503436,0.06312
+50steps,guess readout + layer,10.0,0.2,early+final,,1.2100468,0.04338
+50steps,guess readout + layer,10.0,0.3,early,,1.2070068,0.06246
+50steps,guess readout + layer,10.0,0.3,early+final,,1.2549156000000001,0.04456
+50steps,guess readout + layer,10.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess readout + layer,10.0,,"early+final, budget 2",2.0,1.0488708,0.05678
+50steps,guess readout + layer,10.0,,"early+final, budget 3",3.0,1.0741908,0.04784
+50steps,guess readout + layer,10.0,,"early+final, budget 4",4.0,1.0911192,0.04392
+50steps,guess readout + layer,10.0,,"early+final, budget 5",5.0,1.1060788,0.04156
+50steps,guess readout + layer,10.0,,"early+final, budget 6",6.0,1.1195772,0.04048
+50steps,guess readout + layer,10.0,,"early+final, budget 8",8.0,1.1473,0.03904
+50steps,guess readout + layer,10.0,,"early+final, budget 10",10.0,1.1704732,0.03782
+50steps,guess readout + layer,10.0,,"early+final, budget 12",12.0,1.1949668,0.03716
+50steps,guess readout + layer,10.0,,"early+final, budget 15",15.0,1.2285696,0.0364
+50steps,guess readout + layer,10.0,,"early+final, budget 20",20.0,1.2822167999999998,0.03526
+50steps,guess,20.0,0.02,early,,1.032844,0.08976
+50steps,random,20.0,0.02,early,,1.0084252,0.09382
+50steps,guess,20.0,0.02,early+final,,1.3283547999999998,0.03082
+50steps,random,20.0,0.02,early+final,,1.4060480000000002,0.03044
+50steps,guess,20.0,0.04,early,,1.0810263999999998,0.0832
+50steps,random,20.0,0.04,early,,1.0168336,0.0937
+50steps,guess,20.0,0.04,early+final,,1.2730856,0.03256
+50steps,random,20.0,0.04,early+final,,1.4146544,0.03098
+50steps,guess,20.0,0.06,early,,1.1045128,0.06958
+50steps,random,20.0,0.06,early,,1.0269724,0.0953
+50steps,guess,20.0,0.06,early+final,,1.2542224,0.03452
+50steps,random,20.0,0.06,early+final,,1.4203256,0.03158
+50steps,guess,20.0,0.08,early,,1.1198763999999999,0.06622
+50steps,random,20.0,0.08,early,,1.0373716,0.09428
+50steps,guess,20.0,0.08,early+final,,1.249284,0.03452
+50steps,random,20.0,0.08,early+final,,1.4259600000000001,0.0311
+50steps,guess,20.0,0.1,early,,1.1198763999999999,0.06622
+50steps,random,20.0,0.1,early,,1.0480648,0.0927
+50steps,guess,20.0,0.1,early+final,,1.249284,0.03452
+50steps,random,20.0,0.1,early+final,,1.4386668,0.03148
+50steps,guess,20.0,0.15,early,,1.1198763999999999,0.06622
+50steps,random,20.0,0.15,early,,1.0757932,0.09324
+50steps,guess,20.0,0.15,early+final,,1.249284,0.03452
+50steps,random,20.0,0.15,early+final,,1.4614223999999998,0.03204
+50steps,guess,20.0,0.2,early,,1.1198763999999999,0.06622
+50steps,random,20.0,0.2,early,,1.1063524,0.09418
+50steps,guess,20.0,0.2,early+final,,1.249284,0.03452
+50steps,random,20.0,0.2,early+final,,1.4859436,0.03292
+50steps,guess,20.0,0.3,early,,1.1198763999999999,0.06622
+50steps,random,20.0,0.3,early,,1.1803396,0.09442
+50steps,guess,20.0,0.3,early+final,,1.249284,0.03452
+50steps,random,20.0,0.3,early+final,,1.5478744,0.03426
+50steps,guess,20.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess,20.0,,"early+final, budget 2",2.0,1.0621711999999999,0.05664
+50steps,guess,20.0,,"early+final, budget 3",3.0,1.09659,0.04626
+50steps,guess,20.0,,"early+final, budget 4",4.0,1.122808,0.04218
+50steps,guess,20.0,,"early+final, budget 5",5.0,1.146924,0.03968
+50steps,guess,20.0,,"early+final, budget 6",6.0,1.1701944,0.03814
+50steps,guess,20.0,,"early+final, budget 8",8.0,1.2116192,0.03608
+50steps,guess,20.0,,"early+final, budget 10",10.0,1.249284,0.03452
+50steps,guess,20.0,,"early+final, budget 12",12.0,1.2826275999999999,0.03384
+50steps,guess,20.0,,"early+final, budget 15",15.0,1.338664,0.0329
+50steps,guess,20.0,,"early+final, budget 20",20.0,1.4223704000000001,0.0323
+50steps,guess readout,20.0,0.02,early,,1.0354984,0.09072
+50steps,guess readout,20.0,0.02,early+final,,1.3254316,0.03082
+50steps,guess readout,20.0,0.04,early,,1.0768684,0.08168
+50steps,guess readout,20.0,0.04,early+final,,1.2631752,0.03084
+50steps,guess readout,20.0,0.06,early,,1.1202376,0.07412
+50steps,guess readout,20.0,0.06,early+final,,1.2718312,0.03496
+50steps,guess readout,20.0,0.08,early,,1.144186,0.06488
+50steps,guess readout,20.0,0.08,early+final,,1.2541684,0.03544
+50steps,guess readout,20.0,0.1,early,,1.1769628,0.06156
+50steps,guess readout,20.0,0.1,early+final,,1.25218,0.03872
+50steps,guess readout,20.0,0.15,early,,1.2604924,0.06114
+50steps,guess readout,20.0,0.15,early+final,,1.2966972,0.04348
+50steps,guess readout,20.0,0.2,early,,1.3198552000000001,0.06016
+50steps,guess readout,20.0,0.2,early+final,,1.3480448,0.04534
+50steps,guess readout,20.0,0.3,early,,1.42672,0.05812
+50steps,guess readout,20.0,0.3,early+final,,1.4471636,0.04586
+50steps,guess readout,20.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess readout,20.0,,"early+final, budget 2",2.0,1.064916,0.0563
+50steps,guess readout,20.0,,"early+final, budget 3",3.0,1.1016920000000001,0.04708
+50steps,guess readout,20.0,,"early+final, budget 4",4.0,1.1304008,0.0426
+50steps,guess readout,20.0,,"early+final, budget 5",5.0,1.1555552,0.03984
+50steps,guess readout,20.0,,"early+final, budget 6",6.0,1.1791364,0.03888
+50steps,guess readout,20.0,,"early+final, budget 8",8.0,1.2243432,0.03616
+50steps,guess readout,20.0,,"early+final, budget 10",10.0,1.2679168,0.03552
+50steps,guess readout,20.0,,"early+final, budget 12",12.0,1.3045948,0.03422
+50steps,guess readout,20.0,,"early+final, budget 15",15.0,1.3653252,0.03308
+50steps,guess readout,20.0,,"early+final, budget 20",20.0,1.457958,0.03244
+50steps,layer 3 probe,20.0,0.02,early,,1.04599,0.09098
+50steps,layer 3 probe,20.0,0.02,early+final,,1.3207916,0.03082
+50steps,layer 3 probe,20.0,0.04,early,,1.0711396,0.08522
+50steps,layer 3 probe,20.0,0.04,early+final,,1.2736844,0.03282
+50steps,layer 3 probe,20.0,0.06,early,,1.1067304,0.07826
+50steps,layer 3 probe,20.0,0.06,early+final,,1.2533968,0.03632
+50steps,layer 3 probe,20.0,0.08,early,,1.1466555999999999,0.07028
+50steps,layer 3 probe,20.0,0.08,early+final,,1.2418132,0.0378
+50steps,layer 3 probe,20.0,0.1,early,,1.1783236,0.06466
+50steps,layer 3 probe,20.0,0.1,early+final,,1.2478568,0.03874
+50steps,layer 3 probe,20.0,0.15,early,,1.2381735999999999,0.0611
+50steps,layer 3 probe,20.0,0.15,early+final,,1.279858,0.04212
+50steps,layer 3 probe,20.0,0.2,early,,1.2982,0.0599
+50steps,layer 3 probe,20.0,0.2,early+final,,1.327708,0.0437
+50steps,layer 3 probe,20.0,0.3,early,,1.3976812,0.06022
+50steps,layer 3 probe,20.0,0.3,early+final,,1.4262824,0.04408
+50steps,layer 3 probe,20.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,layer 3 probe,20.0,,"early+final, budget 2",2.0,1.0625044,0.05714
+50steps,layer 3 probe,20.0,,"early+final, budget 3",3.0,1.0983083999999999,0.04816
+50steps,layer 3 probe,20.0,,"early+final, budget 4",4.0,1.1228896,0.04414
+50steps,layer 3 probe,20.0,,"early+final, budget 5",5.0,1.1457068,0.04194
+50steps,layer 3 probe,20.0,,"early+final, budget 6",6.0,1.1667856,0.04068
+50steps,layer 3 probe,20.0,,"early+final, budget 8",8.0,1.2082316,0.03902
+50steps,layer 3 probe,20.0,,"early+final, budget 10",10.0,1.2422651999999998,0.03754
+50steps,layer 3 probe,20.0,,"early+final, budget 12",12.0,1.2815736000000002,0.03708
+50steps,layer 3 probe,20.0,,"early+final, budget 15",15.0,1.3342336000000001,0.0365
+50steps,layer 3 probe,20.0,,"early+final, budget 20",20.0,1.4216108,0.0356
+50steps,guess readout + layer,20.0,0.02,early,,1.0287616,0.09228
+50steps,guess readout + layer,20.0,0.02,early+final,,1.3196780000000001,0.03082
+50steps,guess readout + layer,20.0,0.04,early,,1.0789264,0.0847
+50steps,guess readout + layer,20.0,0.04,early+final,,1.2699664,0.03282
+50steps,guess readout + layer,20.0,0.06,early,,1.1103676,0.07488
+50steps,guess readout + layer,20.0,0.06,early+final,,1.2502484,0.03638
+50steps,guess readout + layer,20.0,0.08,early,,1.1484784000000001,0.06796
+50steps,guess readout + layer,20.0,0.08,early+final,,1.2380732,0.03824
+50steps,guess readout + layer,20.0,0.1,early,,1.1684872,0.06224
+50steps,guess readout + layer,20.0,0.1,early+final,,1.2440748000000001,0.03868
+50steps,guess readout + layer,20.0,0.15,early,,1.2304792,0.05684
+50steps,guess readout + layer,20.0,0.15,early+final,,1.2761192,0.0396
+50steps,guess readout + layer,20.0,0.2,early,,1.2907072,0.05498
+50steps,guess readout + layer,20.0,0.2,early+final,,1.3224923999999998,0.04116
+50steps,guess readout + layer,20.0,0.3,early,,1.4012092,0.056
+50steps,guess readout + layer,20.0,0.3,early+final,,1.42067,0.04388
+50steps,guess readout + layer,20.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,guess readout + layer,20.0,,"early+final, budget 2",2.0,1.0597848,0.05636
+50steps,guess readout + layer,20.0,,"early+final, budget 3",3.0,1.0911588,0.04724
+50steps,guess readout + layer,20.0,,"early+final, budget 4",4.0,1.1167852,0.04384
+50steps,guess readout + layer,20.0,,"early+final, budget 5",5.0,1.1390783999999998,0.04144
+50steps,guess readout + layer,20.0,,"early+final, budget 6",6.0,1.1591415999999999,0.04052
+50steps,guess readout + layer,20.0,,"early+final, budget 8",8.0,1.2019824,0.03894
+50steps,guess readout + layer,20.0,,"early+final, budget 10",10.0,1.2373768,0.0379
+50steps,guess readout + layer,20.0,,"early+final, budget 12",12.0,1.2740848,0.03714
+50steps,guess readout + layer,20.0,,"early+final, budget 15",15.0,1.3268824000000001,0.0366
+50steps,guess readout + layer,20.0,,"early+final, budget 20",20.0,1.4135140000000002,0.03542
+50steps,oracle,10.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,oracle,10.0,,"early+final, budget 2",2.0,1.0207899999999999,0.05546
+50steps,oracle,10.0,,"early+final, budget 3",3.0,1.0330308,0.0448
+50steps,oracle,10.0,,"early+final, budget 4",4.0,1.0422444,0.03936
+50steps,oracle,10.0,,"early+final, budget 5",5.0,1.051744,0.03758
+50steps,oracle,10.0,,"early+final, budget 6",6.0,1.0594616000000001,0.0353
+50steps,oracle,10.0,,"early+final, budget 8",8.0,1.0750508,0.03306
+50steps,oracle,10.0,,"early+final, budget 10",10.0,1.0894564,0.03082
+50steps,oracle,10.0,,"early+final, budget 12",12.0,1.1022076,0.02972
+50steps,oracle,10.0,,"early+final, budget 15",15.0,1.1202696,0.02756
+50steps,oracle,10.0,,"early+final, budget 20",20.0,1.151206,0.0262
+50steps,oracle,20.0,,"early+final, budget 1",1.0,1.0,0.0936
+50steps,oracle,20.0,,"early+final, budget 2",2.0,1.03969,0.05546
+50steps,oracle,20.0,,"early+final, budget 3",3.0,1.0630588,0.0448
+50steps,oracle,20.0,,"early+final, budget 4",4.0,1.0806484,0.03936
+50steps,oracle,20.0,,"early+final, budget 5",5.0,1.098784,0.03758
+50steps,oracle,20.0,,"early+final, budget 6",6.0,1.1135176,0.0353
+50steps,oracle,20.0,,"early+final, budget 8",8.0,1.1432788,0.03306
+50steps,oracle,20.0,,"early+final, budget 10",10.0,1.1707804,0.03082
+50steps,oracle,20.0,,"early+final, budget 12",12.0,1.1951236,0.02972
+50steps,oracle,20.0,,"early+final, budget 15",15.0,1.2296056,0.02756
+50steps,oracle,20.0,,"early+final, budget 20",20.0,1.288666,0.0262
+1000steps,none,,0.0,"finish+filter, budget 1",1.0,1.0,0.17686
+1000steps,none,,0.0,"finish+filter, budget 2",2.0,1.17578,0.09416
+1000steps,none,,0.0,"finish+filter, budget 3",3.0,1.2704600000000001,0.06774
+1000steps,none,,0.0,"finish+filter, budget 4",4.0,1.3411600000000001,0.05418
+1000steps,none,,0.0,"finish+filter, budget 5",5.0,1.39264,0.0459
+1000steps,none,,0.0,"finish+filter, budget 6",6.0,1.43912,0.04198
+1000steps,none,,0.0,"finish+filter, budget 8",8.0,1.5197,0.03636
+1000steps,none,,0.0,"finish+filter, budget 10",10.0,1.5927,0.03406
+1000steps,none,,0.0,"finish+filter, budget 12",12.0,1.6636199999999999,0.0326
+1000steps,none,,0.0,"finish+filter, budget 15",15.0,1.75582,0.03078
+1000steps,none,,0.0,"finish+filter, budget 20",20.0,1.90984,0.02958
+1000steps,none,,0.0,generate once,,1.0,0.17686
+1000steps,none,,0.0,"finish, then filter",,1.5927,0.03406
+1000steps,guess,200.0,0.02,early,,1.009447,0.17166
+1000steps,random,200.0,0.02,early,,1.00403206,0.17638
+1000steps,guess,200.0,0.02,early+final,,1.4885103999999998,0.03406
+1000steps,random,200.0,0.02,early+final,,1.59296718,0.03418
+1000steps,guess,200.0,0.04,early,,1.03954876,0.16588
+1000steps,random,200.0,0.04,early,,1.00805608,0.17836
+1000steps,guess,200.0,0.04,early+final,,1.37676226,0.03406
+1000steps,random,200.0,0.04,early+final,,1.59229556,0.03472
+1000steps,guess,200.0,0.06,early,,1.05667798,0.15878
+1000steps,random,200.0,0.06,early,,1.0129082200000001,0.1782
+1000steps,guess,200.0,0.06,early+final,,1.32340978,0.03522
+1000steps,random,200.0,0.06,early+final,,1.59767076,0.03486
+1000steps,guess,200.0,0.08,early,,1.0667279799999998,0.1476
+1000steps,random,200.0,0.08,early,,1.01788498,0.17696
+1000steps,guess,200.0,0.08,early+final,,1.303576,0.03564
+1000steps,random,200.0,0.08,early+final,,1.59813742,0.03506
+1000steps,guess,200.0,0.1,early,,1.07625538,0.14482
+1000steps,random,200.0,0.1,early,,1.02300244,0.17804
+1000steps,guess,200.0,0.1,early+final,,1.3099922999999998,0.04008
+1000steps,random,200.0,0.1,early+final,,1.5959126000000001,0.03502
+1000steps,guess,200.0,0.15,early,,1.0784221600000001,0.1451
+1000steps,random,200.0,0.15,early,,1.03627246,0.178
+1000steps,guess,200.0,0.15,early+final,,1.3071962799999999,0.04026
+1000steps,random,200.0,0.15,early+final,,1.60030278,0.03624
+1000steps,guess,200.0,0.2,early,,1.0784221600000001,0.1451
+1000steps,random,200.0,0.2,early,,1.05089722,0.17878
+1000steps,guess,200.0,0.2,early+final,,1.3071962799999999,0.04026
+1000steps,random,200.0,0.2,early+final,,1.6001534999999998,0.03714
+1000steps,guess,200.0,0.3,early,,1.0784221600000001,0.1451
+1000steps,random,200.0,0.3,early,,1.08630538,0.17838
+1000steps,guess,200.0,0.3,early+final,,1.3071962799999999,0.04026
+1000steps,random,200.0,0.3,early+final,,1.6125949,0.03878
+1000steps,guess,200.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess,200.0,,"early+final, budget 2",2.0,1.11319216,0.10018
+1000steps,guess,200.0,,"early+final, budget 3",3.0,1.1692895,0.07294
+1000steps,guess,200.0,,"early+final, budget 4",4.0,1.20221676,0.06064
+1000steps,guess,200.0,,"early+final, budget 5",5.0,1.22462748,0.05198
+1000steps,guess,200.0,,"early+final, budget 6",6.0,1.2458070600000002,0.04776
+1000steps,guess,200.0,,"early+final, budget 8",8.0,1.27427792,0.04224
+1000steps,guess,200.0,,"early+final, budget 10",10.0,1.3071962799999999,0.04026
+1000steps,guess,200.0,,"early+final, budget 12",12.0,1.32842426,0.0388
+1000steps,guess,200.0,,"early+final, budget 15",15.0,1.36370604,0.03716
+1000steps,guess,200.0,,"early+final, budget 20",20.0,1.40216626,0.03618
+1000steps,guess readout,200.0,0.02,early,,1.00769026,0.16818
+1000steps,guess readout,200.0,0.02,early+final,,1.50658378,0.03406
+1000steps,guess readout,200.0,0.04,early,,1.02935002,0.1676
+1000steps,guess readout,200.0,0.04,early+final,,1.40995308,0.03412
+1000steps,guess readout,200.0,0.06,early,,1.05068416,0.16148
+1000steps,guess readout,200.0,0.06,early+final,,1.34879518,0.03528
+1000steps,guess readout,200.0,0.08,early,,1.0652727400000002,0.15118
+1000steps,guess readout,200.0,0.08,early+final,,1.3200122200000002,0.03546
+1000steps,guess readout,200.0,0.1,early,,1.08110752,0.14552
+1000steps,guess readout,200.0,0.1,early+final,,1.3088095599999998,0.0383
+1000steps,guess readout,200.0,0.15,early,,1.1182081000000001,0.1303
+1000steps,guess readout,200.0,0.15,early+final,,1.30673798,0.04656
+1000steps,guess readout,200.0,0.2,early,,1.1493228999999998,0.12674
+1000steps,guess readout,200.0,0.2,early+final,,1.2985833,0.04898
+1000steps,guess readout,200.0,0.3,early,,1.21595842,0.11942
+1000steps,guess readout,200.0,0.3,early+final,,1.33944524,0.05552
+1000steps,guess readout,200.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess readout,200.0,,"early+final, budget 2",2.0,1.1133013,0.0997
+1000steps,guess readout,200.0,,"early+final, budget 3",3.0,1.16806306,0.07208
+1000steps,guess readout,200.0,,"early+final, budget 4",4.0,1.2069728,0.06012
+1000steps,guess readout,200.0,,"early+final, budget 5",5.0,1.22794984,0.05188
+1000steps,guess readout,200.0,,"early+final, budget 6",6.0,1.25079844,0.04694
+1000steps,guess readout,200.0,,"early+final, budget 8",8.0,1.2811223399999998,0.04064
+1000steps,guess readout,200.0,,"early+final, budget 10",10.0,1.30876962,0.0382
+1000steps,guess readout,200.0,,"early+final, budget 12",12.0,1.32991054,0.03684
+1000steps,guess readout,200.0,,"early+final, budget 15",15.0,1.36473048,0.03488
+1000steps,guess readout,200.0,,"early+final, budget 20",20.0,1.40757198,0.03334
+1000steps,layer 6 probe,200.0,0.02,early,,1.00692244,0.1697
+1000steps,layer 6 probe,200.0,0.02,early+final,,1.5100400600000001,0.03412
+1000steps,layer 6 probe,200.0,0.04,early,,1.0204819,0.16828
+1000steps,layer 6 probe,200.0,0.04,early+final,,1.4279920199999998,0.0345
+1000steps,layer 6 probe,200.0,0.06,early,,1.0398663400000001,0.16224
+1000steps,layer 6 probe,200.0,0.06,early+final,,1.37013638,0.0346
+1000steps,layer 6 probe,200.0,0.08,early,,1.05486094,0.15212
+1000steps,layer 6 probe,200.0,0.08,early+final,,1.3372112999999999,0.03574
+1000steps,layer 6 probe,200.0,0.1,early,,1.0706032600000002,0.1445
+1000steps,layer 6 probe,200.0,0.1,early+final,,1.3061431399999999,0.03614
+1000steps,layer 6 probe,200.0,0.15,early,,1.09988494,0.131
+1000steps,layer 6 probe,200.0,0.15,early+final,,1.28825616,0.04156
+1000steps,layer 6 probe,200.0,0.2,early,,1.1345614599999998,0.12276
+1000steps,layer 6 probe,200.0,0.2,early+final,,1.28181888,0.0429
+1000steps,layer 6 probe,200.0,0.3,early,,1.19578204,0.11974
+1000steps,layer 6 probe,200.0,0.3,early+final,,1.33223122,0.05178
+1000steps,layer 6 probe,200.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,layer 6 probe,200.0,,"early+final, budget 2",2.0,1.11684482,0.10012
+1000steps,layer 6 probe,200.0,,"early+final, budget 3",3.0,1.172048,0.07294
+1000steps,layer 6 probe,200.0,,"early+final, budget 4",4.0,1.20413968,0.0587
+1000steps,layer 6 probe,200.0,,"early+final, budget 5",5.0,1.2247455999999999,0.04964
+1000steps,layer 6 probe,200.0,,"early+final, budget 6",6.0,1.2495217600000001,0.0448
+1000steps,layer 6 probe,200.0,,"early+final, budget 8",8.0,1.27656962,0.03902
+1000steps,layer 6 probe,200.0,,"early+final, budget 10",10.0,1.30646584,0.03626
+1000steps,layer 6 probe,200.0,,"early+final, budget 12",12.0,1.3273093599999999,0.03406
+1000steps,layer 6 probe,200.0,,"early+final, budget 15",15.0,1.35416812,0.03182
+1000steps,layer 6 probe,200.0,,"early+final, budget 20",20.0,1.39410346,0.03012
+1000steps,guess readout + layer,200.0,0.02,early,,1.0075817200000001,0.17038
+1000steps,guess readout + layer,200.0,0.02,early+final,,1.51509094,0.03406
+1000steps,guess readout + layer,200.0,0.04,early,,1.02033316,0.16708
+1000steps,guess readout + layer,200.0,0.04,early+final,,1.42768282,0.0342
+1000steps,guess readout + layer,200.0,0.06,early,,1.04065426,0.16226
+1000steps,guess readout + layer,200.0,0.06,early+final,,1.37158782,0.0353
+1000steps,guess readout + layer,200.0,0.08,early,,1.05707596,0.15386
+1000steps,guess readout + layer,200.0,0.08,early+final,,1.3346818599999999,0.03558
+1000steps,guess readout + layer,200.0,0.1,early,,1.07347756,0.1483
+1000steps,guess readout + layer,200.0,0.1,early+final,,1.3146667399999998,0.0368
+1000steps,guess readout + layer,200.0,0.15,early,,1.10455216,0.13534
+1000steps,guess readout + layer,200.0,0.15,early+final,,1.29198488,0.03986
+1000steps,guess readout + layer,200.0,0.2,early,,1.1324951799999998,0.12392
+1000steps,guess readout + layer,200.0,0.2,early+final,,1.2842710400000001,0.04286
+1000steps,guess readout + layer,200.0,0.3,early,,1.1823431800000002,0.11506
+1000steps,guess readout + layer,200.0,0.3,early+final,,1.32407256,0.0506
+1000steps,guess readout + layer,200.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess readout + layer,200.0,,"early+final, budget 2",2.0,1.1199605,0.10048
+1000steps,guess readout + layer,200.0,,"early+final, budget 3",3.0,1.17618588,0.07264
+1000steps,guess readout + layer,200.0,,"early+final, budget 4",4.0,1.20939224,0.05886
+1000steps,guess readout + layer,200.0,,"early+final, budget 5",5.0,1.23612318,0.05058
+1000steps,guess readout + layer,200.0,,"early+final, budget 6",6.0,1.2524743200000001,0.04516
+1000steps,guess readout + layer,200.0,,"early+final, budget 8",8.0,1.28149866,0.03928
+1000steps,guess readout + layer,200.0,,"early+final, budget 10",10.0,1.31343276,0.0368
+1000steps,guess readout + layer,200.0,,"early+final, budget 12",12.0,1.329124,0.03428
+1000steps,guess readout + layer,200.0,,"early+final, budget 15",15.0,1.3625081600000002,0.0322
+1000steps,guess readout + layer,200.0,,"early+final, budget 20",20.0,1.39491092,0.0302
+1000steps,guess,400.0,0.02,early,,1.01823748,0.1728
+1000steps,random,400.0,0.02,early,,1.00804406,0.17638
+1000steps,guess,400.0,0.02,early+final,,1.51868756,0.03406
+1000steps,random,400.0,0.02,early+final,,1.59920318,0.03418
+1000steps,guess,400.0,0.04,early,,1.06839456,0.16374
+1000steps,random,400.0,0.04,early,,1.01607208,0.17836
+1000steps,guess,400.0,0.04,early+final,,1.44068578,0.03406
+1000steps,random,400.0,0.04,early+final,,1.60500756,0.03472
+1000steps,guess,400.0,0.06,early,,1.11145394,0.15962
+1000steps,random,400.0,0.06,early,,1.02575222,0.1782
+1000steps,guess,400.0,0.06,early+final,,1.39742198,0.03524
+1000steps,random,400.0,0.06,early+final,,1.61742276,0.03486
+1000steps,guess,400.0,0.08,early,,1.1346558,0.148
+1000steps,random,400.0,0.08,early,,1.0356809800000002,0.17696
+1000steps,guess,400.0,0.08,early+final,,1.3880782200000001,0.0374
+1000steps,random,400.0,0.08,early+final,,1.62482142,0.03506
+1000steps,guess,400.0,0.1,early,,1.1572641799999999,0.13842
+1000steps,random,400.0,0.1,early,,1.04589044,0.17804
+1000steps,guess,400.0,0.1,early+final,,1.3714447,0.03918
+1000steps,random,400.0,0.1,early+final,,1.6304326,0.03502
+1000steps,guess,400.0,0.15,early,,1.16654332,0.13614
+1000steps,random,400.0,0.15,early,,1.07236446,0.178
+1000steps,guess,400.0,0.15,early+final,,1.3912475199999998,0.04018
+1000steps,random,400.0,0.15,early+final,,1.65365878,0.03624
+1000steps,guess,400.0,0.2,early,,1.16654332,0.13614
+1000steps,random,400.0,0.2,early,,1.10154122,0.17878
+1000steps,guess,400.0,0.2,early+final,,1.3912475199999998,0.04018
+1000steps,random,400.0,0.2,early+final,,1.6748535,0.03714
+1000steps,guess,400.0,0.3,early,,1.16654332,0.13614
+1000steps,random,400.0,0.3,early,,1.17218138,0.17838
+1000steps,guess,400.0,0.3,early+final,,1.3912475199999998,0.04018
+1000steps,random,400.0,0.3,early+final,,1.7355749,0.03878
+1000steps,guess,400.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess,400.0,,"early+final, budget 2",2.0,1.12845336,0.1011
+1000steps,guess,400.0,,"early+final, budget 3",3.0,1.1954064599999998,0.07294
+1000steps,guess,400.0,,"early+final, budget 4",4.0,1.23774156,0.0599
+1000steps,guess,400.0,,"early+final, budget 5",5.0,1.26785006,0.05188
+1000steps,guess,400.0,,"early+final, budget 6",6.0,1.29726594,0.04706
+1000steps,guess,400.0,,"early+final, budget 8",8.0,1.3412128,0.042
+1000steps,guess,400.0,,"early+final, budget 10",10.0,1.3912475199999998,0.04018
+1000steps,guess,400.0,,"early+final, budget 12",12.0,1.4243327,0.03852
+1000steps,guess,400.0,,"early+final, budget 15",15.0,1.47144542,0.03686
+1000steps,guess,400.0,,"early+final, budget 20",20.0,1.54911094,0.03584
+1000steps,guess readout,400.0,0.02,early,,1.01685804,0.16904
+1000steps,guess readout,400.0,0.02,early+final,,1.53138354,0.03404
+1000steps,guess readout,400.0,0.04,early,,1.0587866,0.16512
+1000steps,guess readout,400.0,0.04,early+final,,1.4563354,0.03406
+1000steps,guess readout,400.0,0.06,early,,1.10142092,0.16068
+1000steps,guess readout,400.0,0.06,early+final,,1.41653686,0.0351
+1000steps,guess readout,400.0,0.08,early,,1.1270368000000002,0.15202
+1000steps,guess readout,400.0,0.08,early+final,,1.3876696199999998,0.03504
+1000steps,guess readout,400.0,0.1,early,,1.15023064,0.14502
+1000steps,guess readout,400.0,0.1,early+final,,1.4095841,0.04022
+1000steps,guess readout,400.0,0.15,early,,1.22565874,0.1293
+1000steps,guess readout,400.0,0.15,early+final,,1.42714476,0.04422
+1000steps,guess readout,400.0,0.2,early,,1.29432598,0.1171
+1000steps,guess readout,400.0,0.2,early+final,,1.4414285199999999,0.046
+1000steps,guess readout,400.0,0.3,early,,1.4075363,0.10458
+1000steps,guess readout,400.0,0.3,early+final,,1.53037692,0.05204
+1000steps,guess readout,400.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess readout,400.0,,"early+final, budget 2",2.0,1.13110248,0.1014
+1000steps,guess readout,400.0,,"early+final, budget 3",3.0,1.2024073000000002,0.07416
+1000steps,guess readout,400.0,,"early+final, budget 4",4.0,1.2509282000000002,0.06088
+1000steps,guess readout,400.0,,"early+final, budget 5",5.0,1.2825779,0.0528
+1000steps,guess readout,400.0,,"early+final, budget 6",6.0,1.3150485,0.04816
+1000steps,guess readout,400.0,,"early+final, budget 8",8.0,1.3666163,0.04266
+1000steps,guess readout,400.0,,"early+final, budget 10",10.0,1.412643,0.04034
+1000steps,guess readout,400.0,,"early+final, budget 12",12.0,1.45068116,0.03872
+1000steps,guess readout,400.0,,"early+final, budget 15",15.0,1.50726348,0.03716
+1000steps,guess readout,400.0,,"early+final, budget 20",20.0,1.59066532,0.03654
+1000steps,layer 6 probe,400.0,0.02,early,,1.01490918,0.16854
+1000steps,layer 6 probe,400.0,0.02,early+final,,1.5343872200000002,0.03406
+1000steps,layer 6 probe,400.0,0.04,early,,1.044912,0.16414
+1000steps,layer 6 probe,400.0,0.04,early+final,,1.4668977,0.03408
+1000steps,layer 6 probe,400.0,0.06,early,,1.0849719,0.15956
+1000steps,layer 6 probe,400.0,0.06,early+final,,1.42548674,0.0342
+1000steps,layer 6 probe,400.0,0.08,early,,1.10788504,0.14832
+1000steps,layer 6 probe,400.0,0.08,early+final,,1.4018697199999999,0.03412
+1000steps,layer 6 probe,400.0,0.1,early,,1.14166528,0.13934
+1000steps,layer 6 probe,400.0,0.1,early+final,,1.38891064,0.03572
+1000steps,layer 6 probe,400.0,0.15,early,,1.2009411,0.12128
+1000steps,layer 6 probe,400.0,0.15,early+final,,1.39230402,0.03918
+1000steps,layer 6 probe,400.0,0.2,early,,1.27425192,0.11704
+1000steps,layer 6 probe,400.0,0.2,early+final,,1.43584126,0.04536
+1000steps,layer 6 probe,400.0,0.3,early,,1.38686876,0.10258
+1000steps,layer 6 probe,400.0,0.3,early+final,,1.51420022,0.05092
+1000steps,layer 6 probe,400.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,layer 6 probe,400.0,,"early+final, budget 2",2.0,1.13139326,0.10098
+1000steps,layer 6 probe,400.0,,"early+final, budget 3",3.0,1.19907312,0.07302
+1000steps,layer 6 probe,400.0,,"early+final, budget 4",4.0,1.24167158,0.05956
+1000steps,layer 6 probe,400.0,,"early+final, budget 5",5.0,1.27262946,0.05056
+1000steps,layer 6 probe,400.0,,"early+final, budget 6",6.0,1.29967722,0.04532
+1000steps,layer 6 probe,400.0,,"early+final, budget 8",8.0,1.3430416399999998,0.03896
+1000steps,layer 6 probe,400.0,,"early+final, budget 10",10.0,1.3866644,0.0368
+1000steps,layer 6 probe,400.0,,"early+final, budget 12",12.0,1.4136859,0.03438
+1000steps,layer 6 probe,400.0,,"early+final, budget 15",15.0,1.4592756,0.03198
+1000steps,layer 6 probe,400.0,,"early+final, budget 20",20.0,1.5245935199999998,0.03014
+1000steps,guess readout + layer,400.0,0.02,early,,1.01285606,0.16666
+1000steps,guess readout + layer,400.0,0.02,early+final,,1.5346568999999999,0.03398
+1000steps,guess readout + layer,400.0,0.04,early,,1.0453290400000002,0.16598
+1000steps,guess readout + layer,400.0,0.04,early+final,,1.4638095599999998,0.034
+1000steps,guess readout + layer,400.0,0.06,early,,1.08802752,0.15948
+1000steps,guess readout + layer,400.0,0.06,early+final,,1.414017,0.0343
+1000steps,guess readout + layer,400.0,0.08,early,,1.11438124,0.15282
+1000steps,guess readout + layer,400.0,0.08,early+final,,1.3984010800000002,0.03508
+1000steps,guess readout + layer,400.0,0.1,early,,1.14051842,0.14344
+1000steps,guess readout + layer,400.0,0.1,early+final,,1.39611,0.03594
+1000steps,guess readout + layer,400.0,0.15,early,,1.1943085599999999,0.12948
+1000steps,guess readout + layer,400.0,0.15,early+final,,1.40823858,0.03974
+1000steps,guess readout + layer,400.0,0.2,early,,1.2744042999999998,0.117
+1000steps,guess readout + layer,400.0,0.2,early+final,,1.43718344,0.04482
+1000steps,guess readout + layer,400.0,0.3,early,,1.38647578,0.10594
+1000steps,guess readout + layer,400.0,0.3,early+final,,1.52047352,0.05026
+1000steps,guess readout + layer,400.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,guess readout + layer,400.0,,"early+final, budget 2",2.0,1.1358949600000001,0.10208
+1000steps,guess readout + layer,400.0,,"early+final, budget 3",3.0,1.20363934,0.07322
+1000steps,guess readout + layer,400.0,,"early+final, budget 4",4.0,1.24716136,0.05904
+1000steps,guess readout + layer,400.0,,"early+final, budget 5",5.0,1.2804013,0.05102
+1000steps,guess readout + layer,400.0,,"early+final, budget 6",6.0,1.30649442,0.0455
+1000steps,guess readout + layer,400.0,,"early+final, budget 8",8.0,1.35155048,0.03902
+1000steps,guess readout + layer,400.0,,"early+final, budget 10",10.0,1.3942271800000001,0.03658
+1000steps,guess readout + layer,400.0,,"early+final, budget 12",12.0,1.4210954,0.03386
+1000steps,guess readout + layer,400.0,,"early+final, budget 15",15.0,1.46649954,0.03166
+1000steps,guess readout + layer,400.0,,"early+final, budget 20",20.0,1.53306282,0.03008
+1000steps,oracle,200.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,oracle,200.0,,"early+final, budget 2",2.0,1.03533178,0.09416
+1000steps,oracle,200.0,,"early+final, budget 3",3.0,1.0543624600000001,0.06774
+1000steps,oracle,200.0,,"early+final, budget 4",4.0,1.06857316,0.05418
+1000steps,oracle,200.0,,"early+final, budget 5",5.0,1.07892064,0.0459
+1000steps,oracle,200.0,,"early+final, budget 6",6.0,1.0882631200000001,0.04198
+1000steps,oracle,200.0,,"early+final, budget 8",8.0,1.1044597,0.03636
+1000steps,oracle,200.0,,"early+final, budget 10",10.0,1.1191327000000002,0.03406
+1000steps,oracle,200.0,,"early+final, budget 12",12.0,1.13338762,0.0326
+1000steps,oracle,200.0,,"early+final, budget 15",15.0,1.15191982,0.03078
+1000steps,oracle,200.0,,"early+final, budget 20",20.0,1.1828778400000002,0.02958
+1000steps,oracle,400.0,,"early+final, budget 1",1.0,1.0,0.17686
+1000steps,oracle,400.0,,"early+final, budget 2",2.0,1.0704877799999999,0.09416
+1000steps,oracle,400.0,,"early+final, budget 3",3.0,1.10845446,0.06774
+1000steps,oracle,400.0,,"early+final, budget 4",4.0,1.13680516,0.05418
+1000steps,oracle,400.0,,"early+final, budget 5",5.0,1.1574486400000001,0.0459
+1000steps,oracle,400.0,,"early+final, budget 6",6.0,1.1760871199999998,0.04198
+1000steps,oracle,400.0,,"early+final, budget 8",8.0,1.2083997,0.03636
+1000steps,oracle,400.0,,"early+final, budget 10",10.0,1.2376727,0.03406
+1000steps,oracle,400.0,,"early+final, budget 12",12.0,1.26611162,0.0326
+1000steps,oracle,400.0,,"early+final, budget 15",15.0,1.3030838200000001,0.03078
+1000steps,oracle,400.0,,"early+final, budget 20",20.0,1.3648458399999999,0.02958

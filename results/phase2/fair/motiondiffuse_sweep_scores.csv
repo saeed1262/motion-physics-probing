@@ -1,0 +1,130 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,phase2,xcom_margin,r2,explicit,sweep,0,3,87086,250,0.12421361829340993,0.23352547522197126,0.18775148112775755
+motiondiffuse,phase2,xcom_margin,r2,estimate | ridge,sweep,0,3,87086,250,0.6062223091664116,0.7035997214784205,0.6353056323017446
+motiondiffuse,phase2,xcom_margin,r2,estimate | mlp,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate | tuned,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | ridge,sweep,0,3,87086,250,0.6276092838976601,0.7256774988039356,0.664926247151721
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | mlp,sweep,0,3,87086,250,0.7989455724888977,0.8457623530928313,0.8064642079568521
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | tuned,sweep,0,3,87086,250,0.7989455724888977,0.8457623530928313,0.8064642079568521
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 0 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | ridge,sweep,0,3,87086,250,0.6562067092638746,0.7432872459628219,0.6884066168941066
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | mlp,sweep,0,3,87086,250,0.8053962849302468,0.8488748440082389,0.810502284336148
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | tuned,sweep,0,3,87086,250,0.8053962849302468,0.8488748440082389,0.810502284336148
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 1 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | ridge,sweep,0,3,87086,250,0.6813706754333051,0.7707932660150598,0.7224460674285927
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | mlp,sweep,0,3,87086,250,0.8012791629895634,0.84965391888289,0.8122644415821791
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | tuned,sweep,0,3,87086,250,0.8012791629895634,0.84965391888289,0.8122644415821791
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 2 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | ridge,sweep,0,3,87086,250,0.6766113272280943,0.7729822532081997,0.7243950024080497
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | mlp,sweep,0,3,87086,250,0.8084981577728989,0.8543365366324198,0.8180078055159592
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | tuned,sweep,0,3,87086,250,0.8084981577728989,0.8543365366324198,0.8180078055159592
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 3 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | ridge,sweep,0,3,87086,250,0.6788548075399949,0.7724534922883589,0.7234217643304115
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | mlp,sweep,0,3,87086,250,0.8108138090533249,0.8565962236783979,0.8209248605858527
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | tuned,sweep,0,3,87086,250,0.8108138090533249,0.8565962236783979,0.8209248605858527
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 4 | tuned+fallback,sweep,0,3,87086,250,0.8227954331163407,0.8634365790857098,0.8273125266627664
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | ridge,sweep,0,3,87086,250,0.6784141283085846,0.7783715284857684,0.7314841668782187
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | mlp,sweep,0,3,87086,250,0.8139326245099578,0.8592372120696772,0.8235713411419437
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | tuned,sweep,0,3,87086,250,0.8139326245099578,0.8592372120696772,0.8235713411419437
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 5 | tuned+fallback,sweep,0,3,87086,250,0.8224938865630687,0.863627998870212,0.8276500956138907
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | ridge,sweep,0,3,87086,250,0.6741108563635592,0.7795244011337376,0.7329550517861873
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | mlp,sweep,0,3,87086,250,0.8155188993376329,0.8605021970314728,0.8248554088243165
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | tuned,sweep,0,3,87086,250,0.8155188993376329,0.8605021970314728,0.8248554088243165
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 6 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | ridge,sweep,0,3,87086,250,0.6718503542293077,0.7807279479672666,0.7336774829842964
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | mlp,sweep,0,3,87086,250,0.8124821513367355,0.8577543434518325,0.8210237336210944
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | tuned,sweep,0,3,87086,250,0.8124821513367355,0.8577543434518325,0.8210237336210944
+motiondiffuse,phase2,xcom_margin,r2,estimate + layer 7 | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,xcom_margin,r2,layers all | ridge,sweep,0,3,87086,250,0.7016539037048615,0.8126422664022631,0.7712776163377367
+motiondiffuse,phase2,xcom_margin,r2,layers all | mlp,sweep,0,3,87086,250,0.7158864384929067,0.800641290214684,0.7536463168239389
+motiondiffuse,phase2,xcom_margin,r2,layers all | tuned,sweep,0,3,87086,250,0.7082749003539164,0.8093201103990824,0.7655761698884157
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | ridge,sweep,0,3,87086,250,0.7139119085466232,0.8185569174842083,0.7786922470836982
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | mlp,sweep,0,3,87086,250,0.764403423794954,0.8283701945733613,0.7863541934492371
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | tuned,sweep,0,3,87086,250,0.7514795958453409,0.8294796011082247,0.7886481231221844
+motiondiffuse,phase2,xcom_margin,r2,estimate + layers all | tuned+fallback,sweep,0,3,87086,250,0.8232175228376646,0.8645385788796619,0.8290008710458716
+motiondiffuse,phase2,in_flight,auc,explicit,sweep,0,3,90000,250,0.777519633595021,0.11871014865237502,0.08419153388934068
+motiondiffuse,phase2,in_flight,auc,estimate | ridge,sweep,0,3,90000,250,0.9674781597490286,0.5849655436515846,0.511491493996559
+motiondiffuse,phase2,in_flight,auc,estimate | mlp,sweep,0,3,90000,250,0.9428725863976458,0.707290734817253,0.6324545299668024
+motiondiffuse,phase2,in_flight,auc,estimate | tuned,sweep,0,3,90000,250,0.9428725863976458,0.707290734817253,0.6324545299668024
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | ridge,sweep,0,3,90000,250,0.9651993987404367,0.6104343914179237,0.5424129304276036
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | mlp,sweep,0,3,90000,250,0.9159756303029511,0.7014130753676473,0.6245337786385999
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | tuned,sweep,0,3,90000,250,0.9159756303029511,0.7014130753676473,0.6245337786385999
+motiondiffuse,phase2,in_flight,auc,estimate + layer 0 | tuned+fallback,sweep,0,3,90000,250,0.9333295382749554,0.7085318745846397,0.6307257235507021
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | ridge,sweep,0,3,90000,250,0.9618818764515094,0.6187129197550447,0.5484335339962569
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | mlp,sweep,0,3,90000,250,0.9262323226556425,0.701827688529071,0.6227913004414513
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | tuned,sweep,0,3,90000,250,0.9262323226556425,0.701827688529071,0.6227913004414513
+motiondiffuse,phase2,in_flight,auc,estimate + layer 1 | tuned+fallback,sweep,0,3,90000,250,0.9428725863976458,0.707290734817253,0.6324545299668024
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | ridge,sweep,0,3,90000,250,0.9620328565152212,0.6188923560089683,0.5502825096199924
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | mlp,sweep,0,3,90000,250,0.9319837315257485,0.7042115061314137,0.6280608441009924
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | tuned,sweep,0,3,90000,250,0.9319837315257485,0.7042115061314137,0.6280608441009924
+motiondiffuse,phase2,in_flight,auc,estimate + layer 2 | tuned+fallback,sweep,0,3,90000,250,0.9428725863976458,0.707290734817253,0.6324545299668024
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | ridge,sweep,0,3,90000,250,0.9626018512518594,0.6330776970761441,0.5703019662788336
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | mlp,sweep,0,3,90000,250,0.9305993620865723,0.7038852313491154,0.6313171677707786
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | tuned,sweep,0,3,90000,250,0.9305993620865723,0.7038852313491154,0.6313171677707786
+motiondiffuse,phase2,in_flight,auc,estimate + layer 3 | tuned+fallback,sweep,0,3,90000,250,0.9428725863976458,0.707290734817253,0.6324545299668024
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | ridge,sweep,0,3,90000,250,0.9652920500756664,0.6328632689475328,0.5707550917254473
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | mlp,sweep,0,3,90000,250,0.9314757116290083,0.7034899120533081,0.6304767924550183
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | tuned,sweep,0,3,90000,250,0.9314757116290083,0.7034899120533081,0.6304767924550183
+motiondiffuse,phase2,in_flight,auc,estimate + layer 4 | tuned+fallback,sweep,0,3,90000,250,0.9383728532470471,0.7089788252845058,0.6330763900645895
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | ridge,sweep,0,3,90000,250,0.970327743931633,0.6342402465797391,0.573739778923127
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | mlp,sweep,0,3,90000,250,0.9342819295329378,0.703679723575019,0.6280634896120583
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | tuned,sweep,0,3,90000,250,0.9342819295329378,0.703679723575019,0.6280634896120583
+motiondiffuse,phase2,in_flight,auc,estimate + layer 5 | tuned+fallback,sweep,0,3,90000,250,0.9378485015427678,0.7100652538692394,0.6330305986809658
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | ridge,sweep,0,3,90000,250,0.9705159114166858,0.638623979926308,0.5781288099181355
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | mlp,sweep,0,3,90000,250,0.9371579452752162,0.713139562076794,0.6412212891722803
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | tuned,sweep,0,3,90000,250,0.9371579452752162,0.713139562076794,0.6412212891722803
+motiondiffuse,phase2,in_flight,auc,estimate + layer 6 | tuned+fallback,sweep,0,3,90000,250,0.9385562526087744,0.7079015610211319,0.6310381042632215
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | ridge,sweep,0,3,90000,250,0.9691670802586754,0.6371502208809973,0.5760288429683894
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | mlp,sweep,0,3,90000,250,0.9432286548733192,0.7106948254272384,0.6375234412112161
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | tuned,sweep,0,3,90000,250,0.9432286548733192,0.7106948254272384,0.6375234412112161
+motiondiffuse,phase2,in_flight,auc,estimate + layer 7 | tuned+fallback,sweep,0,3,90000,250,0.9377619305499273,0.7061852590410802,0.6294731569926697
+motiondiffuse,phase2,in_flight,auc,layers all | ridge,sweep,0,3,90000,250,0.9626954640929499,0.6520205944955881,0.6131343111346212
+motiondiffuse,phase2,in_flight,auc,layers all | mlp,sweep,0,3,90000,250,0.9218289883487715,0.596547641570959,0.5564782348819796
+motiondiffuse,phase2,in_flight,auc,layers all | tuned,sweep,0,3,90000,250,0.9472511737503984,0.6470687408577034,0.607543987462623
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | ridge,sweep,0,3,90000,250,0.9681356918368043,0.6690113125767372,0.6087364276690584
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | mlp,sweep,0,3,90000,250,0.938712069756273,0.6848326418804213,0.6092077892844424
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | tuned,sweep,0,3,90000,250,0.9456394199969671,0.6821628693995739,0.6060440898510295
+motiondiffuse,phase2,in_flight,auc,estimate + layers all | tuned+fallback,sweep,0,3,90000,250,0.9400273565755992,0.701293011201039,0.623667830982224
+motiondiffuse,phase2,float_vs_fall,auc,explicit,sweep,0,3,2107,50,0.882752004318649,0.12150355518292266,0.15507472938333403
+motiondiffuse,phase2,float_vs_fall,auc,estimate | ridge,sweep,0,3,2107,50,0.9411985033377602,0.04573407314829418,0.03482794593726577
+motiondiffuse,phase2,float_vs_fall,auc,estimate | mlp,sweep,0,3,2107,50,0.9353425091585481,2.7292615240652514e-05,-1.4799850837855647e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate | tuned,sweep,0,3,2107,50,0.9400445165088573,3.055712172236518e-05,-3.761319779141615e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | ridge,sweep,0,3,2107,50,0.9739443465402889,0.035515275555043455,0.021186953314572866
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | mlp,sweep,0,3,2107,50,0.9509105738443997,3.063290772259651e-05,1.562329265964277e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | tuned,sweep,0,3,2107,50,0.9708892153085155,1.5673490990531117e-05,7.4277118944319845e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 0 | tuned+fallback,sweep,0,3,2107,50,0.9597737794633374,9.171569817103804e-05,2.543777459231873e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | ridge,sweep,0,3,2107,50,0.9811782792296063,0.034434611132374573,0.013639822378256297
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | mlp,sweep,0,3,2107,50,0.9705831154123742,3.265240601821043e-05,1.6794033709339304e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | tuned,sweep,0,3,2107,50,0.9724373179781367,2.7409742453622902e-05,6.069010247947591e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 1 | tuned+fallback,sweep,0,3,2107,50,0.9637990419953409,8.985925401132401e-05,1.9896846375980153e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | ridge,sweep,0,3,2107,50,0.9813435536144237,0.05663282805501841,0.032827002424879265
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | mlp,sweep,0,3,2107,50,0.9694702026909408,2.5471564527466464e-05,2.0224855164356465e-06
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | tuned,sweep,0,3,2107,50,0.9811919705987627,3.002688694154477e-05,1.3853660532095557e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 2 | tuned+fallback,sweep,0,3,2107,50,0.9613658901052474,0.00010178282770280818,2.9464076302366302e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | ridge,sweep,0,3,2107,50,0.9730553855000577,0.08900603519002835,0.05742389503334202
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | mlp,sweep,0,3,2107,50,0.9718671702482636,3.062819664496825e-05,1.1907110794678656e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | tuned,sweep,0,3,2107,50,0.9748293957607609,3.127956248547673e-05,1.0335647573504823e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 3 | tuned+fallback,sweep,0,3,2107,50,0.9730182232123471,0.00011349505795463175,3.750272980982275e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | ridge,sweep,0,3,2107,50,0.9724021116003059,0.09989908205404462,0.05058080752944427
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | mlp,sweep,0,3,2107,50,0.9725977025882555,4.36104842317178e-05,2.5804071608789464e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | tuned,sweep,0,3,2107,50,0.9747335561766657,4.1581874886435366e-05,1.135069463749271e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 4 | tuned+fallback,sweep,0,3,2107,50,0.973570767753305,0.00014161888799449067,3.865880382435298e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | ridge,sweep,0,3,2107,50,0.9689010329160074,0.10149925724136402,0.05038321237607835
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | mlp,sweep,0,3,2107,50,0.9698780099008157,4.110582050717548e-05,2.400239663441701e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | tuned,sweep,0,3,2107,50,0.9734661265747518,4.140970320980192e-05,1.0918435648663282e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 5 | tuned+fallback,sweep,0,3,2107,50,0.9646498627929219,0.00014395831191524463,3.795803990873424e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | ridge,sweep,0,3,2107,50,0.9712383452220055,0.1013663197069785,0.047248125170898395
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | mlp,sweep,0,3,2107,50,0.9671592951683158,3.8162815748503094e-05,2.198404325489308e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | tuned,sweep,0,3,2107,50,0.9734866636284867,0.08561093002702153,0.024113279706489434
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 6 | tuned+fallback,sweep,0,3,2107,50,0.9657559298297772,0.00014364392704936346,3.287870658541989e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | ridge,sweep,0,3,2107,50,0.9615340983548843,0.1296401703913503,0.08124372799688134
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | mlp,sweep,0,3,2107,50,0.9639105288584724,3.920568982082616e-05,2.218396221094015e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | tuned,sweep,0,3,2107,50,0.9631203412671558,5.1105506540262906e-05,2.004579603922818e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layer 7 | tuned+fallback,sweep,0,3,2107,50,0.9557807894443456,0.00018714470070496945,7.340771990750321e-05
+motiondiffuse,phase2,float_vs_fall,auc,layers all | ridge,sweep,0,3,2107,50,0.9902967310878183,0.11497020872990772,0.0713589974274682
+motiondiffuse,phase2,float_vs_fall,auc,layers all | mlp,sweep,0,3,2107,50,0.9834725615182555,0.09906119097047646,0.049142568466739395
+motiondiffuse,phase2,float_vs_fall,auc,layers all | tuned,sweep,0,3,2107,50,0.9901412362523985,0.11149851603453316,0.06948769050354468
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | ridge,sweep,0,3,2107,50,0.984216785227404,0.09445869205689644,0.04731534349900284
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | mlp,sweep,0,3,2107,50,0.9835977397505432,0.00010259197826184299,4.7530066750591336e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | tuned,sweep,0,3,2107,50,0.9857912926803986,0.00013709050275653451,5.4066076246620265e-05
+motiondiffuse,phase2,float_vs_fall,auc,estimate + layers all | tuned+fallback,sweep,0,3,2107,50,0.984367390288125,0.00017120263057060638,6.752138207721159e-05

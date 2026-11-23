@@ -1,0 +1,16 @@
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+Model & Target & Explicit & Estimate, linear & Estimate, MLP & Layer, linear & Layer, MLP & Estimate + layer, MLP \\
+\midrule
+\multirow{4}{*}{50-step} & Dynamic balance ($r$) & 0.797 $\pm$ 0.011 & 0.756 $\pm$ 0.007 & \textbf{0.892 $\pm$ 0.003} & 0.851 $\pm$ 0.000 & 0.867 $\pm$ 0.002 & 0.889 $\pm$ 0.002 \\
+ & Static balance ($r$) & 0.746 $\pm$ 0.020 & 0.644 $\pm$ 0.025 & \textbf{0.801 $\pm$ 0.023} & 0.729 $\pm$ 0.015 & 0.749 $\pm$ 0.020 & 0.795 $\pm$ 0.019 \\
+ & In flight ($r$) & 0.710 $\pm$ 0.007 & 0.562 $\pm$ 0.014 & 0.755 $\pm$ 0.010 & 0.662 $\pm$ 0.010 & 0.734 $\pm$ 0.007 & \textbf{0.760 $\pm$ 0.008} \\
+ & Flight gravity ($r$) & 0.439 $\pm$ 0.053 & 0.219 $\pm$ 0.047 & 0.340 $\pm$ 0.039 & 0.445 $\pm$ 0.071 & \textbf{0.536 $\pm$ 0.109} & 0.508 $\pm$ 0.081 \\
+\midrule
+\multirow{4}{*}{1000-step} & Dynamic balance ($r$) & 0.736 $\pm$ 0.004 & 0.664 $\pm$ 0.008 & 0.816 $\pm$ 0.001 & 0.772 $\pm$ 0.011 & 0.800 $\pm$ 0.006 & \textbf{0.817 $\pm$ 0.003} \\
+ & Static balance ($r$) & 0.607 $\pm$ 0.010 & 0.572 $\pm$ 0.010 & \textbf{0.679 $\pm$ 0.003} & 0.610 $\pm$ 0.010 & 0.642 $\pm$ 0.010 & 0.673 $\pm$ 0.005 \\
+ & In flight ($r$) & 0.562 $\pm$ 0.012 & 0.502 $\pm$ 0.020 & 0.608 $\pm$ 0.035 & 0.556 $\pm$ 0.024 & 0.580 $\pm$ 0.025 & \textbf{0.612 $\pm$ 0.034} \\
+ & Flight gravity ($r$) & \textbf{0.645 $\pm$ 0.079} & 0.405 $\pm$ 0.101 & 0.576 $\pm$ 0.020 & 0.572 $\pm$ 0.023 & 0.614 $\pm$ 0.012 & 0.616 $\pm$ 0.003 \\
+\bottomrule
+\end{tabular}}

@@ -1,0 +1,101 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,cond_token,fall_gravity,r2,estimate | mlp config 0,cond,0,3,1147,57,-0.09404672867734964,0.13363636131112056,0.14180053606567591
+50steps,cond_token,fall_gravity,r2,estimate | mlp config 1,cond,0,3,1147,57,-0.09732223607398582,0.13780127192827007,0.14780152296933427
+50steps,cond_token,fall_gravity,r2,estimate | mlp config 2,cond,0,3,1147,57,-0.03391116696234042,0.1311656223301747,0.14883796746613898
+50steps,cond_token,fall_gravity,r2,estimate | mlp config 3,cond,0,3,1147,57,0.006331358981784052,0.16238301977489789,0.20542887091255022
+50steps,cond_token,fall_gravity,r2,estimate | mlp config 4,cond,0,3,1147,57,-0.7256987563366413,0.0774898265041825,0.11465219930558761
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp config 0,cond,0,3,1147,57,0.14622013650555388,0.2334985636096062,0.23118037486526655
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp config 1,cond,0,3,1147,57,0.12012910043130509,0.2265877671551611,0.22471714594434322
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp config 2,cond,0,3,1147,57,0.20991362089723797,0.27747459326880136,0.24677053094101373
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp config 3,cond,0,3,1147,57,0.12559628572879245,0.2447499865302511,0.2548575873247387
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp config 4,cond,0,3,1147,57,-0.014318457293981401,0.16732945810599675,0.15781557722673664
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp config 0,cond,0,3,1147,57,0.08814345510257093,0.1835535798559507,0.18856659797842995
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp config 1,cond,0,3,1147,57,0.08573917791013685,0.1704682430509688,0.16969307326437477
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp config 2,cond,0,3,1147,57,0.09637930362611946,0.18298495514804536,0.2454092027103637
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp config 3,cond,0,3,1147,57,-0.1418209833652373,0.13123755583416127,0.13382708700727727
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp config 4,cond,0,3,1147,57,-0.1605831435773386,0.17489074357906997,0.16213810964646724
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp config 0,cond,0,3,1147,57,0.16463998471807884,0.2798962989012732,0.2792969253240399
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp config 1,cond,0,3,1147,57,0.17647279301662566,0.27210708180117527,0.274194897920353
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp config 2,cond,0,3,1147,57,0.17844054104548623,0.26030132078839285,0.24703581392574508
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp config 3,cond,0,3,1147,57,-1.162089109074648,0.19126938427578177,0.16191787415899775
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp config 4,cond,0,3,1147,57,0.027519207155746628,0.23729455412093958,0.22824945771209623
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp config 0,cond,0,3,1147,57,-0.12022084662713928,0.1629864539577278,0.1796988365313234
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp config 1,cond,0,3,1147,57,-0.19294625958187983,0.17249661234708374,0.1850207186662679
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp config 2,cond,0,3,1147,57,-2.5692492987252287,0.06555734155034759,0.12862063948923658
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp config 3,cond,0,3,1147,57,-72.34590316267239,0.07874371037937287,0.06348135292880085
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp config 4,cond,0,3,1147,57,-1.0678620477703364,0.12940629957274277,0.144497917488948
+50steps,cond_token,float_vs_fall,auc,estimate | mlp config 0,cond,0,3,4710,106,0.9828171992440959,0.4523470959317694,0.3238055132011413
+50steps,cond_token,float_vs_fall,auc,estimate | mlp config 1,cond,0,3,4710,106,0.982567857528248,0.4473319058696527,0.30940680263315845
+50steps,cond_token,float_vs_fall,auc,estimate | mlp config 2,cond,0,3,4710,106,0.978541196805979,0.437691201665239,0.3112422736167928
+50steps,cond_token,float_vs_fall,auc,estimate | mlp config 3,cond,0,3,4710,106,0.9853759493153625,0.4058521421897297,0.2845501900452093
+50steps,cond_token,float_vs_fall,auc,estimate | mlp config 4,cond,0,3,4710,106,0.9799726482659494,0.4235164271854207,0.2884673040451949
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp config 0,cond,0,3,4710,106,0.9834768903784684,0.4707924676153163,0.32612644872068086
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp config 1,cond,0,3,4710,106,0.9850943081819563,0.4730722070256859,0.329789816680619
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp config 2,cond,0,3,4710,106,0.9829473756845579,0.4313730392466998,0.31359275559320426
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp config 3,cond,0,3,4710,106,0.9895026892935506,0.485632942436175,0.38499781351957146
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp config 4,cond,0,3,4710,106,0.9887921021072678,0.5087171016831975,0.391316193740727
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp config 0,cond,0,3,4710,106,0.9859928192522146,0.4233886554848051,0.2693676287704702
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp config 1,cond,0,3,4710,106,0.9862644279907731,0.41707313159813986,0.2612898118673019
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp config 2,cond,0,3,4710,106,0.9872635077020653,0.4426165494584609,0.32515502314341144
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp config 3,cond,0,3,4710,106,0.9871636731387033,0.4066409610992551,0.2879109612441678
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp config 4,cond,0,3,4710,106,0.9877771173797537,0.43856307253187593,0.34039236492683284
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp config 0,cond,0,3,4710,106,0.9881573696137357,0.4618278099349339,0.3503806862581637
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp config 1,cond,0,3,4710,106,0.9895677775137817,0.4549366590950727,0.34585580752038025
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp config 2,cond,0,3,4710,106,0.9855736609016285,0.42397010112842926,0.3050530019840675
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp config 3,cond,0,3,4710,106,0.9859986918735889,0.40554572074045836,0.28656509331486985
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp config 4,cond,0,3,4710,106,0.9887377803595561,0.45229996569414754,0.3499789367451579
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp config 0,cond,0,3,4710,106,0.9832121330315132,0.3468713044733987,0.24576630974319802
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp config 1,cond,0,3,4710,106,0.9825903692435158,0.350901681060715,0.2480500363570094
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp config 2,cond,0,3,4710,106,0.983632759537443,0.3528337576811264,0.22736430623295711
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp config 3,cond,0,3,4710,106,0.9671862386863337,0.28084066339952357,0.16331424947666984
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp config 4,cond,0,3,4710,106,0.9856196631023934,0.3382058405295085,0.23299098053175765
+50steps,cond_token,xcom_margin,r2,estimate | mlp config 0,cond,0,3,81393,250,0.8900990824734477,0.9001301146058812,0.8572847834492159
+50steps,cond_token,xcom_margin,r2,estimate | mlp config 1,cond,0,3,81393,250,0.8899831814867429,0.8992522794592994,0.8556166948494822
+50steps,cond_token,xcom_margin,r2,estimate | mlp config 2,cond,0,3,81393,250,0.8874671354336615,0.9004673037651636,0.8571221629033812
+50steps,cond_token,xcom_margin,r2,estimate | mlp config 3,cond,0,3,81393,250,0.8895316873590616,0.8990249071606032,0.8562552591264966
+50steps,cond_token,xcom_margin,r2,estimate | mlp config 4,cond,0,3,81393,250,0.8865393541240889,0.8994485656327816,0.8559975323808682
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp config 0,cond,0,3,81393,250,0.8832633881013034,0.8976124407827013,0.8543544469860478
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp config 1,cond,0,3,81393,250,0.8838362397668631,0.8982170810664079,0.8553227541090949
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp config 2,cond,0,3,81393,250,0.8848337132859102,0.8985658479460958,0.8558506652738415
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp config 3,cond,0,3,81393,250,0.8851523981918952,0.8982406749822157,0.8549310419423993
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp config 4,cond,0,3,81393,250,0.8823019663874435,0.8967953414328134,0.8538057507217497
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp config 0,cond,0,3,81393,250,0.8787193635686968,0.8893928807037625,0.8409272692908962
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp config 1,cond,0,3,81393,250,0.8826571712989686,0.8932687469758113,0.8463626373660806
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp config 2,cond,0,3,81393,250,0.8776147224002964,0.8898642579792498,0.8420622947804183
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp config 3,cond,0,3,81393,250,0.8770068648580651,0.8895636082461263,0.8426501395916891
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp config 4,cond,0,3,81393,250,0.8809304051587364,0.8885241084036585,0.8404850050236355
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp config 0,cond,0,3,81393,250,0.8798013890417421,0.8906263729082561,0.8442957255717883
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp config 1,cond,0,3,81393,250,0.8800447075991529,0.8912434088796336,0.8456246568746968
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp config 2,cond,0,3,81393,250,0.8759355518815226,0.8871118455765227,0.8389475734039924
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp config 3,cond,0,3,81393,250,0.8741015018243525,0.8857923227591369,0.8389308807662682
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp config 4,cond,0,3,81393,250,0.8788080868210628,0.890031615478419,0.8440381622321753
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp config 0,cond,0,3,81393,250,0.8605183829301384,0.8795898552312553,0.8279972601643204
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp config 1,cond,0,3,81393,250,0.8551346958475722,0.8735139210107727,0.8204701397478774
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp config 2,cond,0,3,81393,250,0.8540217008424832,0.8743155300618703,0.8219950709132697
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp config 3,cond,0,3,81393,250,0.8548868051166952,0.8757203705707133,0.8219747570271606
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp config 4,cond,0,3,81393,250,0.8599556037939362,0.8778931567131656,0.8257499165290925
+50steps,cond_token,in_flight,auc,estimate | mlp config 0,cond,0,3,90000,250,0.9718746390289243,0.7762600281983054,0.7505957169573388
+50steps,cond_token,in_flight,auc,estimate | mlp config 1,cond,0,3,90000,250,0.972890872640071,0.7814817738601038,0.756045029979698
+50steps,cond_token,in_flight,auc,estimate | mlp config 2,cond,0,3,90000,250,0.9736648514388956,0.775483000800618,0.750007940970879
+50steps,cond_token,in_flight,auc,estimate | mlp config 3,cond,0,3,90000,250,0.9789199779245881,0.7680077546446209,0.7415698242809861
+50steps,cond_token,in_flight,auc,estimate | mlp config 4,cond,0,3,90000,250,0.976232433557009,0.7816364560489752,0.7562207715680488
+50steps,cond_token,in_flight,auc,estimate + layer | mlp config 0,cond,0,3,90000,250,0.9734598259702547,0.7742998365122638,0.7482290691546772
+50steps,cond_token,in_flight,auc,estimate + layer | mlp config 1,cond,0,3,90000,250,0.9730978794103888,0.7774103589674809,0.7509242790729158
+50steps,cond_token,in_flight,auc,estimate + layer | mlp config 2,cond,0,3,90000,250,0.9733686596852876,0.7700925127604996,0.7423444469352946
+50steps,cond_token,in_flight,auc,estimate + layer | mlp config 3,cond,0,3,90000,250,0.9793437994795031,0.7661310562547594,0.7384153213097662
+50steps,cond_token,in_flight,auc,estimate + layer | mlp config 4,cond,0,3,90000,250,0.9719852393424773,0.7722634701117224,0.7439706103824927
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp config 0,cond,0,3,90000,250,0.9617590033970345,0.7527665273817356,0.7223029656934044
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp config 1,cond,0,3,90000,250,0.9704399068268049,0.7598887921558523,0.7303823513791868
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp config 2,cond,0,3,90000,250,0.9716016098053284,0.7591739229259266,0.7290886808712137
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp config 3,cond,0,3,90000,250,0.9767617951124774,0.7505915634426155,0.7189704944233899
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp config 4,cond,0,3,90000,250,0.9675764241550417,0.7580396475309715,0.7279805462991781
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp config 0,cond,0,3,90000,250,0.9604899989437007,0.7636285051101812,0.7371655910669621
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp config 1,cond,0,3,90000,250,0.9609574369707933,0.7569239535318083,0.7305975986471321
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp config 2,cond,0,3,90000,250,0.9658446287406156,0.7522105777469805,0.7236533536376312
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp config 3,cond,0,3,90000,250,0.9777096238550012,0.7449051129253625,0.7157977652491637
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp config 4,cond,0,3,90000,250,0.9637289147302588,0.7620131284078866,0.7367948905079088
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp config 0,cond,0,3,90000,250,0.9657811471497182,0.7489807753134482,0.7197507513045773
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp config 1,cond,0,3,90000,250,0.9696590470015161,0.7368920612061682,0.7041398380397198
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp config 2,cond,0,3,90000,250,0.9686446854920617,0.7289081550087702,0.6957730031774286
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp config 3,cond,0,3,90000,250,0.9763683796865357,0.7288244788483896,0.6936708893577713
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp config 4,cond,0,3,90000,250,0.9690218322615127,0.7370184689707513,0.7038634121393168

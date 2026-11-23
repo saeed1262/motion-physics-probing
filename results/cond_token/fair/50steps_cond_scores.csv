@@ -1,0 +1,81 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,cond_token,fall_gravity,r2,explicit,cond,0,3,1147,57,0.17092437036588237,0.37127142484478953,0.47320562950068745
+50steps,cond_token,fall_gravity,r2,estimate | ridge,cond,0,3,1147,57,-0.051014549257969666,0.2616618894683801,0.2294834048481371
+50steps,cond_token,fall_gravity,r2,estimate | mlp,cond,0,3,1147,57,0.030849222680405464,0.1804736486446706,0.20031287793796118
+50steps,cond_token,fall_gravity,r2,estimate | tuned,cond,0,3,1147,57,-0.16812480481866965,0.22601425202410352,0.1805383168371363
+50steps,cond_token,fall_gravity,r2,estimate + layer | ridge,cond,0,3,1147,57,0.22282313089497485,0.2871044361209111,0.2529088749505216
+50steps,cond_token,fall_gravity,r2,estimate + layer | mlp,cond,0,3,1147,57,0.2333689122818946,0.29923336330486666,0.2877248012451699
+50steps,cond_token,fall_gravity,r2,estimate + layer | tuned,cond,0,3,1147,57,0.23974504451476397,0.3036445827976502,0.295744113202736
+50steps,cond_token,fall_gravity,r2,estimate + layer | tuned+fallback,cond,0,3,1147,57,0.08439294838679356,0.22611215800169437,0.22677995622274055
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | ridge,cond,0,3,1147,57,0.2220853798483412,0.2533347877181728,0.25355587790898604
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | mlp,cond,0,3,1147,57,-0.009010045059111516,0.16815464641680816,0.18090042494149108
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | tuned,cond,0,3,1147,57,-0.008870277875229204,0.17996971998120284,0.18426068252254663
+50steps,cond_token,fall_gravity,r2,estimate + layer + cond | tuned+fallback,cond,0,3,1147,57,-0.165826006358208,0.22794850431731495,0.20508239612344475
+50steps,cond_token,fall_gravity,r2,estimate + layers all | ridge,cond,0,3,1147,57,0.22307303219506114,0.31424790979799,0.2742831074959174
+50steps,cond_token,fall_gravity,r2,estimate + layers all | mlp,cond,0,3,1147,57,0.22927346525950687,0.3367902226823551,0.31628527882213114
+50steps,cond_token,fall_gravity,r2,estimate + layers all | tuned,cond,0,3,1147,57,0.21692988513329536,0.31396111930683523,0.29375138946936874
+50steps,cond_token,fall_gravity,r2,estimate + layers all | tuned+fallback,cond,0,3,1147,57,0.16852819676161235,0.2815889004069516,0.29429247408897463
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | ridge,cond,0,3,1147,57,0.19236266859888085,0.25256422916936,0.24342456804712667
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | mlp,cond,0,3,1147,57,-0.8774665993782553,0.1822991607185593,0.2164407295972066
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | tuned,cond,0,3,1147,57,-0.7321638663106929,0.24208933336459276,0.27279242422778816
+50steps,cond_token,fall_gravity,r2,estimate + layers all + cond | tuned+fallback,cond,0,3,1147,57,-0.9220033128848593,0.2564088139637524,0.25107281366828166
+50steps,cond_token,float_vs_fall,auc,explicit,cond,0,3,4710,106,0.9310858892898313,0.3991230839959153,0.30839235301392703
+50steps,cond_token,float_vs_fall,auc,estimate | ridge,cond,0,3,4710,106,0.9821445394041883,0.4289005963241553,0.3118948124591165
+50steps,cond_token,float_vs_fall,auc,estimate | mlp,cond,0,3,4710,106,0.9802251709850418,0.4346402162534451,0.30053870765980484
+50steps,cond_token,float_vs_fall,auc,estimate | tuned,cond,0,3,4710,106,0.9802251709850418,0.4346402162534451,0.30053870765980484
+50steps,cond_token,float_vs_fall,auc,estimate + layer | ridge,cond,0,3,4710,106,0.9907117152189716,0.5177306395624699,0.4064153656453889
+50steps,cond_token,float_vs_fall,auc,estimate + layer | mlp,cond,0,3,4710,106,0.9856206418726223,0.4738335067823325,0.34766012852108114
+50steps,cond_token,float_vs_fall,auc,estimate + layer | tuned,cond,0,3,4710,106,0.9907954000735546,0.5158855700453195,0.39756527139995074
+50steps,cond_token,float_vs_fall,auc,estimate + layer | tuned+fallback,cond,0,3,4710,106,0.9879124323639185,0.4883948290023145,0.3507499205614735
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | ridge,cond,0,3,4710,106,0.9918385244451534,0.5095843319972694,0.3944768023869077
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | mlp,cond,0,3,4710,106,0.9886000184498189,0.4267381475210066,0.3251353687228091
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | tuned,cond,0,3,4710,106,0.9914942420170888,0.49922248759953314,0.3890221821025955
+50steps,cond_token,float_vs_fall,auc,estimate + layer + cond | tuned+fallback,cond,0,3,4710,106,0.9897738086469945,0.46674104081552176,0.35087929580440247
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | ridge,cond,0,3,4710,106,0.9908989050252754,0.5244969783721043,0.42863402683423596
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | mlp,cond,0,3,4710,106,0.9882848544360681,0.463890259949752,0.3502259611277286
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | tuned,cond,0,3,4710,106,0.9908460514329074,0.513468739103869,0.4025255675142263
+50steps,cond_token,float_vs_fall,auc,estimate + layers all | tuned+fallback,cond,0,3,4710,106,0.9908460514329074,0.513468739103869,0.4025255675142263
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | ridge,cond,0,3,4710,106,0.9915842888781604,0.5053533398255078,0.38523420967122846
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | mlp,cond,0,3,4710,106,0.9835896936473653,0.29219068414832633,0.20442035411138704
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | tuned,cond,0,3,4710,106,0.9912781784890283,0.4483175882761515,0.32850612682201524
+50steps,cond_token,float_vs_fall,auc,estimate + layers all + cond | tuned+fallback,cond,0,3,4710,106,0.9841451457523451,0.4139928453583824,0.29525364416232575
+50steps,cond_token,xcom_margin,r2,explicit,cond,0,3,81393,250,0.7838915806979262,0.7972692059234747,0.723733899990306
+50steps,cond_token,xcom_margin,r2,estimate | ridge,cond,0,3,81393,250,0.8656432516094292,0.8748115182511854,0.8224966554299501
+50steps,cond_token,xcom_margin,r2,estimate | mlp,cond,0,3,81393,250,0.8887396309524407,0.9013654059080357,0.8586925191785371
+50steps,cond_token,xcom_margin,r2,estimate | tuned,cond,0,3,81393,250,0.8887396309524407,0.9013654059080357,0.8586925191785371
+50steps,cond_token,xcom_margin,r2,estimate + layer | ridge,cond,0,3,81393,250,0.8796879112158265,0.888415302754765,0.8408194645043721
+50steps,cond_token,xcom_margin,r2,estimate + layer | mlp,cond,0,3,81393,250,0.884178317742006,0.8982326480375301,0.8549356915506281
+50steps,cond_token,xcom_margin,r2,estimate + layer | tuned,cond,0,3,81393,250,0.884178317742006,0.8982326480375301,0.8549356915506281
+50steps,cond_token,xcom_margin,r2,estimate + layer | tuned+fallback,cond,0,3,81393,250,0.8888584462843676,0.9016694313349867,0.8590418698395271
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | ridge,cond,0,3,81393,250,0.8779877564351461,0.8853217162331728,0.8356799951670804
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | mlp,cond,0,3,81393,250,0.880893619276413,0.8917939345651107,0.8449288895852861
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | tuned,cond,0,3,81393,250,0.880893619276413,0.8917939345651107,0.8449288895852861
+50steps,cond_token,xcom_margin,r2,estimate + layer + cond | tuned+fallback,cond,0,3,81393,250,0.8880562752830894,0.9000748850769632,0.8566810954455616
+50steps,cond_token,xcom_margin,r2,estimate + layers all | ridge,cond,0,3,81393,250,0.885861926099481,0.8937640317139657,0.8473074216208947
+50steps,cond_token,xcom_margin,r2,estimate + layers all | mlp,cond,0,3,81393,250,0.8818690405934374,0.8929496290639946,0.847573814807274
+50steps,cond_token,xcom_margin,r2,estimate + layers all | tuned,cond,0,3,81393,250,0.8818690405934374,0.8929496290639946,0.847573814807274
+50steps,cond_token,xcom_margin,r2,estimate + layers all | tuned+fallback,cond,0,3,81393,250,0.8887396309524407,0.9013654059080357,0.8586925191785371
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | ridge,cond,0,3,81393,250,0.8772367245704531,0.886883976193969,0.8372824410131906
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | mlp,cond,0,3,81393,250,0.8608715994094387,0.8799686728842873,0.8287015183361232
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | tuned,cond,0,3,81393,250,0.8716259341063886,0.8838924483265421,0.83297227336375
+50steps,cond_token,xcom_margin,r2,estimate + layers all + cond | tuned+fallback,cond,0,3,81393,250,0.8887396309524407,0.9013654059080357,0.8586925191785371
+50steps,cond_token,in_flight,auc,explicit,cond,0,3,90000,250,0.8756487169599229,0.7108203875955618,0.6821133314175181
+50steps,cond_token,in_flight,auc,estimate | ridge,cond,0,3,90000,250,0.9743415651693138,0.739609255539624,0.7101824078094865
+50steps,cond_token,in_flight,auc,estimate | mlp,cond,0,3,90000,250,0.9759696555711588,0.78152303163181,0.7552813882228756
+50steps,cond_token,in_flight,auc,estimate | tuned,cond,0,3,90000,250,0.9759696555711588,0.78152303163181,0.7552813882228756
+50steps,cond_token,in_flight,auc,estimate + layer | ridge,cond,0,3,90000,250,0.9800914096938733,0.7527046000479455,0.7237186497789597
+50steps,cond_token,in_flight,auc,estimate + layer | mlp,cond,0,3,90000,250,0.9722453822541954,0.7723071198887742,0.7449144152142556
+50steps,cond_token,in_flight,auc,estimate + layer | tuned,cond,0,3,90000,250,0.9722453822541954,0.7723071198887742,0.7449144152142556
+50steps,cond_token,in_flight,auc,estimate + layer | tuned+fallback,cond,0,3,90000,250,0.9722554529194182,0.7746051449941704,0.7475901780879429
+50steps,cond_token,in_flight,auc,estimate + layer + cond | ridge,cond,0,3,90000,250,0.9803811136837056,0.7522522575419542,0.7226755584862263
+50steps,cond_token,in_flight,auc,estimate + layer + cond | mlp,cond,0,3,90000,250,0.9657927651715819,0.7567118621269486,0.7268505148234321
+50steps,cond_token,in_flight,auc,estimate + layer + cond | tuned,cond,0,3,90000,250,0.9657927651715819,0.7567118621269486,0.7268505148234321
+50steps,cond_token,in_flight,auc,estimate + layer + cond | tuned+fallback,cond,0,3,90000,250,0.9759696555711588,0.78152303163181,0.7552813882228756
+50steps,cond_token,in_flight,auc,estimate + layers all | ridge,cond,0,3,90000,250,0.9810687752478483,0.7591178404686713,0.7302350339106047
+50steps,cond_token,in_flight,auc,estimate + layers all | mlp,cond,0,3,90000,250,0.9620967154113557,0.7633095010589912,0.7379300754126982
+50steps,cond_token,in_flight,auc,estimate + layers all | tuned,cond,0,3,90000,250,0.9620967154113557,0.7633095010589912,0.7379300754126982
+50steps,cond_token,in_flight,auc,estimate + layers all | tuned+fallback,cond,0,3,90000,250,0.9759696555711588,0.78152303163181,0.7552813882228756
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | ridge,cond,0,3,90000,250,0.979793763367925,0.7510759480772989,0.7203526667642061
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | mlp,cond,0,3,90000,250,0.9655040375580799,0.7499388574520021,0.7194718894600307
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | tuned,cond,0,3,90000,250,0.9676511890305958,0.7520475641053788,0.7220389682054327
+50steps,cond_token,in_flight,auc,estimate + layers all + cond | tuned+fallback,cond,0,3,90000,250,0.9759696555711588,0.78152303163181,0.7552813882228756

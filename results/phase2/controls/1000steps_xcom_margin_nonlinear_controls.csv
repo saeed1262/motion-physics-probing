@@ -1,0 +1,55 @@
+checkpoint,target,metric,seed,step,features,model,score,within_prompt_r
+1000steps,xcom_margin,r2,0,200,explicit,linear,0.6547978323417492,0.7374813712800813
+1000steps,xcom_margin,r2,0,200,guess features,linear,0.5488095247641811,0.6683555925703719
+1000steps,xcom_margin,r2,0,200,guess features,mlp,0.7295682332561894,0.8045474531390262
+1000steps,xcom_margin,r2,0,200,everything the guess shows,linear,0.7343873287486691,0.8028942766684346
+1000steps,xcom_margin,r2,0,200,everything the guess shows,mlp,0.7489884781293932,0.8168832230681943
+1000steps,xcom_margin,r2,0,200,layer 7,linear,0.7029907526028704,0.7789989028107863
+1000steps,xcom_margin,r2,0,200,layer 7,mlp,0.7286414520544802,0.8012929411028229
+1000steps,xcom_margin,r2,0,200,everything the guess shows + layer 7,linear,0.7434441209376526,0.8116823736715503
+1000steps,xcom_margin,r2,0,200,everything the guess shows + layer 7,mlp,0.7530016292032552,0.8187780271965353
+1000steps,xcom_margin,r2,0,400,explicit,linear,0.7054225911407757,0.7824814383950816
+1000steps,xcom_margin,r2,0,400,guess features,linear,0.558708117603572,0.6776680589662306
+1000steps,xcom_margin,r2,0,400,guess features,mlp,0.7530908009159387,0.8220371988853605
+1000steps,xcom_margin,r2,0,400,everything the guess shows,linear,0.7761196901789349,0.8359402474277269
+1000steps,xcom_margin,r2,0,400,everything the guess shows,mlp,0.7855148206906659,0.8466034385461711
+1000steps,xcom_margin,r2,0,400,layer 7,linear,0.7248579939339729,0.7972333808134695
+1000steps,xcom_margin,r2,0,400,layer 7,mlp,0.7605124171257577,0.8263972768974149
+1000steps,xcom_margin,r2,0,400,everything the guess shows + layer 7,linear,0.7837057162229806,0.8428515270462624
+1000steps,xcom_margin,r2,0,400,everything the guess shows + layer 7,mlp,0.7872388522633376,0.8459492474808354
+1000steps,xcom_margin,r2,1,200,explicit,linear,0.6629374924623564,0.7389483350083514
+1000steps,xcom_margin,r2,1,200,guess features,linear,0.581272169877984,0.6676022931121212
+1000steps,xcom_margin,r2,1,200,guess features,mlp,0.7460974732623861,0.8043218975750269
+1000steps,xcom_margin,r2,1,200,everything the guess shows,linear,0.7446035119710793,0.7980582020414337
+1000steps,xcom_margin,r2,1,200,everything the guess shows,mlp,0.7599570382458919,0.8158172802555301
+1000steps,xcom_margin,r2,1,200,layer 7,linear,0.7228808157232973,0.7777659083119752
+1000steps,xcom_margin,r2,1,200,layer 7,mlp,0.7487063261156994,0.8048757680899573
+1000steps,xcom_margin,r2,1,200,everything the guess shows + layer 7,linear,0.7576636391088011,0.8073737861569433
+1000steps,xcom_margin,r2,1,200,everything the guess shows + layer 7,mlp,0.7645520867519993,0.8185700194605876
+1000steps,xcom_margin,r2,1,400,explicit,linear,0.7069305663128174,0.7785553247829233
+1000steps,xcom_margin,r2,1,400,guess features,linear,0.5870403143215546,0.6737229474156625
+1000steps,xcom_margin,r2,1,400,guess features,mlp,0.764834312595598,0.8193305761476373
+1000steps,xcom_margin,r2,1,400,everything the guess shows,linear,0.7819176614721972,0.8298369580791201
+1000steps,xcom_margin,r2,1,400,everything the guess shows,mlp,0.7957562190151418,0.8438444405176286
+1000steps,xcom_margin,r2,1,400,layer 7,linear,0.7399731017469836,0.7945137869013781
+1000steps,xcom_margin,r2,1,400,layer 7,mlp,0.7710934275301777,0.824528953057788
+1000steps,xcom_margin,r2,1,400,everything the guess shows + layer 7,linear,0.7909112938436925,0.8376747427375507
+1000steps,xcom_margin,r2,1,400,everything the guess shows + layer 7,mlp,0.7879301086232207,0.8407193663263559
+1000steps,xcom_margin,r2,2,200,explicit,linear,0.6471412204662021,0.7322299867335742
+1000steps,xcom_margin,r2,2,200,guess features,linear,0.5193562868613915,0.6549159429332945
+1000steps,xcom_margin,r2,2,200,guess features,mlp,0.6996065515437385,0.796831802640914
+1000steps,xcom_margin,r2,2,200,everything the guess shows,linear,0.709912588520595,0.7972698074580027
+1000steps,xcom_margin,r2,2,200,everything the guess shows,mlp,0.7327635883057224,0.8149512809926626
+1000steps,xcom_margin,r2,2,200,layer 7,linear,0.6651723536937081,0.7599783736399556
+1000steps,xcom_margin,r2,2,200,layer 7,mlp,0.6978838874501319,0.7932830667552241
+1000steps,xcom_margin,r2,2,200,everything the guess shows + layer 7,linear,0.7129337885383062,0.7997310632571203
+1000steps,xcom_margin,r2,2,200,everything the guess shows + layer 7,mlp,0.7211404614280685,0.8126738042976932
+1000steps,xcom_margin,r2,2,400,explicit,linear,0.6965670312553973,0.7735732254810009
+1000steps,xcom_margin,r2,2,400,guess features,linear,0.5202755541369315,0.6632252022909129
+1000steps,xcom_margin,r2,2,400,guess features,mlp,0.7274642325419081,0.8197685081002313
+1000steps,xcom_margin,r2,2,400,everything the guess shows,linear,0.7518779103566388,0.82846277018129
+1000steps,xcom_margin,r2,2,400,everything the guess shows,mlp,0.7678092871588584,0.841110680393511
+1000steps,xcom_margin,r2,2,400,layer 7,linear,0.6916946578697271,0.7831208187833221
+1000steps,xcom_margin,r2,2,400,layer 7,mlp,0.7351186976087734,0.8215372659731466
+1000steps,xcom_margin,r2,2,400,everything the guess shows + layer 7,linear,0.7569501612657743,0.8324131758724809
+1000steps,xcom_margin,r2,2,400,everything the guess shows + layer 7,mlp,0.7605255937897476,0.8404369222822214

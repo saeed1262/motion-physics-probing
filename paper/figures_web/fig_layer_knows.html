@@ -1,0 +1,60 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>What the layer knows</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_layer_knows.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 214, svg = setup(W, H);
+const ys = FIG.points.map((p) => p[0]);
+const lo = Math.floor(d3.quantile(ys, 0.005)), hi = Math.ceil(d3.quantile(ys, 0.995));
+[["a", "From the estimate", 1, col("est"), FIG.r2_est], ["b", "From estimate and layer", 2, col("layer"), FIG.r2_both]].forEach(([L, name, k, c, r2], i) => {
+  const p = panel(svg, i * 160, 0, 156, H, { t: 34, r: 6, b: 30, l: 30 });
+  const x = d3.scaleLinear().domain([lo, hi]).range([0, p.w]).clamp(true);
+  const y = d3.scaleLinear().domain([lo, hi]).range([p.h, 0]).clamp(true);
+  title(p, L, name, "predicted against final fall rate");
+  axes(p, x, y, { yTicks: 4, xTickValues: d3.range(Math.ceil(lo / 5) * 5, hi + 0.1, 5), xLabel: "final fall rate (m/s²)" });
+  p.inner.append("line").attr("x1", x(lo)).attr("y1", y(lo)).attr("x2", x(hi)).attr("y2", y(hi))
+    .attr("stroke", col("axis")).attr("stroke-dasharray", "3 2");
+  // binned density (0.25 m/s² cells), in the readout's color: teal for the estimate, deep blue with the layer
+  const B = 0.25, cells = d3.rollup(FIG.points, (v) => v.length, (d) => Math.floor(d[0] / B), (d) => Math.floor(d[k] / B));
+  const mx = d3.max([...cells.values()].flatMap((m) => [...m.values()]));
+  cells.forEach((m, i) => m.forEach((n, j) => {
+    const xa = i * B, ya = j * B;
+    if (xa < lo || xa >= hi || ya < lo || ya >= hi) return;
+    p.inner.append("rect").attr("x", x(xa)).attr("y", y(ya + B)).attr("width", x(xa + B) - x(xa) + 0.3).attr("height", y(ya) - y(ya + B) + 0.3)
+      .attr("fill", d3.interpolateRgb("#f2f4f8", c)(0.12 + 0.88 * Math.sqrt(n / mx)));   // the readout's own color, light to full
+  }));
+  p.inner.append("text").attr("class", "annot").attr("x", 4).attr("y", 8).text(`R² = ${r2.toFixed(2)} (per frame)`);
+});
+
+// (c-e) the three held-out jumps where adding the layer helps most
+const OX = 326, EW = (W - OX) / 3;
+const tc = svg.append("text").attr("class", "title").attr("x", OX).attr("y", 10);
+tc.append("tspan").attr("class", "letter").text("(c) ");
+tc.append("tspan").text("Where the layer helps most");
+svg.append("text").attr("class", "subtitle").attr("x", OX).attr("y", 22).text("final motion; estimate at 20% dashed; fall rates in m/s²");
+// one scale for all three examples, so the bodies are the same size; each cell clips the estimate's path
+const sc = d3.min(FIG.examples, (e) => Math.min((EW - 8) / (e.box.x1 - e.box.x0), 104 / (e.box.y1 - e.box.y0)));
+FIG.examples.forEach((e, j) => {
+  const bw = e.box.x1 - e.box.x0, bh = e.box.y1 - e.box.y0;
+  const gx = OX + j * EW + (EW - bw * sc) / 2;
+  svg.append("clipPath").attr("id", `cell${j}`).append("rect").attr("x", OX + j * EW + 2 - gx).attr("y", -4).attr("width", EW - 4).attr("height", 112);
+  const g = svg.append("g").attr("transform", `translate(${gx},${34})`).attr("clip-path", `url(#cell${j})`);
+  g.append("image").attr("href", e.img).attr("width", bw * sc).attr("height", bh * sc);
+  const X = (q) => (q[0] - e.box.x0) * sc, Y = (q) => (e.box.y1 - q[1]) * sc;
+  g.append("path").attr("d", d3.line().x(X).y(Y)(e.est)).attr("fill", "none").attr("stroke", col("dim"))
+    .attr("stroke-width", 1.3).attr("stroke-dasharray", "3 2");
+  g.append("path").attr("d", d3.line().defined((q, i) => e.air[i]).x(X).y(Y)(e.final)).attr("fill", "none")
+    .attr("stroke", col("mark")).attr("stroke-width", 1.8);
+  const cx = OX + j * EW + EW / 2, y0 = 34 + d3.max(FIG.examples, (q) => (q.box.y1 - q.box.y0)) * sc + 12;
+  const words = e.prompt.replace(/^a person /, "").split(" ");
+  const lines = [""]; words.forEach((w) => { if ((lines[lines.length - 1] + " " + w).length > 19) lines.push(w); else lines[lines.length - 1] += (lines[lines.length - 1] ? " " : "") + w; });
+  lines.slice(0, 2).forEach((l, i) => svg.append("text").attr("x", cx).attr("y", y0 + 10 * i).attr("text-anchor", "middle")
+    .style("font-style", "italic").style("font-size", "8.5px").text(i === 1 && lines.length > 2 ? l + "…" : l));
+  const yy = y0 + 10 * Math.min(lines.length, 2) + 6;
+  [["final", e.g, col("mark")], ["estimate readout", e.pe, col("est")], ["with layer", e.pb, col("layer")]].forEach(([k, v, c], i) => {
+    const t = svg.append("text").attr("x", cx).attr("y", yy + 11 * i).attr("text-anchor", "middle");
+    t.append("tspan").text(`${k} `); t.append("tspan").style("fill", c).style("font-weight", 650).text(v.toFixed(1));
+  });
+});
+</script></body></html>

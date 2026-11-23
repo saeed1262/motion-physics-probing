@@ -1,0 +1,35 @@
+\begin{tabular}{llccccccc}
+\toprule
+& & & & \multicolumn{3}{c}{Tuned on held-out prompts} & \multicolumn{2}{c}{Gain from adding the layer [95\% CI]} \\
+\cmidrule(lr){5-7} \cmidrule(lr){8-9}
+Target & Model & Explicit & Layer, ridge & Estimate & Layer & Both & Pooled score & Within prompt and frame \\
+\midrule
+Dynamic balance & 50-step & 0.784 & 0.850 & \textbf{0.889} & 0.863 & \textbf{0.889} & $+0.000$ [$-0.001$, $+0.001$] & $+0.000$ [$-0.001$, $+0.001$] \\
+Dynamic balance & 1000-step & 0.655 & 0.720 & \textbf{0.779} & 0.765 & 0.777 & $-0.002$ [$-0.005$, $-0.000$] & $-0.001$ [$-0.003$, $+0.000$] \\
+Dynamic balance & MotionDiffuse & 0.124 & 0.620 & \textbf{0.823} & 0.700 & \textbf{0.823} & $0$ (all folds) & $0$ (all folds) \\
+\addlinespace[2pt]
+Static balance & 50-step & 0.771 & 0.780 & \textbf{0.830} & 0.800 & 0.828 & $-0.001$ [$-0.004$, $+0.002$] & $-0.002$ [$-0.006$, $+0.002$] \\
+Static balance & 1000-step & 0.548 & 0.592 & \textbf{0.671} & 0.647 & \textbf{0.671} & $0$ (all folds) & $0$ (all folds) \\
+Static balance & MotionDiffuse & 0.103 & 0.537 & \textbf{0.729} & 0.547 & \textbf{0.729} & $0$ (all folds) & $0$ (all folds) \\
+\addlinespace[2pt]
+In flight & 50-step & 0.876 & 0.977 & \textbf{0.976} & 0.971 & 0.972 & $-0.004$ [$-0.008$, $-0.000$] & $-0.008$ [$-0.014$, $-0.002$] \\
+In flight & 1000-step & 0.788 & 0.934 & \textbf{0.935} & 0.932 & \textbf{0.935} & $-0.000$ [$-0.003$, $+0.002$] & $+0.002$ [$-0.000$, $+0.005$] \\
+In flight & MotionDiffuse & 0.778 & 0.951 & \textbf{0.943} & 0.905 & 0.939 & $-0.004$ [$-0.009$, $-0.001$] & $-0.001$ [$-0.006$, $+0.003$] \\
+In flight & 50-step, jump prompts & 0.926 & 0.981 & \textbf{0.984} & 0.981 & 0.983 & $-0.001$ [$-0.002$, $-0.000$] & $-0.001$ [$-0.002$, $+0.001$] \\
+In flight & 1000-step, jump prompts & 0.878 & 0.955 & 0.960 & 0.961 & \textbf{0.962} & $+0.001$ [$-0.000$, $+0.003$] & $+0.001$ [$-0.002$, $+0.003$] \\
+In flight & MotionDiffuse, jump prompts & 0.734 & 0.978 & \textbf{0.975} & 0.972 & \textbf{0.975} & $+0.000$ [$-0.001$, $+0.002$] & $+0.002$ [$-0.000$, $+0.004$] \\
+\addlinespace[2pt]
+Floats or falls & 50-step & 0.931 & 0.990 & 0.980 & \textbf{0.988} & \textbf{0.988} & $+0.008$ [$+0.001$, $+0.015$] & $+0.050$ [$-0.007$, $+0.099$] \\
+Floats or falls & 1000-step & 0.922 & 0.980 & 0.964 & \textbf{0.976} & 0.967 & $+0.003$ [$-0.001$, $+0.008$] & $+0.008$ [$-0.013$, $+0.029$] \\
+Floats or falls & MotionDiffuse & 0.883 & 0.988 & 0.940 & \textbf{0.988} & 0.966 & $+0.026$ [$+0.007$, $+0.055$] & -- \\
+Floats or falls & 50-step, jump prompts & 0.837 & 0.971 & \textbf{0.974} & 0.969 & \textbf{0.974} & $-0.000$ [$-0.009$, $+0.008$] & $-0.000$ [$-0.014$, $+0.016$] \\
+Floats or falls & 1000-step, jump prompts & 0.667 & 0.973 & 0.966 & \textbf{0.969} & 0.967 & $+0.001$ [$-0.001$, $+0.003$] & $-0.002$ [$-0.009$, $+0.006$] \\
+Floats or falls & MotionDiffuse, jump prompts & 0.741 & 0.836 & 0.827 & 0.784 & \textbf{0.828} & $+0.001$ [$-0.017$, $+0.017$] & $+0.004$ [$-0.018$, $+0.024$] \\
+\addlinespace[2pt]
+Fall rate (falling only) & 50-step & 0.171 & 0.267 & $-0.168$ & \textbf{0.217} & 0.084 & $+0.253$ [$+0.060$, $+0.505$] & $+0.046$ [$-0.041$, $+0.127$] \\
+Fall rate (falling only) & 1000-step & 0.209 & 0.115 & $-0.069$ & \textbf{0.090} & 0.013 & $+0.082$ [$-0.035$, $+0.167$] & $+0.106$ [$+0.020$, $+0.195$] \\
+Fall rate (falling only) & 50-step, jump prompts & 0.152 & 0.374 & 0.351 & 0.427 & \textbf{0.428} & $+0.077$ [$+0.051$, $+0.107$] & $+0.073$ [$+0.045$, $+0.098$] \\
+Fall rate (falling only) & 1000-step, jump prompts & 0.161 & 0.273 & 0.287 & 0.309 & \textbf{0.363} & $+0.076$ [$+0.053$, $+0.096$] & $+0.021$ [$+0.006$, $+0.037$] \\
+Fall rate (falling only) & MotionDiffuse, jump prompts & 0.289 & 0.326 & 0.365 & 0.326 & \textbf{0.390} & $+0.025$ [$+0.003$, $+0.047$] & $+0.017$ [$-0.001$, $+0.036$] \\
+\bottomrule
+\end{tabular}

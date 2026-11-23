@@ -1,0 +1,21 @@
+
+seed 0
+group              motions  flight %  float>5cm %  XCoM out %  airborne %  gravity m/s2
+curated: flight         56      15.3          1.5        27.4        12.1          9.62
+curated: balance        68      10.9          3.6        30.8        10.4          0.01
+curated: other         132       5.9          2.0        36.4         3.7          0.04
+test captions          744      10.0          3.3        39.1         7.9          0.10
+
+seed 1
+group              motions  flight %  float>5cm %  XCoM out %  airborne %  gravity m/s2
+curated: flight         56      14.4          1.2        28.4        11.5          9.53
+curated: balance        68       8.8          3.4        27.2         8.4          0.01
+curated: other         132       5.7          2.3        40.6         2.9          0.19
+test captions          744      10.2          2.9        39.4         7.9          0.08
+
+seed 2
+group              motions  flight %  float>5cm %  XCoM out %  airborne %  gravity m/s2
+curated: flight         56      14.3          2.4        31.2        11.7          9.40
+curated: balance        68      10.0          3.3        28.1         9.5          0.03
+curated: other         132       7.0          1.8        37.9         4.6          0.03
+test captions          744       9.2          3.2        38.3         7.0          0.10

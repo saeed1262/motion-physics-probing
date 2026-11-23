@@ -1,0 +1,21 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp config 0,text,0,3,7431,235,-1128099.6701595057,0.013814132409922386,0.004044973798710263
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp config 1,text,0,3,7431,235,-1158198.8754882407,0.01379796883792985,0.004030883709651734
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp config 2,text,0,3,7431,235,-27335.508083732122,0.014713991322326196,0.004837414794286275
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp config 3,text,0,3,7431,235,-6149.2964627094025,-0.01088456327069456,-0.0013876457173530208
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp config 4,text,0,3,7431,235,-59.69232172429512,0.041024520453102994,0.028553649940473505
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp config 0,text,0,3,7431,235,-6047.050282064669,0.015201022767524164,0.005212081559886062
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp config 1,text,0,3,7431,235,-7282.729633137096,0.014747926942840798,0.0048545758513833985
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp config 2,text,0,3,7431,235,-22138.292249682807,0.014587934213657621,0.004731655685201086
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp config 3,text,0,3,7431,235,-8953.894310317479,-0.011820368190883607,-0.0022454270529022055
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text | mlp config 4,text,0,3,7431,235,-24.15847322906995,0.041355951544365346,0.02829420608708134
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 0,text,0,3,7431,235,-99.33730287583752,0.03322638090828278,0.021692526076783597
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 1,text,0,3,7431,235,-415.70370903033114,0.023434939294573222,0.01268095018793323
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 2,text,0,3,7431,235,-19332.431647617814,0.014935634243525344,0.005067533093590195
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 3,text,0,3,7431,235,-20.79588163367055,0.03199054821520923,0.03753909722543875
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 4,text,0,3,7431,235,-91.54914627678033,0.006737858717366535,0.014521066625213519
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 0,text,0,3,7431,235,-92715.13862031425,0.01416868283761708,0.0043707529387714255
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 1,text,0,3,7431,235,-99459.99009397047,0.014129881766922514,0.0043441814412081975
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 2,text,0,3,7431,235,-100690.48144124768,0.014146740168825615,0.004339962223145129
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 3,text,0,3,7431,235,-12078.765489482654,-0.011792298797085229,-0.0021974373074520985
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 4,text,0,3,7431,235,-62250.75177009886,-0.012971811911012548,-0.003278267252531661

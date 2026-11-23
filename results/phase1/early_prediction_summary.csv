@@ -1,0 +1,19 @@
+,,spearman,spearman,spearman,spearman,spearman,spearman,spearman,within_prompt,within_prompt,within_prompt,within_prompt,within_prompt,within_prompt
+step,,-1,0,10,20,29,39,49,0,10,20,29,39,49
+failure,source,,,,,,,,,,,,,
+float rate,best layer,,0.094,0.148,0.221,0.275,0.285,0.306,-0.029,0.04,0.122,0.157,0.204,0.232
+float rate,explicit (x0 guess),,0.206,0.56,0.605,0.659,0.738,1.0,-0.108,0.183,0.286,0.47,0.579,1.0
+float rate,text only,0.186,,,,,,,,,,,,
+float rate,x0 probe,,-0.143,-0.041,0.033,0.095,0.084,0.094,-0.069,-0.148,-0.056,-0.041,-0.032,-0.008
+floating rate,best layer,,0.192,0.306,0.375,0.398,0.399,0.406,0.048,0.211,0.268,0.304,0.31,0.299
+floating rate,explicit (x0 guess),,0.212,0.554,0.675,0.803,0.862,1.0,0.064,0.617,0.648,0.76,0.799,1.0
+floating rate,text only,0.127,,,,,,,,,,,,
+floating rate,x0 probe,,-0.071,0.257,0.251,0.282,0.308,0.338,-0.035,0.209,0.175,0.16,0.168,0.188
+gravity error (jumps),best layer,,0.024,0.421,0.225,0.144,-0.155,-0.217,0.191,0.421,0.338,0.207,-0.037,-0.102
+gravity error (jumps),explicit (x0 guess),,,0.274,0.402,0.487,0.727,1.0,,0.203,0.246,0.387,0.727,1.0
+gravity error (jumps),text only,-0.293,,,,,,,,,,,,
+gravity error (jumps),x0 probe,,-0.114,0.206,0.169,0.092,-0.064,-0.165,0.199,0.41,0.426,0.254,0.2,0.111
+off-balance rate (exploratory),best layer,,0.419,0.755,0.716,0.697,0.689,0.71,-0.119,0.541,0.464,0.463,0.535,0.464
+off-balance rate (exploratory),explicit (x0 guess),,0.316,0.911,0.932,0.952,0.954,1.0,-0.044,0.798,0.801,0.844,0.882,1.0
+off-balance rate (exploratory),text only,0.138,,,,,,,,,,,,
+off-balance rate (exploratory),x0 probe,,0.357,0.5,0.543,0.529,0.53,0.584,-0.187,0.186,0.289,0.297,0.287,0.326

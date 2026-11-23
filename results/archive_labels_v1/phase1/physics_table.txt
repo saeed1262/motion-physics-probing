@@ -1,0 +1,8 @@
+group    motions  flight %  float>5cm %  penetr<-2cm %  CoM out %  XCoM out %  skate m/s  airborne %  gravity m/s2
+flight        56      16.1          0.9            0.0       22.5        27.8       0.05        12.6          9.38
+balance       68       9.1          2.4            0.0       28.4        30.1       0.04         8.7          0.00
+other        132       8.7          2.4            0.0       32.5        35.0       0.05         6.1          0.01
+
+MDM's own contact channels agree with geometric contact on 86.5% of foot-frames.
+Gravity is the median value fitted over airborne stretches of 0.2 s or more; real flight gives 9.81.
+Note: 'CoM out' and 'XCoM out' also flag normal walking, so read them as descriptive, not as failures.

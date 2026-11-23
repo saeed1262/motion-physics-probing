@@ -1,0 +1,61 @@
+features,subset,repeat,per_video,pairwise,perm
+time kept + frame changes,"all blocks, labels shuffled",0,0.4777777777777778,0.4638888888888889,0
+frame changes only,"all blocks, labels shuffled",0,0.5111111111111111,0.49722222222222223,0
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.48055555555555557,0.4666666666666667,0
+time kept + frame changes,"all blocks, labels shuffled",0,0.49444444444444446,0.43333333333333335,1
+frame changes only,"all blocks, labels shuffled",0,0.5,0.5,1
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5,0.48333333333333334,1
+time kept + frame changes,"all blocks, labels shuffled",0,0.5027777777777778,0.5277777777777778,2
+frame changes only,"all blocks, labels shuffled",0,0.5138888888888888,0.5083333333333333,2
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4777777777777778,0.46944444444444444,2
+time kept + frame changes,"all blocks, labels shuffled",0,0.48055555555555557,0.5055555555555555,3
+frame changes only,"all blocks, labels shuffled",0,0.4722222222222222,0.4583333333333333,3
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5,0.5138888888888888,3
+time kept + frame changes,"all blocks, labels shuffled",0,0.5138888888888888,0.525,4
+frame changes only,"all blocks, labels shuffled",0,0.4777777777777778,0.45,4
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.48055555555555557,0.45,4
+time kept + frame changes,"all blocks, labels shuffled",0,0.48055555555555557,0.4444444444444444,5
+frame changes only,"all blocks, labels shuffled",0,0.4888888888888889,0.5333333333333333,5
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4888888888888889,0.45,5
+time kept + frame changes,"all blocks, labels shuffled",0,0.48333333333333334,0.48055555555555557,6
+frame changes only,"all blocks, labels shuffled",0,0.4722222222222222,0.49166666666666664,6
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5027777777777778,0.5027777777777778,6
+time kept + frame changes,"all blocks, labels shuffled",0,0.5,0.5083333333333333,7
+frame changes only,"all blocks, labels shuffled",0,0.5166666666666667,0.48333333333333334,7
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.48333333333333334,0.4861111111111111,7
+time kept + frame changes,"all blocks, labels shuffled",0,0.525,0.5361111111111111,8
+frame changes only,"all blocks, labels shuffled",0,0.5083333333333333,0.5138888888888888,8
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5111111111111111,0.5111111111111111,8
+time kept + frame changes,"all blocks, labels shuffled",0,0.5305555555555556,0.5388888888888889,9
+frame changes only,"all blocks, labels shuffled",0,0.4888888888888889,0.5083333333333333,9
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4777777777777778,0.45,9
+time kept + frame changes,"all blocks, labels shuffled",0,0.5222222222222223,0.5388888888888889,10
+frame changes only,"all blocks, labels shuffled",0,0.49444444444444446,0.4638888888888889,10
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4583333333333333,0.4222222222222222,10
+time kept + frame changes,"all blocks, labels shuffled",0,0.5027777777777778,0.5166666666666667,11
+frame changes only,"all blocks, labels shuffled",0,0.5277777777777778,0.5555555555555556,11
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5055555555555555,0.5305555555555556,11
+time kept + frame changes,"all blocks, labels shuffled",0,0.5138888888888888,0.49722222222222223,12
+frame changes only,"all blocks, labels shuffled",0,0.49444444444444446,0.49166666666666664,12
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5194444444444445,0.5333333333333333,12
+time kept + frame changes,"all blocks, labels shuffled",0,0.4861111111111111,0.5111111111111111,13
+frame changes only,"all blocks, labels shuffled",0,0.5083333333333333,0.48333333333333334,13
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.49166666666666664,0.5138888888888888,13
+time kept + frame changes,"all blocks, labels shuffled",0,0.49444444444444446,0.48333333333333334,14
+frame changes only,"all blocks, labels shuffled",0,0.5055555555555555,0.4861111111111111,14
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.49444444444444446,0.49722222222222223,14
+time kept + frame changes,"all blocks, labels shuffled",0,0.4888888888888889,0.5138888888888888,15
+frame changes only,"all blocks, labels shuffled",0,0.5,0.5416666666666666,15
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4888888888888889,0.475,15
+time kept + frame changes,"all blocks, labels shuffled",0,0.5,0.5055555555555555,16
+frame changes only,"all blocks, labels shuffled",0,0.48333333333333334,0.4777777777777778,16
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4888888888888889,0.4666666666666667,16
+time kept + frame changes,"all blocks, labels shuffled",0,0.5083333333333333,0.5222222222222223,17
+frame changes only,"all blocks, labels shuffled",0,0.49166666666666664,0.5166666666666667,17
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.4888888888888889,0.49166666666666664,17
+time kept + frame changes,"all blocks, labels shuffled",0,0.5027777777777778,0.49444444444444446,18
+frame changes only,"all blocks, labels shuffled",0,0.49722222222222223,0.4527777777777778,18
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5083333333333333,0.5305555555555556,18
+time kept + frame changes,"all blocks, labels shuffled",0,0.4861111111111111,0.5222222222222223,19
+frame changes only,"all blocks, labels shuffled",0,0.5055555555555555,0.49166666666666664,19
+time + 4x4 space + signed frame changes,"all blocks, labels shuffled",0,0.5222222222222223,0.4388888888888889,19

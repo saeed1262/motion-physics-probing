@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fair comparison, tuned readouts</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_gain.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const R = FIG.rows, RH = 17, TOP = 40, W = 624, H = TOP + RH * R.length + 46, svg = setup(W, H);
+const LW = 168, PW = (W - LW - 18) / 2;
+// Measures by marker shape (gray when the interval covers zero); color says who wins, as in Figure 3:
+// teal = the estimate's readout is ahead, deep blue = the layer is ahead (a) or adds (b).
+const MEAS = [["score", "pooled R² / AUC", d3.symbolCircle], ["within_prompt_r", "within prompt (r)", d3.symbolSquare],
+              ["within_prompt_frame_r", "within prompt and frame (r)", d3.symbolDiamond]];
+const winner = (k, v) => (!v ? null : v[1] > 5e-4 ? (k === "fair" ? col("est") : col("layer")) : v[2] < -5e-4 ? (k === "fair" ? col("layer") : col("est")) : col("dim"));
+// row labels and stripes
+R.forEach((r, i) => {
+  const y = TOP + i * RH;
+  if (i % 2) svg.append("rect").attr("x", 0).attr("y", y).attr("width", W).attr("height", RH).attr("fill", col("floor"));
+  if (i === 0 || R[i - 1].target !== r.target)
+    svg.append("text").attr("x", 0).attr("y", y + RH / 2 + 3).style("fill", col("ink")).style("font-weight", 650).text(r.target);
+  svg.append("text").attr("x", LW - 8).attr("y", y + RH / 2 + 3).attr("text-anchor", "end").text(r.model.replace("jump prompts", "jumps"));
+});
+[["a", "fair", "Balance and flight: estimate keeps up", "estimate minus layer, both tuned"],
+ ["b", "gain", "Gains mainly for the fall rate", "gain from adding the layer, with fallback"]].forEach(([L, k, name, sub], j) => {
+  const x0 = LW + j * (PW + 18);
+  const vals = R.flatMap((r) => Object.values(r[k]).filter(Boolean).flatMap((v) => [v[1], v[2]]));
+  const x = d3.scaleLinear().domain(d3.extent(vals.concat([0]))).nice().range([x0, x0 + PW]);
+  const t = svg.append("text").attr("class", "title").attr("x", x0).attr("y", 10);
+  t.append("tspan").attr("class", "letter").text(`(${L}) `); t.append("tspan").text(name);
+  svg.append("text").attr("class", "subtitle").attr("x", x0).attr("y", 22).text(sub);
+  svg.append("g").attr("class", "axis").attr("transform", `translate(0,${TOP + RH * R.length})`)
+    .call(d3.axisBottom(x).ticks(5).tickSize(3).tickSizeOuter(0).tickFormat((d) => (d > 0 ? "+" : "") + d.toFixed(2)));
+  svg.append("line").attr("class", "zero").attr("x1", x(0)).attr("x2", x(0)).attr("y1", TOP - 2).attr("y2", TOP + RH * R.length);
+  R.forEach((r, i) => MEAS.forEach(([m, , sym], q) => {
+    const v = r[k][m], y = TOP + i * RH + 4.5 + q * 4, c = winner(k, v);
+    if (!v) return;   // no interval for this score (too few prompts)
+    svg.append("line").attr("x1", x(v[1])).attr("x2", x(v[2])).attr("y1", y).attr("y2", y).attr("stroke", c).attr("stroke-width", 1.1);
+    const open = k === "gain" && r.allfb;   // the fallback kept the estimate in every fold: no interval, open marker
+    svg.append("path").attr("d", d3.symbol(sym, 18)()).attr("transform", `translate(${x(v[0])},${y})`).attr("fill", open ? "#fff" : c)
+      .attr("fill-opacity", open ? 1 : 0.35).attr("stroke", c).attr("stroke-width", 0.9);
+  }));
+});
+// key: shapes for the measures, colors for the winner
+let kx = LW;
+MEAS.forEach(([, lab, sym]) => {
+  const g = svg.append("g").attr("transform", `translate(${kx},${H - 18})`);
+  g.append("path").attr("d", d3.symbol(sym, 18)()).attr("transform", "translate(5,0)").attr("fill", col("dim")).attr("fill-opacity", 0.35)
+    .attr("stroke", col("dim"));
+  g.append("text").attr("x", 13).attr("y", 3).text(lab);
+  kx += 24 + lab.length * 4.6;
+});
+kx = LW;
+const used = new Set(R.flatMap((r) => ["fair", "gain"].flatMap((k) => MEAS.map(([m]) => winner(k, r[k][m])))));
+[["estimate ahead", col("est")], ["layer ahead or adds", col("layer")], ["interval covers zero", col("dim")]].filter(([, c]) => used.has(c)).forEach(([lab, c]) => {
+  const g = svg.append("g").attr("transform", `translate(${kx},${H - 5})`);
+  g.append("line").attr("x1", 0).attr("x2", 12).attr("stroke", c).attr("stroke-width", 2);
+  g.append("text").attr("x", 16).attr("y", 3).style("fill", c === col("dim") ? col("muted") : c).style("font-weight", 600).text(lab);
+  kx += 30 + lab.length * 4.8;
+});
+</script></body></html>

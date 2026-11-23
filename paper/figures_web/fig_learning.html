@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Pilot learning curve</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_learning.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 340, H = 196, svg = setup(W, H);
+const p = panel(svg, 0, 0, W, H, { t: 34, r: 8, b: 28, l: 30 });
+title(p, null, "The layer probe needs about 100 prompts", "dynamic balance, 20% denoised, 50-step; R², mean ± SD");
+const ns = FIG.series[0].pts.map((q) => q[0]);
+const x = d3.scaleLog().domain(d3.extent(ns)).range([0, p.w]);
+const y = d3.scaleLinear().domain([0.5, 0.9]).range([p.h, 0]).clamp(true);
+p.inner.append("rect").attr("x", x(48)).attr("width", x(56) - x(48)).attr("y", 0).attr("height", p.h).attr("fill", col("neutral")).attr("opacity", 0.1);
+p.inner.append("text").attr("x", x(52)).attr("y", y(0.53)).attr("text-anchor", "middle").text("pilot (52)");
+axes(p, x, y, { xTickValues: [13, 26, 52, 100, 200], xFormat: d3.format("d"), xLabel: "training prompts per fold", yTicks: 4 });
+FIG.series.forEach((s) => {
+  band(p, x, y, s.pts.map((q) => [q[0], q[2], q[3]]), col(s.color), 0.16);
+  series(p, x, y, s.pts.map((q) => [q[0], q[1]]), col(s.color), null);
+});
+p.inner.append("text").attr("class", "direct").attr("x", x(14)).attr("y", y(0.795)).style("fill", col("dim")).text("explicit label (1 feature)");
+p.inner.append("text").attr("class", "direct").attr("x", x(200)).attr("y", y(0.72)).attr("text-anchor", "end").style("fill", col("layer")).text("layer 7, linear (512)");
+if (FIG.cross) p.inner.append("text").attr("class", "annot").attr("x", x(Math.sqrt(FIG.cross[0] * FIG.cross[1]))).attr("y", y(0.88))
+  .attr("text-anchor", "middle").text(`overtakes between ${FIG.cross[0]} and ${FIG.cross[1]} prompts`);
+</script></body></html>

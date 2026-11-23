@@ -1,0 +1,49 @@
+checkpoint,target,comparison,measure,seeds,observed,ci_low,ci_high,share_above_zero
+50steps,xcom_margin,"layer, linear minus explicit",pooled,3,0.05487872364895097,0.011661059333144087,0.0965219282999542,0.996
+50steps,xcom_margin,"layer, linear minus explicit",within prompt,3,0.05453878624995734,0.013296299879012966,0.09712020567145964,0.997
+50steps,xcom_margin,"estimate, MLP minus layer, linear",pooled,3,0.039526190703195185,0.03122592997543435,0.04991577094496506,1.0
+50steps,xcom_margin,"estimate, MLP minus layer, linear",within prompt,3,0.040443999678981046,0.03408210655616334,0.048052302124331404,1.0
+50steps,xcom_margin,"estimate + layer minus estimate, MLP",pooled,3,-0.01067013947122164,-0.025629131424410437,-0.0007040991885237889,0.0075
+50steps,xcom_margin,"estimate + layer minus estimate, MLP",within prompt,3,-0.0022972538847637614,-0.005033546061738936,0.00014538785255368381,0.0355
+50steps,balance_margin,"layer, linear minus explicit",pooled,3,-0.010001520002372644,-0.04130798917971695,0.014455980373289594,0.2035
+50steps,balance_margin,"layer, linear minus explicit",within prompt,3,-0.017355338420728117,-0.04553987525765274,0.008525327454290198,0.09
+50steps,balance_margin,"estimate, MLP minus layer, linear",pooled,3,0.056507584796353316,0.03907838307938546,0.0811411840953797,1.0
+50steps,balance_margin,"estimate, MLP minus layer, linear",within prompt,3,0.07231216328808454,0.05822296489049365,0.08786903673902367,1.0
+50steps,balance_margin,"estimate + layer minus estimate, MLP",pooled,3,-0.02487326140066415,-0.041906935181836316,-0.0046133469162785105,0.0045
+50steps,balance_margin,"estimate + layer minus estimate, MLP",within prompt,3,-0.006288932107739287,-0.013508789654203972,0.0009519631833887174,0.0445
+50steps,in_flight,"layer, linear minus explicit",pooled,3,0.0969518538374119,0.07015930048361851,0.12793490104820432,1.0
+50steps,in_flight,"layer, linear minus explicit",within prompt,3,-0.04854341764405201,-0.07162438555369313,-0.02985402741428111,0.0
+50steps,in_flight,"estimate, MLP minus layer, linear",pooled,3,-0.0007400605549883199,-0.006989095269555726,0.006011574896173299,0.3765
+50steps,in_flight,"estimate, MLP minus layer, linear",within prompt,3,0.09295604676317237,0.0783772639877214,0.11079503346969297,1.0
+50steps,in_flight,"estimate + layer minus estimate, MLP",pooled,3,-0.004417591353841788,-0.013342866209136845,0.002427433001945861,0.134
+50steps,in_flight,"estimate + layer minus estimate, MLP",within prompt,3,0.005408710098770975,-0.0017984862162115812,0.012347407073545702,0.9315
+50steps,flight_gravity,"layer, linear minus explicit",pooled,3,0.10722400138307009,-0.012648331191171739,0.24102679949030129,0.959
+50steps,flight_gravity,"layer, linear minus explicit",within prompt,3,0.005843290709421967,-0.15327201660794876,0.15444633221892115,0.5035
+50steps,flight_gravity,"estimate, MLP minus layer, linear",pooled,3,-0.11107350034251495,-0.1820002579288376,-0.05887318462301725,0.0
+50steps,flight_gravity,"estimate, MLP minus layer, linear",within prompt,3,-0.10428696328728604,-0.18728175675600825,-0.03652166560810461,0.0
+50steps,flight_gravity,"estimate + layer minus estimate, MLP",pooled,3,0.1251223101401474,0.08038070081702042,0.19754213893267686,1.0
+50steps,flight_gravity,"estimate + layer minus estimate, MLP",within prompt,3,0.16710849911045195,0.10392788497331601,0.22500319432237925,1.0
+1000steps,xcom_margin,"layer, linear minus explicit",pooled,3,0.04205579224985623,0.01238056577183586,0.07217684892027418,0.997
+1000steps,xcom_margin,"layer, linear minus explicit",within prompt,3,0.03602783058023684,0.014713164112742802,0.05729814416388743,0.9995
+1000steps,xcom_margin,"estimate, MLP minus layer, linear",pooled,3,0.05022172755371035,0.04178514638373011,0.05949199174770221,1.0
+1000steps,xcom_margin,"estimate, MLP minus layer, linear",within prompt,3,0.04363619985122291,0.03716152180145419,0.05101964619029481,1.0
+1000steps,xcom_margin,"estimate + layer minus estimate, MLP",pooled,3,-0.0010049757658947556,-0.006351820089044527,0.004315772289867907,0.357
+1000steps,xcom_margin,"estimate + layer minus estimate, MLP",within prompt,3,0.0007900222128095491,-0.002249988973126932,0.003932612865057569,0.6865
+1000steps,balance_margin,"layer, linear minus explicit",pooled,3,0.01090478979429188,-0.03425767260755977,0.05905382390691644,0.638
+1000steps,balance_margin,"layer, linear minus explicit",within prompt,3,0.002889166533427967,-0.02867657745397836,0.04036905868575415,0.5245
+1000steps,balance_margin,"estimate, MLP minus layer, linear",pooled,3,0.06288113012803187,0.046171444006476235,0.07963734293458288,1.0
+1000steps,balance_margin,"estimate, MLP minus layer, linear",within prompt,3,0.06904255998853326,0.05789854965825526,0.08104596644197877,1.0
+1000steps,balance_margin,"estimate + layer minus estimate, MLP",pooled,3,-0.01848757755946473,-0.03403598891224204,-0.003991795757191074,0.004
+1000steps,balance_margin,"estimate + layer minus estimate, MLP",within prompt,3,-0.005484444962437496,-0.011225622014135326,0.0005776920789871352,0.0365
+1000steps,in_flight,"layer, linear minus explicit",pooled,3,0.13758404954483128,0.11083244459761889,0.16619281082325374,1.0
+1000steps,in_flight,"layer, linear minus explicit",within prompt,3,-0.005608439841262247,-0.030783503620537812,0.018350105032367274,0.325
+1000steps,in_flight,"estimate, MLP minus layer, linear",pooled,3,-0.008102337039821439,-0.015525944793716617,-0.001095447994616687,0.0095
+1000steps,in_flight,"estimate, MLP minus layer, linear",within prompt,3,0.051776766371515626,0.036837059931307314,0.06858952023710439,1.0
+1000steps,in_flight,"estimate + layer minus estimate, MLP",pooled,3,0.008007100509373699,0.00239913672370983,0.014002121152597153,0.9975
+1000steps,in_flight,"estimate + layer minus estimate, MLP",within prompt,3,0.004075362087564427,-0.0028874209863578915,0.011175850889275673,0.8755
+1000steps,flight_gravity,"layer, linear minus explicit",pooled,3,-0.005495761574699554,-0.07929675589613051,0.0747285293985757,0.4015
+1000steps,flight_gravity,"layer, linear minus explicit",within prompt,3,-0.07337981331165366,-0.148805963256393,-0.015735599276893063,0.003
+1000steps,flight_gravity,"estimate, MLP minus layer, linear",pooled,3,-0.05904645757844862,-0.10352094023435313,-0.017066562665644127,0.0035
+1000steps,flight_gravity,"estimate, MLP minus layer, linear",within prompt,3,0.0037684376087956384,-0.021764461433300974,0.03176692397339867,0.661
+1000steps,flight_gravity,"estimate + layer minus estimate, MLP",pooled,3,0.06485938184009932,0.04074474797589147,0.09494306594185617,1.0
+1000steps,flight_gravity,"estimate + layer minus estimate, MLP",within prompt,3,0.040809118847946135,0.01942499601221668,0.06656073876739753,1.0

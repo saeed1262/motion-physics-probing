@@ -1,0 +1,29 @@
+# Large or regenerable: Python environment, downloaded code, data and checkpoints, cached arrays
+.venv/
+vendor/
+/data/                 # the top-level generated data only (paper/figures_web/data/ is tracked)
+
+# Smoke-test outputs
+results/*_smoke/
+
+# HumanML3D clip downloaded by tests/real_clip_check.py
+tests/*.npy
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Per-sample predictions (about 290 MB; regenerate with --save-preds)
+results/**/preds/
+
+# Built outputs: the anonymized supplement (scripts/build_supplement.sh), LaTeX logs, the upload package
+paper/submission/supplementary_material.zip
+paper/build/*
+!paper/build/main.pdf
+_upload/
+
+# Voice auditions for the presentation narration
+paper/supplement/voice_sample_*.wav
+
+# Generated public copy (scripts/export_public.py)
+public/

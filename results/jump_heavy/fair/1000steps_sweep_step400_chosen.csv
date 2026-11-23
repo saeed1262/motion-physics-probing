@@ -1,0 +1,56 @@
+target,features,fold,alpha,ridge_val_mse,mlp_config,mlp_val_mse,tuned,fallback_choice
+fall_gravity,estimate,0,0.1,15.504792331923138,1,13.838113188210844,mlp,
+fall_gravity,estimate,1,10.0,3.690413722119685,4,2.926680429028348,mlp,
+fall_gravity,estimate,2,1000.0,5.487784317251288,4,4.375922304899691,mlp,
+fall_gravity,estimate,3,1000.0,5.265700518108619,4,3.7917746692997865,mlp,
+fall_gravity,estimate,4,100.0,3.808542956769667,1,3.1217551495909626,mlp,
+fall_gravity,estimate + layer 0,0,0.1,15.322705103334947,3,13.941995426244668,mlp,estimate
+fall_gravity,estimate + layer 0,1,100.0,3.493319030811901,1,3.097322438176468,mlp,estimate
+fall_gravity,estimate + layer 0,2,1000.0,5.118095984057178,4,4.309690138900768,mlp,combined
+fall_gravity,estimate + layer 0,3,1000.0,4.918574549479959,4,3.8999170168704125,mlp,estimate
+fall_gravity,estimate + layer 0,4,1000.0,3.448464195800979,4,3.0521665640018325,mlp,combined
+fall_gravity,estimate + layer 1,0,0.1,14.808319594380494,4,13.799750219434213,mlp,combined
+fall_gravity,estimate + layer 1,1,100.0,3.434499069482486,1,3.042565951848761,mlp,estimate
+fall_gravity,estimate + layer 1,2,1000.0,5.000408948626445,4,4.134384322179814,mlp,combined
+fall_gravity,estimate + layer 1,3,1000.0,4.867891760108743,4,4.245466704854238,mlp,estimate
+fall_gravity,estimate + layer 1,4,1000.0,3.419633228751422,4,3.0507656381405353,mlp,combined
+fall_gravity,estimate + layer 2,0,0.1,14.869813404488541,0,13.664410275640543,mlp,combined
+fall_gravity,estimate + layer 2,1,100.0,3.28147895724851,4,2.821482475023463,mlp,combined
+fall_gravity,estimate + layer 2,2,1000.0,4.782966909492355,4,3.895559981033007,mlp,combined
+fall_gravity,estimate + layer 2,3,1000.0,4.759564172905483,4,3.7285105676167842,mlp,combined
+fall_gravity,estimate + layer 2,4,1000.0,3.3889807016751243,1,2.8910341225943927,mlp,combined
+fall_gravity,estimate + layer 3,0,1000.0,14.641447539812152,4,13.292728539411089,mlp,combined
+fall_gravity,estimate + layer 3,1,100.0,3.1936408522111233,4,2.7571259497156033,mlp,combined
+fall_gravity,estimate + layer 3,2,1000.0,4.458854856091364,4,3.9105182657257496,mlp,combined
+fall_gravity,estimate + layer 3,3,1000.0,4.507838676572799,1,3.633353155016095,mlp,combined
+fall_gravity,estimate + layer 3,4,1000.0,3.3573530198438415,0,2.8663664437653855,mlp,combined
+fall_gravity,estimate + layer 4,0,1000.0,14.578831837509593,0,12.769214868346193,mlp,combined
+fall_gravity,estimate + layer 4,1,100.0,3.2347956003288307,4,2.8365556582612435,mlp,combined
+fall_gravity,estimate + layer 4,2,1000.0,4.438899503290169,4,3.84710066503778,mlp,combined
+fall_gravity,estimate + layer 4,3,1000.0,4.469911973918479,4,3.7311100280789486,mlp,combined
+fall_gravity,estimate + layer 4,4,1000.0,3.2946664121517126,4,2.8442632382832995,mlp,combined
+fall_gravity,estimate + layer 5,0,1000.0,14.822833056838254,2,13.060973604284735,mlp,combined
+fall_gravity,estimate + layer 5,1,100.0,3.231337611376588,2,2.918540421036612,mlp,combined
+fall_gravity,estimate + layer 5,2,1000.0,4.524694404612306,4,3.8629266884335993,mlp,combined
+fall_gravity,estimate + layer 5,3,1000.0,4.6176088077331245,4,3.7837536757773726,mlp,combined
+fall_gravity,estimate + layer 5,4,1000.0,3.347973911851827,1,2.8927469190509125,mlp,combined
+fall_gravity,estimate + layer 6,0,1000.0,14.355620513881476,0,12.719878945123174,mlp,combined
+fall_gravity,estimate + layer 6,1,100.0,3.265898559152753,2,2.8497600254972393,mlp,combined
+fall_gravity,estimate + layer 6,2,1000.0,4.630239733307921,4,3.932415121598846,mlp,combined
+fall_gravity,estimate + layer 6,3,1000.0,4.738453215773491,0,4.000536414042161,mlp,estimate
+fall_gravity,estimate + layer 6,4,1000.0,3.402601927236173,4,2.980403802328768,mlp,combined
+fall_gravity,estimate + layer 7,0,100.0,14.449696556268774,3,13.08064660138746,mlp,combined
+fall_gravity,estimate + layer 7,1,100.0,3.400002106470187,4,2.975400779678664,mlp,estimate
+fall_gravity,estimate + layer 7,2,1000.0,4.87077089412153,4,3.9397496836286052,mlp,combined
+fall_gravity,estimate + layer 7,3,1000.0,4.66564027267229,1,3.7015049328778327,mlp,combined
+fall_gravity,estimate + layer 7,4,1000.0,3.493936638995678,0,2.927225013357218,mlp,combined
+fall_gravity,layers all,0,1000.0,14.314378046797119,2,13.54588970068572,mlp,
+fall_gravity,layers all,1,1000.0,3.555192964430277,4,3.3542212402637914,mlp,
+fall_gravity,layers all,2,1000.0,4.601140823936006,4,4.071888902516629,mlp,
+fall_gravity,layers all,3,1000.0,4.513646428082091,2,4.648356280584448,ridge,
+fall_gravity,layers all,4,1000.0,3.5332370939115627,4,3.2263668817125315,mlp,
+fall_gravity,estimate + layers all,0,1000.0,14.405404202794076,1,13.76903468895275,mlp,combined
+fall_gravity,estimate + layers all,1,1000.0,3.0311333338901565,3,2.8898954964770143,mlp,combined
+fall_gravity,estimate + layers all,2,1000.0,4.291825450131248,0,3.897941319000934,mlp,combined
+fall_gravity,estimate + layers all,3,1000.0,4.16925995332633,4,4.202004261844957,ridge,estimate
+fall_gravity,estimate + layers all,4,1000.0,3.239297193518215,3,3.010109935542659,mlp,combined

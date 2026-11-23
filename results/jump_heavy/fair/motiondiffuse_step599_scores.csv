@@ -1,0 +1,12 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,jump_heavy,fall_gravity,r2,explicit,default,0,3,7431,235,0.7747821444393999,0.8413460539261944,0.8614559323221124
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | ridge,default,0,3,7431,235,0.777962441258299,0.8439858332675118,0.8603036655635181
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp,default,0,3,7431,235,0.7530751612279353,0.8310686014927877,0.8574981167765794
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | tuned,default,0,3,7431,235,0.7615590845963298,0.837884033175686,0.8583674866583961
+motiondiffuse,jump_heavy,fall_gravity,r2,layer | ridge,default,0,3,7431,235,0.42542050118190844,0.5841888459748177,0.5975012423433387
+motiondiffuse,jump_heavy,fall_gravity,r2,layer | mlp,default,0,3,7431,235,0.38380820587140374,0.524329101768292,0.5341817268559556
+motiondiffuse,jump_heavy,fall_gravity,r2,layer | tuned,default,0,3,7431,235,0.4171553751666578,0.5747195237343856,0.5890688015480866
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | ridge,default,0,3,7431,235,0.7808009237649969,0.8487291195505842,0.8651737815835521
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | mlp,default,0,3,7431,235,0.6791983723385283,0.7796687658031097,0.8016931212901076
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | tuned,default,0,3,7431,235,0.7808009237649969,0.8487291195505842,0.8651737815835521
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer | tuned+fallback,default,0,3,7431,235,0.7681398594470427,0.8396983103494292,0.8594591721678819

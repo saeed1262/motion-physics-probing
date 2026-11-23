@@ -1,0 +1,72 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Palette candidates</title>
+<link rel="stylesheet" href="style.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script>
+<script src="data/fig_probe_steps.js"></script><script>window.PROBE = window.FIG;</script>
+<script src="data/fig_steps_fall.js"></script><script>window.STEPS = window.FIG;</script>
+<script src="data/fig_layer_knows.js"></script><script>window.KNOWS = window.FIG;</script>
+</head><body><svg id="fig"></svg>
+<script>
+// Six candidate palettes, each mapped to the same roles: estimate (warm), layer (cool), explicit label,
+// both together (dark), noisy input / neutral, second series; and the body tint for the renders.
+const PAL = [
+  ["G", "flare (estimate) + crest (layer)", { est: "#d64f5f", layer: "#215584", expl: "#eb9872", both: "#62296a", neutral: "#8a94a6", second: "#33858d", body: "#a9c4cb" },
+   ["#edb081", "#e2655c", "#aa3a6e", "#62296a"], ["#a5cd90", "#44948f", "#1c6689", "#2c3172"]],
+  ["H", "magma, sampled", { est: "#de4968", layer: "#641a80", expl: "#fe9f6d", both: "#140e36", neutral: "#9a8f99", second: "#b73779", body: "#c9b2c4" },
+   ["#fecf92", "#f7705c", "#b73779", "#3b0f70"], ["#fecf92", "#f7705c", "#b73779", "#3b0f70"]],
+  ["I", "viridis, sampled", { est: "#22a884", layer: "#3b528b", expl: "#7ad151", both: "#440154", neutral: "#8f8f8f", second: "#21918c", body: "#a8c3cf" },
+   ["#bddf26", "#44bf70", "#21918c", "#414487"], ["#bddf26", "#44bf70", "#21918c", "#414487"]],
+];
+const W = 624, RH = 150, H = RH * PAL.length, svg = setup(W, H);
+const P = PROBE.panels[0], S = STEPS.models;
+PAL.forEach(([L, name, c, seqE, seqL], r) => {
+  const oy = r * RH;
+  if (r) svg.append("line").attr("x1", 0).attr("x2", W).attr("y1", oy - 4).attr("y2", oy - 4).attr("stroke", col("grid"));
+  const t = svg.append("text").attr("class", "title").attr("x", 0).attr("y", oy + 10);
+  t.append("tspan").attr("class", "letter").text(`${L}  `); t.append("tspan").text(name);
+  // swatches
+  [["estimate", c.est], ["layer", c.layer], ["explicit", c.expl], ["both", c.both], ["neutral", c.neutral], ["second", c.second], ["body", c.body]]
+    .forEach(([k, v], i) => {
+      const g = svg.append("g").attr("transform", `translate(${250 + i * 53},${oy + 2})`);
+      g.append("rect").attr("width", 12).attr("height", 10).attr("rx", 2).attr("fill", v);
+      g.append("text").attr("x", 15).attr("y", 8.5).style("font-size", "8px").text(k);
+    });
+  // chart 1: Figure 3 (a)
+  const p = panel(svg, 0, oy + 14, 262, RH - 18, { t: 10, r: 70, b: 22, l: 28 });
+  const x = d3.scaleLinear().domain([0, 100]).range([0, p.w]), y = d3.scaleLinear().domain([0, 1]).range([p.h, 0]);
+  axes(p, x, y, { xTickValues: [0, 20, 40, 60, 80, 100], xFormat: (d) => `${d}%`, yTicks: 4 });
+  const C = { layer: c.layer, explicit: c.expl, est: c.est, noisy: c.neutral };
+  P.series.forEach((s) => { band(p, x, y, s.pts.map((q) => [q[0], q[2], q[3]]), C[s.key], 0.16);
+    series(p, x, y, s.pts.map((q) => [q[0], q[1]]), C[s.key], s.label, { dash: s.key === "noisy" ? "2 2" : null, width: s.key === "layer" ? 1.8 : 1.3 }); });
+  P.mlp.forEach((q) => p.inner.append("path").attr("d", d3.symbol(d3.symbolDiamond, 34)()).attr("transform", `translate(${x(q[0])},${y(q[1])})`)
+    .attr("fill", c.est).attr("stroke", "#fff").attr("stroke-width", 0.7));
+  placeLabels(p);
+  // chart 2: R2 across denoising (Figure 7 b) and the gain (Figure 7 d)
+  const q = panel(svg, 266, oy + 14, 122, RH - 18, { t: 10, r: 6, b: 22, l: 26 });
+  const x2 = d3.scaleLinear().domain([20, 80]).range([0, q.w]), y2 = d3.scaleLinear().domain([0, 0.8]).range([q.h, 0]);
+  axes(q, x2, y2, { xTickValues: [20, 50, 80], xFormat: (d) => `${d}%`, yTicks: 4 });
+  [["explicit", c.expl], ["estimate", c.est], ["layer", c.layer], ["both", c.both]].forEach(([k, cc]) =>
+    series(q, x2, y2, S[0].steps.map((s, j) => [s, S[0][k][j]]), cc, null, { r: 2 }));
+  const g = panel(svg, 390, oy + 14, 112, RH - 18, { t: 10, r: 4, b: 22, l: 30 });
+  const y3 = d3.scaleLinear().domain([-0.01, 0.11]).range([g.h, 0]);
+  axes(g, x2.copy().range([0, g.w]), y3, { xTickValues: [20, 50, 80], xFormat: (d) => `${d}%`, yTicks: 3, yFormat: d3.format("+.2f") });
+  S.forEach((m, i) => { const cc = i ? c.second : c.layer, xx = x2.copy().range([0, g.w]);
+    band(g, xx, y3, m.steps.map((s, j) => [s, m.gain_lo[j], m.gain_hi[j]]), cc, 0.14);
+    series(g, xx, y3, m.steps.map((s, j) => [s, m.gain[j]]), cc, null, { dash: i ? "4 2" : null, r: 2 }); });
+  const dn = panel(svg, 506, oy + 14, 118, RH - 18, { t: 10, r: 2, b: 22, l: 22 });
+  const lo = 3, hi = 15, xd = d3.scaleLinear().domain([lo, hi]).range([0, dn.w]), yd = d3.scaleLinear().domain([lo, hi]).range([dn.h, 0]);
+  axes(dn, xd, yd, { xTickValues: [5, 10, 15], yTicks: 3 });
+  const seq = d3.scaleSequential(d3.interpolateRgbBasis(seqE));
+  const B = 0.25, cells = d3.rollup(KNOWS.points, (v) => v.length, (d) => Math.floor(d[0] / B), (d) => Math.floor(d[2] / B));
+  const mx = d3.max([...cells.values()].flatMap((m) => [...m.values()]));
+  cells.forEach((m, i) => m.forEach((n, j) => { const xa = i * B, ya = j * B; if (xa < lo || xa >= hi || ya < lo || ya >= hi) return;
+    dn.inner.append("rect").attr("x", xd(xa)).attr("y", yd(ya + B)).attr("width", xd(xa + B) - xd(xa) + 0.3).attr("height", yd(ya) - yd(ya + B) + 0.3)
+      .attr("fill", seq(Math.sqrt(n / mx))); }));
+  const ramp = svg.append("g").attr("transform", `translate(250,${oy + 16})`);
+  [["sequential", seqE], ...(seqL !== seqE ? [["layer side", seqL]] : [])].forEach(([lab, s], k) => {
+    const sc = d3.scaleSequential(d3.interpolateRgbBasis(s));
+    d3.range(40).forEach((u) => ramp.append("rect").attr("x", k * 180 + u * 3).attr("y", 0).attr("width", 3.2).attr("height", 5).attr("fill", sc(u / 39)));
+    ramp.append("text").attr("x", k * 180 + 124).attr("y", 5).style("font-size", "8px").text(lab);
+  });
+});
+</script></body></html>

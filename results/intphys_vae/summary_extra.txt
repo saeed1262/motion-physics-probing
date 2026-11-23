@@ -1,0 +1,28 @@
+IntPhys dev: 360 videos, 90 scenarios, 0.50 possible
+
+Accuracy (mean, sd over 10 grouped 5-fold repeats):
+                                                   per_video        pairwise       
+                                                        mean    std     mean    std
+subset     features                                                                
+O1         frame changes only                          0.669  0.027    0.785  0.017
+           time + 4x4 space + signed frame changes     0.512  0.013    0.509  0.023
+           time kept + frame changes                   0.582  0.013    0.648  0.032
+O2         frame changes only                          0.578  0.027    0.810  0.016
+           time + 4x4 space + signed frame changes     0.528  0.019    0.537  0.016
+           time kept + frame changes                   0.516  0.022    0.633  0.038
+O3         frame changes only                          0.626  0.015    0.808  0.016
+           time + 4x4 space + signed frame changes     0.519  0.031    0.523  0.024
+           time kept + frame changes                   0.488  0.017    0.451  0.036
+all blocks frame changes only                          0.618  0.006    0.779  0.017
+           time + 4x4 space + signed frame changes     0.528  0.011    0.522  0.022
+           time kept + frame changes                   0.534  0.012    0.574  0.022
+
+Permutation null, linear probes, all blocks (20 shuffles; mean and 95th percentile):
+                                        per_video            pairwise           
+                                             mean <lambda_0>     mean <lambda_0>
+features                                                                        
+frame changes only                          0.498      0.517    0.495      0.542
+time + 4x4 space + signed frame changes     0.493      0.520    0.484      0.531
+time kept + frame changes                   0.500      0.525    0.503      0.539
+
+Permutation p-values (all blocks): {'time kept + frame changes': {'per_video': np.float64(0.047619047619047616), 'pairwise': np.float64(0.047619047619047616)}, 'frame changes only': {'per_video': np.float64(0.047619047619047616), 'pairwise': np.float64(0.047619047619047616)}, 'time + 4x4 space + signed frame changes': {'per_video': np.float64(0.047619047619047616), 'pairwise': np.float64(0.19047619047619047)}}

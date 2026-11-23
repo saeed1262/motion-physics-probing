@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[preprint]{tmlr}
+% The arXiv preprint (de-anonymized, no TMLR header). The anonymous review build used \usepackage{tmlr}.
+
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\usepackage{xcolor}
+
+% Visible to-do markers while drafting. Remove before submission.
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\newcommand{\result}[1]{\textcolor{blue}{[#1]}}
+
+\title{Probing Physics in Motion Diffusion Models\\Against Their Own Estimate}
+
+\author{\name Saeed Ghorbani \email theghorbani@gmail.com \\
+        \addr Independent Researcher, Toronto, Canada}
+
+\def\month{MM}
+\def\year{YYYY}
+\def\openreview{\url{https://openreview.net/forum?id=XXXX}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Recent studies report that video diffusion models ``know more than they show'': physical properties decode better from their activations than from their inputs or outputs. But a diffusion model computes its clean-sample estimate from those same activations, so such a comparison measures how easily a readout extracts the information. Whether the model hides anything is a separate question. We set out to find hidden physical knowledge in kinematic text-to-motion diffusion models, where the physics of every intermediate estimate can be computed exactly, and recorded every layer along the sampling trajectories of MDM (two checkpoints) and MotionDiffuse. Against the usual baselines the layers do look ahead of the model's own estimate on balance and flight. With every readout tuned the same way, the estimate closes the gap: for balance and flight, adding a layer gains at most 0.01, a size that a positive control shows we would detect. The fall rate of jumps is the one clear exception. Early in denoising, MDM's layers add about 0.08 in $R^2$ (up to 0.11 in a refit) that the estimate does not yet show, and the gain fades as sampling proceeds; on MotionDiffuse it is small and not robust. The estimate also flags floating samples without training, but aborting them saves under a tenth of the compute. In a video model, plausibility that linear probes miss in Wan~2.1's clean latent becomes readable after one fixed nonlinearity.
+\end{abstract}
+
+\input{sections/intro}
+\input{sections/related}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/discussion}
+
+\bibliography{references}
+\bibliographystyle{tmlr}
+
+\appendix
+\input{sections/appendix}
+
+\end{document}

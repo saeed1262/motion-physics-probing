@@ -1,0 +1,9 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 0,text,0,3,3005,56,0.10599407821555062,0.15818094994325632,0.17888847542914643
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp config 1,text,0,3,3005,56,0.0969958389469372,0.13871425803438625,0.1597350211383784
+50steps,jump_heavy,fall_gravity,r2,estimate + text | mlp config 0,text,0,3,3005,56,-0.04443999075684135,0.10272860624736876,0.11632266339233846
+50steps,jump_heavy,fall_gravity,r2,estimate + text | mlp config 1,text,0,3,3005,56,-0.053285310410282394,0.09862202681747782,0.11479565289998041
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 0,text,0,3,3005,56,0.13187088060112417,0.26388945556257065,0.24944628205877117
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp config 1,text,0,3,3005,56,0.1489523202495452,0.2864047368655192,0.2658882475699794
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 0,text,0,3,3005,56,0.06082365959365732,0.3082694908670826,0.2879235780264084
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp config 1,text,0,3,3005,56,0.03271302330466863,0.27446498649932083,0.2501639147526489

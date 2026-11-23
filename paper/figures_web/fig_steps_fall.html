@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fall rate across denoising</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="palette.css">
+<script src="lib/d3.min.js"></script><script src="common.js"></script><script src="data/fig_steps_fall.js"></script>
+</head><body><svg id="fig"></svg>
+<script>
+const W = 624, H = 330, svg = setup(W, H);
+
+// (a) one jump: bodies where the estimate visibly differs, and the center-of-mass arc at every step
+const F = FIG.film, TOP = 132;
+const ta = svg.append("text").attr("class", "title").attr("x", 0).attr("y", 10);
+ta.append("tspan").attr("class", "letter").text("(a) ");
+ta.append("tspan").text("The estimate shows the jump by 20%; its fall rate settles over the next steps");
+svg.append("text").attr("class", "subtitle").attr("x", 0).attr("y", 22)
+  .text(`“${F.prompt}”: take-off, apex and landing (left); center-of-mass height over the jump at each step (right)`);
+const shown = F.cols.filter((c) => c.img), bw = F.box.x1 - F.box.x0, bh = F.box.y1 - F.box.y0;
+const cw = 112, sc = Math.min((cw - 6) / bw, (TOP - 52) / bh);
+shown.forEach((c, j) => {
+  const ox = j * cw + (cw - bw * sc) / 2, oy = 30;
+  svg.append("image").attr("href", c.img).attr("x", ox).attr("y", oy).attr("width", bw * sc).attr("height", bh * sc);
+  const X = (p) => ox + (p[0] - F.box.x0) * sc, Y = (p) => oy + (F.box.y1 - p[1]) * sc;
+  svg.append("path").attr("d", d3.line().defined((p, i) => c.air[i]).x(X).y(Y)(c.com)).attr("fill", "none")
+    .attr("stroke", col("mark")).attr("stroke-width", 1.6);
+  const lab = svg.append("text").attr("x", j * cw + cw / 2).attr("y", TOP - 8).attr("text-anchor", "middle");
+  lab.append("tspan").style("fill", col("ink")).style("font-weight", 650).text(c.name === "final" ? "final" : c.name);
+  lab.append("tspan").attr("dx", 4).style("fill", col("muted")).text(c.g === null ? "" : `${c.g.toFixed(1)} m/s²`);
+});
+{ // the arcs, zoomed on the flight, colored along Sunset from 20% (light) to final (dark), with a key on the right
+  const arcs = F.cols.filter((c) => c.name !== "0%");
+  const p = panel(svg, 3 * cw + 6, 24, W - 3 * cw - 6, TOP - 20, { t: 6, r: 84, b: 22, l: 30 });
+  const t0 = F.stretch[0] - 0.12, t1 = F.stretch[1] + 0.12;
+  const win = (c) => c.height.filter((q) => q[0] >= t0 && q[0] <= t1);
+  const all = arcs.flatMap(win), top = d3.max(all, (q) => q[1]);
+  const x = d3.scaleLinear().domain([t0, t1]).range([0, p.w]);
+  const y = d3.scaleLinear().domain([top - 0.3, top + 0.02]).range([p.h, 0]);
+  axes(p, x, y, { yTicks: 3, xTickValues: d3.range(Math.ceil(t0 * 10) / 10, t1, 0.1), xFormat: (d) => d.toFixed(1), xLabel: "time (s)",
+                  yLabel: "height (m)" });
+  svg.append("clipPath").attr("id", "arcclip").append("rect").attr("width", p.w).attr("height", p.h);
+  arcs.forEach((c, k) => {
+    const cc = ramp(k / (arcs.length - 1));
+    p.inner.append("path").attr("d", d3.line().x((q) => x(q[0])).y((q) => y(q[1]))(win(c))).attr("fill", "none")
+      .attr("stroke", cc).attr("stroke-width", c.name === "final" ? 2.2 : 1.5).attr("clip-path", "url(#arcclip)");
+    const g = p.inner.append("g").attr("transform", `translate(${p.w + 8},${8 + 13 * k})`);
+    g.append("line").attr("x1", 0).attr("x2", 12).attr("stroke", cc).attr("stroke-width", 2);
+    const tt = g.append("text").attr("x", 16).attr("y", 3);
+    tt.append("tspan").style("fill", col("ink")).style("font-weight", 650).text(c.name);
+    tt.append("tspan").attr("dx", 4).text(c.g === null ? "" : c.g.toFixed(1));
+  });
+  p.inner.append("text").attr("x", p.w + 8).attr("y", 8 + 13 * arcs.length + 2).style("font-size", "8px").text("fall rate, m/s²");
+}
+
+// (b, c) R2 across denoising, with the gain from the layer shaded; (d) the gain with intervals
+const OY = TOP + 8, CH = H - OY;
+const x = d3.scaleLinear().domain([20, 80]);
+const PW = [236, 182, 190], PX = [0, 244, 434];
+FIG.models.forEach((m, i) => {
+  const p = panel(svg, PX[i], OY, PW[i], CH, { t: 34, r: i === 0 ? 96 : 10, b: 30, l: 30 });
+  x.range([0, p.w]);
+  const y = d3.scaleLinear().domain([0, 0.8]).range([p.h, 0]);
+  title(p, "bc"[i], m.name, "R² for the final fall rate, jump prompts");
+  axes(p, x, y, { xTickValues: [20, 40, 60, 80], xFormat: (d) => `${d}%`, xLabel: "denoising done", yTicks: 4 });
+  p.inner.append("path").attr("d", d3.area().x((d) => x(d[0])).y0((d) => y(d[1])).y1((d) => y(d[2]))(m.steps.map((s, j) => [s, m.estimate[j], m.both[j]])))
+    .attr("fill", col("layer")).attr("opacity", 0.16);
+  const L = i === 0;
+  series(p, x, y, m.steps.map((s, j) => [s, m.explicit[j]]), col("dim"), L ? "estimate's own fall rate" : null, { width: 1, r: 1.8 });
+  series(p, x, y, m.steps.map((s, j) => [s, m.layer[j]]), col("dim"), L ? "layer alone" : null, { width: 1, r: 1.8, dash: "3 2" });
+  series(p, x, y, m.steps.map((s, j) => [s, m.estimate[j]]), col("est"), L ? "estimate" : null, { width: 1.8 });
+  series(p, x, y, m.steps.map((s, j) => [s, m.both[j]]), col("layer"), L ? "estimate + layer" : null, { width: 1.8 });
+  placeLabels(p);
+  if (L) p.inner.append("text").attr("x", x(24)).attr("y", y((m.estimate[0] + m.both[0]) / 2) + 3).style("fill", col("layer"))
+    .style("font-weight", 650).style("font-size", "8.5px").text(`gain +${(m.both[0] - m.estimate[0]).toFixed(2)}`);
+});
+const p = panel(svg, PX[2], OY, PW[2], CH, { t: 34, r: 56, b: 30, l: 34 });
+x.range([0, p.w]);
+const y = d3.scaleLinear().domain([-0.01, 0.11]).range([p.h, 0]);
+title(p, "d", "The gain fades by 60 to 80%", "gain from adding the layer, 95% intervals");
+axes(p, x, y, { xTickValues: [20, 40, 60, 80], xFormat: (d) => `${d}%`, xLabel: "denoising done", yTicks: 5,
+                yFormat: (d) => (d > 0 ? "+" : "") + d.toFixed(2) });
+p.inner.append("line").attr("class", "zero").attr("x1", 0).attr("x2", p.w).attr("y1", y(0)).attr("y2", y(0));
+FIG.models.forEach((m, i) => {
+  const c = [col("layer"), col("second")][i];
+  band(p, x, y, m.steps.map((s, j) => [s, m.gain_lo[j], m.gain_hi[j]]), c, 0.13);
+  series(p, x, y, m.steps.map((s, j) => [s, m.gain[j]]), c, m.short, { dash: i ? "4 2" : null });
+});
+placeLabels(p);
+</script></body></html>

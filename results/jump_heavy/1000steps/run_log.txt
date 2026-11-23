@@ -1,0 +1,72 @@
+checkpoint 1000steps | seeds [0, 1, 2] | 186 test captions | 4 samples per prompt | cache data/jump_heavy
+MDM commit: ef8edce
+Setup done: ['vendor/checkpoints/ckpt_1000steps/humanml_trans_enc_512/args.json']
+vendor/mdm/diffusion/nn.py:150: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_fwd
+vendor/mdm/diffusion/nn.py:160: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @th.cuda.amp.custom_bwd
+TRANS_ENC init
+vendor/mdm/model/mdm.py:83: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  self.seqTransEncoder = nn.TransformerEncoder(seqTransEncoderLayer,
+EMBED TEXT
+Loading CLIP...
+.venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+Loaded 1000steps: model000475000.pt | layers=8 | steps=1000 | recording steps [0, 200, 400, 599, 799, 999]
+250 prompts (64 curated + 186 test) x 4 = 1000 motions per run. Examples: ['a person stretches their shoulders by moving their bent arms forward and backward.', 'a person stretches his shoulders and arms with help from the opposite hands.', 'he walks then runs forward.']
+prompts from prompts/jump_heavy.txt: 245 prompts (14 curated) x 4 = 980 motions per run
+seed 0: batch 1/16 saved (130s)
+seed 0: batch 2/16 saved (277s)
+seed 0: batch 3/16 saved (429s)
+seed 0: batch 4/16 saved (603s)
+seed 0: batch 5/16 saved (885s)
+seed 0: batch 6/16 saved (1169s)
+seed 0: batch 7/16 saved (1359s)
+seed 0: batch 8/16 saved (1518s)
+seed 0: batch 9/16 saved (1682s)
+seed 0: batch 10/16 saved (1850s)
+seed 0: batch 11/16 saved (2022s)
+seed 0: batch 12/16 saved (2186s)
+seed 0: batch 13/16 saved (2351s)
+seed 0: batch 14/16 saved (2517s)
+seed 0: batch 15/16 saved (2683s)
+seed 0: batch 16/16 saved (2741s)
+seed 0: all 16 batches present in data/jump_heavy/1000steps_seed0
+seed 1: batch 1/16 saved (168s)
+seed 1: batch 2/16 saved (337s)
+seed 1: batch 3/16 saved (504s)
+seed 1: batch 4/16 saved (671s)
+seed 1: batch 5/16 saved (842s)
+seed 1: batch 6/16 saved (1009s)
+seed 1: batch 7/16 saved (1175s)
+seed 1: batch 8/16 saved (1346s)
+seed 1: batch 9/16 saved (1521s)
+seed 1: batch 10/16 saved (1691s)
+seed 1: batch 11/16 saved (1844s)
+seed 1: batch 12/16 saved (2006s)
+seed 1: batch 13/16 saved (2172s)
+seed 1: batch 14/16 saved (2334s)
+seed 1: batch 15/16 saved (2501s)
+seed 1: batch 16/16 saved (2559s)
+seed 1: all 16 batches present in data/jump_heavy/1000steps_seed1
+seed 2: batch 1/16 saved (174s)
+seed 2: batch 2/16 saved (348s)
+seed 2: batch 3/16 saved (520s)
+seed 2: batch 4/16 saved (696s)
+seed 2: batch 5/16 saved (872s)
+seed 2: batch 6/16 saved (1051s)
+seed 2: batch 7/16 saved (1228s)
+seed 2: batch 8/16 saved (1399s)
+seed 2: batch 9/16 saved (1569s)
+seed 2: batch 10/16 saved (1740s)
+seed 2: batch 11/16 saved (1910s)
+seed 2: batch 12/16 saved (2083s)
+seed 2: batch 13/16 saved (2255s)
+seed 2: batch 14/16 saved (2435s)
+seed 2: batch 15/16 saved (2613s)
+seed 2: batch 16/16 saved (2671s)
+seed 2: all 16 batches present in data/jump_heavy/1000steps_seed2
+seed 0: labels ready (37s)
+seed 1: labels ready (35s)
+seed 2: labels ready (36s)
+--generate-only: samples and labels are in data/jump_heavy; stopping before the analysis (8085s)

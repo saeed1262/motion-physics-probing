@@ -1,0 +1,45 @@
+{
+  "device": "mps",
+  "torch": "2.15.0",
+  "checkpoint": "50steps",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_prompts": 250,
+  "n_curated": 64,
+  "samples_per_prompt": 4,
+  "n_motions_per_run": 1000,
+  "record_steps": [
+    0,
+    10,
+    20,
+    29,
+    39,
+    49
+  ],
+  "frame_stride": 4,
+  "fixed_layer": "layer 3",
+  "runtime_s": 702,
+  "motions_with_gravity_fit": {
+    "0": {
+      "curated: flight": 38,
+      "curated: balance": 12,
+      "curated: other": 11,
+      "test captions": 124
+    },
+    "1": {
+      "curated: flight": 39,
+      "curated: balance": 12,
+      "curated: other": 13,
+      "test captions": 128
+    },
+    "2": {
+      "curated: flight": 34,
+      "curated: balance": 9,
+      "curated: other": 15,
+      "test captions": 113
+    }
+  }
+}

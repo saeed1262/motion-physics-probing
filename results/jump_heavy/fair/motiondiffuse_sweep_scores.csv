@@ -1,0 +1,87 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+motiondiffuse,jump_heavy,fall_gravity,r2,explicit,sweep,0,3,7431,235,0.28862703874685547,0.45150321928190684,0.4662671167934156
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | ridge,sweep,0,3,7431,235,0.3698524348140093,0.4741770868360063,0.4866815377063753
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | mlp,sweep,0,3,7431,235,-59.698647408626464,0.04097092209393444,0.028421447097198873
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate | tuned,sweep,0,3,7431,235,0.36510348287063765,0.4825718819667612,0.4963458914078256
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 0 | ridge,sweep,0,3,7431,235,0.34851779545372874,0.4383245857760986,0.454380620723474
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 0 | mlp,sweep,0,3,7431,235,-15.427925425821126,0.051690317813109565,0.03851298420605669
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 0 | tuned,sweep,0,3,7431,235,0.3417023018925811,0.43192721529966643,0.44992032950852334
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 0 | tuned+fallback,sweep,0,3,7431,235,0.36510348287063765,0.4825718819667612,0.4963458914078256
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 1 | ridge,sweep,0,3,7431,235,0.3529807386726639,0.4477787525002734,0.4604628262110441
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 1 | mlp,sweep,0,3,7431,235,-105.95676683724226,0.029037443163587164,0.01756071514545153
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 1 | tuned,sweep,0,3,7431,235,0.33768870417655716,0.42456441749082163,0.4414334984757219
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 1 | tuned+fallback,sweep,0,3,7431,235,0.36510348287063765,0.4825718819667612,0.4963458914078256
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 2 | ridge,sweep,0,3,7431,235,0.364112384778719,0.4794605431901717,0.4923761508957411
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 2 | mlp,sweep,0,3,7431,235,-37.28380080753076,0.042334751939483294,0.02989149805682509
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 2 | tuned,sweep,0,3,7431,235,0.34643191557306907,0.45270616959309745,0.47188470762992285
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 2 | tuned+fallback,sweep,0,3,7431,235,0.3607034560676863,0.4903614255421145,0.5066073818451784
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 3 | ridge,sweep,0,3,7431,235,0.3725787628997401,0.48050030405867783,0.4949556820226969
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 3 | mlp,sweep,0,3,7431,235,-0.9194027042700637,0.1773522876350796,0.1566947221099051
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 3 | tuned,sweep,0,3,7431,235,0.3650761573769695,0.46768872452765464,0.48591804618076334
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 3 | tuned+fallback,sweep,0,3,7431,235,0.3655194811640349,0.49205417591213896,0.5095673407937299
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 4 | ridge,sweep,0,3,7431,235,0.3859842897282515,0.484689481602523,0.4994214187877498
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 4 | mlp,sweep,0,3,7431,235,-9.06259847320658,0.05008092995687661,0.0543667013521186
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 4 | tuned,sweep,0,3,7431,235,0.3777432113780128,0.47172791807181175,0.4899812287881649
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 4 | tuned+fallback,sweep,0,3,7431,235,0.37599682886699926,0.48806247036910555,0.5042700034290473
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 5 | ridge,sweep,0,3,7431,235,0.40820162966795714,0.5112464316875991,0.5235795789647656
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 5 | mlp,sweep,0,3,7431,235,-24.531705606222772,0.026137100187372007,0.032397924962408994
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 5 | tuned,sweep,0,3,7431,235,0.3820904658388593,0.4796581833194542,0.49614424361828063
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 5 | tuned+fallback,sweep,0,3,7431,235,0.3869554521862747,0.5030003215305451,0.5165379413898215
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 6 | ridge,sweep,0,3,7431,235,0.41333557024117396,0.5139516507478032,0.5260007299404302
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 6 | mlp,sweep,0,3,7431,235,-20.78891746812391,0.03146234380295212,0.03739448693058978
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 6 | tuned,sweep,0,3,7431,235,0.39922092193949266,0.49875339624232856,0.5093368733878297
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 6 | tuned+fallback,sweep,0,3,7431,235,0.39020886714310876,0.5042299342743288,0.5130257481787567
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 7 | ridge,sweep,0,3,7431,235,0.40169317961388207,0.5139563482244816,0.5257109138886318
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 7 | mlp,sweep,0,3,7431,235,0.30661708076651617,0.4051153959315752,0.42850263585432635
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 7 | tuned,sweep,0,3,7431,235,0.40169317961388207,0.5139563482244816,0.5257109138886318
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layer 7 | tuned+fallback,sweep,0,3,7431,235,0.3827248785088896,0.5052286413538557,0.514877276070582
+motiondiffuse,jump_heavy,fall_gravity,r2,layers all | ridge,sweep,0,3,7431,235,0.37977075681223227,0.49868549065539375,0.5105957750816097
+motiondiffuse,jump_heavy,fall_gravity,r2,layers all | mlp,sweep,0,3,7431,235,0.20699373134564159,0.2933440725669566,0.30091913211300475
+motiondiffuse,jump_heavy,fall_gravity,r2,layers all | tuned,sweep,0,3,7431,235,0.37977075681223227,0.49868549065539375,0.5105957750816097
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layers all | ridge,sweep,0,3,7431,235,0.4306841772096962,0.5392167395752164,0.5500026835447585
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layers all | mlp,sweep,0,3,7431,235,0.2647186248956862,0.3574612500498862,0.37473700728151127
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layers all | tuned,sweep,0,3,7431,235,0.4306841772096962,0.5392167395752164,0.5500026835447585
+motiondiffuse,jump_heavy,fall_gravity,r2,estimate + layers all | tuned+fallback,sweep,0,3,7431,235,0.41220528380766464,0.5292764214806349,0.5404153376114803
+motiondiffuse,jump_heavy,float_vs_fall,auc,explicit,sweep,0,3,8072,235,0.7410008794376806,0.09667850370283203,0.10349905600674085
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate | ridge,sweep,0,3,8072,235,0.8405429798136618,0.20169585696208808,0.1754752012955351
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate | mlp,sweep,0,3,8072,235,0.8260363519102734,0.25405868519883784,0.20682492850282275
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate | tuned,sweep,0,3,8072,235,0.8271282486341843,0.2509594712139366,0.19600948273358162
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 0 | ridge,sweep,0,3,8072,235,0.8247744039757553,0.20259580861674525,0.16908301121015126
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 0 | mlp,sweep,0,3,8072,235,0.7748897763742604,0.20795161715270746,0.13953316370577512
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 0 | tuned,sweep,0,3,8072,235,0.815332362991734,0.19689884922146755,0.15161073058997504
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 0 | tuned+fallback,sweep,0,3,8072,235,0.8265811456035148,0.253165430050934,0.1954193074120107
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 1 | ridge,sweep,0,3,8072,235,0.8289020297186535,0.20719269721627362,0.17626474153258329
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 1 | mlp,sweep,0,3,8072,235,0.8012294492587132,0.21985753483677298,0.15483266955031422
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 1 | tuned,sweep,0,3,8072,235,0.8218579207439595,0.20910914768649172,0.1634703523069583
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 1 | tuned+fallback,sweep,0,3,8072,235,0.8266527350637828,0.25346269161511853,0.19574626269010714
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 2 | ridge,sweep,0,3,8072,235,0.826948540194333,0.22971658851245091,0.19599197686124148
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 2 | mlp,sweep,0,3,8072,235,0.7994516793186868,0.23262622047304585,0.1597148016868449
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 2 | tuned,sweep,0,3,8072,235,0.8261154992021239,0.2384272915792715,0.17007225034961426
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 2 | tuned+fallback,sweep,0,3,8072,235,0.8232659867557398,0.2739458078541018,0.19335873447421753
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 3 | ridge,sweep,0,3,8072,235,0.8240467527461697,0.2445666703326287,0.21109128672965582
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 3 | mlp,sweep,0,3,8072,235,0.8129083984514004,0.25539102708795935,0.18297204472402268
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 3 | tuned,sweep,0,3,8072,235,0.8381255234060796,0.23763895432529292,0.1950681281682101
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 3 | tuned+fallback,sweep,0,3,8072,235,0.8241334578696027,0.2594788188267464,0.19963765346491713
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 4 | ridge,sweep,0,3,8072,235,0.8306449496574938,0.2365750370864177,0.1960816562600609
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 4 | mlp,sweep,0,3,8072,235,0.8116317547332494,0.25819219043594127,0.18850052607102238
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 4 | tuned,sweep,0,3,8072,235,0.8116317547332494,0.25819219043594127,0.18850052607102238
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 4 | tuned+fallback,sweep,0,3,8072,235,0.7965097933751828,0.2688711003458356,0.18643949622717587
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 5 | ridge,sweep,0,3,8072,235,0.8404275129422618,0.2445530684602622,0.20443768057161268
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 5 | mlp,sweep,0,3,8072,235,0.8169109000936542,0.2629005474144224,0.1956660276589801
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 5 | tuned,sweep,0,3,8072,235,0.8169109000936542,0.2629005474144224,0.1956660276589801
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 5 | tuned+fallback,sweep,0,3,8072,235,0.7986287154352544,0.26712018585906455,0.1872260739828486
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 6 | ridge,sweep,0,3,8072,235,0.8445524094681995,0.2721515529302137,0.2139085876971723
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 6 | mlp,sweep,0,3,8072,235,0.8198588742903774,0.2703344902216179,0.20570090946230563
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 6 | tuned,sweep,0,3,8072,235,0.8489697520884284,0.2692830719646426,0.21655845688351053
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 6 | tuned+fallback,sweep,0,3,8072,235,0.8277874594999948,0.2610303481317829,0.19994786315623625
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 7 | ridge,sweep,0,3,8072,235,0.841492117496569,0.2695225924658409,0.2130909806364085
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 7 | mlp,sweep,0,3,8072,235,0.8066815849864516,0.2596360381440681,0.19387072599485802
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 7 | tuned,sweep,0,3,8072,235,0.8363972992508719,0.2618150618868369,0.20119084253875769
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layer 7 | tuned+fallback,sweep,0,3,8072,235,0.8176521974080416,0.25763910744191054,0.190081801951013
+motiondiffuse,jump_heavy,float_vs_fall,auc,layers all | ridge,sweep,0,3,8072,235,0.841354397009954,0.3332096063518486,0.26720228518776246
+motiondiffuse,jump_heavy,float_vs_fall,auc,layers all | mlp,sweep,0,3,8072,235,0.8074680193505681,0.2353776441181999,0.152886213523834
+motiondiffuse,jump_heavy,float_vs_fall,auc,layers all | tuned,sweep,0,3,8072,235,0.8160451084979209,0.2739866910619566,0.18845880424941933
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layers all | ridge,sweep,0,3,8072,235,0.8352184874637618,0.28606668827894516,0.21785608449872743
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layers all | mlp,sweep,0,3,8072,235,0.8177309248203598,0.23893681554017668,0.16651740085990038
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layers all | tuned,sweep,0,3,8072,235,0.8177309248203598,0.23893681554017668,0.16651740085990038
+motiondiffuse,jump_heavy,float_vs_fall,auc,estimate + layers all | tuned+fallback,sweep,0,3,8072,235,0.8237920958097913,0.25522590754552504,0.18698288178002373

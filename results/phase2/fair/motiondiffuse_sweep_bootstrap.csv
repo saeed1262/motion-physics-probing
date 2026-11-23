@@ -1,0 +1,244 @@
+checkpoint,tag,target,layer_spec,refit_seed,comparison,measure,observed,ci_low,ci_high,share_above_zero
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): tuned,score,-0.024271950348766835,-0.032019351198929215,-0.017775279548424634,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): tuned,within_prompt_r,-0.01877622578683058,-0.02292781498752108,-0.01488564731795428,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): tuned,within_prompt_frame_r,-0.02253666308901947,-0.027088406674725948,-0.018248723497383487,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): ridge only,score,0.02138697473124851,0.007473327037970309,0.03459224780250077,0.997
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): ridge only,within_prompt_r,0.02207777732551508,0.01687099145381224,0.027327658205400868,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 0): ridge only,within_prompt_frame_r,0.029620614849976357,0.024165152362696573,0.035372595680977115,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): tuned,score,-0.017821237907417742,-0.025536822806822207,-0.011012722709015986,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): tuned,within_prompt_r,-0.01566373487142303,-0.02040064847676639,-0.01188032403850488,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): tuned,within_prompt_frame_r,-0.018498586709723597,-0.02331595307804845,-0.014258343779749197,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): ridge only,score,0.049984400097462967,0.03346384474724517,0.06762161981190966,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): ridge only,within_prompt_r,0.03968752448440138,0.031128725248218945,0.047278334728683036,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 1): ridge only,within_prompt_frame_r,0.05310098459236201,0.04483536412153433,0.060950973029287314,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): tuned,score,-0.02193835984810122,-0.030227081276857155,-0.014676955268971429,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): tuned,within_prompt_r,-0.01488465999677191,-0.01933321753732033,-0.011163982947073017,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): tuned,within_prompt_frame_r,-0.01673642946369247,-0.020954100116329054,-0.012613668509909998,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): ridge only,score,0.07514836626689347,0.05570260586750061,0.09640218906462346,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): ridge only,within_prompt_r,0.06719354453663928,0.056831612818454676,0.07869051240983554,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 2): ridge only,within_prompt_frame_r,0.0871404351268481,0.07556606534321561,0.09956875891648882,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): tuned,score,-0.014719365064765677,-0.022534509401827482,-0.007413131470312328,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): tuned,within_prompt_r,-0.010202042247242082,-0.015043156360487062,-0.006281441206497521,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): tuned,within_prompt_frame_r,-0.010993065529912416,-0.01506131038010117,-0.007050806098816749,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): ridge only,score,0.07038901806168263,0.05072310098639217,0.09164919570944782,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): ridge only,within_prompt_r,0.06938253172977915,0.06007331280648158,0.08009703616151029,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 3): ridge only,within_prompt_frame_r,0.08908937010630502,0.07833980586366374,0.10059633080747797,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): tuned,score,-0.012403713784339687,-0.020318042166565128,-0.004961852707366136,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): tuned,within_prompt_r,-0.007942355201263962,-0.012746118268234746,-0.0039597844481278404,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): tuned,within_prompt_frame_r,-0.008076010460018934,-0.011941227556925987,-0.0043222354451452625,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): fallback,score,-0.00042208972132384837,-0.002364151183330043,0.0017243850929354752,0.331
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): fallback,within_prompt_r,-0.001101999793952091,-0.0024956996098982136,0.00030140447023266895,0.073
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): fallback,within_prompt_frame_r,-0.001688344383105167,-0.003387154844159845,-6.234722648472138e-05,0.014
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): ridge only,score,0.07263249837358332,0.0544784585347075,0.09258070842749454,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): ridge only,within_prompt_r,0.06885377080993837,0.05930169325367138,0.07843546160251942,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 4): ridge only,within_prompt_frame_r,0.08811613202866686,0.07738690207168968,0.0987334637582187,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): tuned,score,-0.009284898327706737,-0.016101694577505685,-0.0024705228241472623,0.002
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): tuned,within_prompt_r,-0.00530136680998472,-0.009172478303933912,-0.0018568948452366758,0.002
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): tuned,within_prompt_frame_r,-0.0054295299039278655,-0.009031133992509252,-0.0018157028290929531,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): fallback,score,-0.000723636274595929,-0.002566713308546409,0.001321848924280247,0.219
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): fallback,within_prompt_r,-0.0009105800094498795,-0.0022201540634088747,0.0005476977001550003,0.102
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): fallback,within_prompt_frame_r,-0.0013507754319809218,-0.002925502431290078,0.0003112616782333542,0.051
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): ridge only,score,0.07219181914217299,0.05022401361460569,0.09526711360968028,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): ridge only,within_prompt_r,0.07477180700734787,0.06461445152088349,0.08579047094888351,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 5): ridge only,within_prompt_frame_r,0.09617853457647407,0.08507451637802406,0.1081010916335812,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): tuned,score,-0.007698623500031698,-0.014617300915265443,-0.000848241514932635,0.01
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): tuned,within_prompt_r,-0.004036381848189108,-0.008044826163559607,-0.0005767119813031102,0.013
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): tuned,within_prompt_frame_r,-0.004145462221555096,-0.007992629872416782,-0.0006421740230156297,0.011
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): ridge only,score,0.06788854719714754,0.04395467569347585,0.09242677695399885,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): ridge only,within_prompt_r,0.07592467965531702,0.06622961588885024,0.08719497013961923,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 6): ridge only,within_prompt_frame_r,0.09764941948444261,0.08668833939147393,0.10919566289013659,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): tuned,score,-0.01073537150092907,-0.01670675915694971,-0.00469578936704517,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): tuned,within_prompt_r,-0.006784235427829355,-0.010372512121092465,-0.0035901524699178287,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): tuned,within_prompt_frame_r,-0.007977137424777236,-0.012088984886683469,-0.00413118461670718,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): ridge only,score,0.0656280450628961,0.03904782802114393,0.09246262661230183,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): ridge only,within_prompt_r,0.0771282264888461,0.067822319424014,0.08752324279394999,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layer 7): ridge only,within_prompt_frame_r,0.09837185068255172,0.08770351336925182,0.10966391242871915,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): tuned,score,-0.07173792699232373,-0.08938018988631423,-0.057058263254547506,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): tuned,within_prompt_r,-0.03505897777143718,-0.04393585562027166,-0.028546705987860365,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): tuned,within_prompt_frame_r,-0.04035274792368726,-0.049576916709156565,-0.03311482336037263,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): ridge only,score,0.10768959938021161,0.07811957037812964,0.13929473680785215,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): ridge only,within_prompt_r,0.1149571960057878,0.10224260892432661,0.13031235842075609,1.0
+motiondiffuse,phase2,xcom_margin,sweep,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.14338661478195358,0.12823773590408447,0.1606452531608983,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): tuned,score,-0.02689695609469467,-0.045347161869354294,-0.01354720527683711,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): tuned,within_prompt_r,-0.005877659449605721,-0.022515571271380565,0.009612423844145039,0.212
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): tuned,within_prompt_frame_r,-0.007920751328202469,-0.027046082695438612,0.0079802002575837,0.162
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): fallback,score,-0.009543048122690467,-0.02167230960264325,-0.0020740480144267,0.004
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): fallback,within_prompt_r,0.001241139767386712,-0.0034295381063059985,0.0055470801561010525,0.699
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): fallback,within_prompt_frame_r,-0.0017288064161002925,-0.006048099299602765,0.0021276368399877014,0.201
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): ridge only,score,-0.002278761008591923,-0.010973795857312531,0.004194822351664581,0.325
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): ridge only,within_prompt_r,0.025468847766339064,0.0156629707182026,0.035888981603301374,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 0): ridge only,within_prompt_frame_r,0.030921436431044613,0.021756752104126593,0.04024929559272093,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): tuned,score,-0.016640263742003336,-0.04237052266823532,0.01181449249725245,0.107
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): tuned,within_prompt_r,-0.005463046288182061,-0.02060882923822749,0.009082009621383754,0.209
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): tuned,within_prompt_frame_r,-0.009663229525351147,-0.02864550958099392,0.0070702507124912484,0.12
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): ridge only,score,-0.005596283297519267,-0.02235319340398119,0.004438764494546044,0.278
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): ridge only,within_prompt_r,0.033747376103460125,0.024743160506053567,0.044026916075609435,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 1): ridge only,within_prompt_frame_r,0.03694203999969792,0.028565708801367076,0.046269057718258275,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): tuned,score,-0.01088885487189728,-0.02958866463799452,0.010134615463024943,0.135
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): tuned,within_prompt_r,-0.003079228685839319,-0.01859239292923731,0.011122251007652793,0.332
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): tuned,within_prompt_frame_r,-0.004393685865810015,-0.02187354182725956,0.011813451720832903,0.277
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): ridge only,score,-0.00544530323380743,-0.020015824193404506,0.0034569880903624335,0.24
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): ridge only,within_prompt_r,0.03392681235738371,0.025175892798598613,0.04381666189910016,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 2): ridge only,within_prompt_frame_r,0.038791015623433345,0.031236014617357498,0.04685940983210795,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): tuned,score,-0.012273224311073472,-0.03567980799571953,0.015376886077482452,0.154
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): tuned,within_prompt_r,-0.003405503468137616,-0.018987924813930593,0.009638205822150876,0.325
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): tuned,within_prompt_frame_r,-0.0011373621960237834,-0.016842866073827102,0.012603148723284554,0.423
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): fallback,score,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): fallback,within_prompt_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): fallback,within_prompt_frame_r,0.0,0.0,0.0,0.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): ridge only,score,-0.004876308497169246,-0.017872437061965445,0.005879070546732256,0.249
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): ridge only,within_prompt_r,0.048112153424559545,0.03433320466074436,0.06481611937449093,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 3): ridge only,within_prompt_frame_r,0.05881047228227454,0.0467541222852665,0.0729240227158692,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): tuned,score,-0.011396874768637488,-0.031002918598667967,0.011301192283541966,0.131
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): tuned,within_prompt_r,-0.003800822763944889,-0.01948029668397317,0.009765062082944202,0.303
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): tuned,within_prompt_frame_r,-0.0019777375117840945,-0.019440337673485814,0.013039082671239483,0.377
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): fallback,score,-0.004499733150598706,-0.010314233262475787,-0.0002552178511782967,0.019
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): fallback,within_prompt_r,0.001688090467252823,-0.003574006188963721,0.006622462584084804,0.732
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): fallback,within_prompt_frame_r,0.0006218600977870858,-0.005374687224027497,0.006240085157216664,0.6
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): ridge only,score,-0.002186109673362191,-0.014581066728707435,0.007382564465304323,0.382
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): ridge only,within_prompt_r,0.04789772529594816,0.03506841248899213,0.06338277007955619,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 4): ridge only,within_prompt_frame_r,0.05926359772888823,0.048371248451709536,0.07136915344433242,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): tuned,score,-0.008590656864708057,-0.02829276950838728,0.012263730021315866,0.176
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): tuned,within_prompt_r,-0.0036110112422340634,-0.018309203524967583,0.00934365621913602,0.291
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): tuned,within_prompt_frame_r,-0.004391040354744136,-0.02010199046414843,0.009345293450154602,0.246
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): fallback,score,-0.0050240848548780415,-0.012375798195032777,-0.0005726632456609763,0.014
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): fallback,within_prompt_r,0.002774519051986335,-0.0020910100751077216,0.007921515085065558,0.859
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): fallback,within_prompt_frame_r,0.0005760687141633802,-0.004659051955688945,0.005398983874076579,0.618
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): ridge only,score,0.002849584182604392,-0.002613868223052898,0.009088849615562465,0.868
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): ridge only,within_prompt_r,0.0492747029281545,0.03477756721453879,0.06724522478442045,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 5): ridge only,within_prompt_frame_r,0.062248284926567976,0.05078584361711376,0.07490850793471746,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): tuned,score,-0.005714641122429587,-0.025672054700499377,0.01928997778031718,0.267
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): tuned,within_prompt_r,0.005848827259540945,-0.00916019869440521,0.019976975921945986,0.787
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): tuned,within_prompt_frame_r,0.00876675920547787,-0.007894990242203397,0.024470133965739,0.863
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): fallback,score,-0.004316333788871418,-0.009362859655319217,-0.0009775080541368335,0.006
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): fallback,within_prompt_r,0.000610826203878867,-0.0038080071916334777,0.005371904199599366,0.594
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): fallback,within_prompt_frame_r,-0.0014164257035809147,-0.005863586716739089,0.002915421735146001,0.275
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): ridge only,score,0.0030377516676571847,-0.00317974685410331,0.010391593604329362,0.819
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): ridge only,within_prompt_r,0.05365843627472344,0.03769582828781388,0.07348986283735132,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 6): ridge only,within_prompt_frame_r,0.06663731592157651,0.05322789332966801,0.0822326725912482,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): tuned,score,0.00035606847567337674,-0.019705947926448267,0.029337726309958453,0.475
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): tuned,within_prompt_r,0.0034040906099853663,-0.011690715116508937,0.01822230530227065,0.671
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): tuned,within_prompt_frame_r,0.005068911244413665,-0.012721538614475201,0.02108738425893676,0.731
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): fallback,score,-0.005110655847718526,-0.012304741931056384,-0.00045405399174216793,0.015
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): fallback,within_prompt_r,-0.0011054757761728151,-0.007552839198306185,0.004635733440140024,0.357
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): fallback,within_prompt_frame_r,-0.002981372974132701,-0.009072875628038251,0.0023448307553953856,0.143
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): ridge only,score,0.0016889205096467519,-0.006000885733275968,0.008758506211649902,0.708
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): ridge only,within_prompt_r,0.05218467722941267,0.03703471881991525,0.07023382912311912,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layer 7): ridge only,within_prompt_frame_r,0.06453734897183039,0.05191396127979368,0.07832894186285905,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): tuned,score,0.0027668335993212834,-0.010134064128233195,0.018872305329231214,0.611
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): tuned,within_prompt_r,-0.025127865417679085,-0.05026384697911768,-0.005074977445544386,0.007
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): tuned,within_prompt_frame_r,-0.02641044011577287,-0.0534609139053358,-0.005153897581265298,0.005
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): fallback,score,-0.002845229822046602,-0.005795610089005804,-0.0008046966655582722,0.002
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): fallback,within_prompt_r,-0.005997723616213979,-0.016466071562889893,0.0006209094385574431,0.048
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): fallback,within_prompt_frame_r,-0.0087866989845784,-0.025064071817210782,0.0007298721449307088,0.056
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): ridge only,score,0.0006575320877756363,-0.014350301870752938,0.012819240021471829,0.581
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): ridge only,within_prompt_r,0.08404576892515259,0.06331257039768112,0.10921962968243668,1.0
+motiondiffuse,phase2,in_flight,sweep,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.09724493367249942,0.08039757954773527,0.11769444085159117,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): tuned,score,0.03084469879965812,-0.0029664196841837683,0.07011949978753199,0.96
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): tuned,within_prompt_r,-1.488363073183406e-05,-0.05394494374250685,0.09510096336449589,0.513
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): tuned,within_prompt_frame_r,4.504090968584813e-05,,,0.79
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): fallback,score,0.019729262954480076,-0.002651593984592876,0.050870621151602215,0.95
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): fallback,within_prompt_r,6.115857644867287e-05,-0.034103437506754514,0.10793667980823483,0.728
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): fallback,within_prompt_frame_r,6.305097238373488e-05,,,0.858
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): ridge only,score,0.03274584320252871,0.00044042962767652566,0.07356625136946929,0.977
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): ridge only,within_prompt_r,-0.010218797593250728,-0.14460949226563502,0.11415101131473882,0.44
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 0): ridge only,within_prompt_frame_r,-0.013640992622692905,,,0.391
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): tuned,score,0.032392801469279364,0.009295245858350551,0.06581907633836774,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): tuned,within_prompt_r,-3.1473792687422756e-06,-0.029184638163204213,0.10116678491760939,0.593
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): tuned,within_prompt_frame_r,4.368220803936374e-05,,,0.82
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): fallback,score,0.023754525486483602,0.0036260547138246583,0.051210955161731485,0.991
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): fallback,within_prompt_r,5.9302132288958836e-05,-0.028444261529787986,0.10165319931372226,0.792
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): fallback,within_prompt_frame_r,5.75100441673963e-05,,,0.928
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): ridge only,score,0.03997977589184609,0.007657902524105215,0.08317370567869511,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): ridge only,within_prompt_r,-0.011299462015919609,-0.13253425477324726,0.10725661385022205,0.426
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 1): ridge only,within_prompt_frame_r,-0.021188123559009474,,,0.32
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): tuned,score,0.04114745408990539,0.01124161912690073,0.08153917508192388,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): tuned,within_prompt_r,-5.30234780820409e-07,-0.02484550434711459,0.10666350111265589,0.577
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): tuned,within_prompt_frame_r,5.1466858323511703e-05,,,0.842
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): fallback,score,0.02132137359639008,0.0032146868648309183,0.04701592494058776,0.997
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): fallback,within_prompt_r,7.1225705980443e-05,-0.020402286995335504,0.10935005227470225,0.784
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): fallback,within_prompt_frame_r,6.707727409378244e-05,,,0.914
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): ridge only,score,0.040145050276663485,0.007946705233544526,0.08348845362598548,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): ridge only,within_prompt_r,0.010898754906724227,-0.10702906095709899,0.12434335626620673,0.553
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 2): ridge only,within_prompt_frame_r,-0.0020009435123865063,,,0.473
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): tuned,score,0.034784879251903544,0.01202945076377486,0.06848046457843958,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): tuned,within_prompt_r,7.224407631115532e-07,-0.003089699890304193,0.10501480192973557,0.632
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): tuned,within_prompt_frame_r,4.794884536492097e-05,,,0.819
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): fallback,score,0.03297370670348976,0.010317789399535449,0.06576877179420162,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): fallback,within_prompt_r,8.293793623226657e-05,-0.0025294388878348657,0.10579595236475862,0.884
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): fallback,within_prompt_frame_r,7.51159276012389e-05,,,0.929
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): ridge only,score,0.03185688216229743,0.007918360681574815,0.06268593982779468,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): ridge only,within_prompt_r,0.04327196204173417,-0.03619244457260544,0.11943118581249997,0.815
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 3): ridge only,within_prompt_frame_r,0.022595949096076248,,,0.669
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): tuned,score,0.03468903966780834,0.011521857984539016,0.06761361361921635,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): tuned,within_prompt_r,1.1024753164070188e-05,-0.00010228106507563217,0.12020913295360743,0.663
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): tuned,within_prompt_frame_r,4.896389242890886e-05,,,0.827
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): fallback,score,0.033526251244447636,0.010213537535768044,0.06652922792139675,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): fallback,within_prompt_r,0.00011106176627212549,-1.7488306880376463e-05,0.12069238713640115,0.941
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): fallback,within_prompt_frame_r,7.627200161576913e-05,,,0.94
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): ridge only,score,0.031203608262545646,0.007628060113321639,0.061561254966467346,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): ridge only,within_prompt_r,0.054165008905750434,-0.02450294380133778,0.12940080829991357,0.867
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 4): ridge only,within_prompt_frame_r,0.0157528615921785,,,0.62
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): tuned,score,0.0334216100658945,0.011224550068648803,0.06615724584000054,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): tuned,within_prompt_r,1.0852581487436744e-05,-0.00010132245591963419,0.12278752675936878,0.663
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): tuned,within_prompt_frame_r,4.853163344007943e-05,,,0.821
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): fallback,score,0.024605346284064522,0.006697923390848517,0.05004021889986418,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): fallback,within_prompt_r,0.00011340119019287945,-2.6239321208776375e-05,0.12252143320666653,0.944
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): fallback,within_prompt_frame_r,7.557123770015039e-05,,,0.927
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): ridge only,score,0.027702529578247148,0.006717951784055373,0.05417033218085306,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): ridge only,within_prompt_r,0.05576518409306984,-0.02498181156307068,0.13196252191659139,0.862
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 5): ridge only,within_prompt_frame_r,0.015555266438812582,,,0.611
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): tuned,score,0.03344214711962934,0.010474769630741995,0.06717684186972575,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): tuned,within_prompt_r,0.08558037290529916,0.008014245940423815,0.134913146700881,0.987
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): tuned,within_prompt_frame_r,0.024150892904280852,,,0.853
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): fallback,score,0.025711413320919863,0.006025809955739192,0.054228101179520316,0.999
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): fallback,within_prompt_r,0.00011308680532699828,1.119445548607696e-06,0.11815987763040932,0.977
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): fallback,within_prompt_frame_r,7.049190437683603e-05,,,0.949
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): ridge only,score,0.030039841884245244,0.007311689908341981,0.05861710507126069,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): ridge only,within_prompt_r,0.05563224655868432,-0.0154231902026696,0.12570132841060924,0.89
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 6): ridge only,within_prompt_frame_r,0.012420179233632624,,,0.602
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): tuned,score,0.023075824758298502,0.006117183284468008,0.053195254439077244,0.999
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): tuned,within_prompt_r,2.054838481789773e-05,-8.599519689682352e-05,0.15242389208988064,0.717
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): tuned,within_prompt_frame_r,5.765899383064432e-05,,,0.876
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): fallback,score,0.015736272935488294,0.0017113151827949176,0.03926809216033463,0.986
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): fallback,within_prompt_r,0.0001565875789826043,2.4502862724176952e-05,0.1523255210702814,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): fallback,within_prompt_frame_r,0.00011102091769891936,,,0.984
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): ridge only,score,0.02033559501712412,0.006542693631761867,0.043674627164550194,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): ridge only,within_prompt_r,0.08390609724305613,0.005403264695543943,0.16247522177373888,0.998
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layer 7): ridge only,within_prompt_frame_r,0.04641578205961557,,,0.783
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): tuned,score,0.045746776171541215,0.014351963871317775,0.0901584925764971,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): tuned,within_prompt_r,0.00010653338103416934,2.378386940645635e-06,0.1370345919345172,0.98
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): tuned,within_prompt_frame_r,9.16792740380364e-05,,,0.984
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): fallback,score,0.04432287377926769,0.012925683504953272,0.08744857278687589,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): fallback,within_prompt_r,0.00014064550884824122,1.8153836221293816e-05,0.13544465846047835,0.993
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): fallback,within_prompt_frame_r,0.00010513457986862774,,,0.984
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): ridge only,score,0.04301828188964374,0.010710026400608799,0.08585716045427687,1.0
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): ridge only,within_prompt_r,0.04872461890860226,-0.023669802317079627,0.12408662213099803,0.835
+motiondiffuse,phase2,float_vs_fall,sweep,0,conditional gain (layers all): ridge only,within_prompt_frame_r,0.01248739756173707,,,0.585

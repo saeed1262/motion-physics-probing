@@ -1,0 +1,17 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,jump_heavy,fall_gravity,r2,explicit,text,0,3,3005,56,0.1498888492017637,0.34114792430706564,0.2909551525487984
+50steps,jump_heavy,fall_gravity,r2,estimate | ridge,text,0,3,3005,56,0.22163335387932026,0.32956025430564967,0.31256308698505025
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp,text,0,3,3005,56,0.10599407821555062,0.15818094994325632,0.17888847542914643
+50steps,jump_heavy,fall_gravity,r2,estimate | tuned,text,0,3,3005,56,0.22163335387932026,0.32956025430564967,0.31256308698505025
+50steps,jump_heavy,fall_gravity,r2,estimate + text | ridge,text,0,3,3005,56,0.006182281375948451,0.22826695414361078,0.1888646514935386
+50steps,jump_heavy,fall_gravity,r2,estimate + text | mlp,text,0,3,3005,56,-0.04858019456034146,0.0985493924022442,0.11567581393765312
+50steps,jump_heavy,fall_gravity,r2,estimate + text | tuned,text,0,3,3005,56,-0.027498346946842167,0.2126131558206878,0.18544791055303536
+50steps,jump_heavy,fall_gravity,r2,estimate + text | tuned+fallback,text,0,3,3005,56,0.06271870459365847,0.2480461679841205,0.2096394617631962
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | ridge,text,0,3,3005,56,0.33084688166800724,0.47435032886887507,0.4630556337237893
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp,text,0,3,3005,56,0.14561985135364164,0.2716621238106716,0.2551197502633581
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | tuned,text,0,3,3005,56,0.33084688166800724,0.47435032886887507,0.4630556337237893
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | tuned+fallback,text,0,3,3005,56,0.33084688166800724,0.47435032886887507,0.4630556337237893
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | ridge,text,0,3,3005,56,0.3249264602191466,0.4853144324470781,0.4734081199726777
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp,text,0,3,3005,56,0.05556973291352507,0.303128200845246,0.2803974081954053
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned,text,0,3,3005,56,0.3249264602191466,0.4853144324470781,0.4734081199726777
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned+fallback,text,0,3,3005,56,0.32331240386594395,0.47171553784185366,0.45852896632934437

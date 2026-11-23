@@ -1,0 +1,33 @@
+checkpoint,tag,target,metric,readout,layer_spec,refit_seed,seeds,frames,prompts,score,within_prompt_r,within_prompt_frame_r
+50steps,jump_heavy,fall_gravity,r2,explicit,text,0,3,11640,233,0.15241966966969878,0.3432183260654762,0.3087539691081796
+50steps,jump_heavy,fall_gravity,r2,estimate | ridge,text,0,3,11640,233,0.2725233117884258,0.38194777901538357,0.36905874202774414
+50steps,jump_heavy,fall_gravity,r2,estimate | mlp,text,0,3,11640,233,0.3514243942185413,0.4935934958369522,0.48472602345367016
+50steps,jump_heavy,fall_gravity,r2,estimate | tuned,text,0,3,11640,233,0.3514243942185413,0.4935934958369522,0.48472602345367016
+50steps,jump_heavy,fall_gravity,r2,estimate + text | ridge,text,0,3,11640,233,0.23197474158446496,0.3691937371706842,0.34789764443370097
+50steps,jump_heavy,fall_gravity,r2,estimate + text | mlp,text,0,3,11640,233,0.23304897104256994,0.43331382283560255,0.4222089482187903
+50steps,jump_heavy,fall_gravity,r2,estimate + text | tuned,text,0,3,11640,233,0.23304897104256994,0.43331382283560255,0.4222089482187903
+50steps,jump_heavy,fall_gravity,r2,estimate + text | tuned+fallback,text,0,3,11640,233,0.3514243942185413,0.4935934958369522,0.48472602345367016
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | ridge,text,0,3,11640,233,0.41494988092184504,0.5447978030488334,0.5280405238369117
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | mlp,text,0,3,11640,233,0.42822791461567566,0.5700303819453797,0.5572896844057093
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | tuned,text,0,3,11640,233,0.42822791461567566,0.5700303819453797,0.5572896844057093
+50steps,jump_heavy,fall_gravity,r2,estimate + layer | tuned+fallback,text,0,3,11640,233,0.42822791461567566,0.5700303819453797,0.5572896844057093
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | ridge,text,0,3,11640,233,0.38632656293785506,0.544830468832671,0.5291327405456947
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | mlp,text,0,3,11640,233,0.3586708859143508,0.5484797555700696,0.5358904010109607
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned,text,0,3,11640,233,0.3586708859143508,0.5484797555700696,0.5358904010109607
+50steps,jump_heavy,fall_gravity,r2,estimate + text + layer | tuned+fallback,text,0,3,11640,233,0.42822791461567566,0.5700303819453797,0.5572896844057093
+50steps,jump_heavy,float_vs_fall,auc,explicit,text,0,3,13770,236,0.8374972976461288,0.4218812314996937,0.3959803823985448
+50steps,jump_heavy,float_vs_fall,auc,estimate | ridge,text,0,3,13770,236,0.9780164319248825,0.6580450167905108,0.6391448829316342
+50steps,jump_heavy,float_vs_fall,auc,estimate | mlp,text,0,3,13770,236,0.9736829856573574,0.6961146664828134,0.6771830507874946
+50steps,jump_heavy,float_vs_fall,auc,estimate | tuned,text,0,3,13770,236,0.9736829856573574,0.6961146664828134,0.6771830507874946
+50steps,jump_heavy,float_vs_fall,auc,estimate + text | ridge,text,0,3,13770,236,0.9668147314586257,0.6624666610923095,0.6391364659010523
+50steps,jump_heavy,float_vs_fall,auc,estimate + text | mlp,text,0,3,13770,236,0.9527995982769469,0.6535095126908763,0.6260388941835632
+50steps,jump_heavy,float_vs_fall,auc,estimate + text | tuned,text,0,3,13770,236,0.9532595631060129,0.6586517506044848,0.6347855119796445
+50steps,jump_heavy,float_vs_fall,auc,estimate + text | tuned+fallback,text,0,3,13770,236,0.9736829856573574,0.6961146664828134,0.6771830507874946
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | ridge,text,0,3,13770,236,0.9824960876369329,0.7168882472847795,0.6965532977304507
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | mlp,text,0,3,13770,236,0.9743597034670797,0.7050947395130444,0.6745197473623104
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | tuned,text,0,3,13770,236,0.9743597034670797,0.7050947395130444,0.6745197473623104
+50steps,jump_heavy,float_vs_fall,auc,estimate + layer | tuned+fallback,text,0,3,13770,236,0.9736068760789249,0.7014096823291796,0.6769733525721471
+50steps,jump_heavy,float_vs_fall,auc,estimate + text + layer | ridge,text,0,3,13770,236,0.9764491473468531,0.7155137488739136,0.6940624565623355
+50steps,jump_heavy,float_vs_fall,auc,estimate + text + layer | mlp,text,0,3,13770,236,0.9569071358275657,0.697750707610662,0.6690179669211544
+50steps,jump_heavy,float_vs_fall,auc,estimate + text + layer | tuned,text,0,3,13770,236,0.9569071358275657,0.697750707610662,0.6690179669211544
+50steps,jump_heavy,float_vs_fall,auc,estimate + text + layer | tuned+fallback,text,0,3,13770,236,0.9736068760789249,0.7014096823291796,0.6769733525721471

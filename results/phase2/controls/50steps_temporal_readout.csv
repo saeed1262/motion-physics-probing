@@ -1,0 +1,28 @@
+checkpoint,seed,step,target,metric,features,model,score,within_prompt_r
+50steps,0,10,xcom_margin,r2,estimate,temporal,0.8607722455678529,0.8790776276927733
+50steps,0,10,xcom_margin,r2,layer,temporal,0.8269369882016562,0.8644245014359687
+50steps,0,10,xcom_margin,r2,estimate + layer,temporal,0.8472009528726037,0.8751472975838903
+50steps,0,10,in_flight,auc,estimate,temporal,0.9640405585416238,0.7429573807161194
+50steps,0,10,in_flight,auc,layer,temporal,0.957527214589547,0.7212533178018257
+50steps,0,10,in_flight,auc,estimate + layer,temporal,0.9531307625046602,0.7410721454586991
+50steps,0,10,flight_gravity,r2,estimate,temporal,0.8098816832926232,0.34828268677144697
+50steps,0,10,flight_gravity,r2,layer,temporal,0.8632934754214159,0.43515975753512737
+50steps,0,10,flight_gravity,r2,estimate + layer,temporal,0.8554717458279557,0.44723057915605813
+50steps,1,10,xcom_margin,r2,estimate,temporal,0.8531668686083138,0.8719998162501466
+50steps,1,10,xcom_margin,r2,layer,temporal,0.8239428144481,0.8607238891711659
+50steps,1,10,xcom_margin,r2,estimate + layer,temporal,0.8377016691995324,0.8650011227622366
+50steps,1,10,in_flight,auc,estimate,temporal,0.966059606420026,0.7627309033833807
+50steps,1,10,in_flight,auc,layer,temporal,0.9643282912426385,0.737419241595448
+50steps,1,10,in_flight,auc,estimate + layer,temporal,0.9696073807186324,0.762763901869642
+50steps,1,10,flight_gravity,r2,estimate,temporal,0.7614202966206358,0.4968216146167359
+50steps,1,10,flight_gravity,r2,layer,temporal,0.7888987622357544,0.5546395364956144
+50steps,1,10,flight_gravity,r2,estimate + layer,temporal,0.7371420892480498,0.523717799535936
+50steps,2,10,xcom_margin,r2,estimate,temporal,0.8636075050407531,0.880492869156291
+50steps,2,10,xcom_margin,r2,layer,temporal,0.8494783307266578,0.8677814726459682
+50steps,2,10,xcom_margin,r2,estimate + layer,temporal,0.8619965842590276,0.8821746656986449
+50steps,2,10,in_flight,auc,estimate,temporal,0.9604108704089923,0.7349480474330332
+50steps,2,10,in_flight,auc,layer,temporal,0.9568680732438536,0.7199469139040824
+50steps,2,10,in_flight,auc,estimate + layer,temporal,0.9674516659344798,0.7309631108780945
+50steps,2,10,flight_gravity,r2,estimate,temporal,0.7339324537531839,0.42232632937861303
+50steps,2,10,flight_gravity,r2,layer,temporal,0.8149834604159795,0.5722090169358239
+50steps,2,10,flight_gravity,r2,estimate + layer,temporal,0.7697366935873424,0.5470152908204133

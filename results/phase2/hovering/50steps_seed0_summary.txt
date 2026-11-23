@@ -1,0 +1,43 @@
+run 50steps_seed0: 1000 motions, 418 airborne stretches of >= 0.2 s
+
+kind                jump_prompt
+ballistic (g > 5)   False           46
+                    True           163
+hovering (|g| < 2)  False          191
+                    True             4
+other               False           14
+
+hovering stretches by explanation:
+explanation
+unexplained                 94
+feet elevated but still     48
+supported by R wrist        33
+supported by L wrist        13
+whole motion above floor     5
+supported by L knee          2
+
+hovering stretches, medians:
+frames                   21.000
+lowest_foot_mean          0.095
+motion_lowest_foot        0.014
+com_height_range          0.065
+feet_horizontal_speed     0.207
+lowest_other_height       0.526
+
+most common prompts with hovering stretches:
+prompt
+a person walks on a balance beam.                                                                    16
+a person walks over a beam.                                                                          10
+a person walks in place.                                                                              8
+the person is flying like a airplane.                                                                 8
+the person is walking knees down line crawling.                                                       7
+a figure walks in a straight line, turns around, and crawls on all fours back the same direction.     7
+person is walking backwards.                                                                          6
+a person stumbles backwards wobbling slightly.                                                        6
+the person does 2 cartwheels.                                                                         6
+the person was flying around like a fly.                                                              6
+a person does a yoga tree pose.                                                                       5
+a person walks forward one foot in front of another.                                                  5
+man walks forward then backwards then stumbles to his right then to his left.                         5
+a figure walks down and left to stare at a wall.                                                      5
+a person walks forward slowly and carefully.                                                          5
